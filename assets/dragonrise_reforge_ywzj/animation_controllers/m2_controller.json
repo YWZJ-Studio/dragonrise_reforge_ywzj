@@ -1,0 +1,28 @@
+{
+  "name": "m2_controller",
+  "script": "dragonrise_reforge_ywzj:m2",
+  "parameters": {},
+  "event_animations": {
+    "m2_fire": ["m2_shoot"]
+  },
+  "graph": {
+    "type": "merge",
+    "inputs": [
+      {
+        "type": "additive",
+        "base": {
+          "type": "merge",
+          "inputs": [
+            {
+              "type": "script",
+              "function": "updateBones"
+            }
+          ]
+        },
+        "add": {
+          "type": "event_animation"
+        }
+      }
+    ]
+  }
+}

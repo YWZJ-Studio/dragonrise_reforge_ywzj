@@ -1,0 +1,9 @@
+{
+  "name": "z10a_controller",
+  "script": "dragonrise_reforge_ywzj:z10a",
+  "parameters": {},
+  "graph": {
+    "type": "script",
+    "function": "updateBones"
+  }
+}

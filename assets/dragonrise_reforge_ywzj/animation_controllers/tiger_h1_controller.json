@@ -1,0 +1,64 @@
+{
+  "name": "tiger_h1_controller",
+  "script": "dragonrise_reforge_ywzj:tiger_h1",
+  "parameters": {},
+  "event_animations": {
+    "turret_fire": ["turret_shoot"]
+  },
+  "graph": {
+    "type": "merge",
+    "inputs": [
+      {
+        "type": "additive",
+        "base": {
+          "type": "merge",
+          "inputs": [
+            {
+              "type": "bone_binding",
+              "special_bindings": [
+                {
+                  "bones": [
+                    "bone10", "bone11", "bone12", "bone13", "bone14", "bone15", "bone20", "bone21", "bone22", "bone23"
+                  ],
+                  "source": "left_wheel_rotation",
+                  "axis": "x",
+                  "param": -0.5
+                },
+                {
+                  "bones": [
+                    "bone17", "bone7", "bone18", "bone2", "bone5", "bone6", "bone19", "bone24", "bone26", "bone27"
+                  ],
+                  "source": "right_wheel_rotation",
+                  "axis": "x",
+                  "param": -0.5
+                }
+              ],
+              "part_bindings": [
+                {
+                  "bone": "BB2",
+                  "part": "turret",
+                  "rotation_type": "y",
+                  "axis": "y",
+                  "invert": true
+                },
+                {
+                  "bone": "bone8",
+                  "part": "turret",
+                  "rotation_type": "x",
+                  "axis": "x",
+                  "invert": true
+                }
+              ]
+            },
+            {
+              "type": "track_animation"
+            }
+          ]
+        },
+        "add": {
+          "type": "event_animation"
+        }
+      }
+    ]
+  }
+}

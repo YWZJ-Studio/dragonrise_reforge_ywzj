@@ -1,0 +1,20 @@
+{
+  "type": "ywzj_vehicle:tracked_vehicle",
+  "model": "dragonrise_reforge_ywzj:entity/bmpt72",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/bmpt72.png",
+  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/bmpt72.png",
+  "animations": "dragonrise_reforge_ywzj:entity/bmpt72.animation",
+  "animation_controller": "dragonrise_reforge_ywzj:bmpt72_controller",
+  "track_config": {
+    "left_track": "tread_l_move",
+    "right_track": "tread_r_move",
+    "module_length": 0.25,
+    "track_width": 3.0
+  },
+  "sounds": {
+    "engine_start": "ywzj_vehicle:ztz99a_engine_start",
+    "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+    "engine_run": "ywzj_vehicle:ztz99a_engine_run"
+  },
+  "tab_index": 3
+}

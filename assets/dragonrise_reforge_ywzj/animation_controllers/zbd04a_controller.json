@@ -1,0 +1,64 @@
+{
+  "name": "zbd04a_controller",
+  "script": "dragonrise_reforge_ywzj:zbd04a",
+  "parameters": {},
+  "event_animations": {
+    "turret_fire": ["turret_shoot"]
+  },
+  "graph": {
+    "type": "merge",
+    "inputs": [
+      {
+        "type": "additive",
+        "base": {
+          "type": "merge",
+          "inputs": [
+            {
+              "type": "bone_binding",
+              "special_bindings": [
+                {
+                  "bones": [
+                    "wheel_l_0", "wheel_l_1", "wheel_l_2", "wheel_l_3", "wheel_l_4", "wheel_l_5", "wheel_l_6", "wheel_l_7"
+                  ],
+                  "source": "left_wheel_rotation",
+                  "axis": "x",
+                  "param": -0.375
+                },
+                {
+                  "bones": [
+                    "wheel_r_0", "wheel_r_1", "wheel_r_2", "wheel_r_3", "wheel_r_4", "wheel_r_5", "wheel_r_6", "wheel_r_7"
+                  ],
+                  "source": "right_wheel_rotation",
+                  "axis": "x",
+                  "param": -0.375
+                }
+              ],
+              "part_bindings": [
+                {
+                  "bone": "turret",
+                  "part": "turret",
+                  "rotation_type": "y",
+                  "axis": "y",
+                  "invert": false
+                },
+                {
+                  "bone": "cannon",
+                  "part": "turret",
+                  "rotation_type": "x",
+                  "axis": "x",
+                  "invert": true
+                }
+              ]
+            },
+            {
+              "type": "track_animation"
+            }
+          ]
+        },
+        "add": {
+          "type": "event_animation"
+        }
+      }
+    ]
+  }
+}

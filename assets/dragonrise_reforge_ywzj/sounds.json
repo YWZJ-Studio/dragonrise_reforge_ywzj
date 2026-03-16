@@ -1,0 +1,34 @@
+{
+  "cannon_125mm_shot": {
+    "sounds": [
+      "dragonrise_reforge_ywzj:weapon/artillery/t80_fire_3p_1",
+      "dragonrise_reforge_ywzj:weapon/artillery/t80_fire_3p_2",
+      "dragonrise_reforge_ywzj:weapon/artillery/t80_fire_3p_3"
+    ],
+    "subtitle": "dragonrise_reforge_ywzj.sounds.cannon_125mm_shot"
+  },
+  "gsh_30_1_shot": {
+    "sounds": [
+      "dragonrise_reforge_ywzj:weapon/auto_cannon/gsh_30_1_001",
+      "dragonrise_reforge_ywzj:weapon/auto_cannon/gsh_30_1_002",
+      "dragonrise_reforge_ywzj:weapon/auto_cannon/gsh_30_1_003"
+    ],
+    "subtitle": "dragonrise_reforge_ywzj.sounds.gsh_30_1_shot"
+  },
+  "boforce_40mm_shot": {
+    "sounds": [
+      "dragonrise_reforge_ywzj:weapon/artillery/boforce_40mm_001",
+      "dragonrise_reforge_ywzj:weapon/artillery/boforce_40mm_002",
+      "dragonrise_reforge_ywzj:weapon/artillery/boforce_40mm_003"
+    ],
+    "subtitle": "dragonrise_reforge_ywzj.sounds.boforce_40mm_shot"
+  },
+  "88mm_shot": {
+    "sounds": [
+      "dragonrise_reforge_ywzj:weapon/artillery/cannon_88mm_pak43_shot_01",
+      "dragonrise_reforge_ywzj:weapon/artillery/cannon_88mm_pak43_shot_02",
+      "dragonrise_reforge_ywzj:weapon/artillery/cannon_88mm_pak43_shot_03"
+    ],
+    "subtitle": "dragonrise_reforge_ywzj.sounds.88mm_shot"
+  }
+}

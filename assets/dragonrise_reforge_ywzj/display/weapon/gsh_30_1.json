@@ -1,0 +1,7 @@
+{
+  "type": "ywzj_vehicle:weapon",
+  "sounds": {
+    "fire": "dragonrise_reforge_ywzj:gsh_30_1_shot",
+    "reload": "ywzj_vehicle:gun_reload"
+  }
+}

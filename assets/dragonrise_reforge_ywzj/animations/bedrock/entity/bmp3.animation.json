@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"tread_l_move": {
+			"animation_length": 0.125,
+			"bones": {
+				"track": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, 0, -0.5]
+					}
+				}
+			}
+		},
+		"tread_r_move": {
+			"animation_length": 0.125,
+			"bones": {
+				"trackR": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, 0, -0.5]
+					}
+				}
+			}
+		},
+		"turret_shoot": {
+			"animation_length": 0.0417,
+			"bones": {
+				"cannon": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 0, 3.175]
+					}
+				}
+			}
+		}
+	}
+}

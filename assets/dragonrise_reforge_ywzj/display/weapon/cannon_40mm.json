@@ -1,0 +1,7 @@
+{
+  "type": "ywzj_vehicle:weapon",
+  "sounds": {
+    "fire": "dragonrise_reforge_ywzj:boforce_40mm_shot",
+    "reload": "ywzj_vehicle:artillery_reload"
+  }
+}

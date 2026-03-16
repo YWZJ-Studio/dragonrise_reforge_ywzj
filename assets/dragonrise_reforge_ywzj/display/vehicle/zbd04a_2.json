@@ -1,0 +1,13 @@
+{
+  "type": "ywzj_vehicle:tracked_vehicle",
+  "model": "dragonrise_reforge_ywzj:entity/zbd04a",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/zbd04a_2.png",
+  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/zbd04a.png",
+  "animations": "dragonrise_reforge_ywzj:entity/zbd04a.animation",
+  "script": "dragonrise_reforge_ywzj:zbd04a",
+  "sounds": {
+    "engine_start": "ywzj_vehicle:ztz99a_engine_start",
+    "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+    "engine_run": "ywzj_vehicle:ztz99a_engine_run"
+  }
+}

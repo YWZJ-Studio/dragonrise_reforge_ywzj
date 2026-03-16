@@ -1,0 +1,21 @@
+{
+  "type": "ywzj_vehicle:tracked_vehicle",
+  "model": "dragonrise_reforge_ywzj:entity/tiger_h1",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/tiger_h1.png",
+  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/tiger_h1.png",
+  "animations": "dragonrise_reforge_ywzj:entity/tiger_h1.animation",
+  "animation_controller": "dragonrise_reforge_ywzj:tiger_h1_controller",
+  "track_config": {
+    "left_track": "tread_l_move",
+    "right_track": "tread_r_move",
+    "module_length": 0.25,
+    "track_width": 3.0
+  },
+  "sounds": {
+    "engine_start": "ywzj_vehicle:ztz99a_engine_start",
+    "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+    "engine_run": "ywzj_vehicle:ztz99a_engine_run"
+  },
+  "description": "",
+  "tab_index": 50
+}

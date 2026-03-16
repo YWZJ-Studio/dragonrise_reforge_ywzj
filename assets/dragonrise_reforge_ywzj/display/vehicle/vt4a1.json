@@ -1,0 +1,21 @@
+{
+  "type": "ywzj_vehicle:tracked_vehicle",
+  "model": "dragonrise_reforge_ywzj:entity/vt4a1",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/vt4a1.png",
+  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/vt4a1.png",
+  "animations": "dragonrise_reforge_ywzj:entity/vt4a1.animation",
+  "animation_controller": "dragonrise_reforge_ywzj:vt4a1_controller",
+  "track_config": {
+    "left_track": "tread_l_move",
+    "right_track": "tread_r_move",
+    "module_length": 0.25,
+    "track_width": 3.0
+  },
+  "sounds": {
+    "engine_start": "ywzj_vehicle:ztz99a_engine_start",
+    "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+    "engine_run": "ywzj_vehicle:ztz99a_engine_run"
+  },
+  "description": "VT-4主战坦克，又名MBT-3000主战坦克，是中华人民共和国在2000年代末至2010年代研制的由中国北方工业推出专门供军贸出口的第三代主战坦克，是MBT-2000主战坦克（VT-1）基础上换中国产动力舱的升级改型，从渊源上是基于90-II式坦克一系列衍生型的最新型号之一。",
+  "tab_index": 0
+}

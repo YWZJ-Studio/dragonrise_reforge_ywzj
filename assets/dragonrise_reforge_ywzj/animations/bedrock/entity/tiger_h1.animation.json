@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"tread_l_move": {
+			"animation_length": 0.25,
+			"bones": {
+				"bone25": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 0.65]
+					}
+				}
+			}
+		},
+		"tread_r_move": {
+			"animation_length": 0.25,
+			"bones": {
+				"bone4": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 0.65]
+					}
+				}
+			}
+		},
+		"turret_shoot": {
+			"animation_length": 0.25,
+			"bones": {
+				"bone29": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 0, 7.175],
+						"0.25": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "ywzj_vehicle:weapon",
+  "model": "dragonrise_reforge_ywzj:entity/missile_hellfire",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/ac130.png",
+  "sounds": {
+    "fire": "ywzj_vehicle:missile_launch",
+    "reload": "ywzj_vehicle:common_reload"
+  }
+}

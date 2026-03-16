@@ -1,0 +1,107 @@
+{
+  "name": "vt4a1_controller",
+  "script": "dragonrise_reforge_ywzj:vt4a1",
+  "parameters": {},
+  "event_animations": {
+    "turret_fire": ["turret_shoot"],
+    "commander_machine_gun_fire": ["commander_machine_gun_shoot"]
+  },
+  "graph": {
+    "type": "merge",
+    "inputs": [
+      {
+        "type": "additive",
+        "base": {
+          "type": "merge",
+          "inputs": [
+            {
+              "type": "bone_binding",
+              "special_bindings": [
+                {
+                  "bones": [
+                    "wheelL1", "wheelL2", "wheelL3", "wheelL4", "wheelL5", "wheelL6", "wheelL7", "wheelL8"
+                  ],
+                  "source": "left_wheel_rotation",
+                  "axis": "x",
+                  "param": -0.375
+                },
+                {
+                  "bones": [
+                    "wheelR10", "wheelR11", "wheelR12", "wheelR13", "wheelR14", "wheelR15", "wheelR16", "wheelR17"
+                  ],
+                  "source": "right_wheel_rotation",
+                  "axis": "x",
+                  "param": -0.375
+                }
+              ],
+              "part_bindings": [
+                {
+                  "bone": "turret",
+                  "part": "turret",
+                  "rotation_type": "y",
+                  "axis": "y",
+                  "invert": true
+                },
+                {
+                  "bone": "barrel",
+                  "part": "turret",
+                  "rotation_type": "x",
+                  "axis": "x",
+                  "invert": true
+                },
+                {
+                  "bone": "passengerWeaponStationYaw",
+                  "part": "commander_machine_gun",
+                  "rotation_type": "y",
+                  "axis": "y",
+                  "invert": true
+                },
+                {
+                  "bone": "passengerWeaponStationPitch",
+                  "part": "commander_machine_gun",
+                  "rotation_type": "x",
+                  "axis": "x",
+                  "invert": true
+                },
+                {
+                  "bone": "APSL",
+                  "part": "aps_left",
+                  "rotation_type": "y",
+                  "axis": "y",
+                  "invert": true
+                },
+                {
+                  "bone": "bone5",
+                  "part": "aps_left",
+                  "rotation_type": "x",
+                  "axis": "x",
+                  "invert": true
+                },
+                {
+                  "bone": "APSR",
+                  "part": "aps_right",
+                  "rotation_type": "y",
+                  "axis": "y",
+                  "invert": true
+                },
+                {
+                  "bone": "bone6",
+                  "part": "aps_right",
+                  "rotation_type": "x",
+                  "axis": "x",
+                  "invert": true
+                }
+              ]
+            },
+            {
+              "type": "track_animation"
+            }
+          ]
+        },
+        "add": {
+          "type": "event_animation"
+        }
+      }
+    ]
+  }
+}

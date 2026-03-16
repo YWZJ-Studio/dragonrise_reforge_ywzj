@@ -1,0 +1,20 @@
+{
+  "type": "ywzj_vehicle:cannon",
+  "name": "30mm GSh-30-1",
+  "damage": 50,
+  "velocity": 16,
+  "recoil": 0.3,
+  "headshot_multiplier": 1.5,
+  "shoot_interval": 33,
+  "max_capacity": 150,
+  "reload": {
+    "time": 100,
+    "ammo": "ywzj_vehicle:ammo_auto_cannon"
+  },
+  "explosion": {
+    "explode": true,
+    "damage": 10,
+    "radius": 0.5,
+    "destroy_block": true
+  }
+}

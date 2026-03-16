@@ -1,0 +1,128 @@
+{
+  "type": "ywzj_vehicle:tracked_vehicle",
+  "attributes": {
+    "brake_acceleration": 0.025,
+    "forward_acceleration": 0.01,
+    "backward_acceleration": 0.01,
+    "max_speed_forward": 0.5,
+    "max_speed_backward": 0.2,
+    "turn_acceleration": 1,
+    "max_turn": 2
+  },
+  "max_health": 300,
+  "view_info": {
+    "third_person_center_offset": [0, 3, 0],
+    "third_person_distance": 10,
+    "sound_distance": 7,
+    "passenger_view_rot": {
+      "rot_by_vehicle_in_third_person": false,
+      "rot_by_vehicle_in_operator": true
+    }
+  },
+  "energy_info": {
+    "energy_capacity": 1,
+    "energy_consumption_per_tick": 0.00001,
+    "engine_particle_offsets": [[0.5, 1.8, -3], [-0.5, 1.8, -3]]
+  },
+  "physics_info": {
+    "can_destroy_block": true
+  },
+  "structure_model": "dragonrise_reforge_ywzj:vehicle/tiger_h1",
+  "parts": [
+    {
+      "id": "seat_driver",
+      "name": "seat_driver",
+      "type": "ywzj_vehicle:generic",
+      "seat_offset": [0.565, 1.356, 1.263],
+      "owner_view_offset": [0.565, 1.5, 1.4]
+    },
+    {
+      "id": "turret",
+      "name": "turret",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "turret",
+      "seat_offset": [0.5, 1.5, 0],
+      "rot_info": {
+        "x_rot_speed": 1,
+        "y_rot_speed": 1,
+        "x_rot_max": 8,
+        "x_rot_min": -16
+      },
+      "optical_sight_offset": [0.456, -0.171, 1.463],
+      "operator_view_offset": [0, 1.5, 0],
+      "optical_sight_type": "optical_scope",
+      "zoom_max": 8,
+      "weapons": [
+        "dragonrise_reforge_ywzj:cannon_88mm",
+        {
+          "id": "ywzj_vehicle:gun_7.62mm",
+          "part_unit_id": "turret_machine_gun",
+          "secondary": true
+        },
+        {
+          "id": "ywzj_vehicle:launcher_smoke_grenade",
+          "part_unit_id": "turret_smoke_grenade",
+          "secondary": true
+        }
+      ]
+    },
+    {
+      "id": "turret_machine_gun",
+      "name": "turret_machine_gun",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "turret_machine_gun",
+      "is_seat": false,
+      "base": "turret",
+      "rot_info": {
+        "x_rot_speed": 1,
+        "y_rot_speed": 1,
+        "x_rot_max": 8,
+        "x_rot_min": -16
+      }
+    },
+    {
+      "id": "turret_smoke_grenade",
+      "name": "turret_smoke_grenade",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "turret_smoke_grenade",
+      "is_seat": false,
+      "base": "turret",
+      "rot_info": {
+        "x_rot_speed": 0,
+        "y_rot_speed": 0
+      },
+      "ammo_capacity": 6
+    },
+    {
+      "id": "seat_radio_operator",
+      "name": "seat_radio_operator",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "seat_radio_operator",
+      "seat_offset": [-0.565, 1.356, 1.263],
+      "rot_info": {
+        "x_rot_speed": 0,
+        "y_rot_speed": 0
+      },
+      "optical_sight_offset": [-0.5, 1.3, 0.24],
+      "operator_view_offset": [-0.5, 1.5, 0],
+      "optical_sight_type": "none",
+      "with_stabilizer": true,
+      "zoom_max": 8,
+      "weapons": ["ywzj_vehicle:gun_7.62mm"]
+    },
+    {
+      "id": "seat_loader",
+      "name": "seat_loader",
+      "type": "ywzj_vehicle:generic",
+      "seat_offset": [-0.5, 1.5, 0],
+      "owner_view_offset": [-0.5, 1.5, 0]
+    },
+    {
+      "id": "seat_commander",
+      "name": "seat_commander",
+      "type": "ywzj_vehicle:generic",
+      "seat_offset": [0.5, 2, 0.5],
+      "owner_view_offset": [0.5, 2, 0.5]
+    }
+  ]
+}

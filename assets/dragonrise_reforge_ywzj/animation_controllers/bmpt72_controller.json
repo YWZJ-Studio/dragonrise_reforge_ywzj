@@ -1,0 +1,77 @@
+{
+  "name": "bmpt72_controller",
+  "parameters": {},
+  "event_animations": {
+    "turret_fire": ["auto_cannon_shoot"]
+  },
+  "graph": {
+    "type": "merge",
+    "inputs": [
+      {
+        "type": "additive",
+        "base": {
+          "type": "merge",
+          "inputs": [
+            {
+              "type": "bone_binding",
+              "special_bindings": [
+                {
+                  "bones": [
+                    "wheelL1", "wheelL2", "wheelL3", "wheelL4", "wheelL5", "wheelL6", "wheelL7", "wheelL8"
+                  ],
+                  "source": "left_wheel_rotation",
+                  "axis": "x",
+                  "param": -0.375
+                },
+                {
+                  "bones": [
+                    "wheelR1", "wheelR2", "wheelR3", "wheelR4", "wheelR5", "wheelR6", "wheelR7", "wheelR8"
+                  ],
+                  "source": "right_wheel_rotation",
+                  "axis": "x",
+                  "param": -0.375
+                }
+              ],
+              "part_bindings": [
+                {
+                  "bone": "turret",
+                  "part": "turret",
+                  "rotation_type": "y",
+                  "axis": "y",
+                  "invert": true
+                },
+                {
+                  "bone": "bone5",
+                  "part": "auto_cannon",
+                  "rotation_type": "x",
+                  "axis": "x",
+                  "invert": true
+                },
+                {
+                  "bone": "9m120",
+                  "part": "missile",
+                  "rotation_type": "y",
+                  "axis": "y",
+                  "invert": true
+                },
+                {
+                  "bone": "9m120",
+                  "part": "missile",
+                  "rotation_type": "x",
+                  "axis": "x",
+                  "invert": true
+                }
+              ]
+            },
+            {
+              "type": "track_animation"
+            }
+          ]
+        },
+        "add": {
+          "type": "event_animation"
+        }
+      }
+    ]
+  }
+}

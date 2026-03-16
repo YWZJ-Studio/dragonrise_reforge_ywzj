@@ -1,0 +1,126 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 11,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "vehicle_body",
+					"pivot": [0, 0, -8.675],
+					"cubes": [
+						{
+							"origin": [-32.8, 0, -69.55],
+							"size": [67.35, 38.875, 148.5],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [57.7, 27.4]},
+								"east": {"uv": [0, 0], "uv_size": [114.575, 27.4]},
+								"south": {"uv": [0, 0], "uv_size": [57.7, 27.4]},
+								"west": {"uv": [0, 0], "uv_size": [114.575, 27.4]},
+								"up": {"uv": [57.7, 114.575], "uv_size": [-57.7, -114.575], "uv_rotation": 180},
+								"down": {"uv": [57.7, 114.575], "uv_size": [-57.7, -114.575], "uv_rotation": 180}
+							}
+						}
+					]
+				},
+				{
+					"name": "turret",
+					"pivot": [-1.6, 56.6, -14.05],
+					"cubes": [
+						{
+							"origin": [-27, 39.1, -40.65],
+							"size": [50.25, 10.325, 49.9],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [56.7, 14.275]},
+								"east": {"uv": [0, 0], "uv_size": [69.825, 14.275]},
+								"south": {"uv": [0, 0], "uv_size": [56.7, 14.275]},
+								"west": {"uv": [0, 0], "uv_size": [69.825, 14.275]},
+								"up": {"uv": [56.7, 69.825], "uv_size": [-56.7, -69.825]},
+								"down": {"uv": [56.7, 69.825], "uv_size": [-56.7, -69.825]}
+							}
+						}
+					]
+				},
+				{
+					"name": "turret_barrel",
+					"parent": "turret",
+					"pivot": [-5.0224, 42.066, -4.2195],
+					"cubes": [
+						{
+							"origin": [-7.45, 40.35, 9.65],
+							"size": [3.475, 3.675, 46.375],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [4.525, 4.875]},
+								"east": {"uv": [0, 0], "uv_size": [79.075, 4.875]},
+								"south": {"uv": [0, 0], "uv_size": [4.525, 4.875]},
+								"west": {"uv": [0, 0], "uv_size": [79.075, 4.875]},
+								"up": {"uv": [4.525, 79.075], "uv_size": [-4.525, -79.075]},
+								"down": {"uv": [4.525, 79.075], "uv_size": [-4.525, -79.075]}
+							}
+						}
+					]
+				},
+				{
+					"name": "turret_machine_gun_barrel",
+					"parent": "turret",
+					"pivot": [-2.0244, 42.066, -4.2195],
+					"cubes": [
+						{
+							"origin": [-2.55, 41.675, 9.15],
+							"size": [1.4, 1.2, 37.95],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [1.4, 1.2]},
+								"east": {"uv": [0, 0], "uv_size": [15.35, 1.2]},
+								"south": {"uv": [0, 0], "uv_size": [1.4, 1.2]},
+								"west": {"uv": [0, 0], "uv_size": [15.35, 1.2]},
+								"up": {"uv": [1.4, 15.35], "uv_size": [-1.4, -15.35]},
+								"down": {"uv": [1.4, 15.35], "uv_size": [-1.4, -15.35]}
+							}
+						}
+					]
+				},
+				{
+					"name": "turret_smoke_grenade_barrel",
+					"parent": "turret",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [11.025, 41.65, 4.8],
+							"size": [10.35, 4.375, 2],
+							"pivot": [16.4, 44.025, 5.8],
+							"rotation": [25, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [10.35, 4.375]},
+								"east": {"uv": [0, 0], "uv_size": [2, 4.375]},
+								"south": {"uv": [0, 0], "uv_size": [10.35, 4.375]},
+								"west": {"uv": [0, 0], "uv_size": [2, 4.375]},
+								"up": {"uv": [10.35, 2], "uv_size": [-10.35, -2]},
+								"down": {"uv": [10.35, 2], "uv_size": [-10.35, -2]}
+							}
+						},
+						{
+							"origin": [-26.7, 41.65, 4.8],
+							"size": [10.35, 4.375, 2],
+							"pivot": [-21.325, 44.025, 5.8],
+							"rotation": [25, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [10.35, 4.375]},
+								"east": {"uv": [0, 0], "uv_size": [2, 4.375]},
+								"south": {"uv": [0, 0], "uv_size": [10.35, 4.375]},
+								"west": {"uv": [0, 0], "uv_size": [2, 4.375]},
+								"up": {"uv": [10.35, 2], "uv_size": [-10.35, -2]},
+								"down": {"uv": [10.35, 2], "uv_size": [-10.35, -2]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+  "model": "dragonrise_reforge_ywzj:entity/m2",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/m2.png",
+  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/m2.png",
+  "animations": "dragonrise_reforge_ywzj:entity/m2.animation",
+  "animation_controller": "dragonrise_reforge_ywzj:m2_controller",
+  "sounds": {},
+  "tab_index": 600
+}

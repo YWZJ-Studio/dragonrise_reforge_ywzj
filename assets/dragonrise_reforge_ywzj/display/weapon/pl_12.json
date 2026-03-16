@@ -1,0 +1,9 @@
+{
+  "type": "ywzj_vehicle:weapon",
+  "model": "dragonrise_reforge_ywzj:entity/missile_pl_12",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/j15t.png",
+  "sounds": {
+    "fire": "ywzj_vehicle:missile_launch",
+    "reload": "ywzj_vehicle:common_reload"
+  }
+}

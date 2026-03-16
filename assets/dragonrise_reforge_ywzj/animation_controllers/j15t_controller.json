@@ -1,0 +1,114 @@
+{
+  "name": "j15t_controller",
+  "script": "dragonrise_reforge_ywzj:j15t",
+  "parameters": {},
+  "switchable_animations": {
+    "door": {
+      "part_id": "door",
+      "animation": "door"
+    },
+    "landing_gear": {
+      "part_id": "landing_gear",
+      "animation": "landing_gear"
+    }
+  },
+  "state_machines": {
+    "wy": {
+      "start_state": "init",
+      "states": {
+        "init": {
+          "on_enter": [
+            {
+              "type": "play_animation",
+              "animation": "engine_off",
+              "play_type": "loop",
+              "track": "engine_off"
+            },
+            {
+              "type": "play_animation",
+              "animation": "engine_on",
+              "play_type": "loop",
+              "track": "engine_on"
+            }
+          ],
+          "transitions": [
+            {
+              "target": "engine_on",
+              "condition": {
+                "type": "script",
+                "script": "context.getPower() > 0 && context.getThrottleLevel() > 100"
+              },
+              "duration": 0
+            },
+            {
+              "target": "engine_off",
+              "condition": {
+                "type": "script",
+                "script": "context.getThrottleLevel() <= 100"
+              },
+              "duration": 0
+            }
+          ],
+          "evaluate": {
+            "type": "track",
+            "track": "engine_on"
+          }
+        },
+        "engine_off": {
+          "transitions": [
+            {
+              "target": "engine_on",
+              "condition": {
+                "type": "script",
+                "script": "context.getPower() > 0 && context.getThrottleLevel() > 100"
+              },
+              "duration": 0.5
+            }
+          ],
+          "evaluate": {
+            "type": "track",
+            "track": "engine_off"
+          },
+          "duration": 0.5
+        },
+        "engine_on": {
+          "transitions": [
+            {
+              "target": "engine_off",
+              "condition": {
+                "type": "script",
+                "script": "context.getThrottleLevel() <= 100"
+              },
+              "duration": 0.5
+            }
+          ],
+          "evaluate": {
+            "type": "track",
+            "track": "engine_on"
+          }
+        }
+      }
+    }
+  },
+  "graph": {
+    "type": "merge",
+    "inputs": [
+      {
+        "type": "state_machine",
+        "ref": "wy"
+      },
+      {
+        "type": "switchable_animation",
+        "ref": "door"
+      },
+      {
+        "type": "switchable_animation",
+        "ref": "landing_gear"
+      },
+      {
+        "type": "script",
+        "function": "updateBones"
+      }
+    ]
+  }
+}
