@@ -1,7 +1,7 @@
 {
   "type": "ywzj_vehicle:missile",
   "name": "9M120",
-  "damage": 9999,
+  "damage": 999,
   "headshot_multiplier": 1.5,
   "shoot_interval": 1000,
   "max_capacity": 1,

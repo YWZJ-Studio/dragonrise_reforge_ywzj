@@ -2,6 +2,7 @@
   "type": "ywzj_vehicle:rotary_wing_vehicle",
   "attributes": {
     "main_rotor_force": 0.09,
+    "ceiling": 256,
     "x_rot_speed_acceleration": 1.0,
     "x_rot_speed_max": 3.0,
     "y_rot_speed_acceleration": 1.0,
@@ -23,6 +24,10 @@
     "energy_capacity": 0.25,
     "energy_consumption_per_tick": 0.00001,
     "engine_particle_offsets": [[1.5, 2, -1.5], [-1.5, 2, -1.5]]
+  },
+  "defense_stats": {
+    "damage_threshold": 10,
+    "impact_multiplier": 0.2
   },
   "structure_model": "dragonrise_reforge_ywzj:vehicle/ka50",
   "parts": [
