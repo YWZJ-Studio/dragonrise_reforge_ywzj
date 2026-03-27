@@ -12,6 +12,13 @@
     "engine_thrust": "ywzj_vehicle:jet_engine_thrust",
     "passby": "ywzj_vehicle:jet_passby"
   },
+  "special_bone_effects": [
+    {
+      "bone": "bone45",
+      "texture": "dragonrise_reforge_ywzj:textures/entity/f14.png",
+      "type": "muzzle_flash"
+    }
+  ],
   "description": "",
-  "tab_index": 501
+  "tab_index": 510
 }
