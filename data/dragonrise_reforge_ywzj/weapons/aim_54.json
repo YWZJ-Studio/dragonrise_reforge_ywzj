@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:missile",
-  "name": "PL-8",
+  "name": "AIM-54",
   "damage": 100,
   "headshot_multiplier": 1.5,
   "recoil": 0.1,
@@ -17,18 +17,18 @@
   "explosion": {
     "explode": true,
     "damage": 500,
-    "radius": 8,
+    "radius": 16,
     "proximity_fuze": true,
     "proximity_radius": 4,
     "destroy_block": false
   },
   "seeker_fov": 30,
-  "mass": 0.01,
-  "thrust": 0.01,
-  "motor_burn_time": 60,
+  "mass": 0.05,
+  "thrust": 0.02,
+  "motor_burn_time": 600,
   "drag_coefficient": 0.005,
-  "max_g": 30,
-  "reference_speed": 1,
+  "max_g": 18,
+  "reference_speed": 6,
   "guidance": "HOMING",
-  "homing_mode": "INFRARED"
+  "homing_mode": "ACTIVE_RADAR"
 }

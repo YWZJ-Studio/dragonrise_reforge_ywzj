@@ -1,13 +1,11 @@
 {
   "type": "ywzj_vehicle:missile",
   "name": "PL-12",
-  "damage": 30,
-  "max_speed": 6,
-  "max_g": 10,
+  "damage": 100,
   "headshot_multiplier": 1.5,
   "recoil": 0.1,
   "shoot_interval": 1000,
-  "max_capacity": 1,
+  "max_capacity": 6,
   "reload": {
     "time": 100,
     "ammo": "ywzj_vehicle:ammo_missile"
@@ -18,11 +16,19 @@
   "y_rot_min": -90,
   "explosion": {
     "explode": true,
-    "damage": 99,
+    "damage": 500,
     "radius": 8,
     "proximity_fuze": true,
     "proximity_radius": 4,
     "destroy_block": false
   },
-  "guidance": "HOMING"
+  "seeker_fov": 30,
+  "mass": 0.01,
+  "thrust": 0.01,
+  "motor_burn_time": 300,
+  "drag_coefficient": 0.005,
+  "max_g": 30,
+  "reference_speed": 1,
+  "guidance": "HOMING",
+  "homing_mode": "ACTIVE_RADAR"
 }

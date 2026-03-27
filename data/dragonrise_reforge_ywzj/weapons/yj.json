@@ -1,8 +1,7 @@
 {
   "type": "ywzj_vehicle:missile",
   "name": "YJ",
-  "damage": 999,
-  "max_speed": 6,
+  "damage": 1000,
   "max_g": 10,
   "headshot_multiplier": 1.5,
   "recoil": 0.1,
@@ -18,7 +17,7 @@
   "y_rot_min": -90,
   "explosion": {
     "explode": true,
-    "damage": 99,
+    "damage": 100,
     "radius": 8,
     "destroy_block": true
   },

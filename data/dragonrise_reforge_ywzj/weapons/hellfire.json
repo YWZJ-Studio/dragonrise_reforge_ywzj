@@ -1,7 +1,7 @@
 {
   "type": "ywzj_vehicle:missile",
   "name": "AGM-114 Hellfire",
-  "damage": 999,
+  "damage": 1000,
   "max_speed": 6,
   "max_g": 10,
   "headshot_multiplier": 1.5,
@@ -18,7 +18,7 @@
   "y_rot_min": -90,
   "explosion": {
     "explode": true,
-    "damage": 99,
+    "damage": 100,
     "radius": 8,
     "destroy_block": true
   },

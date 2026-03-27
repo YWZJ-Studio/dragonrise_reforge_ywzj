@@ -2,7 +2,7 @@
   "type": "ywzj_vehicle:cannon",
   "name": "40mm Cannon",
   "caliber": 40,
-  "damage": 50,
+  "damage": 200,
   "velocity": 16,
   "recoil": 0.3,
   "headshot_multiplier": 1.5,
@@ -14,7 +14,7 @@
   },
   "explosion": {
     "explode": true,
-    "damage": 30,
+    "damage": 50,
     "radius": 5,
     "destroy_block": true
   }

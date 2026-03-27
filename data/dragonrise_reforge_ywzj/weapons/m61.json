@@ -1,12 +1,12 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "auto_cannon",
+  "name": "20mm M61",
   "damage": 20,
   "velocity": 16,
-  "recoil": 0.3,
+  "recoil": 0.1,
   "headshot_multiplier": 1.5,
-  "shoot_interval": 100,
-  "max_capacity": 120,
+  "shoot_interval": 10,
+  "max_capacity": 676,
   "reload": {
     "time": 100,
     "ammo": "ywzj_vehicle:ammo_auto_cannon"
@@ -14,11 +14,7 @@
   "explosion": {
     "explode": true,
     "damage": 10,
-    "radius": 2,
+    "radius": 0.5,
     "destroy_block": true
-  },
-  "sounds": {
-    "fire": "ywzj_vehicle:auto_cannon_shot",
-    "reload": "ywzj_vehicle:gun_reload"
   }
 }

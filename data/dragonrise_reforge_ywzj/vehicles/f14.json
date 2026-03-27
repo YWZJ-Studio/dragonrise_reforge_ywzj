@@ -9,7 +9,7 @@
     "z_rot_input_step": 0.2,
     "air_drag_k_min": 0.002,
     "air_drag_k_max": 0.008,
-    "lift_to_drag_k": 6.0,
+    "lift_to_drag_k": 4.0,
     "x_rot_input_drag_k": 1.0,
     "y_rot_input_drag_k": 0.25,
     "z_rot_input_drag_k": 0.125,
@@ -39,14 +39,14 @@
   },
   "with_warning_receiver": true,
   "center_offset": [0, 1.625, 0],
-  "structure_model": "dragonrise_reforge_ywzj:vehicle/j15t",
+  "structure_model": "dragonrise_reforge_ywzj:vehicle/f14",
   "parts": [
     {
       "id": "sighting_system",
       "name": "sighting_system",
       "type": "ywzj_vehicle:weapon",
       "structure_bone": "sighting_system",
-      "seat_offset": [0, 3, 5],
+      "seat_offset": [0, 2.7, 4.7],
       "operator_on_weapon_unit": false,
       "rot_info": {
         "x_rot_speed": 15,
@@ -57,26 +57,22 @@
         "y_rot_max": 30
       },
       "optical_sight_offset": [0, 0, 1],
-      "operator_view_offset": [-0.969, 2.384, 5.134],
+      "operator_view_offset": [0, 1.48, -2],
       "optical_sight_type": "crt",
       "zoom_max": 12,
       "sub_part_unit_ids": ["radar"],
       "weapons": [
         {
-          "id": "dragonrise_reforge_ywzj:gsh_30_1",
+          "id": "dragonrise_reforge_ywzj:m61",
           "part_unit_id": "auto_cannon"
         },
         {
-          "id": "dragonrise_reforge_ywzj:pl_8",
-          "part_unit_id": "pl_8"
+          "id": "dragonrise_reforge_ywzj:aim_54",
+          "part_unit_id": "aim_54"
         },
         {
-          "id": "dragonrise_reforge_ywzj:pl_12",
-          "part_unit_id": "pl_12"
-        },
-        {
-          "id": "dragonrise_reforge_ywzj:yj",
-          "part_unit_id": "yj"
+          "id": "dragonrise_reforge_ywzj:aim_9",
+          "part_unit_id": "aim_9"
         },
         {
           "id": "ywzj_vehicle:decoy_flare",
@@ -89,7 +85,7 @@
       "name": "auto_cannon",
       "type": "ywzj_vehicle:weapon",
       "structure_bone": "auto_cannon",
-      "ammo_capacity": 150,
+      "ammo_capacity": 676,
       "is_seat": false,
       "crosshair_style": "circle",
       "rot_info": {
@@ -98,27 +94,14 @@
       }
     },
     {
-      "id": "pl_8",
-      "name": "pl_8",
+      "id": "aim_54",
+      "name": "aim_54",
       "type": "ywzj_vehicle:weapon",
-      "structure_bone": "pl_8",
-      "ammo_capacity": 4,
-      "fire_control_sensor_type": "ir",
-      "is_seat": false,
-      "crosshair_style": "none",
-      "rot_info": {
-        "x_rot_speed": 0,
-        "y_rot_speed": 0
-      }
-    },
-    {
-      "id": "pl_12",
-      "name": "pl_12",
-      "type": "ywzj_vehicle:weapon",
-      "structure_bone": "pl_12",
-      "ammo_capacity": 2,
+      "structure_bone": "aim_54",
+      "ammo_capacity": 6,
       "fire_control_sensor_type": "rf",
       "is_seat": false,
+      "parent_weapon_unit_aim": true,
       "crosshair_style": "none",
       "rot_info": {
         "x_rot_speed": 0,
@@ -126,12 +109,12 @@
       }
     },
     {
-      "id": "yj",
-      "name": "yj",
+      "id": "aim_9",
+      "name": "aim_9",
       "type": "ywzj_vehicle:weapon",
-      "structure_bone": "yj",
-      "ammo_capacity": 5,
-      "fire_control_sensor_type": "eo",
+      "structure_bone": "aim_9",
+      "ammo_capacity": 2,
+      "fire_control_sensor_type": "ir",
       "is_seat": false,
       "parent_weapon_unit_aim": true,
       "crosshair_style": "none",
@@ -165,7 +148,6 @@
         "y_rot_max": 60,
         "y_rot_min": -60
       },
-      "radar_type": "KLJ-10A",
       "scan_sector_angle": 90,
       "max_scan_distance": 4096
     },
@@ -182,6 +164,13 @@
       "type": "ywzj_vehicle:landing_gear",
       "structure_bone": "landing_gear",
       "is_seat": false
+    },
+    {
+      "id": "seat",
+      "name": "seat",
+      "type": "ywzj_vehicle:generic",
+      "seat_offset": [0, 2.7, 3.2],
+      "owner_view_offset": [0, 2.7, 3.2]
     }
   ]
 }

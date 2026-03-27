@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:missile",
-  "name": "PL-8",
+  "name": "AIM-9",
   "damage": 100,
   "headshot_multiplier": 1.5,
   "recoil": 0.1,

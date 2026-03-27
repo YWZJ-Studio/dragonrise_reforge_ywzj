@@ -11,7 +11,7 @@
     "z_rot_speed_max": 4.0,
     "max_air_speed": 1.5
   },
-  "max_health": 30,
+  "max_health": 1000,
   "view_info": {
     "third_person_center_offset": [0, 6, 0],
     "third_person_distance": 16,

@@ -12,7 +12,7 @@
     "max_air_speed": 1.8
   },
   "landing_gear_part_id": "landing_gear",
-  "max_health": 30,
+  "max_health": 1000,
   "view_info": {
     "third_person_center_offset": [0, 6, 0],
     "third_person_distance": 14,
