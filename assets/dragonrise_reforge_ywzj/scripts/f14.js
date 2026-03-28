@@ -1,4 +1,5 @@
 const missiles_aim_54 = ["cow2", "cow1", "cow5", "cow3", "cow4", "cow6"]
+const missiles_aim_9 = ["missile1", "missile2"]
 
 function updateBones(context) {
     const pitchInput = context.getPitchInput()
@@ -20,6 +21,12 @@ function updateBones(context) {
     for (let i = 0; i < missiles_aim_54.length; i++) {
         if (i < missiles_aim_54.length - remainMissiles) {
             builder.hideBone(missiles_aim_54[i])
+        }
+    }
+    remainMissiles = context.getWeaponRemainAmmo("sighting_system", 2)
+    for (let i = 0; i < missiles_aim_9.length; i++) {
+        if (i < missiles_aim_9.length - remainMissiles) {
+            builder.hideBone(missiles_aim_9[i])
         }
     }
     return builder;

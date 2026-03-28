@@ -1,7 +1,7 @@
 {
   "type": "ywzj_vehicle:fixed_wing_vehicle",
   "attributes": {
-    "thrust": 0.01,
+    "thrust": 0.015,
     "thrust_k": 1.3,
     "ceiling": 512,
     "x_rot_input_step": 0.2,
@@ -9,7 +9,7 @@
     "z_rot_input_step": 0.2,
     "air_drag_k_min": 0.002,
     "air_drag_k_max": 0.0015,
-    "lift_to_drag_k": 3.230,
+    "lift_to_drag_k": 4,
     "x_rot_input_drag_k": 1.0,
     "y_rot_input_drag_k": 0.25,
     "z_rot_input_drag_k": 0.125,
@@ -35,7 +35,7 @@
   },
   "defense_stats": {
     "damage_threshold": 10,
-    "impact_multiplier": 0.2
+    "impact_multiplier": 3
   },
   "with_warning_receiver": true,
   "center_offset": [0, 1.625, 0],
