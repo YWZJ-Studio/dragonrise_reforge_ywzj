@@ -21,7 +21,7 @@
     "vortex_offsets": [[9.075, 2.023, -3.898], [-9.075, 2.023, -3.898]]
   },
   "landing_gear_part_id": "landing_gear",
-  "max_health": 1000,
+  "max_health": 500,
   "view_info": {
     "third_person_center_offset": [0, 6, 0],
     "third_person_distance": 20,
