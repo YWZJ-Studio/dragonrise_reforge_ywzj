@@ -1,7 +1,7 @@
 {
   "type": "ywzj_vehicle:rotary_wing_vehicle",
   "attributes": {
-    "main_rotor_force": 0.07,
+    "main_rotor_force": 0.0392,
     "ceiling": 256,
     "x_rot_speed_acceleration": 1.0,
     "x_rot_speed_max": 4.0,
