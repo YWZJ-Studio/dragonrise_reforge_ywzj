@@ -3,46 +3,46 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
-      "count": 192
+      "count": 288
     },
     {
       "tag": "forge:ingots/copper",
-      "count": 128
+      "count": 192
     },
     {
       "item": "minecraft:redstone",
-      "count": 96
+      "count": 144
     },
     {
       "item": "minecraft:glass_pane",
-      "count": 24
+      "count": 36
     },
     {
       "item": "minecraft:dispenser",
-      "count": 12
+      "count": 18
     },
     {
       "item": "minecraft:diamond",
-      "count": 16
+      "count": 24
     },
     {
       "item": "minecraft:gold_ingot",
-      "count": 48
+      "count": 72
     },
     {
       "item": "minecraft:lapis_lazuli",
-      "count": 32
+      "count": 48
     },
     {
       "item": "minecraft:netherite_scrap",
-      "count": 4
+      "count": 6
     }
   ],
   "result": {
     "item": "ywzj_vehicle:vehicle_spawn_item",
     "nbt": {
-      "YwzjVehicleId": "dragonrise_reforge_ywzj:j8"
+      "YwzjVehicleId": "dragonrise_reforge_ywzj:ac130"
     }
   },
-  "printingTime": 1800
+  "printingTime": 2700
 }

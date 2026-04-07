@@ -2,7 +2,6 @@
   "type": "ywzj_vehicle:missile",
   "name": "YJ",
   "damage": 1000,
-  "max_g": 10,
   "headshot_multiplier": 1.5,
   "recoil": 0.1,
   "shoot_interval": 1000,
@@ -21,5 +20,11 @@
     "radius": 8,
     "destroy_block": true
   },
+  "mass": 0.01,
+  "thrust": 0.004,
+  "motor_burn_time": 600,
+  "drag_coefficient": 0.005,
+  "max_g": 30,
+  "reference_speed": 1,
   "guidance": "HOMING"
 }
