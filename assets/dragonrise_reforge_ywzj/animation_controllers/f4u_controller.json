@@ -1,0 +1,24 @@
+{
+  "name": "f4u_controller",
+  "script": "dragonrise_reforge_ywzj:f4u",
+  "parameters": {},
+  "switchable_animations": {
+    "landing_gear": {
+      "part_id": "landing_gear",
+      "animation": "landing_gear"
+    }
+  },
+  "graph": {
+    "type": "merge",
+    "inputs": [
+      {
+        "type": "switchable_animation",
+        "ref": "landing_gear"
+      },
+      {
+        "type": "script",
+        "function": "updateBones"
+      }
+    ]
+  }
+}

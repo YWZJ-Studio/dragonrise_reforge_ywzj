@@ -1,0 +1,9 @@
+{
+  "type": "ywzj_vehicle:weapon",
+  "model": "dragonrise_reforge_ywzj:entity/bomb_an_m64",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/f4u.png",
+  "sounds": {
+    "fire": "ywzj_vehicle:bomb_drop",
+    "reload": "ywzj_vehicle:gun_reload"
+  }
+}
