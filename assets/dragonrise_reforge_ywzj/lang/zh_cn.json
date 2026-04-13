@@ -13,6 +13,7 @@
   "entity.dragonrise_reforge_ywzj.ac130": "AC-130",
   "entity.dragonrise_reforge_ywzj.f4u": "F4U",
   "entity.dragonrise_reforge_ywzj.m2": "M2",
+  "entity.dragonrise_reforge_ywzj.akm": "Osa-AKM",
 
   "dragonrise_reforge_ywzj.vt4a1": "VT4A1",
   "dragonrise_reforge_ywzj.zbd04a": "ZBD04A",
@@ -27,5 +28,6 @@
   "dragonrise_reforge_ywzj.f14": "F-14",
   "dragonrise_reforge_ywzj.ac130": "AC-130",
   "dragonrise_reforge_ywzj.f4u": "F4U",
-  "dragonrise_reforge_ywzj.m2": "M2"
+  "dragonrise_reforge_ywzj.m2": "M2",
+  "dragonrise_reforge_ywzj.akm": "Osa-AKM"
 }

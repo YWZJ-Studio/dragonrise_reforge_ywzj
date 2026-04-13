@@ -1,0 +1,104 @@
+{
+  "type": "ywzj_vehicle:wheeled_vehicle",
+  "attributes": {
+    "brake_force": 0.025,
+    "forward_force": 0.02,
+    "backward_force": 0.02,
+    "max_speed_forward": 0.8,
+    "max_speed_backward": 0.2,
+    "turn_step": 0.4,
+    "max_turn": 2
+  },
+  "max_health": 3000,
+  "view_info": {
+    "third_person_center_offset": [0, 8, 0],
+    "third_person_distance": 16,
+    "sound_distance": 7
+  },
+  "energy_info": {
+    "energy_capacity": 1,
+    "energy_consumption_per_tick": 0.00001,
+    "engine_particle_offsets": []
+  },
+  "physics_info": {
+    "can_destroy_block": true
+  },
+  "structure_model": "dragonrise_reforge_ywzj:vehicle/akm",
+  "parts": [
+    {
+      "id": "turret",
+      "name": "turret",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "turret",
+      "seat_offset": [0.728, 2.14, 4.2],
+      "operator_on_weapon_unit": false,
+      "rot_info": {
+        "x_rot_speed": 0,
+        "y_rot_speed": 1.5,
+        "x_rot_max": 0,
+        "x_rot_min": 0
+      },
+      "operator_view_offset": [0, 1.5, 0],
+      "optical_sight_type": "none",
+      "with_stabilizer": true,
+      "sub_part_unit_ids": ["lock_radar", "scan_radar"],
+      "weapons": [
+        {
+          "id": "dragonrise_reforge_ywzj:9k33m3",
+          "part_unit_id": "turret_missile"
+        }
+      ]
+    },
+    {
+      "id": "turret_missile",
+      "name": "turret_missile",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "turret_missile",
+      "fire_control_sensor_type": "rf",
+      "crosshair_style": "none",
+      "is_seat": false,
+      "base": "turret",
+      "rot_info": {
+        "x_rot_speed": 0,
+        "y_rot_speed": 0
+      }
+    },
+    {
+      "id": "lock_radar",
+      "name": "lock_radar",
+      "type": "ywzj_vehicle:radar",
+      "structure_bone": "lock_radar",
+      "is_seat": false,
+      "base": "turret",
+      "rot_info": {
+        "x_rot_speed": 0,
+        "y_rot_speed": 15,
+        "y_rot_max": 30,
+        "y_rot_min": -30
+      },
+      "scan_sector_angle": 80,
+      "max_scan_distance": 4096
+    },
+    {
+      "id": "scan_radar",
+      "name": "scan_radar",
+      "type": "ywzj_vehicle:radar",
+      "structure_bone": "scan_radar",
+      "is_seat": false,
+      "base": "turret",
+      "rot_info": {
+        "x_rot_speed": 0,
+        "y_rot_speed": 15
+      },
+      "scan_sector_angle": 80,
+      "max_scan_distance": 4096
+    },
+    {
+      "id": "seat",
+      "name": "seat",
+      "type": "ywzj_vehicle:generic",
+      "seat_offset": [-0.728, 2.14, 4.2],
+      "owner_view_offset": [-0.728, 2.14, 4.2]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "ywzj_vehicle:wheeled_vehicle",
+  "model": "dragonrise_reforge_ywzj:entity/akm",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/akm.png",
+  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/akm.png",
+  "animations": "dragonrise_reforge_ywzj:entity/akm.animation",
+  "animation_controller": "dragonrise_reforge_ywzj:akm_controller",
+  "sounds": {
+    "engine_start": "ywzj_vehicle:lav150_engine_start",
+    "engine_idle": "ywzj_vehicle:truck_engine_idle",
+    "engine_run": "ywzj_vehicle:truck_engine_run"
+  },
+  "tab_index": 100
+}
