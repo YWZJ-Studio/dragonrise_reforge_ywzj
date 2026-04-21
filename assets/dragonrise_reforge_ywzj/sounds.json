@@ -1,4 +1,12 @@
 {
+  "missile_start_med": {
+    "sounds": [
+      "dragonrise_reforge_ywzj:weapon/missile/missile_start_med_001",
+      "dragonrise_reforge_ywzj:weapon/missile/missile_start_med_002",
+      "dragonrise_reforge_ywzj:weapon/missile/missile_start_med_003"
+    ],
+    "subtitle": "dragonrise_reforge_ywzj.sounds.missile_start_med"
+  },
   "cannon_125mm_shot": {
     "sounds": [
       "dragonrise_reforge_ywzj:weapon/artillery/t80_fire_3p_1",

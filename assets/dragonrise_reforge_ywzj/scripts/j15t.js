@@ -1,6 +1,5 @@
 const missiles_pl_8 = ["3", "1", "4", "2"]
 const missiles_pl_12 = ["pl-12-5", "pl-12-2"]
-const missiles_yj = ["yj1", "yj4", "yj2", "yj3", "yj6"]
 
 function updateBones(context) {
     const pitchInput = context.getPitchInput()
@@ -17,23 +16,20 @@ function updateBones(context) {
     builder.setRotation("LeftVerticalTailInner", 0, -yawInput * 16, 0);
     builder.setRotation("RightVerticalTailInner", 0, -yawInput * 16, 0);
     builder.setRotation("ctrl", -8 * pitchInput, 0, -8 * rollInput);
+    // 霹雳8
     let remainMissiles = context.getWeaponRemainAmmo("sighting_system", 1)
     for (let i = 0; i < missiles_pl_8.length; i++) {
         if (i < missiles_pl_8.length - remainMissiles) {
             builder.hideBone(missiles_pl_8[i])
         }
     }
+    // 霹雳12
     remainMissiles = context.getWeaponRemainAmmo("sighting_system", 2)
     for (let i = 0; i < missiles_pl_12.length; i++) {
         if (i < missiles_pl_12.length - remainMissiles) {
             builder.hideBone(missiles_pl_12[i])
         }
     }
-    remainMissiles = context.getWeaponRemainAmmo("sighting_system", 3)
-    for (let i = 0; i < missiles_yj.length; i++) {
-        if (i < missiles_yj.length - remainMissiles) {
-            builder.hideBone(missiles_yj[i])
-        }
-    }
+    // 可变挂载从载具部件渲染
     return builder;
 }

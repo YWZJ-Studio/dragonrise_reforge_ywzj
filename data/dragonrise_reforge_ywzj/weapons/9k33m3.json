@@ -1,7 +1,7 @@
 {
   "type": "ywzj_vehicle:missile",
   "name": "9K33M3",
-  "damage": 999,
+  "damage": 99,
   "headshot_multiplier": 1.5,
   "recoil": 0.6,
   "shoot_interval": 1000,
@@ -16,10 +16,10 @@
   "y_rot_min": -90,
   "explosion": {
     "explode": true,
-    "damage": 500,
-    "radius": 16,
+    "damage": 999,
+    "radius": 8,
     "proximity_fuze": true,
-    "proximity_radius": 4,
+    "proximity_radius": 2,
     "destroy_block": false
   },
   "seeker_fov": 30,

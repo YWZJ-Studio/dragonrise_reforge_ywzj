@@ -75,8 +75,19 @@
           "part_unit_id": "pl_12"
         },
         {
-          "id": "dragonrise_reforge_ywzj:yj",
-          "part_unit_id": "yj"
+          "part_unit_id": "variable_weapon_1"
+        },
+        {
+          "part_unit_id": "variable_weapon_2"
+        },
+        {
+          "part_unit_id": "variable_weapon_3"
+        },
+        {
+          "part_unit_id": "variable_weapon_4"
+        },
+        {
+          "part_unit_id": "variable_weapon_5"
         },
         {
           "id": "ywzj_vehicle:decoy_flare",
@@ -91,11 +102,7 @@
       "structure_bone": "auto_cannon",
       "ammo_capacity": 150,
       "is_seat": false,
-      "crosshair_style": "circle",
-      "rot_info": {
-        "x_rot_speed": 0,
-        "y_rot_speed": 0
-      }
+      "crosshair_style": "circle"
     },
     {
       "id": "pl_8",
@@ -105,11 +112,7 @@
       "ammo_capacity": 4,
       "fire_control_sensor_type": "ir",
       "is_seat": false,
-      "crosshair_style": "none",
-      "rot_info": {
-        "x_rot_speed": 0,
-        "y_rot_speed": 0
-      }
+      "crosshair_style": "none"
     },
     {
       "id": "pl_12",
@@ -119,26 +122,237 @@
       "ammo_capacity": 2,
       "fire_control_sensor_type": "rf",
       "is_seat": false,
-      "crosshair_style": "none",
-      "rot_info": {
-        "x_rot_speed": 0,
-        "y_rot_speed": 0
-      }
+      "crosshair_style": "none"
     },
     {
-      "id": "yj",
-      "name": "yj",
+      "id": "variable_weapon_1",
+      "name": "variable_weapon_1",
       "type": "ywzj_vehicle:weapon",
-      "structure_bone": "yj",
-      "ammo_capacity": 5,
-      "fire_control_sensor_type": "eo",
+      "structure_bone": "variable_weapon_1",
+      "render_selected_weapon": true,
+      "is_seat": false,
+      "weapons": [
+        {
+          "part_unit_id": "variable_weapon_pl_12_1"
+        },
+        {
+          "part_unit_id": "variable_weapon_yj_1"
+        }
+      ]
+    },
+    {
+      "id": "variable_weapon_pl_12_1",
+      "name": "pl_12",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_1",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "rf",
       "is_seat": false,
       "parent_weapon_unit_aim": true,
       "crosshair_style": "none",
-      "rot_info": {
-        "x_rot_speed": 0,
-        "y_rot_speed": 0
-      }
+      "weapons": [
+        "dragonrise_reforge_ywzj:pl_12"
+      ]
+    },
+    {
+      "id": "variable_weapon_yj_1",
+      "name": "kd_88",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_1",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "eo",
+      "is_seat": false,
+      "parent_weapon_unit_aim": true,
+      "crosshair_style": "square",
+      "weapons": [
+        "dragonrise_reforge_ywzj:kd_88"
+      ]
+    },
+    {
+      "id": "variable_weapon_2",
+      "name": "variable_weapon_2",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_2",
+      "render_selected_weapon": true,
+      "is_seat": false,
+      "weapons": [
+        {
+          "part_unit_id": "variable_weapon_pl_12_2"
+        },
+        {
+          "part_unit_id": "variable_weapon_yj_2"
+        }
+      ]
+    },
+    {
+      "id": "variable_weapon_pl_12_2",
+      "name": "pl_12",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_2",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "rf",
+      "is_seat": false,
+      "parent_weapon_unit_aim": true,
+      "crosshair_style": "none",
+      "weapons": [
+        "dragonrise_reforge_ywzj:pl_12"
+      ]
+    },
+    {
+      "id": "variable_weapon_yj_2",
+      "name": "kd_88",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_2",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "eo",
+      "is_seat": false,
+      "parent_weapon_unit_aim": true,
+      "crosshair_style": "square",
+      "weapons": [
+        "dragonrise_reforge_ywzj:kd_88"
+      ]
+    },
+    {
+      "id": "variable_weapon_3",
+      "name": "variable_weapon_3",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_3",
+      "render_selected_weapon": true,
+      "is_seat": false,
+      "weapons": [
+        {
+          "part_unit_id": "variable_weapon_pl_12_3"
+        },
+        {
+          "part_unit_id": "variable_weapon_yj_3"
+        }
+      ]
+    },
+    {
+      "id": "variable_weapon_pl_12_3",
+      "name": "pl_12",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_3",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "rf",
+      "is_seat": false,
+      "parent_weapon_unit_aim": true,
+      "crosshair_style": "none",
+      "weapons": [
+        "dragonrise_reforge_ywzj:pl_12"
+      ]
+    },
+    {
+      "id": "variable_weapon_yj_3",
+      "name": "kd_88",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_3",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "eo",
+      "is_seat": false,
+      "parent_weapon_unit_aim": true,
+      "crosshair_style": "square",
+      "weapons": [
+        "dragonrise_reforge_ywzj:kd_88"
+      ]
+    },
+    {
+      "id": "variable_weapon_4",
+      "name": "variable_weapon_4",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_4",
+      "render_selected_weapon": true,
+      "is_seat": false,
+      "weapons": [
+        {
+          "part_unit_id": "variable_weapon_pl_12_4"
+        },
+        {
+          "part_unit_id": "variable_weapon_yj_4"
+        }
+      ]
+    },
+    {
+      "id": "variable_weapon_pl_12_4",
+      "name": "pl_12",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_4",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "rf",
+      "is_seat": false,
+      "parent_weapon_unit_aim": true,
+      "crosshair_style": "none",
+      "weapons": [
+        "dragonrise_reforge_ywzj:pl_12"
+      ]
+    },
+    {
+      "id": "variable_weapon_yj_4",
+      "name": "kd_88",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_4",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "eo",
+      "is_seat": false,
+      "parent_weapon_unit_aim": true,
+      "crosshair_style": "square",
+      "weapons": [
+        "dragonrise_reforge_ywzj:kd_88"
+      ]
+    },
+    {
+      "id": "variable_weapon_5",
+      "name": "variable_weapon_5",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_5",
+      "render_selected_weapon": true,
+      "is_seat": false,
+      "weapons": [
+        {
+          "part_unit_id": "variable_weapon_pl_12_5"
+        },
+        {
+          "part_unit_id": "variable_weapon_yj_5"
+        }
+      ]
+    },
+    {
+      "id": "variable_weapon_pl_12_5",
+      "name": "pl_12",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_5",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "rf",
+      "is_seat": false,
+      "parent_weapon_unit_aim": true,
+      "crosshair_style": "none",
+      "weapons": [
+        "dragonrise_reforge_ywzj:pl_12"
+      ]
+    },
+    {
+      "id": "variable_weapon_yj_5",
+      "name": "kd_88",
+      "type": "ywzj_vehicle:weapon",
+      "structure_bone": "variable_weapon_5",
+      "render_model": true,
+      "ammo_capacity": 1,
+      "fire_control_sensor_type": "eo",
+      "is_seat": false,
+      "parent_weapon_unit_aim": true,
+      "crosshair_style": "square",
+      "weapons": [
+        "dragonrise_reforge_ywzj:kd_88"
+      ]
     },
     {
       "id": "decoy_flare",
@@ -147,11 +361,7 @@
       "structure_bone": "decoy_flare",
       "is_seat": false,
       "crosshair_style": "none",
-      "firing_mode": "salvo",
-      "rot_info": {
-        "x_rot_speed": 0,
-        "y_rot_speed": 0
-      }
+      "firing_mode": "salvo"
     },
     {
       "id": "radar",

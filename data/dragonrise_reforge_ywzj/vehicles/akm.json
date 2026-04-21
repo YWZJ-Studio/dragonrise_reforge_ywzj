@@ -33,10 +33,10 @@
       "seat_offset": [0.728, 2.14, 4.2],
       "operator_on_weapon_unit": false,
       "rot_info": {
-        "x_rot_speed": 0,
+        "x_rot_speed": 1.5,
         "y_rot_speed": 1.5,
         "x_rot_max": 0,
-        "x_rot_min": 0
+        "x_rot_min": -45
       },
       "operator_view_offset": [0, 1.5, 0],
       "optical_sight_type": "none",
@@ -55,6 +55,7 @@
       "type": "ywzj_vehicle:weapon",
       "structure_bone": "turret_missile",
       "fire_control_sensor_type": "rf",
+      "parent_weapon_unit_aim": true,
       "crosshair_style": "none",
       "is_seat": false,
       "base": "turret",

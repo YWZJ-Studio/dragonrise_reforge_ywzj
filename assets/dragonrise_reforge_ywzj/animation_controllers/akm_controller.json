@@ -41,9 +41,16 @@
           },
           {
             "bone": "bone15",
-            "part": "radar",
+            "part": "scan_radar",
             "rotation_type": "y",
             "axis": "y",
+            "invert": true
+          },
+          {
+            "bone": "barrel",
+            "part": "turret",
+            "rotation_type": "x",
+            "axis": "x",
             "invert": true
           }
         ]

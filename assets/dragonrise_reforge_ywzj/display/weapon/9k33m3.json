@@ -3,7 +3,7 @@
   "model": "dragonrise_reforge_ywzj:entity/missile_9k33m3",
   "texture": "dragonrise_reforge_ywzj:textures/entity/akm.png",
   "sounds": {
-    "fire": "ywzj_vehicle:missile_launch",
+    "fire": "dragonrise_reforge_ywzj:missile_start_med",
     "reload": "ywzj_vehicle:common_reload"
   }
 }
