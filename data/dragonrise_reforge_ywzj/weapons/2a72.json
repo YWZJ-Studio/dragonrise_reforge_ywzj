@@ -1,6 +1,7 @@
 {
   "type": "ywzj_vehicle:cannon",
   "name": "30mm 2A72",
+  "caliber": 30,
   "damage": 30,
   "velocity": 16,
   "inaccuracy": 0.1,

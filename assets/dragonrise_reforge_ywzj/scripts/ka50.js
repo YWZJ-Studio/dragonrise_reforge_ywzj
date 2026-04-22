@@ -12,18 +12,7 @@ function updateBones(context) {
     builder.setRotation("auto_cannon", -context.getPartXRot("auto_cannon"), -context.getPartYRot("auto_cannon"), 0);
 
     // 操作杆
-    let d1 = 0;
-    let d2 = 0;
-    const control = context.getControlUnit();
-    if (control.left || control.right) {
-        d1 = control.left ? 10 : -10;
-    }
-    if (control.forward || control.backward) {
-        d2 = control.forward ? -10 : 10;
-    } else {
-        d2 = Math.max(-10, Math.min(10, -(control.xRot - context.getXRot()) / 30 * 10));
-    }
-    builder.setRotation("czg", d2, 0, d1);
+    builder.setRotation("czg", context.getPitchInput() * 10, 0, -context.getRollInput() * 10);
     builder.setRotation("zjg", context.getCollectivePitch() / 100 * 20, 0, 0);
 
     return builder
