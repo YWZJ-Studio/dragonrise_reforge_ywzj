@@ -12,8 +12,8 @@
   },
   "x_rot_max": 90,
   "x_rot_min": -90,
-  "y_rot_max": 90,
-  "y_rot_min": -90,
+  "y_rot_max": 180,
+  "y_rot_min": -180,
   "explosion": {
     "explode": true,
     "damage": 999,
