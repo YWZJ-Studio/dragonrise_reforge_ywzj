@@ -3156,13 +3156,13 @@
 				{
 					"name": "turret",
 					"parent": "base",
-					"pivot": [-40.5, 28.4418, -43.9437]
+					"pivot": [-40.5, 28.4418, -43.9437],
+					"rotation": [2.5, 0, 0]
 				},
 				{
 					"name": "bone",
 					"parent": "turret",
-					"pivot": [-40.5, 28.4418, -43.9437],
-					"rotation": [-2.5, 0, 0]
+					"pivot": [-40.5, 28.4418, -43.9437]
 				},
 				{
 					"name": "armor",
@@ -5926,7 +5926,7 @@
 					"name": "barrel",
 					"parent": "bone",
 					"pivot": [-40.5, 33.5418, -64.9437],
-					"rotation": [-2.5, 0, 0]
+					"rotation": [-5, 0, 0]
 				},
 				{
 					"name": "sdf",

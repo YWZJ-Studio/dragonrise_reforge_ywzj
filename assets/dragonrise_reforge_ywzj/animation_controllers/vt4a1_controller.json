@@ -36,7 +36,7 @@
               ],
               "part_bindings": [
                 {
-                  "bone": "turret",
+                  "bone": "bone",
                   "part": "turret",
                   "rotation_type": "y",
                   "axis": "y",
