@@ -112,6 +112,7 @@
       "ammo_capacity": 4,
       "fire_control_sensor_type": "ir",
       "is_seat": false,
+      "parent_weapon_unit_aim": true,
       "crosshair_style": "none"
     },
     {
@@ -122,6 +123,7 @@
       "ammo_capacity": 2,
       "fire_control_sensor_type": "rf",
       "is_seat": false,
+      "parent_weapon_unit_aim": true,
       "crosshair_style": "none"
     },
     {
