@@ -41,8 +41,8 @@
                   "invert": true
                 },
                 {
-                  "bone": "bone5",
-                  "part": "auto_cannon",
+                  "bone": "barrel",
+                  "part": "turret",
                   "rotation_type": "x",
                   "axis": "x",
                   "invert": true
