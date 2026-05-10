@@ -40,7 +40,6 @@
       },
       "operator_view_offset": [0, 1.5, 0],
       "optical_sight_type": "none",
-      "with_stabilizer": true,
       "sub_part_unit_ids": ["lock_radar", "scan_radar"],
       "weapons": [
         {

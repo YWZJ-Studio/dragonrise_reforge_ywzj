@@ -107,6 +107,7 @@
       "operator_view_offset": [-0.5, 1.5, 0],
       "optical_sight_type": "none",
       "with_stabilizer": true,
+      "with_thermal_imager": true,
       "zoom_max": 8,
       "weapons": ["ywzj_vehicle:gun_7.62mm"]
     },

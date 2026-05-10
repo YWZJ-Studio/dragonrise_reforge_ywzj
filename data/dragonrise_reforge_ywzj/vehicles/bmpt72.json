@@ -44,6 +44,7 @@
 			"fire_control_lock_type": "aim_hit",
 			"optical_sight_type": "crt",
 			"with_stabilizer": true,
+      		"with_thermal_imager": true,
 			"zoom_max": 8,
 			"weapons": [
 				"dragonrise_reforge_ywzj:2a72",
