@@ -1,0 +1,6 @@
+// function prepareBones() {
+//     // Left wheels: ['Wheel', 'WheelL', 'wheelL7']...
+//     // Right wheels: ...
+//     context.rotateBone("turret", 0, -context.getPartYRot("turret"), 0);
+//     context.rotateBone("barrel", -context.getPartXRot("turret"), 0, 0);
+// }

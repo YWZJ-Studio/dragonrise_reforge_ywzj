@@ -1,0 +1,51 @@
+{
+  "type": "ywzj_vehicle:wheeled_vehicle",
+  "attributes": {
+    "brake_acceleration": 0.03,
+    "forward_acceleration": 0.012,
+    "backward_acceleration": 0.012,
+    "max_speed_forward": 0.6,
+    "max_speed_backward": 0.2,
+    "turn_acceleration": 1.2,
+    "max_turn": 2.5
+  },
+  "max_health": 300,
+  "view_info": {
+    "third_person_center_offset": [
+      0,
+      2,
+      0
+    ],
+    "third_person_distance": 5,
+    "sound_distance": 5
+  },
+  "energy_info": {
+    "energy_capacity": 0.5,
+    "energy_consumption_per_tick": 1e-05,
+    "engine_particle_offsets": [
+      [
+        -1.5,
+        1,
+        -2
+      ],
+      [
+        1.5,
+        1,
+        -2
+      ]
+    ]
+  },
+  "structure_model": "dragonrise_reforge_ywzj:vehicle/motuo",
+  "parts": [
+    {
+      "id": "seat",
+      "name": "seat",
+      "type": "ywzj_vehicle:generic",
+      "seat_offset": [
+        0,
+        1.3,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "model": "dragonrise_reforge_ywzj:entity/dshk",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/dshk.png",
+  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/dshk.png",
+  "animations": "dragonrise_reforge_ywzj:entity/dshk.animation",
+  "animation_controller": "dragonrise_reforge_ywzj:dshk_controller",
+  "sounds": {},
+  "description": "",
+  "tab_index": 600
+}

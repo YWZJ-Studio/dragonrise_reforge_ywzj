@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"barrel_shoot": {
+			"animation_length": 0.0417,
+			"bones": {
+				"barrel": {
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.0417": [
+							0,
+							0,
+							2
+						]
+					}
+				}
+			}
+		}
+	}
+}

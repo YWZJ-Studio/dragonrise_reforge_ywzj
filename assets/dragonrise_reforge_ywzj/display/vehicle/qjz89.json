@@ -1,0 +1,10 @@
+{
+  "model": "dragonrise_reforge_ywzj:entity/qjz89",
+  "texture": "dragonrise_reforge_ywzj:textures/entity/qjz89.png",
+  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/qjz89.png",
+  "animations": "dragonrise_reforge_ywzj:entity/qjz89.animation",
+  "animation_controller": "dragonrise_reforge_ywzj:qjz89_controller",
+  "sounds": {},
+  "description": "",
+  "tab_index": 600
+}
