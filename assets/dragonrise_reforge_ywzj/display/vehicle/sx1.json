@@ -6,5 +6,6 @@
   "animation_controller": "dragonrise_reforge_ywzj:sx1_controller",
   "sounds": {},
   "description": "",
-  "tab_index": 600
+  "tab_index": 1103,
+  "type": "ywzj_vehicle:wheeled_vehicle"
 }

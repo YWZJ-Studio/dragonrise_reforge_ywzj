@@ -1,5 +1,5 @@
 {
-  "type": "ywzj_vehicle:tracked_vehicle",
+  "type": "ywzj_vehicle:wheeled_vehicle",
   "model": "dragonrise_reforge_ywzj:entity/zbl08",
   "texture": "dragonrise_reforge_ywzj:textures/entity/zbl08.png",
   "slot_texture": "dragonrise_reforge_ywzj:textures/slot/zbl08.png",
@@ -11,5 +11,5 @@
     "engine_run": "ywzj_vehicle:ztz99a_engine_run"
   },
   "description": "",
-  "tab_index": 100
+  "tab_index": 1107
 }

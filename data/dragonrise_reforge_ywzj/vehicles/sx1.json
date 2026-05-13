@@ -1,6 +1,14 @@
 {
-  "type": "ywzj_vehicle:generic",
-  "attributes": {},
+  "type": "ywzj_vehicle:wheeled_vehicle",
+  "attributes": {
+    "brake_acceleration": 0.03,
+    "forward_acceleration": 0.012,
+    "backward_acceleration": 0.012,
+    "max_speed_forward": 0.6,
+    "max_speed_backward": 0.2,
+    "turn_acceleration": 1.2,
+    "max_turn": 2.5
+  },
   "max_health": 50,
   "view_info": {
     "third_person_center_offset": [
@@ -60,5 +68,6 @@
         "ywzj_vehicle:gun_12.7mm"
       ]
     }
-  ]
+  ],
+  "experimental": true
 }

@@ -26,6 +26,7 @@
   "mass": 0.01,
   "thrust": 0.01,
   "motor_burn_time": 300,
+  "ignition_delay_tick": 5,
   "drag_coefficient": 0.005,
   "max_g": 30,
   "reference_speed": 1,

@@ -6,5 +6,6 @@
   "animation_controller": "dragonrise_reforge_ywzj:shield_controller",
   "sounds": {},
   "description": "",
-  "tab_index": 600
+  "tab_index": 1403,
+  "type": "ywzj_vehicle:generic"
 }
