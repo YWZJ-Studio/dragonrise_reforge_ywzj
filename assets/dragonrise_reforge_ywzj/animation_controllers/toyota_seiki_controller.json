@@ -1,48 +1,44 @@
 {
-  "name": "toyota_seiki_controller",
-  "script": "dragonrise_reforge_ywzj:toyota_seiki",
-  "parameters": {},
-  "event_animations": {},
-  "loop_animations": {
-    "static": {
-      "animation": "static"
-    }
-  },
-  "graph": {
-    "type": "merge",
-    "inputs": [
-      {
-        "type": "loop_animation",
-        "ref": "static"
-      },
-      {
-        "type": "additive",
-        "base": {
-          "type": "bone_binding",
-          "special_bindings": [
-            {
-              "bones": [
-                "wheelL1"
-              ],
-              "source": "left_wheel_rotation",
-              "axis": "x",
-              "param": -0.375
-            },
-            {
-              "bones": [
-                "wheelR1"
-              ],
-              "source": "right_wheel_rotation",
-              "axis": "x",
-              "param": -0.375
-            }
-          ],
-          "part_bindings": []
-        },
-        "add": {
-          "type": "event_animation"
-        }
-      }
-    ]
-  }
+	"name": "toyota_seiki_controller",
+	"script": "dragonrise_reforge_ywzj:toyota_seiki",
+	"parameters": {},
+	"event_animations": {},
+	"loop_animations": {
+		"static": {
+			"animation": "static"
+		}
+	},
+	"graph": {
+		"type": "merge",
+		"inputs": [
+			{
+				"type": "loop_animation",
+				"ref": "static"
+			},
+			{
+				"type": "additive",
+				"base": {
+					"type": "bone_binding",
+					"special_bindings": [
+						{
+							"bones": ["wheelL1"],
+							"source": "left_wheel_rotation",
+							"axis": "x",
+							"param": -0.375
+						},
+						{
+							"bones": ["wheelR1"],
+							"source": "right_wheel_rotation",
+							"axis": "x",
+							"param": -0.375
+						}
+					],
+					"part_bindings": []
+				},
+				"add": {
+					"type": "event_animation"
+				}
+			}
+		]
+	}
 }

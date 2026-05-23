@@ -23,17 +23,9 @@
   "landing_gear_part_id": "landing_gear",
   "max_health": 500,
   "view_info": {
-    "third_person_center_offset": [
-      0,
-      6,
-      0
-    ],
+    "third_person_center_offset": [0, 6, 0],
     "third_person_distance": 20,
-    "third_person_center_offset_zoomed": [
-      0,
-      7,
-      0
-    ],
+    "third_person_center_offset_zoomed": [0, 7, 0],
     "third_person_distance_zoomed": 4,
     "sound_distance": 8
   },
@@ -46,11 +38,7 @@
     "impact_multiplier": 3
   },
   "with_warning_receiver": true,
-  "center_offset": [
-    0,
-    1.625,
-    0
-  ],
+  "center_offset": [0, 1.625, 0],
   "structure_model": "dragonrise_reforge_ywzj:vehicle/j20",
   "parts": [
     {
@@ -58,11 +46,7 @@
       "name": "sighting_system",
       "type": "ywzj_vehicle:weapon",
       "structure_bone": "sighting_system",
-      "seat_offset": [
-        0,
-        2.7,
-        4.7
-      ],
+      "seat_offset": [0, 2.7, 4.7],
       "operator_on_weapon_unit": false,
       "rot_info": {
         "x_rot_speed": 15,
@@ -72,23 +56,15 @@
         "y_rot_min": -30,
         "y_rot_max": 30
       },
-      "optical_sight_offset": [
-        0,
-        0,
-        1
-      ],
-      "operator_view_offset": [
-        0,
-        1.48,
-        -2
-      ],
+      "optical_sight_offset": [0, 0, 1],
+      "operator_view_offset": [0, 1.48, -2],
       "optical_sight_type": "crt",
       "zoom_max": 12,
       "sub_part_unit_ids": ["radar"],
       "weapons": [
         {
-          "id": "dragonrise_reforge_ywzj:pl_12",
-          "part_unit_id": "pl_12",
+          "id": "dragonrise_reforge_ywzj:pl_15",
+          "part_unit_id": "pl_15",
           "weapon_bay_unit_id": "weapon_bay"
         },
         {
@@ -98,10 +74,10 @@
       ]
     },
     {
-      "id": "pl_12",
-      "name": "pl_12",
+      "id": "pl_15",
+      "name": "pl_15",
       "type": "ywzj_vehicle:weapon",
-      "structure_bone": "pl_12",
+      "structure_bone": "pl_15",
       "render_model": true,
       "ammo_capacity": 4,
       "fire_control_sensor_type": "rf",

@@ -1,21 +1,22 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "88mm Cannon",
+  "name": "88mm KwK 36 APHE",
   "caliber": 88,
-  "damage": 500,
+  "damage": 750,
+  "velocity": 35,
   "headshot_multiplier": 1,
   "recoil": 1,
-  "inaccuracy": 0.05,
+  "inaccuracy": 0.02,
   "shoot_interval": 400,
   "max_capacity": 1,
   "reload": {
-    "time": 60,
+    "time": 180,
     "ammo": "ywzj_vehicle:ammo_artillery"
   },
   "explosion": {
     "explode": true,
-    "damage": 100,
-    "radius": 4,
+    "damage": 200,
+    "radius": 5,
     "destroy_block": true
   }
 }

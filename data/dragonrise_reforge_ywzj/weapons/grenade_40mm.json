@@ -1,0 +1,17 @@
+{
+  "type": "ywzj_vehicle:grenade",
+  "name": "40mm Automatic Grenade Launcher",
+  "damage": 50,
+  "velocity": 3,
+  "shoot_interval": 150,
+  "max_capacity": 32,
+  "reload": {
+    "time": 100,
+    "ammo": "ywzj_vehicle:ammo_grenade"
+  },
+  "explosion": {
+    "explode": true,
+    "damage": 80,
+    "radius": 5
+  }
+}

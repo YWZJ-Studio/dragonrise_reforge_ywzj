@@ -1,67 +1,61 @@
 {
-  "name": "wlhgzu23_controller",
-  "script": "dragonrise_reforge_ywzj:wlhgzu23",
-  "parameters": {},
-  "event_animations": {
-    "turret_fire": [
-      "barrel_shoot"
-    ]
-  },
-  "loop_animations": {
-    "static": {
-      "animation": "static"
-    }
-  },
-  "graph": {
-    "type": "merge",
-    "inputs": [
-      {
-        "type": "loop_animation",
-        "ref": "static"
-      },
-      {
-        "type": "additive",
-        "base": {
-          "type": "bone_binding",
-          "special_bindings": [
-            {
-              "bones": [
-                "wheelL1"
-              ],
-              "source": "left_wheel_rotation",
-              "axis": "x",
-              "param": -0.375
-            },
-            {
-              "bones": [
-                "wheelR1"
-              ],
-              "source": "right_wheel_rotation",
-              "axis": "x",
-              "param": -0.375
-            }
-          ],
-          "part_bindings": [
-            {
-              "bone": "turret",
-              "part": "turret",
-              "rotation_type": "y",
-              "axis": "y",
-              "invert": true
-            },
-            {
-              "bone": "barrel",
-              "part": "turret",
-              "rotation_type": "x",
-              "axis": "x",
-              "invert": false
-            }
-          ]
-        },
-        "add": {
-          "type": "event_animation"
-        }
-      }
-    ]
-  }
+	"name": "wlhgzu23_controller",
+	"script": "dragonrise_reforge_ywzj:wlhgzu23",
+	"parameters": {},
+	"event_animations": {
+		"turret_fire": ["barrel_shoot"]
+	},
+	"loop_animations": {
+		"static": {
+			"animation": "static"
+		}
+	},
+	"graph": {
+		"type": "merge",
+		"inputs": [
+			{
+				"type": "loop_animation",
+				"ref": "static"
+			},
+			{
+				"type": "additive",
+				"base": {
+					"type": "bone_binding",
+					"special_bindings": [
+						{
+							"bones": ["wheelL1"],
+							"source": "left_wheel_rotation",
+							"axis": "x",
+							"param": -0.375
+						},
+						{
+							"bones": ["wheelR1"],
+							"source": "right_wheel_rotation",
+							"axis": "x",
+							"param": -0.375
+						}
+					],
+					"part_bindings": [
+						{
+							"bone": "turret",
+							"part": "turret",
+							"rotation_type": "y",
+							"axis": "y",
+							"invert": true
+						},
+						{
+							"bone": "barrel",
+							"part": "turret",
+							"rotation_type": "x",
+							"axis": "x",
+							"invert": false
+						}
+					]
+				},
+				"add": {
+					"type": "event_animation"
+				}
+			}
+		]
+	}
 }

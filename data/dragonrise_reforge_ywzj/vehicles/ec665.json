@@ -71,7 +71,7 @@
       "zoom_max": 8,
       "weapons": [
         {
-          "id": "ywzj_vehicle:rocket",
+          "id": "dragonrise_reforge_ywzj:rocket_70mm",
           "part_unit_id": "rocket"
         },
         {

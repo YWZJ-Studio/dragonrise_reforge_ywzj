@@ -1,11 +1,12 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "105mm Cannon",
+  "name": "105mm Tank Cannon",
   "caliber": 105,
-  "damage": 1000,
+  "damage": 900,
+  "velocity": 45,
   "headshot_multiplier": 1,
   "recoil": 1,
-  "inaccuracy": 0.05,
+  "inaccuracy": 0.02,
   "shoot_interval": 400,
   "max_capacity": 1,
   "reload": {
@@ -14,8 +15,8 @@
   },
   "explosion": {
     "explode": true,
-    "damage": 100,
-    "radius": 4,
+    "damage": 250,
+    "radius": 5,
     "destroy_block": true
   }
 }
