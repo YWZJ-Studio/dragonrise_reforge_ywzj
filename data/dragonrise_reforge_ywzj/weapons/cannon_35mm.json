@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "35mm AA Cannon",
+  "name": "35mm Cannon",
   "caliber": 35,
   "damage": 35,
   "velocity": 32,

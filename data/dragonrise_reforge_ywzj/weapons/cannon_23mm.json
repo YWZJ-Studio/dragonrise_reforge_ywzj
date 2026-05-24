@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "23mm Aircraft Cannon",
+  "name": "23mm Cannon",
   "caliber": 23,
   "damage": 30,
   "velocity": 32,

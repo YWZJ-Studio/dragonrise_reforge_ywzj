@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "30mm Autocannon",
+  "name": "30mm Cannon",
   "caliber": 30,
   "damage": 30,
   "velocity": 16,

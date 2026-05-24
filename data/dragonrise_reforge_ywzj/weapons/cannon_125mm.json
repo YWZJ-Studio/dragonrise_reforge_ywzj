@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "125mm Tank Cannon",
+  "name": "125mm Cannon",
   "caliber": 125,
   "damage": 1200,
   "velocity": 50,

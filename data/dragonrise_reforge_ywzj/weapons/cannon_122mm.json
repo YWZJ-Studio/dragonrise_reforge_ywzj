@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "122mm D-25T APHE",
+  "name": "122mm Cannon",
   "caliber": 122,
   "damage": 1100,
   "velocity": 40,

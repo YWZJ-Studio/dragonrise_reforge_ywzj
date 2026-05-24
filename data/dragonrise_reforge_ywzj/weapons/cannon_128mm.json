@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "128mm KwK 44 APHE",
+  "name": "128mm Cannon",
   "caliber": 128,
   "damage": 1500,
   "velocity": 38,

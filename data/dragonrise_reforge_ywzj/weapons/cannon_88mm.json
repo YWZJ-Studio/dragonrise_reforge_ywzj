@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "88mm KwK 36 APHE",
+  "name": "88mm Cannon",
   "caliber": 88,
   "damage": 750,
   "velocity": 35,

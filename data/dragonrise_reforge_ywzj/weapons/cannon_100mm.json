@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "100mm 3OF70 HE Cannon",
+  "name": "100mm Cannon",
   "caliber": 100,
   "damage": 400,
   "velocity": 15,

@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "40mm Bofors Autocannon",
+  "name": "40mm Cannon",
   "caliber": 40,
   "damage": 120,
   "velocity": 30,

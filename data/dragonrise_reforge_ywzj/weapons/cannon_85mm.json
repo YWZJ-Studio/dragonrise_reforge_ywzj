@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "85mm ZiS-S-53 APHE",
+  "name": "85mm Cannon",
   "caliber": 85,
   "damage": 700,
   "velocity": 35,

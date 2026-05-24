@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "90mm M3 APHE",
+  "name": "90mm Cannon",
   "caliber": 90,
   "damage": 800,
   "velocity": 32,

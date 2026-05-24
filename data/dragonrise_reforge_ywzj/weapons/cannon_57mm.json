@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "57mm AA Autocannon",
+  "name": "57mm Cannon",
   "caliber": 57,
   "damage": 200,
   "velocity": 35,

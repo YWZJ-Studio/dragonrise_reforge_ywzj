@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "76mm WWII Tank Gun",
+  "name": "76mm Cannon",
   "caliber": 76,
   "damage": 600,
   "velocity": 35,

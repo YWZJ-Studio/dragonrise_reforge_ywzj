@@ -1,6 +1,6 @@
 {
   "type": "ywzj_vehicle:cannon",
-  "name": "105mm Howitzer",
+  "name": "105mm Cannon",
   "caliber": 105,
   "damage": 500,
   "velocity": 12,
