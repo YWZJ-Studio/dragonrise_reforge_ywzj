@@ -57,7 +57,7 @@
         "y_rot_max": 30
       },
       "optical_sight_offset": [0, 0, 1],
-      "operator_view_offset": [0, 1.48, -2],
+      "operator_view_offset": [-0.05, 1.6, -2],
       "optical_sight_type": "crt",
       "zoom_max": 12,
       "sub_part_unit_ids": ["radar"],
