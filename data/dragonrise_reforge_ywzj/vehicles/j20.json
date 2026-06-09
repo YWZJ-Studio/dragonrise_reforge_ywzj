@@ -37,6 +37,9 @@
     "damage_threshold": 10,
     "impact_multiplier": 3
   },
+  "physics_info": {
+    "radar_cross_section": 0.1
+  },
   "with_warning_receiver": true,
   "center_offset": [0, 1.625, 0],
   "structure_model": "dragonrise_reforge_ywzj:vehicle/j20",
