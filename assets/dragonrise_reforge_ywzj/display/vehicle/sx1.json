@@ -1,11 +1,11 @@
 {
-  "model": "dragonrise_reforge_ywzj:entity/sx1",
-  "texture": "dragonrise_reforge_ywzj:textures/entity/sx1.png",
-  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/sx1.png",
-  "animations": "dragonrise_reforge_ywzj:entity/sx1.animation",
-  "animation_controller": "dragonrise_reforge_ywzj:sx1_controller",
-  "sounds": {},
-  "description": "",
-  "tab_index": 1103,
-  "type": "ywzj_vehicle:wheeled_vehicle"
+    "model": "dragonrise_reforge_ywzj:entity/sx1",
+    "texture": "dragonrise_reforge_ywzj:textures/entity/sx1.png",
+    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/sx1.png",
+    "animations": "dragonrise_reforge_ywzj:entity/sx1.animation",
+    "animation_controller": "dragonrise_reforge_ywzj:sx1_controller",
+    "sounds": {},
+    "description": "",
+    "tab_index": 1103,
+    "type": "ywzj_vehicle:wheeled_vehicle"
 }

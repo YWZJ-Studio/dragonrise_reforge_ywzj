@@ -1,30 +1,30 @@
 {
-  "type": "ywzj_vehicle:missile",
-  "name": "9M133 Kornet",
-  "damage": 1200,
-  "headshot_multiplier": 1.5,
-  "shoot_interval": 3000,
-  "max_capacity": 1,
-  "reload": {
-    "time": 100,
-    "ammo": "ywzj_vehicle:ammo_missile"
-  },
-  "x_rot_max": 15,
-  "x_rot_min": -15,
-  "y_rot_max": 15,
-  "y_rot_min": -15,
-  "explosion": {
-    "explode": true,
-    "damage": 150,
-    "radius": 6,
-    "destroy_block": true
-  },
-  "seeker_fov": 0,
-  "mass": 0.05,
-  "thrust": 0.03,
-  "motor_burn_time": 600,
-  "drag_coefficient": 0.005,
-  "max_g": 18,
-  "reference_speed": 3,
-  "guidance": "SACLOS"
+    "type": "ywzj_vehicle:missile",
+    "name": "9M133 Kornet",
+    "damage": 1200,
+    "headshot_multiplier": 1.5,
+    "shoot_interval": 3000,
+    "max_capacity": 1,
+    "reload": {
+        "time": 100,
+        "ammo": "ywzj_vehicle:ammo_missile"
+    },
+    "x_rot_max": 15,
+    "x_rot_min": -15,
+    "y_rot_max": 15,
+    "y_rot_min": -15,
+    "explosion": {
+        "explode": true,
+        "damage": 150,
+        "radius": 6,
+        "destroy_block": true
+    },
+    "seeker_fov": 0,
+    "mass": 0.05,
+    "thrust": 0.03,
+    "motor_burn_time": 600,
+    "drag_coefficient": 0.005,
+    "max_g": 18,
+    "reference_speed": 3,
+    "guidance": "SACLOS"
 }

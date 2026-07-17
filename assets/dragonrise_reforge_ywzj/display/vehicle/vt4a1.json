@@ -1,21 +1,21 @@
 {
-  "type": "ywzj_vehicle:tracked_vehicle",
-  "model": "dragonrise_reforge_ywzj:entity/vt4a1",
-  "texture": "dragonrise_reforge_ywzj:textures/entity/vt4a1.png",
-  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/vt4a1.png",
-  "animations": "dragonrise_reforge_ywzj:entity/vt4a1.animation",
-  "animation_controller": "dragonrise_reforge_ywzj:vt4a1_controller",
-  "track_config": {
-    "left_track": "tread_l_move",
-    "right_track": "tread_r_move",
-    "module_length": 0.25,
-    "track_width": 3.0
-  },
-  "sounds": {
-    "engine_start": "ywzj_vehicle:ztz99a_engine_start",
-    "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-    "engine_run": "ywzj_vehicle:ztz99a_engine_run"
-  },
-  "description": "VT-4主战坦克，又名MBT-3000主战坦克，是中华人民共和国在2000年代末至2010年代研制的由中国北方工业推出专门供军贸出口的第三代主战坦克，是MBT-2000主战坦克（VT-1）基础上换中国产动力舱的升级改型，从渊源上是基于90-II式坦克一系列衍生型的最新型号之一。",
-  "tab_index": 3
+    "type": "ywzj_vehicle:tracked_vehicle",
+    "model": "dragonrise_reforge_ywzj:entity/vt4a1",
+    "texture": "dragonrise_reforge_ywzj:textures/entity/vt4a1.png",
+    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/vt4a1.png",
+    "animations": "dragonrise_reforge_ywzj:entity/vt4a1.animation",
+    "animation_controller": "dragonrise_reforge_ywzj:vt4a1_controller",
+    "track_config": {
+        "left_track": "tread_l_move",
+        "right_track": "tread_r_move",
+        "module_length": 0.25,
+        "track_width": 3.0
+    },
+    "sounds": {
+        "engine_start": "ywzj_vehicle:ztz99a_engine_start",
+        "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+        "engine_run": "ywzj_vehicle:ztz99a_engine_run"
+    },
+    "description": "VT-4\u4e3b\u6218\u5766\u514b\uff0c\u53c8\u540dMBT-3000\u4e3b\u6218\u5766\u514b\uff0c\u662f\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u57282000\u5e74\u4ee3\u672b\u81f32010\u5e74\u4ee3\u7814\u5236\u7684\u7531\u4e2d\u56fd\u5317\u65b9\u5de5\u4e1a\u63a8\u51fa\u4e13\u95e8\u4f9b\u519b\u8d38\u51fa\u53e3\u7684\u7b2c\u4e09\u4ee3\u4e3b\u6218\u5766\u514b\uff0c\u662fMBT-2000\u4e3b\u6218\u5766\u514b\uff08VT-1\uff09\u57fa\u7840\u4e0a\u6362\u4e2d\u56fd\u4ea7\u52a8\u529b\u8231\u7684\u5347\u7ea7\u6539\u578b\uff0c\u4ece\u6e0a\u6e90\u4e0a\u662f\u57fa\u4e8e90-II\u5f0f\u5766\u514b\u4e00\u7cfb\u5217\u884d\u751f\u578b\u7684\u6700\u65b0\u578b\u53f7\u4e4b\u4e00\u3002",
+    "tab_index": 3
 }

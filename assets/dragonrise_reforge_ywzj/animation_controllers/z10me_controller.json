@@ -1,55 +1,60 @@
 {
-	"name": "z10me_controller",
-	"script": "dragonrise_reforge_ywzj:z10me",
-	"parameters": {},
-	"event_animations": {
-		"turret_fire": ["barrel_shoot"]
-	},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
-		}
-	},
-	"graph": {
-		"type": "merge",
-		"inputs": [
-			{
-				"type": "loop_animation",
-				"ref": "static"
-			},
-			{
-				"type": "additive",
-				"base": {
-					"type": "bone_binding",
-					"special_bindings": [
-						{
-							"bones": ["propellerBase", "propeller"],
-							"source": "main_rotor_rotation",
-							"axis": "y",
-							"param": 10.0
-						}
-					],
-					"part_bindings": [
-						{
-							"bone": "turret",
-							"part": "turret",
-							"rotation_type": "y",
-							"axis": "y",
-							"invert": true
-						},
-						{
-							"bone": "barrel",
-							"part": "turret",
-							"rotation_type": "x",
-							"axis": "x",
-							"invert": false
-						}
-					]
-				},
-				"add": {
-					"type": "event_animation"
-				}
-			}
-		]
-	}
+    "name": "z10me_controller",
+    "script": "dragonrise_reforge_ywzj:z10me",
+    "parameters": {},
+    "event_animations": {
+        "turret_fire": [
+            "barrel_shoot"
+        ]
+    },
+    "loop_animations": {
+        "static": {
+            "animation": "static"
+        }
+    },
+    "graph": {
+        "type": "merge",
+        "inputs": [
+            {
+                "type": "loop_animation",
+                "ref": "static"
+            },
+            {
+                "type": "additive",
+                "base": {
+                    "type": "bone_binding",
+                    "special_bindings": [
+                        {
+                            "bones": [
+                                "propellerBase",
+                                "propeller"
+                            ],
+                            "source": "main_rotor_rotation",
+                            "axis": "y",
+                            "param": 10.0
+                        }
+                    ],
+                    "part_bindings": [
+                        {
+                            "bone": "turret",
+                            "part": "turret",
+                            "rotation_type": "y",
+                            "axis": "y",
+                            "invert": true
+                        },
+                        {
+                            "bone": "barrel",
+                            "part": "turret",
+                            "rotation_type": "x",
+                            "axis": "x",
+                            "invert": false
+                        }
+                    ]
+                },
+                "add": {
+                    "type": "event_animation"
+                }
+            }
+        ]
+    }
 }

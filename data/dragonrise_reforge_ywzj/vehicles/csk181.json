@@ -1,73 +1,53 @@
 {
-  "type": "ywzj_vehicle:wheeled_vehicle",
-  "attributes": {
-    "brake_acceleration": 0.03,
-    "forward_acceleration": 0.012,
-    "backward_acceleration": 0.012,
-    "max_speed_forward": 0.6,
-    "max_speed_backward": 0.2,
-    "turn_acceleration": 1.2,
-    "max_turn": 2.5
-  },
-  "max_health": 300,
-  "view_info": {
-    "third_person_center_offset": [
-      0,
-      2,
-      0
-    ],
-    "third_person_distance": 5,
-    "sound_distance": 5
-  },
-  "energy_info": {
-    "energy_capacity": 0.5,
-    "energy_consumption_per_tick": 1e-05
-  },
-  "structure_model": "dragonrise_reforge_ywzj:vehicle/csk181",
-  "parts": [
-    {
-      "id": "turret",
-      "name": "turret",
-      "type": "ywzj_vehicle:weapon",
-      "structure_bone": "turret",
-      "seat_offset": [
-        0,
-        1.5,
-        -0.5
-      ],
-      "rot_info": {
-        "x_rot_speed": 1.5,
-        "y_rot_speed": 1.5,
-        "x_rot_max": 5,
-        "x_rot_min": -15
-      },
-      "optical_sight_offset": [
-        0.5,
-        1,
-        0.2
-      ],
-      "operator_view_offset": [
-        0,
-        1,
-        0
-      ],
-      "fire_control_lock_type": "aim_hit",
-      "optical_sight_type": "operator",
-      "zoom_max": 4,
-      "weapons": [
-        "ywzj_vehicle:gun_12.7mm"
-      ]
+    "type": "ywzj_vehicle:wheeled_vehicle",
+    "attributes": {
+        "brake_acceleration": 0.03,
+        "forward_acceleration": 0.012,
+        "backward_acceleration": 0.012,
+        "max_speed_forward": 0.6,
+        "max_speed_backward": 0.2,
+        "turn_acceleration": 1.2,
+        "max_turn": 2.5
     },
-    {
-      "id": "seat",
-      "name": "seat",
-      "type": "ywzj_vehicle:generic",
-      "seat_offset": [
-        0,
-        1.3,
-        1
-      ]
-    }
-  ],
-  "experimental": true
+    "max_health": 300,
+    "view_info": {
+        "third_person_center_offset": [0, 2, 0],
+        "third_person_distance": 5,
+        "sound_distance": 5
+    },
+    "energy_info": {
+        "energy_capacity": 0.5,
+        "energy_consumption_per_tick": 1e-05
+    },
+    "structure_model": "dragonrise_reforge_ywzj:vehicle/csk181",
+    "parts": [
+        {
+            "id": "turret",
+            "name": "turret",
+            "type": "ywzj_vehicle:weapon",
+            "structure_bone": "turret",
+            "seat_offset": [0, 1.5, -0.5],
+            "rot_info": {
+                "x_rot_speed": 1.5,
+                "y_rot_speed": 1.5,
+                "x_rot_max": 5,
+                "x_rot_min": -15
+            },
+            "optical_sight_offset": [0.5, 1, 0.2],
+            "operator_view_offset": [0, 1, 0],
+            "fire_control_lock_type": "aim_hit",
+            "optical_sight_type": "operator",
+            "zoom_max": 4,
+            "weapons": [
+                "ywzj_vehicle:gun_12.7mm"
+            ]
+        },
+        {
+            "id": "seat",
+            "name": "seat",
+            "type": "ywzj_vehicle:generic",
+            "seat_offset": [0, 1.3, 1]
+        }
+    ],
+    "experimental": true
 }

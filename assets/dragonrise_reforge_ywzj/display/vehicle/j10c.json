@@ -1,24 +1,24 @@
 {
-  "type": "ywzj_vehicle:fixed_wing_vehicle",
-  "model": "dragonrise_reforge_ywzj:entity/j10c",
-  "texture": "dragonrise_reforge_ywzj:textures/entity/j10c.png",
-  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/j10c.png",
-  "animations": "dragonrise_reforge_ywzj:entity/j10c.animation",
-  "animation_controller": "dragonrise_reforge_ywzj:j10c_controller",
-  "sounds": {
-    "engine_start": "ywzj_vehicle:jet_engine_start",
-    "engine_stop": "ywzj_vehicle:jet_engine_stop",
-    "engine_run": "ywzj_vehicle:jet_engine_run",
-    "engine_thrust": "ywzj_vehicle:jet_engine_thrust",
-    "passby": "ywzj_vehicle:jet_passby"
-  },
-  "special_bone_effects": [
-    {
-      "bone": "door",
-      "texture": "dragonrise_reforge_ywzj:textures/entity/j10c.png",
-      "type": "transparent"
-    }
-  ],
-  "description": "歼-10C（J-10C），是中国自主研发的第三代改进型超音速多用途战斗机，由中航工业成都飞机工业公司生产，配装先进航电系统及多型先进机载武器，具备中近距制空和对地面、海面目标精确打击能力，可进一步完善空军攻防作战体系。",
-  "tab_index": 303
+    "type": "ywzj_vehicle:fixed_wing_vehicle",
+    "model": "dragonrise_reforge_ywzj:entity/j10c",
+    "texture": "dragonrise_reforge_ywzj:textures/entity/j10c.png",
+    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/j10c.png",
+    "animations": "dragonrise_reforge_ywzj:entity/j10c.animation",
+    "animation_controller": "dragonrise_reforge_ywzj:j10c_controller",
+    "sounds": {
+        "engine_start": "ywzj_vehicle:jet_engine_start",
+        "engine_stop": "ywzj_vehicle:jet_engine_stop",
+        "engine_run": "ywzj_vehicle:jet_engine_run",
+        "engine_thrust": "ywzj_vehicle:jet_engine_thrust",
+        "passby": "ywzj_vehicle:jet_passby"
+    },
+    "special_bone_effects": [
+        {
+            "bone": "door",
+            "texture": "dragonrise_reforge_ywzj:textures/entity/j10c.png",
+            "type": "transparent"
+        }
+    ],
+    "description": "\u6b7c-10C\uff08J-10C\uff09\uff0c\u662f\u4e2d\u56fd\u81ea\u4e3b\u7814\u53d1\u7684\u7b2c\u4e09\u4ee3\u6539\u8fdb\u578b\u8d85\u97f3\u901f\u591a\u7528\u9014\u6218\u6597\u673a\uff0c\u7531\u4e2d\u822a\u5de5\u4e1a\u6210\u90fd\u98de\u673a\u5de5\u4e1a\u516c\u53f8\u751f\u4ea7\uff0c\u914d\u88c5\u5148\u8fdb\u822a\u7535\u7cfb\u7edf\u53ca\u591a\u578b\u5148\u8fdb\u673a\u8f7d\u6b66\u5668\uff0c\u5177\u5907\u4e2d\u8fd1\u8ddd\u5236\u7a7a\u548c\u5bf9\u5730\u9762\u3001\u6d77\u9762\u76ee\u6807\u7cbe\u786e\u6253\u51fb\u80fd\u529b\uff0c\u53ef\u8fdb\u4e00\u6b65\u5b8c\u5584\u7a7a\u519b\u653b\u9632\u4f5c\u6218\u4f53\u7cfb\u3002",
+    "tab_index": 303
 }

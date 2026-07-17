@@ -1,17 +1,17 @@
 {
-  "type": "ywzj_vehicle:rocket",
-  "name": "80mm Rocket Pod",
-  "damage": 150,
-  "velocity": 4,
-  "shoot_interval": 75,
-  "max_capacity": 16,
-  "reload": {
-    "time": 200,
-    "ammo": "ywzj_vehicle:ammo_rocket"
-  },
-  "explosion": {
-    "explode": true,
-    "damage": 250,
-    "radius": 6
-  }
+    "type": "ywzj_vehicle:rocket",
+    "name": "80mm Rocket Pod",
+    "damage": 150,
+    "velocity": 4,
+    "shoot_interval": 75,
+    "max_capacity": 16,
+    "reload": {
+        "time": 200,
+        "ammo": "ywzj_vehicle:ammo_rocket"
+    },
+    "explosion": {
+        "explode": true,
+        "damage": 250,
+        "radius": 6
+    }
 }

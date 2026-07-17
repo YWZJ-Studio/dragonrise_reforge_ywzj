@@ -1,11 +1,11 @@
 {
-  "model": "dragonrise_reforge_ywzj:entity/mk19",
-  "texture": "dragonrise_reforge_ywzj:textures/entity/mk19.png",
-  "slot_texture": "dragonrise_reforge_ywzj:textures/slot/mk19.png",
-  "animations": "dragonrise_reforge_ywzj:entity/mk19.animation",
-  "animation_controller": "dragonrise_reforge_ywzj:mk19_controller",
-  "sounds": {},
-  "description": "",
-  "tab_index": 1401,
-  "type": "ywzj_vehicle:generic"
+    "model": "dragonrise_reforge_ywzj:entity/mk19",
+    "texture": "dragonrise_reforge_ywzj:textures/entity/mk19.png",
+    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/mk19.png",
+    "animations": "dragonrise_reforge_ywzj:entity/mk19.animation",
+    "animation_controller": "dragonrise_reforge_ywzj:mk19_controller",
+    "sounds": {},
+    "description": "",
+    "tab_index": 1401,
+    "type": "ywzj_vehicle:generic"
 }

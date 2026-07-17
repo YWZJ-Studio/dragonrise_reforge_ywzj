@@ -1,105 +1,105 @@
 {
-	"name": "f14_controller",
-	"script": "dragonrise_reforge_ywzj:f14",
-	"parameters": {},
-	"switchable_animations": {
-		"door": {
-			"part_id": "door",
-			"animation": "door"
-		},
-		"landing_gear": {
-			"part_id": "landing_gear",
-			"animation": "landing_gear"
-		}
-	},
-	"state_machines": {
-		"variable_sweep_wing": {
-			"start_state": "init",
-			"states": {
-				"init": {
-					"on_enter": [
-						{
-							"type": "play_animation",
-							"animation": "highspeed_on",
-							"play_type": "play_once_hold",
-							"track": "highspeed_on"
-						},
-						{
-							"type": "play_animation",
-							"animation": "highspeed_off",
-							"play_type": "play_once_hold",
-							"track": "highspeed_off"
-						}
-					],
-					"transitions": [
-						{
-							"target": "highspeed_on",
-							"condition": {
-								"type": "script",
-								"script": "context.getSpeed() > 2.5"
-							},
-							"duration": 2
-						}
-					],
-					"evaluate": {
-						"type": "track",
-						"track": ""
-					}
-				},
-				"highspeed_off": {
-					"transitions": [
-						{
-							"target": "highspeed_on",
-							"condition": {
-								"type": "script",
-								"script": "context.getSpeed() > 2.5"
-							},
-							"duration": 2
-						}
-					],
-					"evaluate": {
-						"type": "track",
-						"track": "highspeed_off"
-					}
-				},
-				"highspeed_on": {
-					"transitions": [
-						{
-							"target": "highspeed_off",
-							"condition": {
-								"type": "script",
-								"script": "context.getSpeed() < 2.5"
-							},
-							"duration": 2
-						}
-					],
-					"evaluate": {
-						"type": "track",
-						"track": "highspeed_on"
-					}
-				}
-			}
-		}
-	},
-	"graph": {
-		"type": "merge",
-		"inputs": [
-			{
-				"type": "state_machine",
-				"ref": "variable_sweep_wing"
-			},
-			{
-				"type": "switchable_animation",
-				"ref": "door"
-			},
-			{
-				"type": "switchable_animation",
-				"ref": "landing_gear"
-			},
-			{
-				"type": "script",
-				"function": "updateBones"
-			}
-		]
-	}
+    "name": "f14_controller",
+    "script": "dragonrise_reforge_ywzj:f14",
+    "parameters": {},
+    "switchable_animations": {
+        "door": {
+            "part_id": "door",
+            "animation": "door"
+        },
+        "landing_gear": {
+            "part_id": "landing_gear",
+            "animation": "landing_gear"
+        }
+    },
+    "state_machines": {
+        "variable_sweep_wing": {
+            "start_state": "init",
+            "states": {
+                "init": {
+                    "on_enter": [
+                        {
+                            "type": "play_animation",
+                            "animation": "highspeed_on",
+                            "play_type": "play_once_hold",
+                            "track": "highspeed_on"
+                        },
+                        {
+                            "type": "play_animation",
+                            "animation": "highspeed_off",
+                            "play_type": "play_once_hold",
+                            "track": "highspeed_off"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "target": "highspeed_on",
+                            "condition": {
+                                "type": "script",
+                                "script": "context.getSpeed() > 2.5"
+                            },
+                            "duration": 2
+                        }
+                    ],
+                    "evaluate": {
+                        "type": "track",
+                        "track": ""
+                    }
+                },
+                "highspeed_off": {
+                    "transitions": [
+                        {
+                            "target": "highspeed_on",
+                            "condition": {
+                                "type": "script",
+                                "script": "context.getSpeed() > 2.5"
+                            },
+                            "duration": 2
+                        }
+                    ],
+                    "evaluate": {
+                        "type": "track",
+                        "track": "highspeed_off"
+                    }
+                },
+                "highspeed_on": {
+                    "transitions": [
+                        {
+                            "target": "highspeed_off",
+                            "condition": {
+                                "type": "script",
+                                "script": "context.getSpeed() < 2.5"
+                            },
+                            "duration": 2
+                        }
+                    ],
+                    "evaluate": {
+                        "type": "track",
+                        "track": "highspeed_on"
+                    }
+                }
+            }
+        }
+    },
+    "graph": {
+        "type": "merge",
+        "inputs": [
+            {
+                "type": "state_machine",
+                "ref": "variable_sweep_wing"
+            },
+            {
+                "type": "switchable_animation",
+                "ref": "door"
+            },
+            {
+                "type": "switchable_animation",
+                "ref": "landing_gear"
+            },
+            {
+                "type": "script",
+                "function": "updateBones"
+            }
+        ]
+    }
 }
