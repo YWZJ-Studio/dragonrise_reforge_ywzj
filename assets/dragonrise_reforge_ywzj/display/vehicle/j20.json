@@ -22,6 +22,11 @@
       "bone": "wyr",
       "texture": "dragonrise_reforge_ywzj:textures/entity/j20.png",
       "type": "transparent"
+    },
+    {
+      "bone": "bone9",
+      "texture": "dragonrise_reforge_ywzj:textures/entity/j20.png",
+      "type": "transparent"
     }
   ],
   "description": "",

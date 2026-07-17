@@ -27,7 +27,10 @@
   },
   "defense_stats": {
     "damage_threshold": 10,
-    "impact_multiplier": 0.2
+    "impact_multiplier": 2
+  },
+  "physics_info": {
+    "center": [0, 0, 2]
   },
   "structure_model": "dragonrise_reforge_ywzj:vehicle/ka50",
   "parts": [

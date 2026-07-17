@@ -11,12 +11,8 @@
   },
   "max_health": 2500,
   "view_info": {
-    "third_person_center_offset": [
-      0,
-      3,
-      0
-    ],
-    "third_person_distance": 7,
+    "third_person_center_offset": [0, 3, 0],
+    "third_person_distance": 16,
     "sound_distance": 7
   },
   "energy_info": {

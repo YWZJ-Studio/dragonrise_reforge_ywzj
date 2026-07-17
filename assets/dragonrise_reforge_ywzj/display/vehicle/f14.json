@@ -14,9 +14,9 @@
   },
   "special_bone_effects": [
     {
-      "bone": "bone45",
+      "bone": "door",
       "texture": "dragonrise_reforge_ywzj:textures/entity/f14.png",
-      "type": "muzzle_flash"
+      "type": "transparent"
     }
   ],
   "description": "",

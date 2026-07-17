@@ -11,6 +11,7 @@ function updateBones(context) {
     builder.setRotation("wingLR", rollInput * 16, 0, 0);
     builder.setRotation("wingRR", -rollInput * 16, 0, 0);
     builder.setRotation("2", 0, -yawInput * 16, 0);
+    builder.setRotation("ctrl", -8 * pitchInput, 0, -8 * rollInput);
     let remainMissiles = context.getWeaponRemainAmmo("seat", 1)
     for (let i = 0; i < missiles.length; i++) {
         if (i < missiles.length - remainMissiles) {

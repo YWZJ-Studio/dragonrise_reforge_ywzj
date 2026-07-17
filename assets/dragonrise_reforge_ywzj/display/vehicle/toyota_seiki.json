@@ -6,9 +6,9 @@
   "animations": "dragonrise_reforge_ywzj:entity/toyota_seiki.animation",
   "animation_controller": "dragonrise_reforge_ywzj:toyota_seiki_controller",
   "sounds": {
-    "engine_start": "ywzj_vehicle:ztz99a_engine_start",
-    "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-    "engine_run": "ywzj_vehicle:ztz99a_engine_run"
+    "engine_start": "ywzj_vehicle:lav150_engine_start",
+    "engine_idle": "ywzj_vehicle:lav150_engine_idle",
+    "engine_run": "ywzj_vehicle:lav150_engine_run"
   },
   "description": "",
   "tab_index": 1104

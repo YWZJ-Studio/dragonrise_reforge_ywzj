@@ -3,37 +3,29 @@
 	"script": "dragonrise_reforge_ywzj:toyota_seiki",
 	"parameters": {},
 	"event_animations": {},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
+	"switchable_animations": {
+		"trunk": {
+			"part_id": "trunk",
+			"animation": "trunk"
 		}
 	},
 	"graph": {
 		"type": "merge",
 		"inputs": [
 			{
-				"type": "loop_animation",
-				"ref": "static"
-			},
-			{
 				"type": "additive",
 				"base": {
-					"type": "bone_binding",
-					"special_bindings": [
+					"type": "merge",
+					"inputs": [
 						{
-							"bones": ["wheelL1"],
-							"source": "left_wheel_rotation",
-							"axis": "x",
-							"param": -0.375
+							"type": "switchable_animation",
+							"ref": "trunk"
 						},
 						{
-							"bones": ["wheelR1"],
-							"source": "right_wheel_rotation",
-							"axis": "x",
-							"param": -0.375
+							"type": "script",
+							"function": "updateBones"
 						}
-					],
-					"part_bindings": []
+					]
 				},
 				"add": {
 					"type": "event_animation"
