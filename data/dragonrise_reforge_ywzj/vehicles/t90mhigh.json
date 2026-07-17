@@ -1,0 +1,58 @@
+{
+    "type": "ywzj_vehicle:tracked_vehicle",
+    "attributes": {
+        "brake_acceleration": 0.025,
+        "forward_acceleration": 0.01,
+        "backward_acceleration": 0.01,
+        "max_speed_forward": 0.4,
+        "max_speed_backward": 0.15,
+        "turn_acceleration": 1,
+        "max_turn": 2
+    },
+    "max_health": 2500,
+    "view_info": {
+        "third_person_center_offset": [0, 3, 0],
+        "third_person_distance": 7,
+        "sound_distance": 7
+    },
+    "physics_info": {
+        "can_destroy_block": true
+    },
+    "energy_info": {
+        "energy_capacity": 1,
+        "energy_consumption_per_tick": 1e-05
+    },
+    "structure_model": "dragonrise_reforge_ywzj:vehicle/t90mhigh",
+    "parts": [
+        {
+            "id": "turret",
+            "name": "turret",
+            "type": "ywzj_vehicle:weapon",
+            "structure_bone": "turret",
+            "seat_offset": [-0.5, 1.5, -1],
+            "rot_info": {
+                "x_rot_speed": 1.2,
+                "y_rot_speed": 1.2,
+                "x_rot_max": 5,
+                "x_rot_min": -13
+            },
+            "optical_sight_offset": [0.6, 1.3, 0.24],
+            "operator_view_offset": [0, 1.5, 0],
+            "fire_control_lock_type": "aim_hit",
+            "optical_sight_type": "crt",
+            "with_stabilizer": false,
+            "with_thermal_imager": false,
+            "zoom_max": 6,
+            "weapons": [
+                "ywzj_vehicle:gun_12.7mm"
+            ]
+        },
+        {
+            "id": "seat",
+            "name": "seat",
+            "type": "ywzj_vehicle:generic",
+            "seat_offset": [0, 1.3, 1.7]
+        }
+    ],
+    "experimental": true
+}

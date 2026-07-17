@@ -1,0 +1,11 @@
+{
+    "type": "ywzj_vehicle:generic",
+    "model": "dragonrise_reforge_ywzj:entity/hj8",
+    "texture": "dragonrise_reforge_ywzj:textures/entity/hj8.png",
+    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/hj8.png",
+    "animations": "dragonrise_reforge_ywzj:entity/hj8.animation",
+    "animation_controller": "dragonrise_reforge_ywzj:hj8_controller",
+    "sounds": {},
+    "description": "",
+    "tab_index": 5000
+}

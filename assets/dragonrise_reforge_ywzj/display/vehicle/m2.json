@@ -5,6 +5,6 @@
     "animations": "dragonrise_reforge_ywzj:entity/m2.animation",
     "animation_controller": "dragonrise_reforge_ywzj:m2_controller",
     "sounds": {},
-    "tab_index": 400,
+    "tab_index": 5200,
     "type": "ywzj_vehicle:generic"
 }

@@ -1,0 +1,11 @@
+{
+    "type": "ywzj_vehicle:generic",
+    "model": "dragonrise_reforge_ywzj:entity/airbomb500kg",
+    "texture": "dragonrise_reforge_ywzj:textures/entity/airbomb500kg.png",
+    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/airbomb500kg.png",
+    "animations": "dragonrise_reforge_ywzj:entity/airbomb500kg.animation",
+    "animation_controller": "dragonrise_reforge_ywzj:airbomb500kg_controller",
+    "sounds": {},
+    "description": "",
+    "tab_index": 5400
+}

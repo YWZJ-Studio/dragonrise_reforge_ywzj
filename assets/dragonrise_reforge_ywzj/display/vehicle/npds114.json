@@ -1,0 +1,11 @@
+{
+    "type": "ywzj_vehicle:generic",
+    "model": "dragonrise_reforge_ywzj:entity/npds114",
+    "texture": "dragonrise_reforge_ywzj:textures/entity/npds114.png",
+    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/npds114.png",
+    "animations": "dragonrise_reforge_ywzj:entity/npds114.animation",
+    "animation_controller": "dragonrise_reforge_ywzj:npds114_controller",
+    "sounds": {},
+    "description": "",
+    "tab_index": 5001
+}

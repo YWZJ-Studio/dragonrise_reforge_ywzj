@@ -9,5 +9,6 @@
         "engine_start": "ywzj_vehicle:ztz99a_engine_start",
         "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
         "engine_run": "ywzj_vehicle:ztz99a_engine_run"
-    }
+    },
+    "tab_index": 2003
 }

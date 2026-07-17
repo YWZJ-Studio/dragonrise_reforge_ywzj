@@ -1,17 +1,15 @@
 {
-    "type": "ywzj_vehicle:fixed_wing_vehicle",
+    "type": "ywzj_vehicle:tracked_vehicle",
     "model": "dragonrise_reforge_ywzj:entity/xyr2000",
     "texture": "dragonrise_reforge_ywzj:textures/entity/xyr2000.png",
     "slot_texture": "dragonrise_reforge_ywzj:textures/slot/xyr2000.png",
     "animations": "dragonrise_reforge_ywzj:entity/xyr2000.animation",
     "animation_controller": "dragonrise_reforge_ywzj:xyr2000_controller",
     "sounds": {
-        "engine_start": "ywzj_vehicle:jet_engine_start",
-        "engine_stop": "ywzj_vehicle:jet_engine_stop",
-        "engine_run": "ywzj_vehicle:jet_engine_run",
-        "engine_thrust": "ywzj_vehicle:jet_engine_thrust",
-        "passby": "ywzj_vehicle:jet_passby"
+        "engine_start": "ywzj_vehicle:ztz99a_engine_start",
+        "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+        "engine_run": "ywzj_vehicle:ztz99a_engine_run"
     },
     "description": "",
-    "tab_index": 1310
+    "tab_index": 2407
 }
