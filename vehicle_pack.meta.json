@@ -1,15 +1,15 @@
 {
     "namespace": "dragonrise_reforge_ywzj",
-    "title": "\u9f99\u4e4b\u5d1b\u8d77\uff1a\u91cd\u94f8",
+    "title": "龙之崛起：重铸",
     "description": "What was your mission in Shanghai!",
-    "version": "0.1.5",
+    "version": "0.2.0",
     "date": "2026-01-01",
     "license": "All Rights Reserved",
     "authors": [
-        "\u9f99\u4e4b\u5d1b\u8d77\u56e2\u961f",
+        "龙之崛起团队",
         "YWZJ"
     ],
     "dependencies": {
-        "ywzj_vehicle": "[0.5.3,)"
+        "ywzj_vehicle": "[0.5.7,)"
     }
 }
