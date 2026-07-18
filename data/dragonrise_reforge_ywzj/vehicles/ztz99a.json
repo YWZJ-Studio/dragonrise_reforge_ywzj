@@ -44,7 +44,63 @@
             "with_thermal_imager": false,
             "zoom_max": 6,
             "weapons": [
-                "dragonrise_reforge_ywzj:cannon_125mm"
+                "dragonrise_reforge_ywzj:cannon_125mm",
+                {
+                    "id": "ywzj_vehicle:gun_7.62mm",
+                    "part_unit_id": "turret_machine_gun",
+                    "secondary": true
+                },
+                {
+                    "id": "ywzj_vehicle:launcher_smoke_grenade",
+                    "part_unit_id": "turret_smoke_grenade"
+                }
+            ]
+        },
+        {
+            "id": "turret_machine_gun",
+            "name": "turret_machine_gun",
+            "type": "ywzj_vehicle:weapon",
+            "structure_bone": "turret_machine_gun",
+            "is_seat": false,
+            "base": "turret",
+            "rot_info": {
+                "x_rot_speed": 1.2,
+                "y_rot_speed": 0,
+                "x_rot_max": 5,
+                "x_rot_min": -13
+            }
+        },
+        {
+            "id": "turret_smoke_grenade",
+            "name": "turret_smoke_grenade",
+            "type": "ywzj_vehicle:weapon",
+            "structure_bone": "turret_smoke_grenade",
+            "is_seat": false,
+            "base": "turret",
+            "rot_info": {
+                "x_rot_speed": 0,
+                "y_rot_speed": 0
+            }
+        },
+        {
+            "id": "passengerWeaponStation",
+            "name": "passengerWeaponStation",
+            "type": "ywzj_vehicle:weapon",
+            "structure_bone": "passengerWeaponStation",
+            "seat_offset": [0.5, 1.7, 0.275],
+            "operator_on_weapon_unit": false,
+            "rot_info": {
+                "x_rot_speed": 4.5,
+                "y_rot_speed": 4.5,
+                "x_rot_max": 15,
+                "x_rot_min": -45,
+                "need_power": false
+            },
+            "operator_view_offset": [0.5, 0.5, -0.5],
+            "optical_sight_type": "operator",
+            "zoom_max": 2,
+            "weapons": [
+                "ywzj_vehicle:gun_14.5mm"
             ]
         },
         {
@@ -53,6 +109,5 @@
             "type": "ywzj_vehicle:generic",
             "seat_offset": [0, 1.3, 1.7]
         }
-    ],
-    "experimental": true
+    ]
 }

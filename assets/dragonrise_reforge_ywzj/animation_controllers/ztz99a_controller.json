@@ -5,6 +5,9 @@
     "event_animations": {
         "turret_fire": [
             "barrel_shoot"
+        ],
+        "passengerWeaponStation_fire": [
+            "commander_machine_gun_shoot"
         ]
     },
     "graph": {
@@ -48,15 +51,29 @@
                     ],
                     "part_bindings": [
                         {
-                            "bone": "paota",
+                            "bone": "turret",
                             "part": "turret",
                             "rotation_type": "y",
                             "axis": "y",
                             "invert": true
                         },
                         {
-                            "bone": "paoguan",
+                            "bone": "barrel",
                             "part": "turret",
+                            "rotation_type": "x",
+                            "axis": "x",
+                            "invert": true
+                        },
+                        {
+                            "bone": "passengerWeaponStationYaw",
+                            "part": "passengerWeaponStation",
+                            "rotation_type": "y",
+                            "axis": "y",
+                            "invert": true
+                        },
+                        {
+                            "bone": "passengerWeaponStationPitch",
+                            "part": "passengerWeaponStation",
                             "rotation_type": "x",
                             "axis": "x",
                             "invert": true
