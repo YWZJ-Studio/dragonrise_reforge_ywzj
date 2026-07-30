@@ -1,0 +1,16 @@
+{
+    "type": "ywzj_vehicle:tracked_vehicle",
+    "model": "dragonrise_reforge_ywzj:entity/ztz2077",
+    "texture": "dragonrise_reforge_ywzj:textures/entity/ztz2077.png",
+    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/ztz2077.png",
+    "animations": "dragonrise_reforge_ywzj:entity/ztz2077.animation",
+    "animation_controller": "dragonrise_reforge_ywzj:ztz2077_controller",
+    "track_config": {},
+    "sounds": {
+        "engine_start": "ywzj_vehicle:ztz99a_engine_start",
+        "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+        "engine_run": "ywzj_vehicle:ztz99a_engine_run"
+    },
+    "description": "",
+    "tab_index": 2006
+}

@@ -22,7 +22,7 @@
     "physics_info": {
         "can_destroy_block": true
     },
-    "structure_model": "dragonrise_reforge_ywzj:vehicle/ztz99a",
+    "structure_model": "dragonrise_reforge_ywzj:vehicle/ztz2077",
     "parts": [
         {
             "id": "turret",
@@ -36,19 +36,27 @@
                 "x_rot_max": 5,
                 "x_rot_min": -13
             },
-            "optical_sight_offset": [0.6, 1.3, 0.24],
+            "optical_sight_offset": [0.9828125, 0.8859375, 0.6640625],
             "operator_view_offset": [0, 1.5, 0],
             "fire_control_lock_type": "aim_hit",
             "optical_sight_type": "crt",
-            "with_stabilizer": false,
-            "with_thermal_imager": false,
-            "zoom_max": 6,
+            "with_stabilizer": true,
+            "with_thermal_imager": true,
+            "zoom_max": 16,
             "weapons": [
                 "dragonrise_reforge_ywzj:cannon_125mm",
                 {
-                    "id": "ywzj_vehicle:gun_7.62mm",
+                    "id": "ywzj_vehicle:gun_14.5mm",
                     "part_unit_id": "turret_machine_gun",
                     "secondary": true
+                },
+                {
+                    "id": "dragonrise_reforge_ywzj:2a72",
+                    "part_unit_id": "passenger_weapon_station"
+                },
+                {
+                    "id": "ywzj_vehicle:launcher_frag_grenade",
+                    "part_unit_id": "turret_grenade"
                 },
                 {
                     "id": "ywzj_vehicle:launcher_smoke_grenade",
@@ -62,7 +70,6 @@
             "type": "ywzj_vehicle:weapon",
             "structure_bone": "turret_machine_gun",
             "is_seat": false,
-            "base": "turret",
             "rot_info": {
                 "x_rot_speed": 1.2,
                 "y_rot_speed": 0,
@@ -75,33 +82,51 @@
             "name": "turret_smoke_grenade",
             "type": "ywzj_vehicle:weapon",
             "structure_bone": "turret_smoke_grenade",
+            "ammo_capacity": 16,
             "is_seat": false,
-            "base": "turret",
             "rot_info": {
                 "x_rot_speed": 0,
                 "y_rot_speed": 0
             }
         },
         {
-            "id": "passengerWeaponStation",
-            "name": "passengerWeaponStation",
+            "id": "turret_grenade",
+            "name": "turret_grenade",
             "type": "ywzj_vehicle:weapon",
-            "structure_bone": "passengerWeaponStation",
-            "seat_offset": [0.5, 1.7, 0.275],
+            "structure_bone": "turret_grenade",
+            "ammo_capacity": 4,
+            "is_seat": false,
+            "rot_info": {
+                "x_rot_speed": 0,
+                "y_rot_speed": 0
+            }
+        },
+        {
+            "id": "passenger_weapon_station",
+            "name": "passenger_weapon_station",
+            "type": "ywzj_vehicle:weapon",
+            "structure_bone": "passenger_weapon_station",
+            "is_seat": false,
             "operator_on_weapon_unit": false,
             "rot_info": {
                 "x_rot_speed": 4.5,
-                "y_rot_speed": 4.5,
+                "y_rot_speed": 0,
                 "x_rot_max": 15,
-                "x_rot_min": -45,
-                "need_power": false
-            },
-            "operator_view_offset": [0.5, 0.5, -0.5],
-            "optical_sight_type": "operator",
-            "zoom_max": 2,
-            "weapons": [
-                "ywzj_vehicle:gun_14.5mm"
-            ]
+                "x_rot_min": -45
+            }
+        },
+        {
+            "id": "track",
+            "name": "track",
+            "type": "ywzj_vehicle:track",
+            "structure_bone": "tracks"
+        },
+        {
+            "id": "seat",
+            "name": "seat",
+            "type": "ywzj_vehicle:generic",
+            "seat_offset": [0.5, 1.5, -1],
+            "owner_view_offset": [0, 4, 0]
         },
         {
             "id": "seat",

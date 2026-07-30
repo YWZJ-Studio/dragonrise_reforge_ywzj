@@ -1,0 +1,73 @@
+{
+    "name": "ztz2077_controller",
+    "script": "dragonrise_reforge_ywzj:ztz2077",
+    "parameters": {},
+    "event_animations": {
+        "turret_fire": [
+            "barrel_shoot"
+        ],
+        "passenger_weapon_station_fire": [
+            "weapon_station_shoot"
+        ]
+    },
+    "graph": {
+        "type": "merge",
+        "inputs": [
+            {
+                "type": "additive",
+                "base": {
+                    "type": "bone_binding",
+                    "special_bindings": [
+                        {
+                            "bones": [
+                                "bone8", "bone9",
+                                "bone2", "bone3", "bone5", "bone4", "bone7", "bone6"
+                            ],
+                            "source": "left_wheel_rotation",
+                            "axis": "x",
+                            "param": -0.5
+                        },
+                        {
+                            "bones": [
+                                "bone12", "bone19",
+                                "bone13", "bone14", "bone15", "bone16", "bone17", "bone18"
+                            ],
+                            "source": "right_wheel_rotation",
+                            "axis": "x",
+                            "param": -0.5
+                        }
+                    ],
+                    "part_bindings": [
+                        {
+                            "bone": "bone27",
+                            "part": "turret",
+                            "rotation_type": "y",
+                            "axis": "y",
+                            "invert": true
+                        },
+                        {
+                            "bone": "bone34",
+                            "part": "turret",
+                            "rotation_type": "x",
+                            "axis": "x",
+                            "invert": true
+                        },
+                        {
+                            "bone": "bone47",
+                            "part": "passenger_weapon_station",
+                            "rotation_type": "x",
+                            "axis": "x",
+                            "invert": true
+                        }
+                    ]
+                },
+                "add": {
+                    "type": "event_animation"
+                }
+            },
+            {
+                "type": "track_animation"
+            }
+        ]
+    }
+}
