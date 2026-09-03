@@ -1,15 +1,15 @@
 {
-    "type": "ywzj_vehicle:tracked_vehicle",
-    "model": "dragonrise_reforge_ywzj:entity/cyborg_tank",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/cyborg_tank.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/cyborg_tank.png",
-    "animations": "dragonrise_reforge_ywzj:entity/cyborg_tank.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:cyborg_tank_controller",
-    "sounds": {
-        "engine_start": "ywzj_vehicle:ztz99a_engine_start",
-        "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-        "engine_run": "ywzj_vehicle:ztz99a_engine_run"
-    },
-    "description": "",
-    "tab_index": 2400
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/cyborg_tank",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/cyborg_tank.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/cyborg_tank.png",
+	"animations": "dragonrise_reforge_ywzj:entity/cyborg_tank.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:cyborg_tank_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.cyborg_tank.description",
+	"tab_index": 2550
 }

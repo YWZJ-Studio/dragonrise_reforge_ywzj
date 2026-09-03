@@ -1,0 +1,83 @@
+{
+	"type": "ywzj_vehicle:rotary_wing_vehicle",
+	"attributes": {
+		"main_rotor_force": 0.06,
+		"ceiling": 256,
+		"x_rot_speed_acceleration": 1,
+		"x_rot_speed_max": 3,
+		"y_rot_speed_acceleration": 1,
+		"y_rot_speed_max": 3,
+		"z_rot_speed_acceleration": 1,
+		"z_rot_speed_max": 3,
+		"max_air_speed": 1.8
+	},
+	"max_health": 3000,
+	"view_info": {
+		"third_person_center_offset": [0, 6, 0],
+		"third_person_distance": 14,
+		"third_person_center_offset_zoomed": [0, 7, 0],
+		"third_person_distance_zoomed": 0,
+		"sound_distance": 8
+	},
+	"energy_info": {
+		"energy_capacity": 1,
+		"energy_consumption_per_tick": 1e-5
+	},
+	"defense_stats": {
+		"damage_threshold": 10,
+		"impact_multiplier": 0.2
+	},
+	"with_warning_receiver": true,
+	"structure_model": "dragonrise_reforge_ywzj:vehicle/sd905",
+	"parts": [
+		{
+			"id": "weapon_station",
+			"name": "weapon_station",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "vehicle_body",
+			"seat_offset": [0, 0.625, 2.6875],
+			"operator_on_weapon_unit": false,
+			"rot_info": {
+				"x_rot_speed": 3,
+				"y_rot_speed": 3,
+				"x_rot_max": 45,
+				"x_rot_min": -20,
+				"y_rot_max": 180,
+				"y_rot_min": -180
+			},
+			"optical_sight_offset": [0, 0.5, 1],
+			"operator_view_offset": [0, 1, 0],
+			"optical_sight_type": "crt",
+			"zoom_max": 8,
+			"weapons": [
+				"dragonrise_reforge_ywzj:cannon_30mm",
+				"dragonrise_reforge_ywzj:bomb_500kg"
+			]
+		},
+		{
+			"id": "seat_2",
+			"name": "seat_2",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0, 0.625, 1.625],
+			"owner_view_offset": [0, 0.625, 1.625]
+		},
+		{
+			"id": "seat_3",
+			"name": "seat_3",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.5625, 0.625, -0.4375],
+			"owner_view_offset": [-0.5625, 0.625, -0.4375]
+		},
+		{
+			"id": "seat_4",
+			"name": "seat_4",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.5625, 0.625, -0.4375],
+			"owner_view_offset": [0.5625, 0.625, -0.4375]
+		}
+	],
+	"experimental": true
+}

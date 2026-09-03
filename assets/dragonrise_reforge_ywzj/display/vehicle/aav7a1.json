@@ -1,0 +1,14 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/aav7a1",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/aav7a1.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/aav7a1.png",
+	"track_config": {},
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.aav7a1.description",
+	"tab_index": 2320
+}

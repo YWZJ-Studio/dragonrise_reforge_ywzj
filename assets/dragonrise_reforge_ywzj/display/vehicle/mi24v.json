@@ -1,0 +1,13 @@
+{
+	"type": "ywzj_vehicle:rotary_wing_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/mi24v",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/mi24v.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/mi24v.png",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:z10_engine_start",
+		"engine_stop": "ywzj_vehicle:z10_engine_stop",
+		"engine_run": "ywzj_vehicle:z10_engine_run"
+	},
+	"description": "vehicle.mi24v.description",
+	"tab_index": 3040
+}

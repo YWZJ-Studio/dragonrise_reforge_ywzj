@@ -1,11 +1,11 @@
 {
-    "type": "ywzj_vehicle:generic",
-    "model": "dragonrise_reforge_ywzj:entity/nuclearbomb",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/nuclearbomb.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/nuclearbomb.png",
-    "animations": "dragonrise_reforge_ywzj:entity/nuclearbomb.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:nuclearbomb_controller",
-    "sounds": {},
-    "description": "",
-    "tab_index": 5402
+	"type": "ywzj_vehicle:generic",
+	"model": "dragonrise_reforge_ywzj:entity/nuclearbomb",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/nuclearbomb.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/nuclearbomb.png",
+	"animations": "dragonrise_reforge_ywzj:entity/nuclearbomb.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:nuclearbomb_controller",
+	"sounds": {},
+	"description": "vehicle.nuclearbomb.description",
+	"tab_index": 5100
 }

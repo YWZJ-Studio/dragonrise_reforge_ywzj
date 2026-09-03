@@ -1,0 +1,101 @@
+{
+	"type": "ywzj_vehicle:wheeled_vehicle",
+	"attributes": {
+		"brake_force": 0.025,
+		"forward_force": 0.03,
+		"backward_force": 0.02,
+		"max_speed_forward": 0.7,
+		"max_speed_backward": 0.25,
+		"turn_step": 0.35,
+		"max_turn": 2.5
+	},
+	"max_health": 1250,
+	"view_info": {
+		"third_person_center_offset": [0, 3, 0],
+		"third_person_distance": 7,
+		"sound_distance": 5
+	},
+	"energy_info": {
+		"energy_capacity": 1,
+		"energy_consumption_per_tick": 1e-5
+	},
+	"physics_info": {
+		"can_destroy_block": false
+	},
+	"structure_model": "dragonrise_reforge_ywzj:vehicle/mv3_supply",
+	"parts": [
+		{
+			"id": "seat_1",
+			"name": "seat_1",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.659, 0.935, 1.542],
+			"owner_view_offset": [0.659, 0.935, 1.542]
+		},
+		{
+			"id": "seat_2",
+			"name": "seat_2",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.659, 0.935, 1.542],
+			"owner_view_offset": [-0.659, 0.935, 1.542]
+		},
+		{
+			"id": "seat_3",
+			"name": "seat_3",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.659, 0.935, 0.73],
+			"owner_view_offset": [-0.659, 0.935, 0.73]
+		},
+		{
+			"id": "seat_4",
+			"name": "seat_4",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.659, 0.935, 0.73],
+			"owner_view_offset": [0.659, 0.935, 0.73]
+		},
+		{
+			"id": "seat_5",
+			"name": "seat_5",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0, 0.935, 0.73],
+			"owner_view_offset": [0, 0.935, 0.73]
+		},
+		{
+			"id": "seat_6",
+			"name": "seat_6",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.847, 1.123, -2.958],
+			"owner_view_offset": [-0.847, 1.123, -2.958]
+		},
+		{
+			"id": "seat_7",
+			"name": "seat_7",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.847, 1.123, -3.833],
+			"owner_view_offset": [-0.847, 1.123, -3.833]
+		},
+		{
+			"id": "seat_8",
+			"name": "seat_8",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.847, 1.123, -2.958],
+			"owner_view_offset": [0.847, 1.123, -2.958]
+		},
+		{
+			"id": "seat_9",
+			"name": "seat_9",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.847, 1.123, -3.833],
+			"owner_view_offset": [0.847, 1.123, -3.833]
+		}
+	],
+	"experimental": true
+}

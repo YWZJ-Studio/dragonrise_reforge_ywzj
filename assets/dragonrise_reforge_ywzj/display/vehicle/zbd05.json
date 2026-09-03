@@ -1,0 +1,14 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/zbd05",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/zbd05.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/zbd05.png",
+	"track_config": {},
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.zbd05.description",
+	"tab_index": 2050
+}

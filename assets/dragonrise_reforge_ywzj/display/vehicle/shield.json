@@ -1,11 +1,11 @@
 {
-    "model": "dragonrise_reforge_ywzj:entity/shield",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/shield.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/shield.png",
-    "animations": "dragonrise_reforge_ywzj:entity/shield.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:shield_controller",
-    "sounds": {},
-    "description": "",
-    "tab_index": 5403,
-    "type": "ywzj_vehicle:generic"
+	"model": "dragonrise_reforge_ywzj:entity/shield",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/shield.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/shield.png",
+	"animations": "dragonrise_reforge_ywzj:entity/shield.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:shield_controller",
+	"sounds": {},
+	"description": "vehicle.shield.description",
+	"tab_index": 5140,
+	"type": "ywzj_vehicle:generic"
 }

@@ -1,119 +1,119 @@
 {
-    "type": "ywzj_vehicle:fixed_wing_vehicle",
-    "attributes": {
-        "thrust": 0.02,
-        "thrust_k": 1.4,
-        "ceiling": 512,
-        "x_rot_input_step": 0.2,
-        "y_rot_input_step": 0.5,
-        "z_rot_input_step": 0.2,
-        "air_drag_k_min": 0.002,
-        "air_drag_k_max": 0.008,
-        "lift_to_drag_k": 3,
-        "x_rot_input_drag_k": 1.0,
-        "y_rot_input_drag_k": 0.25,
-        "z_rot_input_drag_k": 0.125,
-        "landing_gear_drag_k": 0.5,
-        "turn_rate_by_speed": 0.4,
-        "x_turn_rate": 2.0,
-        "y_turn_rate": 3.0,
-        "z_turn_rate": 8.0,
-        "vortex_offsets": [
-            [6, 1.5, -3],
-            [-6, 1.5, -3]
-        ]
-    },
-    "landing_gear_part_id": "landing_gear",
-    "max_health": 500,
-    "view_info": {
-        "third_person_center_offset": [0, 6, 0],
-        "third_person_distance": 20,
-        "third_person_center_offset_zoomed": [0, 7, 0],
-        "third_person_distance_zoomed": 4,
-        "sound_distance": 8
-    },
-    "energy_info": {
-        "energy_capacity": 0.25,
-        "energy_consumption_per_tick": 1e-05
-    },
-    "defense_stats": {
-        "damage_threshold": 10,
-        "impact_multiplier": 3
-    },
-    "with_warning_receiver": true,
-    "center_offset": [0, 1.625, 0],
-    "structure_model": "dragonrise_reforge_ywzj:vehicle/rafale",
-    "parts": [
-        {
-            "id": "sighting_system",
-            "name": "sighting_system",
-            "type": "ywzj_vehicle:weapon",
-            "structure_bone": "sighting_system",
-            "seat_offset": [0, 2.7, 4.7],
-            "operator_on_weapon_unit": false,
-            "rot_info": {
-                "x_rot_speed": 15,
-                "y_rot_speed": 15,
-                "x_rot_min": -5,
-                "x_rot_max": 45,
-                "y_rot_min": -30,
-                "y_rot_max": 30
-            },
-            "optical_sight_offset": [0, 0, 1],
-            "operator_view_offset": [0, 1.48, -2],
-            "optical_sight_type": "crt",
-            "zoom_max": 12,
-            "weapons": [
-                {
-                    "id": "ywzj_vehicle:rocket",
-                    "part_unit_id": "rocket"
-                },
-                {
-                    "id": "ywzj_vehicle:decoy_flare",
-                    "part_unit_id": "decoy_flare"
-                }
-            ]
-        },
-        {
-            "id": "rocket",
-            "name": "rocket",
-            "type": "ywzj_vehicle:weapon",
-            "structure_bone": "rocket",
-            "is_seat": false,
-            "fire_control_sensor_type": "ccip",
-            "crosshair_style": "cross",
-            "rot_info": {
-                "x_rot_speed": 0,
-                "y_rot_speed": 0
-            }
-        },
-        {
-            "id": "decoy_flare",
-            "name": "decoy_flare",
-            "type": "ywzj_vehicle:weapon",
-            "structure_bone": "decoy_flare",
-            "is_seat": false,
-            "crosshair_style": "none",
-            "firing_mode": "salvo",
-            "rot_info": {
-                "x_rot_speed": 0,
-                "y_rot_speed": 0
-            }
-        },
-        {
-            "id": "door",
-            "name": "door",
-            "type": "ywzj_vehicle:door",
-            "structure_bone": "door",
-            "is_seat": false
-        },
-        {
-            "id": "seat",
-            "name": "seat",
-            "type": "ywzj_vehicle:generic",
-            "seat_offset": [0, 2.7, 3.2],
-            "owner_view_offset": [0, 2.7, 3.2]
-        }
-    ],
-    "experimental": true
+	"type": "ywzj_vehicle:fixed_wing_vehicle",
+	"attributes": {
+		"thrust": 0.02,
+		"thrust_k": 1.4,
+		"ceiling": 512,
+		"x_rot_input_step": 0.2,
+		"y_rot_input_step": 0.5,
+		"z_rot_input_step": 0.2,
+		"air_drag_k_min": 0.002,
+		"air_drag_k_max": 0.008,
+		"lift_to_drag_k": 3,
+		"x_rot_input_drag_k": 1.0,
+		"y_rot_input_drag_k": 0.25,
+		"z_rot_input_drag_k": 0.125,
+		"landing_gear_drag_k": 0.5,
+		"turn_rate_by_speed": 0.4,
+		"x_turn_rate": 2.0,
+		"y_turn_rate": 3.0,
+		"z_turn_rate": 8.0,
+		"vortex_offsets": [
+			[6, 1.5, -3],
+			[-6, 1.5, -3]
+		]
+	},
+	"landing_gear_part_id": "landing_gear",
+	"max_health": 500,
+	"view_info": {
+		"third_person_center_offset": [0, 6, 0],
+		"third_person_distance": 20,
+		"third_person_center_offset_zoomed": [0, 7, 0],
+		"third_person_distance_zoomed": 4,
+		"sound_distance": 8
+	},
+	"energy_info": {
+		"energy_capacity": 0.25,
+		"energy_consumption_per_tick": 1e-5
+	},
+	"defense_stats": {
+		"damage_threshold": 10,
+		"impact_multiplier": 3
+	},
+	"with_warning_receiver": true,
+	"center_offset": [0, 1.625, 0],
+	"structure_model": "dragonrise_reforge_ywzj:vehicle/rafale",
+	"parts": [
+		{
+			"id": "sighting_system",
+			"name": "sighting_system",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "sighting_system",
+			"seat_offset": [0, 2.7, 4.7],
+			"operator_on_weapon_unit": false,
+			"rot_info": {
+				"x_rot_speed": 15,
+				"y_rot_speed": 15,
+				"x_rot_min": -5,
+				"x_rot_max": 45,
+				"y_rot_min": -30,
+				"y_rot_max": 30
+			},
+			"optical_sight_offset": [0, 0, 1],
+			"operator_view_offset": [0, 1.48, -2],
+			"optical_sight_type": "crt",
+			"zoom_max": 12,
+			"weapons": [
+				{
+					"id": "ywzj_vehicle:rocket",
+					"part_unit_id": "rocket"
+				},
+				{
+					"id": "ywzj_vehicle:decoy_flare",
+					"part_unit_id": "decoy_flare"
+				}
+			]
+		},
+		{
+			"id": "rocket",
+			"name": "rocket",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "rocket",
+			"is_seat": false,
+			"fire_control_sensor_type": "ccip",
+			"crosshair_style": "cross",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
+		},
+		{
+			"id": "decoy_flare",
+			"name": "decoy_flare",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "decoy_flare",
+			"is_seat": false,
+			"crosshair_style": "none",
+			"firing_mode": "salvo",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
+		},
+		{
+			"id": "door",
+			"name": "door",
+			"type": "ywzj_vehicle:door",
+			"structure_bone": "door",
+			"is_seat": false
+		},
+		{
+			"id": "seat",
+			"name": "seat",
+			"type": "ywzj_vehicle:generic",
+			"seat_offset": [0, 2.7, 3.2],
+			"owner_view_offset": [0, 2.7, 3.2]
+		}
+	],
+	"experimental": true
 }

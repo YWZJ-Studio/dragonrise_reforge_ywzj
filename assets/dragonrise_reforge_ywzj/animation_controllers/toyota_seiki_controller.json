@@ -1,36 +1,36 @@
 {
-    "name": "toyota_seiki_controller",
-    "script": "dragonrise_reforge_ywzj:toyota_seiki",
-    "parameters": {},
-    "event_animations": {},
-    "switchable_animations": {
-        "trunk": {
-            "part_id": "trunk",
-            "animation": "trunk"
-        }
-    },
-    "graph": {
-        "type": "merge",
-        "inputs": [
-            {
-                "type": "additive",
-                "base": {
-                    "type": "merge",
-                    "inputs": [
-                        {
-                            "type": "switchable_animation",
-                            "ref": "trunk"
-                        },
-                        {
-                            "type": "script",
-                            "function": "updateBones"
-                        }
-                    ]
-                },
-                "add": {
-                    "type": "event_animation"
-                }
-            }
-        ]
-    }
+	"name": "toyota_seiki_controller",
+	"script": "dragonrise_reforge_ywzj:toyota_seiki",
+	"parameters": {},
+	"event_animations": {},
+	"switchable_animations": {
+		"trunk": {
+			"part_id": "trunk",
+			"animation": "trunk"
+		}
+	},
+	"graph": {
+		"type": "merge",
+		"inputs": [
+			{
+				"type": "additive",
+				"base": {
+					"type": "merge",
+					"inputs": [
+						{
+							"type": "switchable_animation",
+							"ref": "trunk"
+						},
+						{
+							"type": "script",
+							"function": "updateBones"
+						}
+					]
+				},
+				"add": {
+					"type": "event_animation"
+				}
+			}
+		]
+	}
 }

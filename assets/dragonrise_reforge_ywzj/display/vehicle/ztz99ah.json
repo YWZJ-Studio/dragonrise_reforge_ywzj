@@ -1,0 +1,14 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/ztz99ah",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/ztz99ah.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/ztz99ah.png",
+	"track_config": {},
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.ztz99ah.description",
+	"tab_index": 2030
+}

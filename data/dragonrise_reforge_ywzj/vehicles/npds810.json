@@ -1,19 +1,19 @@
 {
-    "type": "ywzj_vehicle:generic",
-    "attributes": {},
-    "max_health": 50,
-    "view_info": {
-        "third_person_center_offset": [0, 2, 0],
-        "third_person_distance": 4,
-        "third_person_center_offset_zoomed": [0, 1, 0],
-        "third_person_distance_zoomed": 0,
-        "sound_distance": 3
-    },
-    "energy_info": {
-        "energy_capacity": 1,
-        "energy_consumption_per_tick": 1e-05
-    },
-    "structure_model": "dragonrise_reforge_ywzj:vehicle/npds810",
-    "parts": [],
-    "experimental": true
+	"type": "ywzj_vehicle:generic",
+	"attributes": {},
+	"max_health": 50,
+	"view_info": {
+		"third_person_center_offset": [0, 2, 0],
+		"third_person_distance": 4,
+		"third_person_center_offset_zoomed": [0, 1, 0],
+		"third_person_distance_zoomed": 0,
+		"sound_distance": 3
+	},
+	"energy_info": {
+		"energy_capacity": 1,
+		"energy_consumption_per_tick": 1e-5
+	},
+	"structure_model": "dragonrise_reforge_ywzj:vehicle/npds810",
+	"parts": [],
+	"experimental": true
 }

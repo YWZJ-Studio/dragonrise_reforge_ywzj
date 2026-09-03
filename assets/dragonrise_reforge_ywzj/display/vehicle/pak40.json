@@ -1,0 +1,9 @@
+{
+	"type": "ywzj_vehicle:generic",
+	"model": "dragonrise_reforge_ywzj:entity/pak40",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/pak40.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/pak40.png",
+	"sounds": {},
+	"description": "vehicle.pak40.description",
+	"tab_index": 5070
+}

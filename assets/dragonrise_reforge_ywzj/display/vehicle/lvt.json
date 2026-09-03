@@ -1,15 +1,15 @@
 {
-    "type": "ywzj_vehicle:wheeled_vehicle",
-    "model": "dragonrise_reforge_ywzj:entity/lvt",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/lvt.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/lvt.png",
-    "animations": "dragonrise_reforge_ywzj:entity/lvt.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:lvt_controller",
-    "sounds": {
-        "engine_start": "ywzj_vehicle:ztz99a_engine_start",
-        "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-        "engine_run": "ywzj_vehicle:ztz99a_engine_run"
-    },
-    "description": "",
-    "tab_index": 1200
+	"type": "ywzj_vehicle:wheeled_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/lvt",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/lvt.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/lvt.png",
+	"animations": "dragonrise_reforge_ywzj:entity/lvt.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:lvt_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.lvt.description",
+	"tab_index": 1170
 }

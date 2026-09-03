@@ -1,40 +1,38 @@
 {
-    "name": "camel_controller",
-    "script": "dragonrise_reforge_ywzj:camel",
-    "parameters": {},
-    "event_animations": {},
-    "loop_animations": {
-        "static": {
-            "animation": "static"
-        }
-    },
-    "graph": {
-        "type": "merge",
-        "inputs": [
-            {
-                "type": "loop_animation",
-                "ref": "static"
-            },
-            {
-                "type": "additive",
-                "base": {
-                    "type": "bone_binding",
-                    "special_bindings": [
-                        {
-                            "bones": [
-                                "propeller"
-                            ],
-                            "source": "main_rotor_rotation",
-                            "axis": "y",
-                            "param": 10.0
-                        }
-                    ],
-                    "part_bindings": []
-                },
-                "add": {
-                    "type": "event_animation"
-                }
-            }
-        ]
-    }
+	"name": "camel_controller",
+	"script": "dragonrise_reforge_ywzj:camel",
+	"parameters": {},
+	"event_animations": {},
+	"loop_animations": {
+		"static": {
+			"animation": "static"
+		}
+	},
+	"graph": {
+		"type": "merge",
+		"inputs": [
+			{
+				"type": "loop_animation",
+				"ref": "static"
+			},
+			{
+				"type": "additive",
+				"base": {
+					"type": "bone_binding",
+					"special_bindings": [
+						{
+							"bones": ["propeller"],
+							"source": "main_rotor_rotation",
+							"axis": "y",
+							"param": 10.0
+						}
+					],
+					"part_bindings": []
+				},
+				"add": {
+					"type": "event_animation"
+				}
+			}
+		]
+	}
 }

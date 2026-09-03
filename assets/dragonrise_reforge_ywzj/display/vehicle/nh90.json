@@ -1,15 +1,15 @@
 {
-    "type": "ywzj_vehicle:rotary_wing_vehicle",
-    "model": "dragonrise_reforge_ywzj:entity/nh90",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/nh90.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/nh90.png",
-    "animations": "dragonrise_reforge_ywzj:entity/nh90.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:nh90_controller",
-    "sounds": {
-        "engine_start": "ywzj_vehicle:z10_engine_start",
-        "engine_stop": "ywzj_vehicle:z10_engine_stop",
-        "engine_run": "ywzj_vehicle:z10_engine_run"
-    },
-    "description": "",
-    "tab_index": 3301
+	"type": "ywzj_vehicle:rotary_wing_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/nh90",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/nh90.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/nh90.png",
+	"animations": "dragonrise_reforge_ywzj:entity/nh90.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:nh90_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:z10_engine_start",
+		"engine_stop": "ywzj_vehicle:z10_engine_stop",
+		"engine_run": "ywzj_vehicle:z10_engine_run"
+	},
+	"description": "vehicle.nh90.description",
+	"tab_index": 3100
 }

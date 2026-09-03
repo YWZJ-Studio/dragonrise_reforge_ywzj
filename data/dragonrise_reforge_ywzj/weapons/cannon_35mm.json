@@ -1,22 +1,22 @@
 {
-    "type": "ywzj_vehicle:cannon",
-    "name": "35mm Cannon",
-    "caliber": 35,
-    "damage": 35,
-    "velocity": 32,
-    "recoil": 0.1,
-    "inaccuracy": 1,
-    "headshot_multiplier": 1.5,
-    "shoot_interval": 50,
-    "max_capacity": 400,
-    "reload": {
-        "time": 160,
-        "ammo": "ywzj_vehicle:ammo_auto_cannon"
-    },
-    "explosion": {
-        "explode": true,
-        "damage": 15,
-        "radius": 3,
-        "destroy_block": false
-    }
+	"type": "ywzj_vehicle:cannon",
+	"name": "35mm Cannon",
+	"caliber": 35,
+	"damage": 35,
+	"velocity": 32,
+	"recoil": 0.1,
+	"inaccuracy": 1,
+	"headshot_multiplier": 1.5,
+	"shoot_interval": 50,
+	"max_capacity": 400,
+	"reload": {
+		"time": 160,
+		"ammo": "ywzj_vehicle:ammo_auto_cannon"
+	},
+	"explosion": {
+		"explode": true,
+		"damage": 15,
+		"radius": 3,
+		"destroy_block": false
+	}
 }

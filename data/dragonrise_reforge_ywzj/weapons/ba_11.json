@@ -1,32 +1,32 @@
 {
-    "type": "ywzj_vehicle:missile",
-    "name": "BA-11 ASM",
-    "damage": 1000,
-    "headshot_multiplier": 1.5,
-    "recoil": 0.1,
-    "shoot_interval": 2000,
-    "max_capacity": 6,
-    "reload": {
-        "time": 100,
-        "ammo": "ywzj_vehicle:ammo_missile"
-    },
-    "x_rot_max": 90,
-    "x_rot_min": -90,
-    "y_rot_max": 90,
-    "y_rot_min": -90,
-    "explosion": {
-        "explode": true,
-        "damage": 100,
-        "radius": 8,
-        "destroy_block": true
-    },
-    "seeker_fov": 20,
-    "mass": 0.05,
-    "thrust": 0.03,
-    "motor_burn_time": 600,
-    "drag_coefficient": 0.005,
-    "max_g": 20,
-    "reference_speed": 3,
-    "guidance": "HOMING",
-    "homing_mode": "EO"
+	"type": "ywzj_vehicle:missile",
+	"name": "BA-11 ASM",
+	"damage": 1000,
+	"headshot_multiplier": 1.5,
+	"recoil": 0.1,
+	"shoot_interval": 2000,
+	"max_capacity": 6,
+	"reload": {
+		"time": 100,
+		"ammo": "ywzj_vehicle:ammo_missile"
+	},
+	"x_rot_max": 90,
+	"x_rot_min": -90,
+	"y_rot_max": 90,
+	"y_rot_min": -90,
+	"explosion": {
+		"explode": true,
+		"damage": 100,
+		"radius": 8,
+		"destroy_block": true
+	},
+	"seeker_fov": 20,
+	"mass": 0.05,
+	"thrust": 0.03,
+	"motor_burn_time": 600,
+	"drag_coefficient": 0.005,
+	"max_g": 20,
+	"reference_speed": 3,
+	"guidance": "HOMING",
+	"homing_mode": "EO"
 }

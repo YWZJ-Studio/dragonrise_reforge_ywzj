@@ -1,11 +1,11 @@
 {
-    "type": "ywzj_vehicle:generic",
-    "model": "dragonrise_reforge_ywzj:entity/npds514",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/npds514.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/npds514.png",
-    "animations": "dragonrise_reforge_ywzj:entity/npds514.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:npds514_controller",
-    "sounds": {},
-    "description": "",
-    "tab_index": 5002
+	"type": "ywzj_vehicle:generic",
+	"model": "dragonrise_reforge_ywzj:entity/npds514",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/npds514.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/npds514.png",
+	"animations": "dragonrise_reforge_ywzj:entity/npds514.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:npds514_controller",
+	"sounds": {},
+	"description": "vehicle.npds514.description",
+	"tab_index": 5120
 }

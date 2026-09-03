@@ -1,0 +1,15 @@
+{
+	"type": "ywzj_vehicle:fixed_wing_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/f15e",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/f15e.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/f15e.png",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:jet_engine_start",
+		"engine_stop": "ywzj_vehicle:jet_engine_stop",
+		"engine_run": "ywzj_vehicle:jet_engine_run",
+		"engine_thrust": "ywzj_vehicle:jet_engine_thrust",
+		"passby": "ywzj_vehicle:jet_passby"
+	},
+	"description": "vehicle.f15e.description",
+	"tab_index": 4160
+}

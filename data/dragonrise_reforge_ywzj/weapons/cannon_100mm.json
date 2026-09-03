@@ -1,22 +1,22 @@
 {
-    "type": "ywzj_vehicle:cannon",
-    "name": "100mm Cannon",
-    "caliber": 100,
-    "damage": 400,
-    "velocity": 15,
-    "headshot_multiplier": 1,
-    "recoil": 1,
-    "inaccuracy": 0.02,
-    "shoot_interval": 400,
-    "max_capacity": 1,
-    "reload": {
-        "time": 80,
-        "ammo": "ywzj_vehicle:ammo_artillery"
-    },
-    "explosion": {
-        "explode": true,
-        "damage": 500,
-        "radius": 8,
-        "destroy_block": true
-    }
+	"type": "ywzj_vehicle:cannon",
+	"name": "100mm Cannon",
+	"caliber": 100,
+	"damage": 400,
+	"velocity": 15,
+	"headshot_multiplier": 1,
+	"recoil": 1,
+	"inaccuracy": 0.02,
+	"shoot_interval": 400,
+	"max_capacity": 1,
+	"reload": {
+		"time": 80,
+		"ammo": "ywzj_vehicle:ammo_artillery"
+	},
+	"explosion": {
+		"explode": true,
+		"damage": 500,
+		"radius": 8,
+		"destroy_block": true
+	}
 }

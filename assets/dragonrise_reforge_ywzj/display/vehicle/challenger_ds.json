@@ -1,0 +1,14 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/challenger_ds",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/challenger_ds.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/challenger_ds.png",
+	"track_config": {},
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.challenger_ds.description",
+	"tab_index": 2470
+}

@@ -1,15 +1,15 @@
 {
-    "type": "ywzj_vehicle:tracked_vehicle",
-    "model": "dragonrise_reforge_ywzj:entity/m3stuart",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/m3stuart.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/m3stuart.png",
-    "animations": "dragonrise_reforge_ywzj:entity/m3stuart.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:m3stuart_controller",
-    "sounds": {
-        "engine_start": "ywzj_vehicle:ztz99a_engine_start",
-        "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-        "engine_run": "ywzj_vehicle:ztz99a_engine_run"
-    },
-    "description": "",
-    "tab_index": 2204
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/m3stuart",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/m3stuart.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/m3stuart.png",
+	"animations": "dragonrise_reforge_ywzj:entity/m3stuart.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:m3stuart_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.m3stuart.description",
+	"tab_index": 2270
 }

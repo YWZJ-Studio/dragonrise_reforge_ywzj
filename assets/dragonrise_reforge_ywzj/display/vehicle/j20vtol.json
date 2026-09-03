@@ -1,0 +1,15 @@
+{
+	"type": "ywzj_vehicle:fixed_wing_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/j20vtol",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/j20vtol.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/j20vtol.png",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:jet_engine_start",
+		"engine_stop": "ywzj_vehicle:jet_engine_stop",
+		"engine_run": "ywzj_vehicle:jet_engine_run",
+		"engine_thrust": "ywzj_vehicle:jet_engine_thrust",
+		"passby": "ywzj_vehicle:jet_passby"
+	},
+	"description": "vehicle.j20vtol.description",
+	"tab_index": 4210
+}

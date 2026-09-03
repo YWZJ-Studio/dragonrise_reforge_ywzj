@@ -1,0 +1,14 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/t72b3",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/t72b3.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/t72b3.png",
+	"track_config": {},
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.t72b3.description",
+	"tab_index": 2240
+}

@@ -1,0 +1,13 @@
+{
+	"type": "ywzj_vehicle:wheeled_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/fav_a",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/fav_a.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/fav_a.png",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.fav_a.description",
+	"tab_index": 1180
+}

@@ -1,24 +1,24 @@
 {
-    "type": "ywzj_vehicle:fixed_wing_vehicle",
-    "model": "dragonrise_reforge_ywzj:entity/f16c",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/f16c.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/f16c.png",
-    "animations": "dragonrise_reforge_ywzj:entity/f16c.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:f16c_controller",
-    "sounds": {
-        "engine_start": "ywzj_vehicle:jet_engine_start",
-        "engine_stop": "ywzj_vehicle:jet_engine_stop",
-        "engine_run": "ywzj_vehicle:jet_engine_run",
-        "engine_thrust": "ywzj_vehicle:jet_engine_thrust",
-        "passby": "ywzj_vehicle:jet_passby"
-    },
-    "special_bone_effects": [
-        {
-            "bone": "door",
-            "texture": "dragonrise_reforge_ywzj:textures/entity/f16c.png",
-            "type": "transparent"
-        }
-    ],
-    "description": "",
-    "tab_index": 4203
+	"type": "ywzj_vehicle:fixed_wing_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/f16c",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/f16c.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/f16c.png",
+	"animations": "dragonrise_reforge_ywzj:entity/f16c.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:f16c_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:jet_engine_start",
+		"engine_stop": "ywzj_vehicle:jet_engine_stop",
+		"engine_run": "ywzj_vehicle:jet_engine_run",
+		"engine_thrust": "ywzj_vehicle:jet_engine_thrust",
+		"passby": "ywzj_vehicle:jet_passby"
+	},
+	"special_bone_effects": [
+		{
+			"bone": "door",
+			"texture": "dragonrise_reforge_ywzj:textures/entity/f16c.png",
+			"type": "transparent"
+		}
+	],
+	"description": "vehicle.f16c.description",
+	"tab_index": 4150
 }

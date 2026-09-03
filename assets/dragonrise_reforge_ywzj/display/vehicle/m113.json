@@ -1,15 +1,15 @@
 {
-    "type": "ywzj_vehicle:tracked_vehicle",
-    "model": "dragonrise_reforge_ywzj:entity/m113",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/m113.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/m113.png",
-    "animations": "dragonrise_reforge_ywzj:entity/m113.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:m113_controller",
-    "sounds": {
-        "engine_start": "ywzj_vehicle:ztz99a_engine_start",
-        "engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-        "engine_run": "ywzj_vehicle:ztz99a_engine_run"
-    },
-    "description": "",
-    "tab_index": 2201
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/m113",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/m113.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/m113.png",
+	"animations": "dragonrise_reforge_ywzj:entity/m113.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:m113_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+	},
+	"description": "vehicle.m113.description",
+	"tab_index": 2310
 }

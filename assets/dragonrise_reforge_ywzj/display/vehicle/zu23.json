@@ -1,11 +1,11 @@
 {
-    "model": "dragonrise_reforge_ywzj:entity/zu23",
-    "texture": "dragonrise_reforge_ywzj:textures/entity/zu23.png",
-    "slot_texture": "dragonrise_reforge_ywzj:textures/slot/zu23.png",
-    "animations": "dragonrise_reforge_ywzj:entity/zu23.animation",
-    "animation_controller": "dragonrise_reforge_ywzj:zu23_controller",
-    "sounds": {},
-    "description": "",
-    "tab_index": 5102,
-    "type": "ywzj_vehicle:generic"
+	"model": "dragonrise_reforge_ywzj:entity/zu23",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/zu23.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/zu23.png",
+	"animations": "dragonrise_reforge_ywzj:entity/zu23.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:zu23_controller",
+	"sounds": {},
+	"description": "vehicle.zu23.description",
+	"tab_index": 5030,
+	"type": "ywzj_vehicle:generic"
 }

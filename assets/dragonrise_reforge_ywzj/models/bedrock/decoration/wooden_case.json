@@ -21,12 +21,28 @@
 							"pivot": [-83.14916, 0, 34.44151],
 							"rotation": [0, 22.5, 0],
 							"uv": {
-								"north": {"uv": [995, 824], "uv_size": [-23, 26], "uv_rotation": 90},
-								"east": {"uv": [960, 852], "uv_size": [-19, -37], "uv_rotation": 90},
-								"south": {"uv": [995, 824], "uv_size": [-23, 26], "uv_rotation": 90},
-								"west": {"uv": [960, 852], "uv_size": [-19, -37], "uv_rotation": 90},
-								"up": {"uv": [935, 815], "uv_size": [25, 37]},
-								"down": {"uv": [935, 852], "uv_size": [25, -37]}
+								"north": {
+									"uv": [995, 824],
+									"uv_size": [-23, 26],
+									"uv_rotation": 90
+								},
+								"east": {
+									"uv": [960, 852],
+									"uv_size": [-19, -37],
+									"uv_rotation": 90
+								},
+								"south": {
+									"uv": [995, 824],
+									"uv_size": [-23, 26],
+									"uv_rotation": 90
+								},
+								"west": {
+									"uv": [960, 852],
+									"uv_size": [-19, -37],
+									"uv_rotation": 90
+								},
+								"up": { "uv": [935, 815], "uv_size": [25, 37] },
+								"down": { "uv": [935, 852], "uv_size": [25, -37] }
 							}
 						}
 					]

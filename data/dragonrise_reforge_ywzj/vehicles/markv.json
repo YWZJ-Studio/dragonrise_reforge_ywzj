@@ -1,0 +1,85 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"attributes": {
+		"brake_acceleration": 0.025,
+		"forward_acceleration": 0.01,
+		"backward_acceleration": 0.01,
+		"max_speed_forward": 0.4,
+		"max_speed_backward": 0.15,
+		"turn_acceleration": 1,
+		"max_turn": 2
+	},
+	"max_health": 1500,
+	"view_info": {
+		"third_person_center_offset": [0, 3, 0],
+		"third_person_distance": 10,
+		"sound_distance": 7
+	},
+	"energy_info": {
+		"energy_capacity": 1,
+		"energy_consumption_per_tick": 1e-5
+	},
+	"physics_info": {
+		"can_destroy_block": true
+	},
+	"structure_model": "dragonrise_reforge_ywzj:vehicle/markv",
+	"parts": [
+		{
+			"id": "weapon_station",
+			"name": "weapon_station",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "vehicle_body",
+			"seat_offset": [-0.187, 0.511, 2.853],
+			"operator_on_weapon_unit": false,
+			"rot_info": {
+				"x_rot_speed": 3,
+				"y_rot_speed": 3,
+				"x_rot_max": 45,
+				"x_rot_min": -20,
+				"y_rot_max": 180,
+				"y_rot_min": -180
+			},
+			"optical_sight_offset": [0, 0.5, 1],
+			"operator_view_offset": [0, 1, 0],
+			"optical_sight_type": "crt",
+			"zoom_max": 8,
+			"weapons": [
+				"dragonrise_reforge_ywzj:cannon_57mm",
+				"ywzj_vehicle:gun_7.62mm"
+			]
+		},
+		{
+			"id": "seat_2",
+			"name": "seat_2",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [2.188, 0.011, 1.478],
+			"owner_view_offset": [2.188, 0.011, 1.478]
+		},
+		{
+			"id": "seat_3",
+			"name": "seat_3",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-2.125, 0.011, 1.415],
+			"owner_view_offset": [-2.125, 0.011, 1.415]
+		},
+		{
+			"id": "seat_4",
+			"name": "seat_4",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [2.063, 0.011, 0.165],
+			"owner_view_offset": [2.063, 0.011, 0.165]
+		},
+		{
+			"id": "seat_5",
+			"name": "seat_5",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-2.062, 0.011, 0.165],
+			"owner_view_offset": [-2.062, 0.011, 0.165]
+		}
+	],
+	"experimental": true
+}
