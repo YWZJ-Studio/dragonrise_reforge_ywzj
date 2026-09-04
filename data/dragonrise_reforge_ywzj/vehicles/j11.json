@@ -18,16 +18,14 @@
 		"x_turn_rate": 2,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [
-			[6, 1.5, -3],
-			[-6, 1.5, -3]
-		]
+		"vortex_offsets": [[6.4921875, 1.76875, -6.184375], [-6.4921875, 1.76875, -6.184375]],
+		"afterburner_offsets": [[1.028125, 1.76875, -7.55625, 0.65], [-1.028125, 1.76875, -7.55625, 0.65]]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
 	"view_info": {
-		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_center_offset": [0, 4, 0],
+		"third_person_distance": 16,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
@@ -59,8 +57,8 @@
 				"y_rot_min": 0,
 				"y_rot_max": 0
 			},
-			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [0, 1.12188, -3.28125],
+			"optical_sight_offset": [0, 0, 0.1],
+			"operator_view_offset": [0.4296875, 0.05, -1.8],
 			"optical_sight_type": "crt",
 			"zoom_max": 12,
 			"sub_part_unit_ids": ["radar"],
@@ -70,16 +68,12 @@
 					"part_unit_id": "cannon"
 				},
 				{
-					"id": "dragonrise_reforge_ywzj:pl_8",
-					"part_unit_id": "missile"
+					"id": "dragonrise_reforge_ywzj:pl_10",
+					"part_unit_id": "pl_10"
 				},
 				{
 					"id": "dragonrise_reforge_ywzj:pl_12",
-					"part_unit_id": "missile2"
-				},
-				{
-					"id": "dragonrise_reforge_ywzj:kd_88a",
-					"part_unit_id": "seek_missile"
+					"part_unit_id": "pl_12"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -101,10 +95,10 @@
 			}
 		},
 		{
-			"id": "missile",
-			"name": "missile",
+			"id": "pl_10",
+			"name": "pl_10",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "missile",
+			"structure_bone": "pl_10",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -117,10 +111,10 @@
 			"fire_control_sensor_type": "ir"
 		},
 		{
-			"id": "missile2",
-			"name": "missile2",
+			"id": "pl_12",
+			"name": "pl_12",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "missile2",
+			"structure_bone": "pl_12",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -128,25 +122,9 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"ammo_capacity": 2,
+			"ammo_capacity": 6,
 			"render_model": true,
 			"fire_control_sensor_type": "rf"
-		},
-		{
-			"id": "seek_missile",
-			"name": "seek_missile",
-			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "seek_missile",
-			"is_seat": false,
-			"parent_weapon_unit_aim": true,
-			"crosshair_style": "none",
-			"rot_info": {
-				"x_rot_speed": 0,
-				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "eo"
 		},
 		{
 			"id": "decoy_flare",
@@ -185,6 +163,5 @@
 			"is_seat": false,
 			"drag_k": 0.5
 		}
-	],
-	"experimental": true
+	]
 }
