@@ -1,0 +1,9 @@
+{
+	"type": "ywzj_vehicle:weapon",
+	"model": "dragonrise_reforge_ywzj:entity/missile_r_73",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/missile_r_73.png",
+	"sounds": {
+		"fire": "ywzj_vehicle:missile_launch",
+		"reload": "ywzj_vehicle:common_reload"
+	}
+}

@@ -12,7 +12,13 @@
 			},
 			"bones": [
 				{
+					"name": "ywzj_orientation",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
 					"name": "rafale",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0.6, 29]
 				},
 				{
@@ -5534,6 +5540,7 @@
 				},
 				{
 					"name": "agbomb",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0.6, 29]
 				},
 				{

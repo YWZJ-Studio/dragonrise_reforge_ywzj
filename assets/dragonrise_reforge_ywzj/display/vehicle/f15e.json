@@ -11,5 +11,7 @@
 		"passby": "ywzj_vehicle:jet_passby"
 	},
 	"description": "vehicle.f15e.description",
-	"tab_index": 4160
+	"tab_index": 4160,
+	"animations": "dragonrise_reforge_ywzj:entity/f15e.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:f15e_controller"
 }

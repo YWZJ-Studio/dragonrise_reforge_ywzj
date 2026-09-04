@@ -1,0 +1,10 @@
+{
+	"type": "ywzj_vehicle:weapon",
+	"model": "dragonrise_reforge_ywzj:entity/bomb_jdam_er",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/bomb_jdam_er.png",
+	"animations": "dragonrise_reforge_ywzj:entity/jdam_er.animation",
+	"sounds": {
+		"fire": "ywzj_vehicle:bomb_drop",
+		"reload": "ywzj_vehicle:common_reload"
+	}
+}

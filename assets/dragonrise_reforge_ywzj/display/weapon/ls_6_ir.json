@@ -1,0 +1,10 @@
+{
+	"type": "ywzj_vehicle:weapon",
+	"model": "dragonrise_reforge_ywzj:entity/bomb_ls_6_ir",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/bomb_ls_6_ir.png",
+	"animations": "dragonrise_reforge_ywzj:entity/ls_6_ir.animation",
+	"sounds": {
+		"fire": "ywzj_vehicle:bomb_drop",
+		"reload": "ywzj_vehicle:common_reload"
+	}
+}

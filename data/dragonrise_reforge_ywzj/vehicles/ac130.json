@@ -40,6 +40,9 @@
 		"damage_threshold": 10,
 		"impact_multiplier": 3
 	},
+	"physics_info": {
+		"center": [0, 0, 6]
+	},
 	"with_warning_receiver": true,
 	"center_offset": [0, 1.625, 0],
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/ac130",

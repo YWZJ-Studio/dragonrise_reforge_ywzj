@@ -12,11 +12,18 @@
 			},
 			"bones": [
 				{
+					"name": "ywzj_orientation",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
 					"name": "bb_main",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0, 0]
 				},
 				{
 					"name": "jf17",
+					"parent": "ywzj_orientation",
 					"pivot": [0.00746, 3.70303, 21.07329]
 				},
 				{
@@ -3996,6 +4003,7 @@
 				},
 				{
 					"name": "Fuel",
+					"parent": "ywzj_orientation",
 					"pivot": [34.50101, 15.87004, 32.14818],
 					"cubes": [
 						{
@@ -4170,6 +4178,7 @@
 				},
 				{
 					"name": "Fuel3",
+					"parent": "ywzj_orientation",
 					"pivot": [0.22531, 8.46301, 23.43402],
 					"cubes": [
 						{
@@ -4344,6 +4353,7 @@
 				},
 				{
 					"name": "Fuel2",
+					"parent": "ywzj_orientation",
 					"pivot": [-34.48609, 15.87004, 32.14818],
 					"cubes": [
 						{
@@ -4518,6 +4528,7 @@
 				},
 				{
 					"name": "PL-5e-1",
+					"parent": "ywzj_orientation",
 					"pivot": [66.13382, -8.74564, 15.89194],
 					"cubes": [
 						{
@@ -4608,6 +4619,7 @@
 				},
 				{
 					"name": "PL-5e-2",
+					"parent": "ywzj_orientation",
 					"pivot": [-66.1189, -8.74564, 15.89194],
 					"cubes": [
 						{
@@ -4698,6 +4710,7 @@
 				},
 				{
 					"name": "SD-10-1",
+					"parent": "ywzj_orientation",
 					"pivot": [31.35706, -57.10923, -12.42908],
 					"cubes": [
 						{
@@ -4802,6 +4815,7 @@
 				},
 				{
 					"name": "SD-10-2",
+					"parent": "ywzj_orientation",
 					"pivot": [43.12117, -57.10923, -12.42908],
 					"cubes": [
 						{
@@ -4906,6 +4920,7 @@
 				},
 				{
 					"name": "SD-10-3",
+					"parent": "ywzj_orientation",
 					"pivot": [-43.10625, -57.10923, -12.42908],
 					"cubes": [
 						{
@@ -5010,6 +5025,7 @@
 				},
 				{
 					"name": "SD-10-4",
+					"parent": "ywzj_orientation",
 					"pivot": [-31.34214, -57.10923, -12.42908],
 					"cubes": [
 						{
@@ -5114,6 +5130,7 @@
 				},
 				{
 					"name": "bone29",
+					"parent": "ywzj_orientation",
 					"pivot": [-0.11657, 29.42142, 86.35483],
 					"cubes": [
 						{

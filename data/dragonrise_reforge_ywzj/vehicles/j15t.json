@@ -164,7 +164,7 @@
 		},
 		{
 			"id": "variable_weapon_yj_1",
-			"name": "kd_88",
+			"name": "kd_88a",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "variable_weapon_1",
 			"render_model": true,
@@ -173,7 +173,7 @@
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "square",
-			"weapons": ["dragonrise_reforge_ywzj:kd_88"]
+			"weapons": ["dragonrise_reforge_ywzj:kd_88a"]
 		},
 		{
 			"id": "variable_weapon_2",
@@ -206,7 +206,7 @@
 		},
 		{
 			"id": "variable_weapon_yj_2",
-			"name": "kd_88",
+			"name": "kd_88a",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "variable_weapon_2",
 			"render_model": true,
@@ -215,7 +215,7 @@
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "square",
-			"weapons": ["dragonrise_reforge_ywzj:kd_88"]
+			"weapons": ["dragonrise_reforge_ywzj:kd_88a"]
 		},
 		{
 			"id": "variable_weapon_3",
@@ -248,7 +248,7 @@
 		},
 		{
 			"id": "variable_weapon_yj_3",
-			"name": "kd_88",
+			"name": "kd_88a",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "variable_weapon_3",
 			"render_model": true,
@@ -257,7 +257,7 @@
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "square",
-			"weapons": ["dragonrise_reforge_ywzj:kd_88"]
+			"weapons": ["dragonrise_reforge_ywzj:kd_88a"]
 		},
 		{
 			"id": "variable_weapon_4",
@@ -290,7 +290,7 @@
 		},
 		{
 			"id": "variable_weapon_yj_4",
-			"name": "kd_88",
+			"name": "kd_88a",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "variable_weapon_4",
 			"render_model": true,
@@ -299,7 +299,7 @@
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "square",
-			"weapons": ["dragonrise_reforge_ywzj:kd_88"]
+			"weapons": ["dragonrise_reforge_ywzj:kd_88a"]
 		},
 		{
 			"id": "variable_weapon_5",
@@ -332,7 +332,7 @@
 		},
 		{
 			"id": "variable_weapon_yj_5",
-			"name": "kd_88",
+			"name": "kd_88a",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "variable_weapon_5",
 			"render_model": true,
@@ -341,7 +341,7 @@
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "square",
-			"weapons": ["dragonrise_reforge_ywzj:kd_88"]
+			"weapons": ["dragonrise_reforge_ywzj:kd_88a"]
 		},
 		{
 			"id": "decoy_flare",

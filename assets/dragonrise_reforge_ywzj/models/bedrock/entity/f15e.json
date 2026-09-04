@@ -12,7 +12,13 @@
 			},
 			"bones": [
 				{
+					"name": "ywzj_orientation",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
 					"name": "group14",
+					"parent": "ywzj_orientation",
 					"pivot": [-0.11575, 43.41898, 6.72556],
 					"cubes": [
 						{
@@ -262,6 +268,7 @@
 				},
 				{
 					"name": "F15E",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 24.9, 19]
 				},
 				{
@@ -7847,6 +7854,7 @@
 				},
 				{
 					"name": "Obb",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 28.4, 28]
 				},
 				{
@@ -8310,52 +8318,64 @@
 				},
 				{
 					"name": "NacellePos",
+					"parent": "ywzj_orientation",
 					"pivot": [14.1, 10.675, -29.25]
 				},
 				{
 					"name": "dummy_0_1_1",
+					"parent": "ywzj_orientation",
 					"pivot": [-53.75, 37.5, 13]
 				},
 				{
 					"name": "dummy_0_2_1",
+					"parent": "ywzj_orientation",
 					"pivot": [-40.25, 37.5, 13]
 				},
 				{
 					"name": "dummy_0_3_1",
+					"parent": "ywzj_orientation",
 					"pivot": [-46.85, 31.5, 19]
 				},
 				{
 					"name": "dummy_0_3_2",
+					"parent": "ywzj_orientation",
 					"pivot": [46.85, 31.5, 19]
 				},
 				{
 					"name": "dummy_0_2_2",
+					"parent": "ywzj_orientation",
 					"pivot": [40.25, 37.5, 13]
 				},
 				{
 					"name": "dummy_0_1_2",
+					"parent": "ywzj_orientation",
 					"pivot": [53.75, 37.5, 13]
 				},
 				{
 					"name": "dummy_1_0_1",
+					"parent": "ywzj_orientation",
 					"pivot": [27.35, 18.25, 4]
 				},
 				{
 					"name": "dummy_1_0_2",
+					"parent": "ywzj_orientation",
 					"pivot": [-27.35, 18.25, 4]
 				},
 				{
 					"name": "dummy_1_0_3",
+					"parent": "ywzj_orientation",
 					"pivot": [26.7, 20.25, 65],
 					"rotation": [4.5, -4, 0]
 				},
 				{
 					"name": "dummy_1_0_4",
+					"parent": "ywzj_orientation",
 					"pivot": [-26.7, 20.25, 65],
 					"rotation": [4.5, 4, 0]
 				},
 				{
 					"name": "dummy_1_1_1",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 21.25, 34]
 				}
 			]

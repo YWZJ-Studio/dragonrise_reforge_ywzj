@@ -4,7 +4,7 @@
 	"caliber": 23,
 	"damage": 30,
 	"velocity": 32,
-	"recoil": 0.2,
+	"recoil": 0.05,
 	"inaccuracy": 0.15,
 	"headshot_multiplier": 1.5,
 	"shoot_interval": 20,

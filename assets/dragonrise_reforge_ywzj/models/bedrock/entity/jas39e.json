@@ -12,7 +12,13 @@
 			},
 			"bones": [
 				{
+					"name": "ywzj_orientation",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
 					"name": "jas39",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 1, 26]
 				},
 				{
@@ -4766,6 +4772,7 @@
 				},
 				{
 					"name": "aim120-1",
+					"parent": "ywzj_orientation",
 					"pivot": [7.7262, 11.41875, 22.96294],
 					"cubes": [
 						{
@@ -4870,6 +4877,7 @@
 				},
 				{
 					"name": "aim120-2",
+					"parent": "ywzj_orientation",
 					"pivot": [-7.22775, 11.41875, 22.96294],
 					"cubes": [
 						{
@@ -4974,6 +4982,7 @@
 				},
 				{
 					"name": "aim120-3",
+					"parent": "ywzj_orientation",
 					"pivot": [0.53138, 11.41875, 20.14143],
 					"cubes": [
 						{
@@ -5078,6 +5087,7 @@
 				},
 				{
 					"name": "aim120-4",
+					"parent": "ywzj_orientation",
 					"pivot": [48.9201, 18.04927, 51.60116],
 					"cubes": [
 						{
@@ -5182,6 +5192,7 @@
 				},
 				{
 					"name": "aim120-5",
+					"parent": "ywzj_orientation",
 					"pivot": [-48.9201, 18.04927, 51.60116],
 					"cubes": [
 						{
@@ -5286,6 +5297,7 @@
 				},
 				{
 					"name": "FUEL",
+					"parent": "ywzj_orientation",
 					"pivot": [32.37671, 17.19176, 48.32574],
 					"cubes": [
 						{
@@ -5460,6 +5472,7 @@
 				},
 				{
 					"name": "FUEL2",
+					"parent": "ywzj_orientation",
 					"pivot": [-32.37671, 17.19176, 48.32574],
 					"cubes": [
 						{
@@ -5634,6 +5647,7 @@
 				},
 				{
 					"name": "bone29",
+					"parent": "ywzj_orientation",
 					"pivot": [-0.26155, 28.59145, 113.8172],
 					"cubes": [
 						{

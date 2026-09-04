@@ -12,7 +12,13 @@
 			},
 			"bones": [
 				{
+					"name": "ywzj_orientation",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
 					"name": "root",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 1, 0]
 				},
 				{

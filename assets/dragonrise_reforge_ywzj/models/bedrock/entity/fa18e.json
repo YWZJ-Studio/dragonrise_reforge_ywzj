@@ -12,7 +12,13 @@
 			},
 			"bones": [
 				{
+					"name": "ywzj_orientation",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
 					"name": "root",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0, 0]
 				},
 				{
@@ -6028,14 +6034,17 @@
 				},
 				{
 					"name": "NacellePos",
+					"parent": "ywzj_orientation",
 					"pivot": [-12, 7, -37]
 				},
 				{
 					"name": "Plane",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0, 0]
 				},
 				{
 					"name": "Obb",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 28.4, 28]
 				},
 				{
@@ -6401,51 +6410,61 @@
 				},
 				{
 					"name": "dummy_0_1_1",
+					"parent": "ywzj_orientation",
 					"pivot": [-107, 40.25, 31],
 					"rotation": [0, 0, -2]
 				},
 				{
 					"name": "dummy_0_1_2",
+					"parent": "ywzj_orientation",
 					"pivot": [107, 40.25, 31],
 					"rotation": [0, 0, 2]
 				},
 				{
 					"name": "dummy_0_2_1",
+					"parent": "ywzj_orientation",
 					"pivot": [-71, 30.5, 33],
 					"rotation": [4.01523, 4.98779, 0.34967]
 				},
 				{
 					"name": "dummy_0_3_1",
+					"parent": "ywzj_orientation",
 					"pivot": [-55.275, 29.75, 25],
 					"rotation": [3.99334, 3.74999, 0.08756]
 				},
 				{
 					"name": "dummy_0_4_1",
+					"parent": "ywzj_orientation",
 					"pivot": [-36.25, 30.25, 19],
 					"rotation": [4, 3.5, 0]
 				},
 				{
 					"name": "dummy_0_5_1",
+					"parent": "ywzj_orientation",
 					"pivot": [-19.65, 22.25, 27],
 					"rotation": [4, 3.5, 0]
 				},
 				{
 					"name": "dummy_0_2_2",
+					"parent": "ywzj_orientation",
 					"pivot": [71, 30.5, 33],
 					"rotation": [4.01523, -4.98779, -0.34967]
 				},
 				{
 					"name": "dummy_0_3_2",
+					"parent": "ywzj_orientation",
 					"pivot": [55.275, 29.75, 25],
 					"rotation": [3.99334, -3.74999, -0.08756]
 				},
 				{
 					"name": "dummy_0_4_2",
+					"parent": "ywzj_orientation",
 					"pivot": [36.25, 30.25, 19],
 					"rotation": [4, -3.5, 0]
 				},
 				{
 					"name": "dummy_0_5_2",
+					"parent": "ywzj_orientation",
 					"pivot": [19.65, 22.25, 27],
 					"rotation": [4, -3.5, 0]
 				}

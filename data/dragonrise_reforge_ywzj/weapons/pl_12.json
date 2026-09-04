@@ -1,7 +1,7 @@
 {
 	"type": "ywzj_vehicle:missile",
 	"name": "PL-12",
-	"damage": 100,
+	"damage": 1100,
 	"headshot_multiplier": 1.5,
 	"recoil": 0.1,
 	"shoot_interval": 1000,
@@ -16,8 +16,8 @@
 	"y_rot_min": -90,
 	"explosion": {
 		"explode": true,
-		"damage": 500,
-		"radius": 8,
+		"damage": 180,
+		"radius": 12,
 		"proximity_fuze": true,
 		"proximity_radius": 4,
 		"destroy_block": true

@@ -12,7 +12,13 @@
 			},
 			"bones": [
 				{
+					"name": "ywzj_orientation",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
 					"name": "rafale",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0.6, 29]
 				},
 				{
@@ -5418,6 +5424,7 @@
 				},
 				{
 					"name": "MICA-1",
+					"parent": "ywzj_orientation",
 					"pivot": [50.34028, -55.37134, 13.63246],
 					"cubes": [
 						{
@@ -5524,6 +5531,7 @@
 				},
 				{
 					"name": "MICA-2",
+					"parent": "ywzj_orientation",
 					"pivot": [34.04028, -55.37134, -2.56754],
 					"cubes": [
 						{
@@ -5637,6 +5645,7 @@
 				},
 				{
 					"name": "MICA-3",
+					"parent": "ywzj_orientation",
 					"pivot": [3.84028, -53.67134, -0.26754],
 					"cubes": [
 						{
@@ -5743,6 +5752,7 @@
 				},
 				{
 					"name": "MICA-4",
+					"parent": "ywzj_orientation",
 					"pivot": [-3.84028, -53.67134, -0.26754],
 					"cubes": [
 						{
@@ -5851,6 +5861,7 @@
 				},
 				{
 					"name": "MICA-5",
+					"parent": "ywzj_orientation",
 					"pivot": [-34.04028, -55.37134, -2.56754],
 					"cubes": [
 						{
@@ -5959,6 +5970,7 @@
 				},
 				{
 					"name": "MICA-6",
+					"parent": "ywzj_orientation",
 					"pivot": [-50.34028, -55.37134, 13.63246],
 					"cubes": [
 						{

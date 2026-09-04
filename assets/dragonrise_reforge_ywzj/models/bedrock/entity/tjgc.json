@@ -12,11 +12,18 @@
 			},
 			"bones": [
 				{
+					"name": "ywzj_orientation",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
 					"name": "bb_main",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0, 0]
 				},
 				{
 					"name": "bone7",
+					"parent": "ywzj_orientation",
 					"pivot": [14.34271, 30.18026, 129.20251],
 					"cubes": [
 						{
@@ -6616,6 +6623,7 @@
 				},
 				{
 					"name": "bone24",
+					"parent": "ywzj_orientation",
 					"pivot": [54.60449, 25.83927, 38.99669],
 					"cubes": [
 						{
@@ -8232,6 +8240,7 @@
 				},
 				{
 					"name": "bone43",
+					"parent": "ywzj_orientation",
 					"pivot": [-54.60449, 25.83927, 38.99669],
 					"cubes": [
 						{
@@ -9848,6 +9857,7 @@
 				},
 				{
 					"name": "bone181",
+					"parent": "ywzj_orientation",
 					"pivot": [27.85492, 29.59166, 29.59431],
 					"rotation": [0, 0, 15],
 					"cubes": [
@@ -11915,6 +11925,7 @@
 				},
 				{
 					"name": "bone258",
+					"parent": "ywzj_orientation",
 					"pivot": [-27.85492, 29.59166, 29.59431],
 					"rotation": [0, 0, -15],
 					"cubes": [
@@ -13982,6 +13993,7 @@
 				},
 				{
 					"name": "bone178",
+					"parent": "ywzj_orientation",
 					"pivot": [-27.23547, 29.50475, 96.08628]
 				},
 				{
@@ -14106,6 +14118,7 @@
 				},
 				{
 					"name": "bone341",
+					"parent": "ywzj_orientation",
 					"pivot": [-18.19674, 27.7027, 67.64449],
 					"rotation": [-1.45855, 2.52346, -11.60849],
 					"cubes": [
@@ -14734,6 +14747,7 @@
 				},
 				{
 					"name": "bone345",
+					"parent": "ywzj_orientation",
 					"pivot": [18.19674, 27.7027, 67.64449],
 					"rotation": [-1.45855, -2.52346, 11.60849],
 					"cubes": [
@@ -15362,6 +15376,7 @@
 				},
 				{
 					"name": "bone342",
+					"parent": "ywzj_orientation",
 					"pivot": [-189.40045, 32.8835, 20.6285],
 					"cubes": [
 						{
@@ -16736,6 +16751,7 @@
 				},
 				{
 					"name": "gbu24",
+					"parent": "ywzj_orientation",
 					"pivot": [23.8332, 13.79523, 78.15367],
 					"rotation": [-1, 0, 0],
 					"cubes": [
@@ -16841,6 +16857,7 @@
 				},
 				{
 					"name": "gbu2",
+					"parent": "ywzj_orientation",
 					"pivot": [15.8332, 15.79454, 78.10131],
 					"rotation": [-1, 0, 0],
 					"cubes": [
@@ -16946,6 +16963,7 @@
 				},
 				{
 					"name": "gbu3",
+					"parent": "ywzj_orientation",
 					"pivot": [-15.8332, 15.79454, 78.10131],
 					"rotation": [-1, 0, 0],
 					"cubes": [
@@ -17051,6 +17069,7 @@
 				},
 				{
 					"name": "gbu4",
+					"parent": "ywzj_orientation",
 					"pivot": [-23.8332, 13.79523, 78.15367],
 					"rotation": [-1, 0, 0],
 					"cubes": [
@@ -17156,6 +17175,7 @@
 				},
 				{
 					"name": "gbu5",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 23.52114, 63.75944],
 					"rotation": [-1, 0, 0],
 					"cubes": [
@@ -17259,6 +17279,7 @@
 				},
 				{
 					"name": "bone355",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 25.7802, -21.59612],
 					"cubes": [
 						{
@@ -17647,6 +17668,7 @@
 				},
 				{
 					"name": "bone373",
+					"parent": "ywzj_orientation",
 					"pivot": [-26.69231, 19.57799, 22.72017]
 				},
 				{
@@ -18680,6 +18702,7 @@
 				},
 				{
 					"name": "bone374",
+					"parent": "ywzj_orientation",
 					"pivot": [-14.34759, 26.85546, 120.98777],
 					"cubes": [
 						{
@@ -18706,6 +18729,7 @@
 				},
 				{
 					"name": "bone375",
+					"parent": "ywzj_orientation",
 					"pivot": [14.34759, 26.85546, 120.98777],
 					"cubes": [
 						{

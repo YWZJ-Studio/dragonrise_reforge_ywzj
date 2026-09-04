@@ -11,5 +11,7 @@
 		"passby": "ywzj_vehicle:jet_passby"
 	},
 	"description": "vehicle.su24m.description",
-	"tab_index": 4100
+	"tab_index": 4100,
+	"animations": "dragonrise_reforge_ywzj:entity/su24m.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:su24m_controller"
 }

@@ -1,11 +1,11 @@
 {
 	"type": "ywzj_vehicle:missile",
-	"name": "KD-88",
-	"damage": 1000,
+	"name": "KD-88A",
+	"damage": 600,
 	"headshot_multiplier": 1.5,
 	"recoil": 0.1,
 	"shoot_interval": 1000,
-	"max_capacity": 1,
+	"max_capacity": 2,
 	"reload": {
 		"time": 100,
 		"ammo": "ywzj_vehicle:ammo_missile"
@@ -16,15 +16,17 @@
 	"y_rot_min": -90,
 	"explosion": {
 		"explode": true,
-		"damage": 100,
-		"radius": 8,
+		"damage": 300,
+		"radius": 12,
 		"destroy_block": true
 	},
+	"seeker_fov": 30,
 	"mass": 0.01,
-	"thrust": 0.004,
-	"motor_burn_time": 600,
+	"thrust": 0.008,
+	"motor_burn_time": 260,
 	"drag_coefficient": 0.005,
-	"max_g": 30,
+	"max_g": 18,
 	"reference_speed": 1,
-	"guidance": "HOMING"
+	"guidance": "HOMING",
+	"homing_mode": "ELECTRO_OPTICAL"
 }

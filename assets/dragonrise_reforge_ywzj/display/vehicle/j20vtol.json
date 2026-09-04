@@ -11,5 +11,7 @@
 		"passby": "ywzj_vehicle:jet_passby"
 	},
 	"description": "vehicle.j20vtol.description",
-	"tab_index": 4210
+	"tab_index": 4210,
+	"animations": "dragonrise_reforge_ywzj:entity/j20vtol.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:j20vtol_controller"
 }

@@ -16,7 +16,8 @@
 		"turn_rate_by_speed": 0.4,
 		"x_turn_rate": 2.5,
 		"y_turn_rate": 3,
-		"z_turn_rate": 8
+		"z_turn_rate": 8,
+		"landing_gear_drag_k": 0.5
 	},
 	"max_health": 1750,
 	"view_info": {
@@ -28,7 +29,7 @@
 	},
 	"energy_info": {
 		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-5
+		"energy_consumption_per_tick": 0.00001
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
@@ -36,30 +37,269 @@
 	},
 	"with_warning_receiver": true,
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/fa18e",
-	"parts": {
-		"id": "weapon_station",
-		"name": "weapon_station",
-		"type": "ywzj_vehicle:weapon",
-		"structure_bone": "vehicle_body",
-		"seat_offset": [0, 1.437, 4.175],
-		"operator_on_weapon_unit": false,
-		"rot_info": {
-			"x_rot_speed": 3,
-			"y_rot_speed": 3,
-			"x_rot_max": 45,
-			"x_rot_min": -20,
-			"y_rot_max": 180,
-			"y_rot_min": -180
+	"parts": [
+		{
+			"id": "sighting_system",
+			"name": "sighting_system",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "sighting_system",
+			"seat_offset": [0, 3.057, 4.175],
+			"operator_on_weapon_unit": false,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0,
+				"x_rot_min": 0,
+				"x_rot_max": 0,
+				"y_rot_min": 0,
+				"y_rot_max": 0
+			},
+			"optical_sight_offset": [0, 0, 1],
+			"operator_view_offset": [-0.75, 2.599, 1.862],
+			"optical_sight_type": "crt",
+			"zoom_max": 12,
+			"sub_part_unit_ids": ["radar"],
+			"weapons": [
+				{
+					"id": "dragonrise_reforge_ywzj:m61",
+					"part_unit_id": "cannon"
+				},
+				{
+					"id": "dragonrise_reforge_ywzj:aim_9",
+					"part_unit_id": "missile"
+				},
+				{
+					"part_unit_id": "missile2"
+				},
+				{
+					"part_unit_id": "missile3"
+				},
+				{
+					"part_unit_id": "missile4"
+				},
+				{
+					"id": "ywzj_vehicle:decoy_flare",
+					"part_unit_id": "decoy_flare"
+				}
+			]
 		},
-		"optical_sight_offset": [0, 0.5, 1],
-		"operator_view_offset": [0, 1, 0],
-		"optical_sight_type": "crt",
-		"zoom_max": 8,
-		"weapons": [
-			"dragonrise_reforge_ywzj:m61",
-			"dragonrise_reforge_ywzj:aim_9",
-			"dragonrise_reforge_ywzj:aim_54"
-		]
-	},
-	"experimental": true
+		{
+			"id": "cannon",
+			"name": "cannon",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "cannon",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "circle",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
+		},
+		{
+			"id": "missile",
+			"name": "missile",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "none",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"ammo_capacity": 2,
+			"render_model": true,
+			"fire_control_sensor_type": "ir"
+		},
+		{
+			"id": "missile2",
+			"name": "missile2",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile2",
+			"render_selected_weapon": true,
+			"is_seat": false,
+			"weapons": [
+				{
+					"part_unit_id": "missile2_aim_120"
+				},
+				{
+					"part_unit_id": "missile2_agm_65"
+				}
+			]
+		},
+		{
+			"id": "missile2_aim_120",
+			"name": "missile2_aim_120",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile2",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "none",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"ammo_capacity": 2,
+			"render_model": true,
+			"fire_control_sensor_type": "rf",
+			"weapons": ["dragonrise_reforge_ywzj:aim_120"]
+		},
+		{
+			"id": "missile2_agm_65",
+			"name": "missile2_agm_65",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile2",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "none",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"ammo_capacity": 2,
+			"render_model": true,
+			"fire_control_sensor_type": "eo",
+			"weapons": ["dragonrise_reforge_ywzj:agm_65"]
+		},
+		{
+			"id": "missile3",
+			"name": "missile3",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile3",
+			"render_selected_weapon": true,
+			"is_seat": false,
+			"weapons": [
+				{
+					"part_unit_id": "missile3_aim_120"
+				},
+				{
+					"part_unit_id": "missile3_bomb_500kg"
+				}
+			]
+		},
+		{
+			"id": "missile3_aim_120",
+			"name": "missile3_aim_120",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile3",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "none",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"ammo_capacity": 2,
+			"render_model": true,
+			"fire_control_sensor_type": "rf",
+			"weapons": ["dragonrise_reforge_ywzj:aim_120"]
+		},
+		{
+			"id": "missile3_bomb_500kg",
+			"name": "missile3_bomb_500kg",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile3",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "big_cross",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"ammo_capacity": 2,
+			"render_model": true,
+			"fire_control_sensor_type": "ccip",
+			"weapons": ["dragonrise_reforge_ywzj:bomb_500kg"]
+		},
+		{
+			"id": "missile4",
+			"name": "missile4",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile4",
+			"render_selected_weapon": true,
+			"is_seat": false,
+			"weapons": [
+				{
+					"part_unit_id": "missile4_aim_120"
+				},
+				{
+					"part_unit_id": "missile4_bomb_500kg"
+				}
+			]
+		},
+		{
+			"id": "missile4_aim_120",
+			"name": "missile4_aim_120",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile4",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "none",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"ammo_capacity": 3,
+			"render_model": true,
+			"fire_control_sensor_type": "rf",
+			"weapons": ["dragonrise_reforge_ywzj:aim_120"]
+		},
+		{
+			"id": "missile4_bomb_500kg",
+			"name": "missile4_bomb_500kg",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "missile4",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"crosshair_style": "big_cross",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"ammo_capacity": 2,
+			"render_model": true,
+			"fire_control_sensor_type": "ccip",
+			"weapons": ["dragonrise_reforge_ywzj:bomb_500kg"]
+		},
+		{
+			"id": "decoy_flare",
+			"name": "decoy_flare",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "decoy_flare",
+			"is_seat": false,
+			"crosshair_style": "none",
+			"firing_mode": "salvo",
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			}
+		},
+		{
+			"id": "radar",
+			"name": "radar",
+			"type": "ywzj_vehicle:radar",
+			"structure_bone": "radar",
+			"is_seat": false,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 30,
+				"y_rot_min": -60,
+				"y_rot_max": 60
+			},
+			"radar_type": "AN/APG-79",
+			"scan_sector_angle": 90,
+			"max_scan_distance": 4096
+		},
+		{
+			"id": "landing_gear",
+			"name": "landing_gear",
+			"type": "ywzj_vehicle:landing_gear",
+			"structure_bone": "landing_gear",
+			"is_seat": false,
+			"drag_k": 0.5
+		}
+	],
+	"experimental": true,
+	"landing_gear_part_id": "landing_gear",
+	"center_offset": [0, 1.706, 0]
 }

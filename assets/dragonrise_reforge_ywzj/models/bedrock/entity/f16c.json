@@ -12,11 +12,18 @@
 			},
 			"bones": [
 				{
+					"name": "ywzj_orientation",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
 					"name": "bb_main",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0, 0]
 				},
 				{
 					"name": "f16",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0, 7.665]
 				},
 				{
@@ -6204,6 +6211,7 @@
 				},
 				{
 					"name": "bone5",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 9.49, 0],
 					"cubes": [
 						{
@@ -6217,6 +6225,7 @@
 				},
 				{
 					"name": "bone29",
+					"parent": "ywzj_orientation",
 					"pivot": [-0.06234, 35.55684, 93.32947],
 					"cubes": [
 						{
@@ -6351,6 +6360,7 @@
 				},
 				{
 					"name": "ag",
+					"parent": "ywzj_orientation",
 					"pivot": [0, 0, 0]
 				},
 				{
