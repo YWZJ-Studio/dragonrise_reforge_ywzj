@@ -9,5 +9,6 @@ function updateBones(context) {
     builder.setRotation("wingLB", rollInput * 16, 0, 0)
     builder.setRotation("wingRB", -rollInput * 16, 0, 0)
     builder.setRotation("weiyiR", 0, -yawInput * 16, 0)
+    builder.setRotation("ctrl", -8 * pitchInput, 0, -8 * rollInput)
     return builder
 }

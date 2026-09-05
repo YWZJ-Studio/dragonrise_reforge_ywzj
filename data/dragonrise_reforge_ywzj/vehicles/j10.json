@@ -18,16 +18,15 @@
 		"x_turn_rate": 2,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [
-			[6, 1.5, -3],
-			[-6, 1.5, -3]
-		]
+		"vortex_offsets": [[4.384375, 1.5390625, -4.390625], [-4.384375, 1.5390625, -4.390625]],
+		"afterburner_offsets": [[0, 1.8140625, -6.5203125, 0.65]],
+		"aerobatic_smoke_offsets": [[0, 2.628125, -7.5734375]]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
 	"view_info": {
-		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_center_offset": [0, 4, 0],
+		"third_person_distance": 16,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
@@ -49,7 +48,7 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.745, 1.7],
+			"seat_offset": [0, 2.7140625, 3.009375],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 0,
@@ -59,10 +58,8 @@
 				"y_rot_min": 0,
 				"y_rot_max": 0
 			},
-			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [0, 1.57812, 2.125],
-			"optical_sight_type": "crt",
-			"zoom_max": 12,
+			"operator_view_offset": [0, -0.05, 0.2],
+			"optical_sight_type": "none",
 			"sub_part_unit_ids": ["radar"],
 			"weapons": [
 				{
@@ -74,7 +71,7 @@
 					"part_unit_id": "rocket"
 				},
 				{
-					"id": "dragonrise_reforge_ywzj:bomb_500kg",
+					"id": "dragonrise_reforge_ywzj:gb_250",
 					"part_unit_id": "bomb"
 				},
 				{
@@ -183,6 +180,5 @@
 			"is_seat": false,
 			"drag_k": 0.5
 		}
-	],
-	"experimental": true
+	]
 }
