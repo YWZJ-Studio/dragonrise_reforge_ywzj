@@ -40,9 +40,9 @@
 			"operator_view_offset": [0, 1.5, 0],
 			"fire_control_lock_type": "aim_hit",
 			"optical_sight_type": "crt",
-			"with_stabilizer": false,
-			"with_thermal_imager": false,
 			"zoom_max": 6,
+			"with_stabilizer": true,
+			"with_thermal_imager": true,
 			"weapons": [
 				"dragonrise_reforge_ywzj:cannon_125mm",
 				{

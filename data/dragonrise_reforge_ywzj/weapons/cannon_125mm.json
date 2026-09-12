@@ -3,7 +3,7 @@
 	"name": "125mm Cannon",
 	"caliber": 125,
 	"damage": 1200,
-	"velocity": 50,
+	"velocity": 20,
 	"headshot_multiplier": 1,
 	"recoil": 1,
 	"inaccuracy": 0.02,
