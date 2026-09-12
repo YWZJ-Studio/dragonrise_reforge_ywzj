@@ -5,6 +5,16 @@
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/j15t.png",
 	"animations": "dragonrise_reforge_ywzj:entity/j15t.animation",
 	"animation_controller": "dragonrise_reforge_ywzj:j15t_controller",
+	"special_bone_effects": [
+		{
+			"bone": "door",
+			"type": "transparent"
+		},
+		{
+			"bone": "bone3",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",
@@ -12,13 +22,6 @@
 		"engine_thrust": "ywzj_vehicle:jet_engine_thrust",
 		"passby": "ywzj_vehicle:jet_passby"
 	},
-	"special_bone_effects": [
-		{
-			"bone": "door",
-			"texture": "dragonrise_reforge_ywzj:textures/entity/j15t.png",
-			"type": "transparent"
-		}
-	],
 	"description": "vehicle.j15t.description",
 	"tab_index": 4060
 }

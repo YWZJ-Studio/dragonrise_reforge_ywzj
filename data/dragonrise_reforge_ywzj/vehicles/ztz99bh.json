@@ -67,7 +67,6 @@
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "turret_machine_gun",
 			"is_seat": false,
-			"base": "turret",
 			"rot_info": {
 				"x_rot_speed": 1.2,
 				"y_rot_speed": 0,
@@ -81,7 +80,6 @@
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "hmg",
 			"is_seat": false,
-			"base": "turret",
 			"parent_weapon_unit_aim": true,
 			"rot_info": {
 				"x_rot_speed": 1.2,
@@ -96,7 +94,6 @@
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "turret_smoke_grenade",
 			"is_seat": false,
-			"base": "turret",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
@@ -109,7 +106,6 @@
 			"structure_bone": "commander_machine_gun",
 			"seat_offset": [0.5, 1.7, 0.275],
 			"operator_on_weapon_unit": false,
-			"base": "turret",
 			"rot_info": {
 				"x_rot_speed": 4.5,
 				"y_rot_speed": 4.5,

@@ -30,8 +30,8 @@
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
 	"view_info": {
-		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_center_offset": [0, 5, 0],
+		"third_person_distance": 18,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
@@ -158,7 +158,6 @@
 			"ammo_capacity": 1,
 			"fire_control_sensor_type": "rf",
 			"is_seat": false,
-			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"weapons": ["dragonrise_reforge_ywzj:pl_12"]
 		},
@@ -200,7 +199,6 @@
 			"ammo_capacity": 1,
 			"fire_control_sensor_type": "rf",
 			"is_seat": false,
-			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"weapons": ["dragonrise_reforge_ywzj:pl_12"]
 		},
@@ -242,7 +240,6 @@
 			"ammo_capacity": 1,
 			"fire_control_sensor_type": "rf",
 			"is_seat": false,
-			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"weapons": ["dragonrise_reforge_ywzj:pl_12"]
 		},
@@ -284,7 +281,6 @@
 			"ammo_capacity": 1,
 			"fire_control_sensor_type": "rf",
 			"is_seat": false,
-			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"weapons": ["dragonrise_reforge_ywzj:pl_12"]
 		},
@@ -326,7 +322,6 @@
 			"ammo_capacity": 1,
 			"fire_control_sensor_type": "rf",
 			"is_seat": false,
-			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"weapons": ["dragonrise_reforge_ywzj:pl_12"]
 		},

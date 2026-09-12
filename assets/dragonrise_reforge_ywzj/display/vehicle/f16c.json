@@ -15,7 +15,6 @@
 	"special_bone_effects": [
 		{
 			"bone": "door",
-			"texture": "dragonrise_reforge_ywzj:textures/entity/f16c.png",
 			"type": "transparent"
 		}
 	],

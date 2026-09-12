@@ -75,7 +75,6 @@
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "turret_machine_gun",
 			"is_seat": false,
-			"base": "turret",
 			"rot_info": {
 				"x_rot_speed": 1,
 				"y_rot_speed": 1,
@@ -89,7 +88,6 @@
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "turret_smoke_grenade",
 			"is_seat": false,
-			"base": "turret",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0

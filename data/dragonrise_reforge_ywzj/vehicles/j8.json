@@ -26,8 +26,8 @@
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
 	"view_info": {
-		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_center_offset": [0, 5, 0],
+		"third_person_distance": 18,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
@@ -60,7 +60,7 @@
 				"y_rot_max": 0
 			},
 			"optical_sight_offset": [0, 0.6, 1.2],
-			"operator_view_offset": [-0.05, 1, 0],
+			"operator_view_offset": [-0.06, 1, 0],
 			"optical_sight_type": "none",
 			"zoom_max": 12,
 			"sub_part_unit_ids": ["radar"],

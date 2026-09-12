@@ -15,12 +15,10 @@
 	"special_bone_effects": [
 		{
 			"bone": "enghy",
-			"texture": "dragonrise_reforge_ywzj:textures/entity/j8.png",
 			"type": "muzzle_flash"
 		},
 		{
 			"bone": "glass",
-			"texture": "dragonrise_reforge_ywzj:textures/entity/j8.png",
 			"type": "transparent"
 		}
 	],
