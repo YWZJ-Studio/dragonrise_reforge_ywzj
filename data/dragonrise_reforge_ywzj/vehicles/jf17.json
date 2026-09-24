@@ -1,14 +1,14 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.02,
+		"thrust": 8000.0,
 		"thrust_k": 1.4,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
-		"air_drag_k_min": 0.002,
-		"air_drag_k_max": 0.008,
+		"air_drag_k_min": 2.0,
+		"air_drag_k_max": 8.0,
 		"lift_to_drag_k": 3,
 		"x_rot_input_drag_k": 1,
 		"y_rot_input_drag_k": 0.25,
@@ -19,29 +19,37 @@
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
 		"vortex_offsets": [
-			[6, 1.5, -3],
-			[-6, 1.5, -3]
+			[4.7314, 1.7269, -4.4961],
+			[-4.7314, 1.7269, -4.4961]
+		],
+		"afterburner_offsets": [
+			[0.0029, 1.9585, -7.2606, 0.88]
 		]
+	},
+	"physics_info": {
+		"mass": 1000,
+		"friction": 2000,
+		"destroy_explosion_velocity": 0.3
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
 	"view_info": {
 		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_distance": 16,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 0.00001
+		"energy_consumption_per_tick": 1e-05
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
 		"impact_multiplier": 3
 	},
 	"with_warning_receiver": true,
-	"center_offset": [0, 1.32578, 0],
+	"center_offset": [0.0, 1.4467, 0.0],
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/jf17",
 	"parts": [
 		{
@@ -49,7 +57,7 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.42156, 3.45313],
+			"seat_offset": [-0.0005, 2.5194, 3.446],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 0,
@@ -59,11 +67,13 @@
 				"y_rot_min": 0,
 				"y_rot_max": 0
 			},
-			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [0, 0.57031, -0.60937],
-			"optical_sight_type": "crt",
+			"optical_sight_offset": [0, 0, 0],
+			"operator_view_offset": [0.0, 0.0, 0.0],
+			"optical_sight_type": "none",
 			"zoom_max": 12,
-			"sub_part_unit_ids": ["radar"],
+			"sub_part_unit_ids": [
+				"radar"
+			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:type_23_3",
@@ -165,6 +175,5 @@
 			"is_seat": false,
 			"drag_k": 0.5
 		}
-	],
-	"experimental": true
+	]
 }

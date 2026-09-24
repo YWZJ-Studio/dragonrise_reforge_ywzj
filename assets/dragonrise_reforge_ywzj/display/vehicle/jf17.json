@@ -5,6 +5,12 @@
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/jf17.png",
 	"animations": "dragonrise_reforge_ywzj:entity/jf17.animation",
 	"animation_controller": "dragonrise_reforge_ywzj:jf17_controller",
+	"special_bone_effects": [
+		{
+			"bone": "hud",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",
