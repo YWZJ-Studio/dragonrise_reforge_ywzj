@@ -1,0 +1,23 @@
+{
+	"type": "ywzj_vehicle:aerial_bomb",
+	"drag_coefficient": 1.135,
+	"mass": 227,
+	"name": "Mk 82 Bomb",
+	"damage": 10,
+	"velocity": 0,
+	"recoil": 0,
+	"inaccuracy": 1,
+	"shoot_interval": 300,
+	"max_capacity": 1,
+	"reload": {
+		"time": 100,
+		"ammo": "ywzj_vehicle:ammo_aerial_bomb"
+	},
+	"penetration_depth": 0,
+	"explosion": {
+		"explode": true,
+		"damage": 256,
+		"radius": 16,
+		"destroy_block": true
+	}
+}
