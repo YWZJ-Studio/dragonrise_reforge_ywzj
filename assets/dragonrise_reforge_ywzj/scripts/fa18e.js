@@ -4,9 +4,12 @@ function updateBones(context) {
     const rollInput = context.getRollInput()
 
     const builder = createPoseBuilder()
-    builder.setRotation("LeftTailPlane2", -pitchInput * 16, 0, 0)
-    builder.setRotation("RightTailPlane2", -pitchInput * 16, 0, 0)
-    builder.setRotation("LeftFlap2", rollInput * 16, 0, 0)
-    builder.setRotation("RightFlap2", -rollInput * 16, 0, 0)
+    builder.setRotation("LeftFlap2", -pitchInput * 16, 0, 0)
+    builder.setRotation("RightFlap2", -pitchInput * 16, 0, 0)
+    builder.setRotation("aileron_left", rollInput * 16, 0, 0)
+    builder.setRotation("aileron_right", -rollInput * 16, 0, 0)
+    builder.setRotation("rudder_left", 0, -yawInput * 14, 0)
+    builder.setRotation("rudder_right", 0, -yawInput * 14, 0)
+    builder.setRotation("ctrl", -8 * pitchInput, 0, -8 * rollInput)
     return builder
 }
