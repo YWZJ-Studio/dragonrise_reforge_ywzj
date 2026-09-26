@@ -5,6 +5,12 @@
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/f16c.png",
 	"animations": "dragonrise_reforge_ywzj:entity/f16c.animation",
 	"animation_controller": "dragonrise_reforge_ywzj:f16c_controller",
+	"special_bone_effects": [
+		{
+			"bone": "bone",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:jet_engine_start",
 		"engine_stop": "ywzj_vehicle:jet_engine_stop",
@@ -12,12 +18,6 @@
 		"engine_thrust": "ywzj_vehicle:jet_engine_thrust",
 		"passby": "ywzj_vehicle:jet_passby"
 	},
-	"special_bone_effects": [
-		{
-			"bone": "door",
-			"type": "transparent"
-		}
-	],
 	"description": "vehicle.f16c.description",
 	"tab_index": 4150
 }
