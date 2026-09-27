@@ -6,8 +6,12 @@ function updateBones(context) {
     const builder = createPoseBuilder()
     builder.setRotation("wingLR", -pitchInput * 14, 0, 0)
     builder.setRotation("wingRR", -pitchInput * 14, 0, 0)
-    builder.setRotation("wingLB", -pitchInput * 10 + rollInput * 16, 0, 0)
-    builder.setRotation("wingRB", -pitchInput * 10 - rollInput * 16, 0, 0)
+    builder.setRotation("wingLB", rollInput * 16, 0, 0)
+    builder.setRotation("wingRB", rollInput * 16, 0, 0)
     builder.setRotation("weiyiR", 0, -yawInput * 14, 0)
+    builder.setRotation("ctrl", -8 * pitchInput, 0, -8 * rollInput)
+    const airToAir = String(context.getWeaponName("sighting_system", 2)) === "MICA"
+    context.setBoneVisible("hanger_aasm", !airToAir)
+    context.setBoneVisible("hanger_mica", airToAir)
     return builder
 }
