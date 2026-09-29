@@ -1,52 +1,55 @@
 {
-	"format_version": "1.21.0",
+	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.unknown",
+				"identifier": "geometry.camel.structure",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 17,
-				"visible_bounds_height": 6.5,
-				"visible_bounds_offset": [0, 2.75, 0]
+				"visible_bounds_width": 12,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
 			},
 			"bones": [
+				{
+					"name": "main_structure",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-12.7154, 0, -32], "size": [25.4308, 42.2218, 76.1192], "uv": [0, 0]}
+					]
+				},
 				{
 					"name": "vehicle_body",
 					"pivot": [0, 0, 0],
 					"cubes": [
-						{
-							"origin": [-8, 0, -8],
-							"size": [16, 16, 16],
-							"uv": {
-								"north": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"east": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"south": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"west": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"up": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								},
-								"down": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								}
-							}
-						}
+						{"origin": [-9, 20.8018, 3.8323], "size": [18, 21.42, 48.09], "uv": [0, 0]},
+						{"origin": [-6.1, 24.0218, -36.7677], "size": [12.2, 18.2, 40.6], "uv": [0, 0]},
+						{"origin": [-2.5, 27.2218, -42.9677], "size": [5, 11.1, 6.2], "uv": [0, 0]},
+						{"origin": [-80.8734, 48.8333, 20.2126], "size": [161.7468, 3.4132, 25.9283], "uv": [0, 0]},
+						{"origin": [-81.107, 21.667, 9.7927], "size": [162.214, 6.2538, 25.92], "uv": [0, 0]},
+						{"origin": [-20.63, 34.1918, -48.1277], "size": [41.26, 2.74, 17.11], "uv": [0, 0]},
+						{"origin": [-0.463, 28.1218, -54.6577], "size": [0.926, 18.8, 24.99], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "sighting_system",
+					"pivot": [0, 44.1218, 24.6323]
+				},
+				{
+					"name": "cannon_barrel",
+					"pivot": [0, 39.7888, 36.5625],
+					"cubes": [
+						{"origin": [1.4884, 39.5008, 36.5625], "size": [0.58, 0.576, 14.1552], "uv": [0, 0]},
+						{"origin": [-2.0684, 39.5008, 36.5625], "size": [0.58, 0.576, 14.1552], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "landing_gear",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-12.72, 0, 28.9523], "size": [3.92, 23.2418, 15.17], "uv": [0, 0]},
+						{"origin": [8.8, 0, 28.9523], "size": [3.92, 23.2418, 15.17], "uv": [0, 0]},
+						{"origin": [-0.5, 22.5718, -38.8277], "size": [1, 6.95, 3.8], "uv": [0, 0]}
 					]
 				}
 			]

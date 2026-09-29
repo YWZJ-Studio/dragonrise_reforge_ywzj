@@ -1,15 +1,17 @@
 {
-	"type": "ywzj_vehicle:rotary_wing_vehicle",
+	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"model": "dragonrise_reforge_ywzj:entity/camel",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/camel.png",
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/camel.png",
 	"animations": "dragonrise_reforge_ywzj:entity/camel.animation",
 	"animation_controller": "dragonrise_reforge_ywzj:camel_controller",
 	"sounds": {
-		"engine_start": "ywzj_vehicle:z10_engine_start",
-		"engine_stop": "ywzj_vehicle:z10_engine_stop",
-		"engine_run": "ywzj_vehicle:z10_engine_run"
+		"engine_start": "ywzj_vehicle:piston_engine_start",
+		"engine_stop": "ywzj_vehicle:piston_engine_stop",
+		"engine_run": "ywzj_vehicle:piston_engine_run",
+		"engine_thrust": "ywzj_vehicle:piston_engine_thrust",
+		"passby": "ywzj_vehicle:piston_passby"
 	},
 	"description": "vehicle.camel.description",
-	"tab_index": 3110
+	"tab_index": 4120
 }
