@@ -1,0 +1,30 @@
+{
+	"type": "ywzj_vehicle:missile",
+	"name": "ZBL-08 ATGM R",
+	"damage": 1000,
+	"headshot_multiplier": 1.5,
+	"shoot_interval": 2000,
+	"max_capacity": 1,
+	"reload": {
+		"time": 100,
+		"ammo": "ywzj_vehicle:ammo_missile"
+	},
+	"x_rot_max": 15,
+	"x_rot_min": -15,
+	"y_rot_max": 15,
+	"y_rot_min": -15,
+	"explosion": {
+		"explode": true,
+		"damage": 100,
+		"radius": 5,
+		"destroy_block": true
+	},
+	"seeker_fov": 0,
+	"mass": 50,
+	"thrust": 12000,
+	"motor_burn_time": 600,
+	"drag_coefficient": 0.25,
+	"max_g": 18,
+	"reference_speed": 3,
+	"guidance": "SACLOS"
+}

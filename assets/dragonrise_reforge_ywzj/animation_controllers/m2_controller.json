@@ -1,28 +1,33 @@
 {
 	"name": "m2_controller",
-	"script": "dragonrise_reforge_ywzj:m2",
-	"parameters": {},
 	"event_animations": {
-		"m2_fire": ["m2_shoot"]
+		"turret_fire": [
+			"turret_fire"
+		]
 	},
 	"graph": {
-		"type": "merge",
-		"inputs": [
-			{
-				"type": "additive",
-				"base": {
-					"type": "merge",
-					"inputs": [
-						{
-							"type": "script",
-							"function": "updateBones"
-						}
-					]
+		"type": "additive",
+		"base": {
+			"type": "bone_binding",
+			"part_bindings": [
+				{
+					"bone": "weapon_yaw",
+					"part": "turret",
+					"rotation_type": "y",
+					"axis": "y",
+					"invert": true
 				},
-				"add": {
-					"type": "event_animation"
+				{
+					"bone": "weapon_pitch",
+					"part": "turret",
+					"rotation_type": "x",
+					"axis": "x",
+					"invert": false
 				}
-			}
-		]
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
 	}
 }

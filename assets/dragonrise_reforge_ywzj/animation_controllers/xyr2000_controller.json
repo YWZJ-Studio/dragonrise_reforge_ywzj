@@ -12,19 +12,133 @@
 		"type": "merge",
 		"inputs": [
 			{
-				"type": "loop_animation",
-				"ref": "static"
+				"type": "merge",
+				"inputs": [
+					{
+						"type": "merge",
+						"inputs": [
+							{
+								"type": "loop_animation",
+								"ref": "static"
+							},
+							{
+								"type": "additive",
+								"base": {
+									"type": "bone_binding",
+									"special_bindings": [],
+									"part_bindings": []
+								},
+								"add": {
+									"type": "event_animation"
+								}
+							}
+						]
+					},
+					{
+						"type": "bone_binding",
+						"special_bindings": [
+							{
+								"bones": [
+									"track_spin_bone"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							},
+							{
+								"bones": [
+									"track_spin_bone11"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							},
+							{
+								"bones": [
+									"track_spin_bone12"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							},
+							{
+								"bones": [
+									"track_spin_bone13"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							},
+							{
+								"bones": [
+									"track_spin_bone14"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							},
+							{
+								"bones": [
+									"track_spin_bone15"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							},
+							{
+								"bones": [
+									"track_spin_bone3"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							},
+							{
+								"bones": [
+									"track_spin_bone6"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							},
+							{
+								"bones": [
+									"track_spin_bone7"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							},
+							{
+								"bones": [
+									"track_spin_bone8"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.6562312
+							}
+						]
+					}
+				]
 			},
 			{
-				"type": "additive",
-				"base": {
-					"type": "bone_binding",
-					"special_bindings": [],
-					"part_bindings": []
-				},
-				"add": {
-					"type": "event_animation"
-				}
+				"type": "bone_binding",
+				"part_bindings": [
+					{
+						"bone": "weapon_drive_yaw",
+						"part": "turret",
+						"rotation_type": "y",
+						"axis": "y",
+						"invert": true
+					},
+					{
+						"bone": "weapon_drive_pitch",
+						"part": "turret",
+						"rotation_type": "x",
+						"axis": "x",
+						"invert": false
+					}
+				]
 			}
 		]
 	}

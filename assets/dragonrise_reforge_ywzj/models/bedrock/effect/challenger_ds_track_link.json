@@ -1,0 +1,42 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.challenger_ds_track_link",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0.0, 0.0, 0.0]
+			},
+			"bones": [
+				{
+					"name": "vehicle_forward",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
+					"name": "track_link_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0.0, 0.0, 0.0],
+					"cubes": [
+						{
+							"origin": [-5.8912, -0.9072, -2.0],
+							"size": [11.7824, 1.8144, 4.0],
+							"uv": {
+								"north": {"uv": [394, 351], "uv_size": [12, 2]},
+								"east": {"uv": [327.50110212916286, 275], "uv_size": [3.9977957416742216, 2]},
+								"south": {"uv": [394, 353], "uv_size": [12, 2]},
+								"west": {"uv": [332.50110212916286, 223], "uv_size": [3.9977957416742216, 2]},
+								"up": {"uv": [486, 199.5011021291629], "uv_size": [17, 3.9977957416742216]},
+								"down": {"uv": [466, 203.4988978708371], "uv_size": [17, -3.9977957416742216]}
+							}
+						}
+					],
+					"parent": "vehicle_forward"
+				}
+			]
+		}
+	]
+}

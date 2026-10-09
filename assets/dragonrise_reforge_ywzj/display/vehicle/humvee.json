@@ -4,10 +4,12 @@
 	"texture": "dragonrise_reforge_ywzj:textures/entity/humvee.png",
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/humvee.png",
 	"sounds": {
-		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
-		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+		"engine_start": "ywzj_vehicle:lav150_engine_start",
+		"engine_idle": "ywzj_vehicle:truck_engine_idle",
+		"engine_run": "ywzj_vehicle:truck_engine_run"
 	},
 	"description": "vehicle.humvee.description",
-	"tab_index": 1190
+	"tab_index": 1190,
+	"animation_controller": "dragonrise_reforge_ywzj:humvee_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/humvee.animation"
 }

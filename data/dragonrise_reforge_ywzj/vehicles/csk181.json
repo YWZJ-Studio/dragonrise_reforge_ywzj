@@ -1,50 +1,172 @@
 {
 	"type": "ywzj_vehicle:wheeled_vehicle",
 	"attributes": {
-		"brake_acceleration": 0.03,
-		"forward_acceleration": 0.012,
-		"backward_acceleration": 0.012,
+		"brake_force": 74976.0,
+		"forward_force": 29990.4,
+		"backward_force": 29990.4,
 		"max_speed_forward": 0.6,
 		"max_speed_backward": 0.2,
-		"turn_acceleration": 1.2,
+		"turn_step": 0.35,
 		"max_turn": 2.5
 	},
 	"max_health": 300,
 	"view_info": {
-		"third_person_center_offset": [0, 2, 0],
-		"third_person_distance": 5,
-		"sound_distance": 5
+		"third_person_center_offset": [0, 1.514, 0],
+		"third_person_distance": 8.8,
+		"sound_distance": 5,
+		"passenger_view_rot": {
+			"rot_by_vehicle_in_third_person": false,
+			"rot_by_vehicle_in_operator": true
+		}
 	},
 	"energy_info": {
-		"energy_capacity": 0.5,
-		"energy_consumption_per_tick": 1e-5
+		"energy_capacity": 252,
+		"energy_consumption_per_tick": 0.000416667
+	},
+	"center_offset": [0.0, 1.1646656, 0.0],
+	"physics_info": {
+		"mass": 6248,
+		"friction": 12496,
+		"destroy_explosion_velocity": 0.3,
+		"suspension_response": 0.4,
+		"center": [0, -0.58233, 0]
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/csk181",
 	"parts": [
 		{
-			"id": "turret",
-			"name": "turret",
-			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "turret",
-			"seat_offset": [0, 1.5, -0.5],
-			"rot_info": {
-				"x_rot_speed": 1.5,
-				"y_rot_speed": 1.5,
-				"x_rot_max": 5,
-				"x_rot_min": -15
-			},
-			"optical_sight_offset": [0.5, 1, 0.2],
-			"operator_view_offset": [0, 1, 0],
-			"fire_control_lock_type": "aim_hit",
-			"optical_sight_type": "operator",
-			"zoom_max": 4,
-			"weapons": ["ywzj_vehicle:gun_12.7mm"]
+			"id": "driver_seat_1",
+			"name": "part.dragonrise_reforge_ywzj.driver_seat",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.6875, 1.9543312, 1.1867256],
+			"owner_view_offset": [0.6875, 1.9543312, 1.1867256],
+			"dismount_offset": [2.094, 0.3, 1.1867256]
 		},
 		{
-			"id": "seat",
-			"name": "seat",
+			"id": "passenger_seat_1",
+			"name": "part.dragonrise_reforge_ywzj.passenger_seat_1",
 			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0, 1.3, 1]
+			"is_seat": true,
+			"seat_offset": [-0.6875, 1.9543312, 1.1867256],
+			"owner_view_offset": [-0.6875, 1.9543312, 1.1867256],
+			"dismount_offset": [-2.094, 0.3, 1.1867256]
+		},
+		{
+			"id": "passenger_seat_2",
+			"name": "part.dragonrise_reforge_ywzj.passenger_seat_2",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.6875, 1.9543312, -0.6882744],
+			"owner_view_offset": [0.6875, 1.9543312, -0.6882744],
+			"dismount_offset": [2.094, 0.3, -0.6882744]
+		},
+		{
+			"id": "passenger_seat_3",
+			"name": "part.dragonrise_reforge_ywzj.passenger_seat_3",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.6875, 1.9543312, -0.6882744],
+			"owner_view_offset": [-0.6875, 1.9543312, -0.6882744],
+			"dismount_offset": [-2.094, 0.3, -0.6882744]
+		},
+		{
+			"id": "turret",
+			"name": "part.dragonrise_reforge_ywzj.turret",
+			"type": "ywzj_vehicle:weapon",
+			"render_bone": "turret",
+			"structure_bone": "turret",
+			"ammo_capacity": 300,
+			"fire_control_sensor_type": "none",
+			"is_seat": true,
+			"seat_offset": [0.0, 2.3918312, -0.0007744],
+			"owner_view_offset": [0.0, 2.3918312, -0.0007744],
+			"operator_on_weapon_unit": true,
+			"rot_info": {
+				"x_rot_speed": 2,
+				"y_rot_speed": 3,
+				"x_rot_max": 10,
+				"x_rot_min": -25
+			},
+			"optical_sight_offset": [0.3585931, 0.2320312, 0.3641788],
+			"operator_view_offset": [0.0263625, -0.0051251, -0.409425],
+			"optical_sight_type": "operator",
+			"zoom_max": 4,
+			"with_stabilizer": false,
+			"weapons": [
+				"ywzj_vehicle:gun_12.7mm"
+			]
+		},
+		{
+			"id": "suspension_wheelR1Turn",
+			"name": "part.dragonrise_reforge_ywzj.suspension",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"defense_stats": {
+				"damage_threshold": 0
+			},
+			"render_bone": "wheelR1Turn",
+			"structure_bone": "wheelR1Turn",
+			"is_seat": false,
+			"spring_stiffness": 187440.0,
+			"damping": 15400,
+			"rest_length": 0.4,
+			"max_compression": 0.4,
+			"max_extension": 0.24,
+			"max_droop": 0.22
+		},
+		{
+			"id": "suspension_wheelL1Turn",
+			"name": "part.dragonrise_reforge_ywzj.suspension",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"defense_stats": {
+				"damage_threshold": 0
+			},
+			"render_bone": "wheelL1Turn",
+			"structure_bone": "wheelL1Turn",
+			"is_seat": false,
+			"spring_stiffness": 187440.0,
+			"damping": 15400,
+			"rest_length": 0.4,
+			"max_compression": 0.4,
+			"max_extension": 0.24,
+			"max_droop": 0.22
+		},
+		{
+			"id": "suspension_wheelR2",
+			"name": "part.dragonrise_reforge_ywzj.suspension",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"defense_stats": {
+				"damage_threshold": 0
+			},
+			"render_bone": "wheelR2",
+			"structure_bone": "wheelR2",
+			"is_seat": false,
+			"spring_stiffness": 187440.0,
+			"damping": 15400,
+			"rest_length": 0.4,
+			"max_compression": 0.4,
+			"max_extension": 0.24,
+			"max_droop": 0.22
+		},
+		{
+			"id": "suspension_wheelL2",
+			"name": "part.dragonrise_reforge_ywzj.suspension",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"defense_stats": {
+				"damage_threshold": 0
+			},
+			"render_bone": "wheelL2",
+			"structure_bone": "wheelL2",
+			"is_seat": false,
+			"spring_stiffness": 187440.0,
+			"damping": 15400,
+			"rest_length": 0.4,
+			"max_compression": 0.4,
+			"max_extension": 0.24,
+			"max_droop": 0.22
 		}
 	],
 	"experimental": true

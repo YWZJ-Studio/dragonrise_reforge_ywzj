@@ -1,0 +1,132 @@
+{
+	"name": "humvee_controller",
+	"parameters": {},
+	"event_animations": {
+		"turret_fire": [
+			"barrel_shoot"
+		]
+	},
+	"graph": {
+		"type": "merge",
+		"inputs": [
+			{
+				"type": "additive",
+				"base": {
+					"type": "merge",
+					"inputs": [
+						{
+							"type": "bone_binding",
+							"special_bindings": [
+								{
+									"bones": [
+										"wheelL1Turn"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.51485
+								},
+								{
+									"bones": [
+										"wheelL1Turn"
+									],
+									"source": "steering_angle",
+									"axis": "y",
+									"multiplier": 1,
+									"min": -30,
+									"max": 30
+								},
+								{
+									"bones": [
+										"wheelR1Turn"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.51485
+								},
+								{
+									"bones": [
+										"wheelR1Turn"
+									],
+									"source": "steering_angle",
+									"axis": "y",
+									"multiplier": 1,
+									"min": -30,
+									"max": 30
+								},
+								{
+									"bones": [
+										"wheelL2"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.51485
+								},
+								{
+									"bones": [
+										"wheelR2"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.51485
+								}
+							],
+							"part_bindings": [
+								{
+									"bone": "turret",
+									"part": "turret",
+									"rotation_type": "y",
+									"axis": "y",
+									"invert": true
+								},
+								{
+									"bone": "barrel",
+									"part": "turret",
+									"rotation_type": "x",
+									"axis": "x",
+									"invert": true
+								}
+							]
+						}
+					]
+				},
+				"add": {
+					"type": "event_animation"
+				}
+			},
+			{
+				"type": "switchable_animation",
+				"ref": "door_front_left"
+			},
+			{
+				"type": "switchable_animation",
+				"ref": "door_rear_left"
+			},
+			{
+				"type": "switchable_animation",
+				"ref": "door_front_right"
+			},
+			{
+				"type": "switchable_animation",
+				"ref": "door_rear_right"
+			}
+		]
+	},
+	"switchable_animations": {
+		"door_front_left": {
+			"part_id": "door_front_left",
+			"animation": "door_front_left"
+		},
+		"door_rear_left": {
+			"part_id": "door_rear_left",
+			"animation": "door_rear_left"
+		},
+		"door_front_right": {
+			"part_id": "door_front_right",
+			"animation": "door_front_right"
+		},
+		"door_rear_right": {
+			"part_id": "door_rear_right",
+			"animation": "door_rear_right"
+		}
+	}
+}

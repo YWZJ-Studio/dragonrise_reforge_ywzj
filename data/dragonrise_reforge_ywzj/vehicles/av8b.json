@@ -1,14 +1,14 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.02,
+		"thrust": 54112,
 		"thrust_k": 1.4,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
-		"air_drag_k_min": 0.002,
-		"air_drag_k_max": 0.008,
+		"air_drag_k_min": 13.528,
+		"air_drag_k_max": 54.112,
 		"lift_to_drag_k": 3,
 		"x_rot_input_drag_k": 1,
 		"y_rot_input_drag_k": 0.25,
@@ -19,8 +19,12 @@
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
 		"vortex_offsets": [
-			[6, 1.5, -3],
-			[-6, 1.5, -3]
+			[4.1393, 1.2224, -2.2546],
+			[-4.1393, 1.2224, -2.2546]
+		],
+		"afterburner_offsets": [
+			[0.695, 1.4237, -0.5339, 0.32],
+			[-0.695, 1.4237, -0.5339, 0.32]
 		]
 	},
 	"landing_gear_part_id": "landing_gear",
@@ -34,14 +38,19 @@
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 0.00001
+		"energy_consumption_per_tick": 1e-05
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
 		"impact_multiplier": 3
 	},
 	"with_warning_receiver": true,
-	"center_offset": [0, 1.125, 0],
+	"center_offset": [0.0, 1.2396, -0.0835],
+	"physics_info": {
+		"mass": 6764,
+		"friction": 13528,
+		"destroy_explosion_velocity": 0.3
+	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/av8b",
 	"parts": [
 		{
@@ -49,21 +58,23 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.12, 3],
+			"seat_offset": [0.0, 2.2247, 3.5094],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
-				"x_rot_min": 0,
 				"x_rot_max": 0,
-				"y_rot_min": 0,
-				"y_rot_max": 0
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0
 			},
-			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [0, 0.82812, 2.9375],
-			"optical_sight_type": "crt",
+			"optical_sight_offset": [0, 0, 0],
+			"operator_view_offset": [0.0, 0.0, 0.0],
+			"optical_sight_type": "none",
 			"zoom_max": 12,
-			"sub_part_unit_ids": ["radar"],
+			"sub_part_unit_ids": [
+				"radar"
+			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:gsh_30_1",
@@ -74,12 +85,12 @@
 					"part_unit_id": "rocket"
 				},
 				{
-					"id": "dragonrise_reforge_ywzj:bomb_500kg",
+					"id": "dragonrise_reforge_ywzj:gbu_12",
 					"part_unit_id": "bomb"
 				},
 				{
 					"id": "dragonrise_reforge_ywzj:pl_8",
-					"part_unit_id": "missile"
+					"part_unit_id": "pl_8"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -105,46 +116,47 @@
 			"name": "rocket",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "rocket",
+			"render_model": true,
+			"ammo_capacity": 4,
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 28
+			}
 		},
 		{
 			"id": "bomb",
 			"name": "bomb",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "bomb",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "big_cross",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "ccip"
+			}
 		},
 		{
-			"id": "missile",
-			"name": "missile",
+			"id": "pl_8",
+			"name": "pl_8",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "missile",
+			"structure_bone": "pl_8",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "ir"
+			}
 		},
 		{
 			"id": "decoy_flare",
@@ -168,8 +180,8 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 30,
-				"y_rot_min": -60,
-				"y_rot_max": 60
+				"y_rot_max": 60,
+				"y_rot_min": -60
 			},
 			"radar_type": "AN/APG-65",
 			"scan_sector_angle": 90,

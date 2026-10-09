@@ -1,38 +1,122 @@
 {
 	"name": "zlt11_controller",
-	"script": "dragonrise_reforge_ywzj:zlt11",
 	"parameters": {},
 	"event_animations": {
-		"turret_fire": ["barrel_shoot"]
-	},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
-		}
+		"turret_fire": [
+			"barrel_shoot"
+		]
 	},
 	"graph": {
-		"type": "merge",
-		"inputs": [
-			{
-				"type": "loop_animation",
-				"ref": "static"
-			},
-			{
-				"type": "additive",
-				"base": {
+		"type": "additive",
+		"base": {
+			"type": "merge",
+			"inputs": [
+				{
 					"type": "bone_binding",
 					"special_bindings": [
 						{
-							"bones": ["wheelL2", "wheelL3"],
-							"source": "left_wheel_rotation",
+							"bones": [
+								"wheelL0Turn"
+							],
+							"source": "wheel_rotation",
 							"axis": "x",
-							"param": -0.375
+							"param": -0.656283
 						},
 						{
-							"bones": ["wheelR2", "wheelR3"],
-							"source": "right_wheel_rotation",
+							"bones": [
+								"wheelL0Turn"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1,
+							"min": -30,
+							"max": 30
+						},
+						{
+							"bones": [
+								"wheelL1Turn"
+							],
+							"source": "wheel_rotation",
 							"axis": "x",
-							"param": -0.375
+							"param": -0.656283
+						},
+						{
+							"bones": [
+								"wheelL1Turn"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1,
+							"min": -15,
+							"max": 15
+						},
+						{
+							"bones": [
+								"wheelL2"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.656283
+						},
+						{
+							"bones": [
+								"wheelL3"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.656283
+						},
+						{
+							"bones": [
+								"wheelR0Turn"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.656283
+						},
+						{
+							"bones": [
+								"wheelR0Turn"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1,
+							"min": -30,
+							"max": 30
+						},
+						{
+							"bones": [
+								"wheelR1Turn"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.656283
+						},
+						{
+							"bones": [
+								"wheelR1Turn"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1,
+							"min": -15,
+							"max": 15
+						},
+						{
+							"bones": [
+								"wheelR2"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.656283
+						},
+						{
+							"bones": [
+								"wheelR3"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.656283
 						}
 					],
 					"part_bindings": [
@@ -48,14 +132,14 @@
 							"part": "turret",
 							"rotation_type": "x",
 							"axis": "x",
-							"invert": false
+							"invert": true
 						},
 						{
 							"bone": "passengerWeaponStationYaw",
 							"part": "commander_machine_gun",
 							"rotation_type": "y",
 							"axis": "y",
-							"invert": false
+							"invert": true
 						},
 						{
 							"bone": "passengerWeaponStationPitch",
@@ -65,11 +149,11 @@
 							"invert": true
 						}
 					]
-				},
-				"add": {
-					"type": "event_animation"
 				}
-			}
-		]
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
 	}
 }

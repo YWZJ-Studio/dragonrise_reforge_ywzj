@@ -11,25 +11,30 @@
 	},
 	"max_health": 1500,
 	"view_info": {
-		"third_person_center_offset": [0, 3, 0],
+		"third_person_center_offset": [0.0, 3.0, 0.0],
 		"third_person_distance": 10,
 		"sound_distance": 7
 	},
 	"energy_info": {
 		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-5
+		"energy_consumption_per_tick": 1e-05
 	},
 	"physics_info": {
-		"can_destroy_block": true
+		"mass": 18112,
+		"friction": 36224,
+		"can_destroy_block": true,
+		"suspension_response": 0.25
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/aav7a1",
 	"parts": [
 		{
-			"id": "weapon_station",
-			"name": "weapon_station",
+			"id": "turret",
+			"name": "turret",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "vehicle_body",
-			"seat_offset": [1, 1.14, 2.938],
+			"render_bone": "weapon_drive_yaw",
+			"structure_bone": "turret",
+			"seat_offset": [1.0, 2.505375, 2.9375],
+			"seat_rot": 0,
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 3,
@@ -39,13 +44,31 @@
 				"y_rot_max": 180,
 				"y_rot_min": -180
 			},
-			"optical_sight_offset": [0, 0.5, 1],
-			"operator_view_offset": [0, 1, 0],
+			"optical_sight_offset": [0.0591097, 0.4579197, 0.3074359],
+			"operator_view_offset": [2.0591094, -0.1270659, 1.9094236],
 			"optical_sight_type": "crt",
 			"zoom_max": 8,
+			"bolts": [
+				{
+					"offset": [-0.3098156, 0.0578863, -0.1301725],
+					"barrel_length": 1.2656249973480957,
+					"x_rot": 0,
+					"y_rot": 0
+				},
+				{
+					"offset": [0.3229969, 0.0735112, 0.0],
+					"barrel_length": 1.1354524970713065,
+					"x_rot": 0,
+					"y_rot": 0
+				}
+			],
 			"weapons": [
 				"dragonrise_reforge_ywzj:grenade_40mm",
-				"ywzj_vehicle:gun_12.7mm"
+				{
+					"id": "ywzj_vehicle:gun_12.7mm",
+					"part_unit_id": "turret_machine_gun",
+					"secondary": true
+				}
 			]
 		},
 		{
@@ -53,160 +76,393 @@
 			"name": "seat_2",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [-1, 1.703, 1.375],
-			"owner_view_offset": [-1, 1.703, 1.375]
+			"seat_offset": [-1.0, 3.3125, 1.375],
+			"owner_view_offset": [-1.0, 3.3125, 1.375],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat_3",
 			"name": "seat_3",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [1.125, 3.1875, 1.375],
+			"owner_view_offset": [1.125, 3.1875, 1.375],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat_4",
 			"name": "seat_4",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [0.0, 2.75, 0.75],
+			"owner_view_offset": [0.0, 2.75, 0.75],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat_5",
 			"name": "seat_5",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [-1.0, 2.75, 0.75],
+			"owner_view_offset": [-1.0, 2.75, 0.75],
+			"seat_rot": -90
 		},
 		{
 			"id": "seat_6",
 			"name": "seat_6",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [1.0, 2.75, 0.0],
+			"owner_view_offset": [1.0, 2.75, 0.0],
+			"seat_rot": 90
 		},
 		{
 			"id": "seat_7",
 			"name": "seat_7",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [0.0, 2.75, 0.0],
+			"owner_view_offset": [0.0, 2.75, 0.0],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat_8",
 			"name": "seat_8",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [-1.0, 2.75, 0.0],
+			"owner_view_offset": [-1.0, 2.75, 0.0],
+			"seat_rot": -90
 		},
 		{
 			"id": "seat_9",
 			"name": "seat_9",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [1.0, 2.75, -0.75],
+			"owner_view_offset": [1.0, 2.75, -0.75],
+			"seat_rot": 90
 		},
 		{
 			"id": "seat_10",
 			"name": "seat_10",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [0.0, 2.75, -0.75],
+			"owner_view_offset": [0.0, 2.75, -0.75],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat_11",
 			"name": "seat_11",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [-1.0, 2.75, -0.75],
+			"owner_view_offset": [-1.0, 2.75, -0.75],
+			"seat_rot": -90
 		},
 		{
 			"id": "seat_12",
 			"name": "seat_12",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [1.0, 2.75, -1.5],
+			"owner_view_offset": [1.0, 2.75, -1.5],
+			"seat_rot": 90
 		},
 		{
 			"id": "seat_13",
 			"name": "seat_13",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [0.0, 2.75, -1.5],
+			"owner_view_offset": [0.0, 2.75, -1.5],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat_14",
 			"name": "seat_14",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [-1.0, 2.75, -1.5],
+			"owner_view_offset": [-1.0, 2.75, -1.5],
+			"seat_rot": -90
 		},
 		{
 			"id": "seat_15",
 			"name": "seat_15",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [1.0, 2.75, -2.25],
+			"owner_view_offset": [1.0, 2.75, -2.25],
+			"seat_rot": 90
 		},
 		{
 			"id": "seat_16",
 			"name": "seat_16",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [0.0, 2.75, -2.25],
+			"owner_view_offset": [0.0, 2.75, -2.25],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat_17",
 			"name": "seat_17",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [-1.0, 2.75, -2.25],
+			"owner_view_offset": [-1.0, 2.75, -2.25],
+			"seat_rot": -90
 		},
 		{
 			"id": "seat_18",
 			"name": "seat_18",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [1.0, 2.75, -3.0],
+			"owner_view_offset": [1.0, 2.75, -3.0],
+			"seat_rot": 90
 		},
 		{
 			"id": "seat_19",
 			"name": "seat_19",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [0.0, 2.75, -3.0],
+			"owner_view_offset": [0.0, 2.75, -3.0],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat_20",
 			"name": "seat_20",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [-1.0, 2.75, -3.0],
+			"owner_view_offset": [-1.0, 2.75, -3.0],
+			"seat_rot": -90
 		},
 		{
 			"id": "seat_21",
 			"name": "seat_21",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [1.125, 1.578, 1.375],
-			"owner_view_offset": [1.125, 1.578, 1.375]
+			"seat_offset": [1.0, 2.75, -3.75],
+			"owner_view_offset": [1.0, 2.75, -3.75],
+			"seat_rot": 90
+		},
+		{
+			"id": "track",
+			"name": "track",
+			"type": "ywzj_vehicle:track",
+			"structure_bone": "tracks"
+		},
+		{
+			"id": "door_ramp",
+			"name": "part.dragonrise_reforge_ywzj.door_ramp",
+			"type": "ywzj_vehicle:door",
+			"render_bone": "door_ramp_drive",
+			"structure_bone": "door_ramp",
+			"is_seat": false,
+			"detachable": false
+		},
+		{
+			"id": "turret_machine_gun",
+			"name": "turret_machine_gun",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "turret_mg",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0,
+				"x_rot_max": 0,
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0,
+				"x_rot": 0,
+				"y_rot": 0
+			}
+		},
+		{
+			"id": "suspension_left_1",
+			"name": "suspension_left_1",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelL0",
+			"structure_bone": "suspension_left_1",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_2",
+			"name": "suspension_left_2",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelL1",
+			"structure_bone": "suspension_left_2",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_3",
+			"name": "suspension_left_3",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelL2",
+			"structure_bone": "suspension_left_3",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_4",
+			"name": "suspension_left_4",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelL3",
+			"structure_bone": "suspension_left_4",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_5",
+			"name": "suspension_left_5",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelL4",
+			"structure_bone": "suspension_left_5",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_6",
+			"name": "suspension_left_6",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelL5",
+			"structure_bone": "suspension_left_6",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_1",
+			"name": "suspension_right_1",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelR0",
+			"structure_bone": "suspension_right_1",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_2",
+			"name": "suspension_right_2",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelR1",
+			"structure_bone": "suspension_right_2",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_3",
+			"name": "suspension_right_3",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelR2",
+			"structure_bone": "suspension_right_3",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_4",
+			"name": "suspension_right_4",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelR3",
+			"structure_bone": "suspension_right_4",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_5",
+			"name": "suspension_right_5",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelR4",
+			"structure_bone": "suspension_right_5",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_6",
+			"name": "suspension_right_6",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheelR5",
+			"structure_bone": "suspension_right_6",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
 		}
 	],
 	"experimental": true

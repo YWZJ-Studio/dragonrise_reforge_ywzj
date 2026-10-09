@@ -1,0 +1,42 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.2s25m_track_link",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0.0, 0.0, 0.0]
+			},
+			"bones": [
+				{
+					"name": "vehicle_forward",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
+					"name": "track_link_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0.0, 0.0, 0.0],
+					"cubes": [
+						{
+							"origin": [-3.310705, -0.49325, -2.0],
+							"size": [6.62141, 0.9865, 4.0],
+							"uv": {
+								"north": {"uv": [436, 150], "uv_size": [8, 1]},
+								"east": {"uv": [419.9277575555899, 51], "uv_size": [5.144484888820229, 1]},
+								"south": {"uv": [436, 155], "uv_size": [8, 1]},
+								"west": {"uv": [419.9277575555899, 52], "uv_size": [5.144484888820229, 1]},
+								"up": {"uv": [475, 312.9277575555899], "uv_size": [14, 5.144484888820229]},
+								"down": {"uv": [489, 318.0722424444101], "uv_size": [14, -5.144484888820229]}
+							}
+						}
+					],
+					"parent": "vehicle_forward"
+				}
+			]
+		}
+	]
+}

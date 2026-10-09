@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.zbd04a_track_link",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "track_link_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0.0, 0.0, 180.0],
+					"cubes": [
+						{
+							"origin": [-3.9375, -0.75, -1.5],
+							"size": [7.875, 1.5, 3.0],
+							"uv": {
+								"north": {"uv": [12, 7], "uv_size": [10, 2]},
+								"east": {"uv": [4, 6], "uv_size": [3, 2]},
+								"south": {"uv": [20, 9], "uv_size": [10, 2]},
+								"west": {"uv": [7, 6], "uv_size": [3, 2]},
+								"up": {"uv": [0, 10], "uv_size": [10, 3]},
+								"down": {"uv": [10, 13], "uv_size": [10, -3]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

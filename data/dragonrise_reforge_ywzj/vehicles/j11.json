@@ -1,14 +1,14 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.02,
+		"thrust": 125600,
 		"thrust_k": 1.4,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
-		"air_drag_k_min": 0.002,
-		"air_drag_k_max": 0.008,
+		"air_drag_k_min": 31.4,
+		"air_drag_k_max": 125.6,
 		"lift_to_drag_k": 3,
 		"x_rot_input_drag_k": 1,
 		"y_rot_input_drag_k": 0.25,
@@ -18,8 +18,14 @@
 		"x_turn_rate": 2,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [[6.4921875, 1.76875, -6.184375], [-6.4921875, 1.76875, -6.184375]],
-		"afterburner_offsets": [[1.028125, 1.76875, -7.55625, 0.65], [-1.028125, 1.76875, -7.55625, 0.65]]
+		"vortex_offsets": [
+			[6.4921875, 1.76875, -6.184375],
+			[-6.4921875, 1.76875, -6.184375]
+		],
+		"afterburner_offsets": [
+			[1.028125, 1.76875, -7.55625, 0.65],
+			[-1.028125, 1.76875, -7.55625, 0.65]
+		]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
@@ -32,7 +38,7 @@
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 0.00001
+		"energy_consumption_per_tick": 1e-05
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
@@ -40,6 +46,10 @@
 	},
 	"with_warning_receiver": true,
 	"center_offset": [0, 1.58594, 0],
+	"physics_info": {
+		"mass": 15700,
+		"friction": 31400
+	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/j11",
 	"parts": [
 		{
@@ -52,16 +62,18 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
-				"x_rot_min": 0,
 				"x_rot_max": 0,
-				"y_rot_min": 0,
-				"y_rot_max": 0
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0
 			},
-			"optical_sight_offset": [0, 0, 0.1],
-			"operator_view_offset": [0.4296875, 0.05, -1.9],
-			"optical_sight_type": "crt",
+			"optical_sight_offset": [0, 0, 0],
+			"operator_view_offset": [0, 0, 0],
+			"optical_sight_type": "none",
 			"zoom_max": 12,
-			"sub_part_unit_ids": ["radar"],
+			"sub_part_unit_ids": [
+				"radar"
+			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:gsh_30_1",
@@ -99,32 +111,32 @@
 			"name": "pl_10",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pl_10",
+			"render_model": true,
+			"ammo_capacity": 4,
+			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 4,
-			"render_model": true,
-			"fire_control_sensor_type": "ir"
+			}
 		},
 		{
 			"id": "pl_12",
 			"name": "pl_12",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pl_12",
+			"render_model": true,
+			"ammo_capacity": 6,
+			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 6,
-			"render_model": true,
-			"fire_control_sensor_type": "rf"
+			}
 		},
 		{
 			"id": "decoy_flare",
@@ -148,8 +160,8 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 30,
-				"y_rot_min": -60,
-				"y_rot_max": 60
+				"y_rot_max": 60,
+				"y_rot_min": -60
 			},
 			"radar_type": "Type 1493",
 			"scan_sector_angle": 90,

@@ -2,37 +2,31 @@
 	"name": "uh60_controller",
 	"script": "dragonrise_reforge_ywzj:uh60",
 	"parameters": {},
-	"event_animations": {},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
-		}
-	},
 	"graph": {
 		"type": "merge",
 		"inputs": [
 			{
-				"type": "loop_animation",
-				"ref": "static"
+				"type": "switchable_animation",
+				"ref": "door"
 			},
 			{
-				"type": "additive",
-				"base": {
-					"type": "bone_binding",
-					"special_bindings": [
-						{
-							"bones": ["propeller"],
-							"source": "main_rotor_rotation",
-							"axis": "y",
-							"param": 10.0
-						}
-					],
-					"part_bindings": []
-				},
-				"add": {
-					"type": "event_animation"
-				}
+				"type": "switchable_animation",
+				"ref": "door2"
+			},
+			{
+				"type": "script",
+				"function": "updateBones"
 			}
 		]
+	},
+	"switchable_animations": {
+		"door": {
+			"part_id": "door",
+			"animation": "door"
+		},
+		"door2": {
+			"part_id": "door2",
+			"animation": "door2"
+		}
 	}
 }

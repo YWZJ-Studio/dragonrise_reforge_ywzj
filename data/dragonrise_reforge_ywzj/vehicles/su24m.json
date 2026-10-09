@@ -13,25 +13,21 @@
 		"x_rot_input_drag_k": 1.2,
 		"y_rot_input_drag_k": 0.25,
 		"z_rot_input_drag_k": 0.125,
+		"landing_gear_drag_k": 0.5,
 		"turn_rate_by_speed": 0.4,
 		"x_turn_rate": 2.5,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"landing_gear_drag_k": 0.5,
-		"afterburner_offsets": [
-			[0.5851, 2.2598, -8.7559, 0.86],
-			[-0.5851, 2.2598, -8.7559, 0.86]
-		],
 		"vortex_offsets": [
 			[8.7634, 2.1094, -4.6759],
 			[-8.7634, 2.1094, -4.6759]
+		],
+		"afterburner_offsets": [
+			[0.5851, 2.2598, -8.7559, 0.86],
+			[-0.5851, 2.2598, -8.7559, 0.86]
 		]
 	},
-	"physics_info": {
-		"mass": 22300,
-		"friction": 44600,
-		"destroy_explosion_velocity": 0.3
-	},
+	"landing_gear_part_id": "landing_gear",
 	"max_health": 1250,
 	"view_info": {
 		"third_person_center_offset": [0, 6, 0],
@@ -49,6 +45,12 @@
 		"impact_multiplier": 0.2
 	},
 	"with_warning_receiver": true,
+	"center_offset": [0.0, 1.7892, -0.0571],
+	"physics_info": {
+		"mass": 22300,
+		"friction": 44600,
+		"destroy_explosion_velocity": 0.3
+	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/su24m",
 	"parts": [
 		{
@@ -61,10 +63,10 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
-				"x_rot_min": 0,
 				"x_rot_max": 0,
-				"y_rot_min": 0,
-				"y_rot_max": 0
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0
 			},
 			"operator_view_offset": [0.0, 0.22, 0.0],
 			"optical_sight_type": "none",
@@ -92,8 +94,8 @@
 			]
 		},
 		{
-			"id": "seat_2",
-			"name": "seat_2",
+			"id": "pilot_seat_2",
+			"name": "pilot_seat_2",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
 			"seat_offset": [-0.325, 2.9, 5.2847],
@@ -117,32 +119,32 @@
 			"name": "kh_29",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "kh_29",
+			"render_model": false,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": false,
-			"fire_control_sensor_type": "eo"
+			}
 		},
 		{
 			"id": "r_60",
 			"name": "r_60",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "r_60",
+			"render_model": false,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": false,
-			"fire_control_sensor_type": "ir"
+			}
 		},
 		{
 			"id": "decoy_flare",
@@ -166,8 +168,8 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 30,
-				"y_rot_min": -60,
-				"y_rot_max": 60
+				"y_rot_max": 60,
+				"y_rot_min": -60
 			},
 			"radar_type": "Orion-A",
 			"scan_sector_angle": 90,
@@ -181,7 +183,5 @@
 			"is_seat": false,
 			"drag_k": 0.5
 		}
-	],
-	"landing_gear_part_id": "landing_gear",
-	"center_offset": [0.0, 1.7892, -0.0571]
+	]
 }

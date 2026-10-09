@@ -1,0 +1,9 @@
+{
+	"name": "mi24v_controller",
+	"script": "dragonrise_reforge_ywzj:mi24v",
+	"parameters": {},
+	"graph": {
+		"type": "script",
+		"function": "updateBones"
+	}
+}

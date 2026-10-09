@@ -1,0 +1,50 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.darkbear_track_link",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0.0, 0.0, 0.0]
+			},
+			"bones": [
+				{
+					"name": "vehicle_forward",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
+					"name": "track_link_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0.0, 0.0, 0.0],
+					"cubes": [
+						{
+							"origin": [-5.85, -0.45, -2.0],
+							"size": [11.7, 0.9, 4.0],
+							"uv": {
+								"north": {"uv": [454, 68], "uv_size": [13, 1]},
+								"east": {
+									"uv": [504, 216.22222222222223],
+									"uv_size": [-1, -4.444444444444444],
+									"uv_rotation": 90
+								},
+								"south": {"uv": [454, 69], "uv_size": [13, 1]},
+								"west": {
+									"uv": [504, 211.77777777777777],
+									"uv_size": [-1, 4.444444444444444],
+									"uv_rotation": 90
+								},
+								"up": {"uv": [478, 216.22222222222223], "uv_size": [13, -4.444444444444444]},
+								"down": {"uv": [492, 216.22222222222223], "uv_size": [13, -4.444444444444444]}
+							}
+						}
+					],
+					"parent": "vehicle_forward"
+				}
+			]
+		}
+	]
+}

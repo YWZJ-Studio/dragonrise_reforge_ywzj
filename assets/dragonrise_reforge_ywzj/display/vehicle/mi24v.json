@@ -9,5 +9,27 @@
 		"engine_run": "ywzj_vehicle:z10_engine_run"
 	},
 	"description": "vehicle.mi24v.description",
-	"tab_index": 3040
+	"tab_index": 3040,
+	"animation_controller": "dragonrise_reforge_ywzj:mi24v_controller",
+	"special_bone_effects": [
+		{
+			"bone": "canopy_glass",
+			"type": "transparent",
+			"texture": "dragonrise_reforge_ywzj:textures/entity/nh90.png"
+		},
+		{
+			"bone": "canopy_glass_front",
+			"type": "transparent",
+			"texture": "dragonrise_reforge_ywzj:textures/entity/nh90.png"
+		},
+		{
+			"bone": "cabin_glass",
+			"type": "transparent"
+		},
+		{
+			"bone": "glass_fill_door4",
+			"type": "transparent",
+			"texture": "dragonrise_reforge_ywzj:textures/entity/nh90.png"
+		}
+	]
 }

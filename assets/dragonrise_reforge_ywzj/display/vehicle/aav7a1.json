@@ -3,12 +3,19 @@
 	"model": "dragonrise_reforge_ywzj:entity/aav7a1",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/aav7a1.png",
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/aav7a1.png",
-	"track_config": {},
+	"track_config": {
+		"model": "dragonrise_reforge_ywzj:effect/aav7a1_track_link",
+		"texture": "dragonrise_reforge_ywzj:textures/entity/aav7a1.png",
+		"module_length": 0.25
+	},
 	"sounds": {
 		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
 		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run",
+		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.aav7a1.description",
-	"tab_index": 2320
+	"tab_index": 2320,
+	"animation_controller": "dragonrise_reforge_ywzj:aav7a1_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/aav7a1.animation"
 }

@@ -1,13 +1,14 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"barrel_shoot": {
-			"animation_length": 0.0417,
+		"turret_fire": {
+			"animation_length": 0.15,
 			"bones": {
-				"barrel": {
+				"weapon_recoil": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.0417": [0, 0, 2]
+						"0.04": [0, 0, -0.15],
+						"0.15": [0, 0, 0]
 					}
 				}
 			}

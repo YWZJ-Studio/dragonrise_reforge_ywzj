@@ -5,5 +5,7 @@
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/pak40.png",
 	"sounds": {},
 	"description": "vehicle.pak40.description",
-	"tab_index": 5070
+	"tab_index": 5070,
+	"animation_controller": "dragonrise_reforge_ywzj:pak40_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/pak40.animation"
 }

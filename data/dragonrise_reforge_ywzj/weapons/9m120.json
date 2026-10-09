@@ -11,18 +11,18 @@
 	},
 	"x_rot_max": 90,
 	"x_rot_min": -90,
-	"y_rot_max": 15,
-	"y_rot_min": -15,
+	"y_rot_max": 180,
+	"y_rot_min": -180,
 	"explosion": {
 		"explode": true,
 		"damage": 100,
 		"radius": 5,
 		"destroy_block": true
 	},
-	"mass": 0.05,
-	"thrust": 0.03,
+	"mass": 48.3,
+	"thrust": 11592,
 	"motor_burn_time": 600,
-	"drag_coefficient": 0.005,
+	"drag_coefficient": 0.2415,
 	"max_g": 18,
 	"reference_speed": 3
 }

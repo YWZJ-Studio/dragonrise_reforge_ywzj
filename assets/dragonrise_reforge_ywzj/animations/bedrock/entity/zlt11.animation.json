@@ -2,12 +2,13 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"barrel_shoot": {
-			"animation_length": 0.0417,
+			"animation_length": 0.25,
 			"bones": {
 				"barrel": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.0417": [0, 0, 2]
+						"0.05": [0, 0, 2],
+						"0.25": [0, 0, 0]
 					}
 				}
 			}

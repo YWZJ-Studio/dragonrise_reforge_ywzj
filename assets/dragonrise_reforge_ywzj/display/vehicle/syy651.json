@@ -1,5 +1,5 @@
 {
-	"type": "ywzj_vehicle:wheeled_vehicle",
+	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"model": "dragonrise_reforge_ywzj:entity/syy651",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/syy651.png",
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/syy651.png",

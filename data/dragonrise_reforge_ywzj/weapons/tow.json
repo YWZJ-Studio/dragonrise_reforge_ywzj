@@ -1,0 +1,31 @@
+{
+	"type": "ywzj_vehicle:missile",
+	"name": "BGM-71 TOW ATGM",
+	"caliber": 152,
+	"damage": 1000,
+	"headshot_multiplier": 1.5,
+	"shoot_interval": 1000,
+	"max_capacity": 2,
+	"reload": {
+		"time": 100,
+		"ammo": "ywzj_vehicle:ammo_missile"
+	},
+	"x_rot_max": 90,
+	"x_rot_min": -90,
+	"y_rot_max": 180,
+	"y_rot_min": -180,
+	"explosion": {
+		"explode": true,
+		"damage": 150,
+		"radius": 7,
+		"destroy_block": true
+	},
+	"seeker_fov": 30,
+	"mass": 21.5,
+	"thrust": 3440,
+	"motor_burn_time": 600,
+	"drag_coefficient": 0.1075,
+	"max_g": 18,
+	"reference_speed": 2,
+	"guidance": "SACLOS"
+}

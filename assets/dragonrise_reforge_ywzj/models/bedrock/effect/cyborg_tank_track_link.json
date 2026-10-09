@@ -1,0 +1,50 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cyborg_tank_track_link",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0.0, 0.0, 0.0]
+			},
+			"bones": [
+				{
+					"name": "vehicle_forward",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0]
+				},
+				{
+					"name": "track_link_0",
+					"pivot": [0, 0, 0],
+					"rotation": [0.0, 0.0, 0.0],
+					"cubes": [
+						{
+							"origin": [-8.9, -1.0, -2.0],
+							"size": [17.8, 2.0, 4.0],
+							"uv": {
+								"north": {"uv": [642, 238], "uv_size": [18, 2]},
+								"east": {
+									"uv": [767, 145.32478632478632],
+									"uv_size": [-3, -4.64957264957264],
+									"uv_rotation": 90
+								},
+								"south": {"uv": [643, 147], "uv_size": [18, 2]},
+								"west": {
+									"uv": [767, 145.32478632478632],
+									"uv_size": [-3, -4.64957264957264],
+									"uv_rotation": 90
+								},
+								"up": {"uv": [749, 140.67521367521368], "uv_size": [18, 4.64957264957264]},
+								"down": {"uv": [749, 140.67521367521368], "uv_size": [18, 4.64957264957264]}
+							}
+						}
+					],
+					"parent": "vehicle_forward"
+				}
+			]
+		}
+	]
+}

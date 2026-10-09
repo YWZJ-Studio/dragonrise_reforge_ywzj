@@ -1,0 +1,33 @@
+{
+	"name": "npds114_controller",
+	"event_animations": {
+		"turret_fire": [
+			"turret_fire"
+		]
+	},
+	"graph": {
+		"type": "additive",
+		"base": {
+			"type": "bone_binding",
+			"part_bindings": [
+				{
+					"bone": "weapon_yaw",
+					"part": "turret",
+					"rotation_type": "y",
+					"axis": "y",
+					"invert": true
+				},
+				{
+					"bone": "weapon_pitch",
+					"part": "turret",
+					"rotation_type": "x",
+					"axis": "x",
+					"invert": false
+				}
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
+	}
+}

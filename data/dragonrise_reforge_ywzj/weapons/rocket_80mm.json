@@ -13,5 +13,8 @@
 		"explode": true,
 		"damage": 250,
 		"radius": 6
-	}
+	},
+	"mass": 11.3,
+	"thrust": 4520,
+	"drag_coefficient": 0.0565
 }

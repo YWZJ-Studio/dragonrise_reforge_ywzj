@@ -5,11 +5,16 @@
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/ztz2077.png",
 	"animations": "dragonrise_reforge_ywzj:entity/ztz2077.animation",
 	"animation_controller": "dragonrise_reforge_ywzj:ztz2077_controller",
-	"track_config": {},
+	"track_config": {
+		"model": "dragonrise_reforge_ywzj:effect/ztz2077_track_link",
+		"texture": "ywzj_vehicle:textures/effect/track_link.png",
+		"module_length": 0.375
+	},
 	"sounds": {
 		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
 		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
-		"engine_run": "ywzj_vehicle:ztz99a_engine_run"
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run",
+		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.ztz2077.description",
 	"tab_index": 2610

@@ -1,14 +1,14 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 8000.0,
+		"thrust": 52688,
 		"thrust_k": 1.4,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
-		"air_drag_k_min": 2.0,
-		"air_drag_k_max": 8.0,
+		"air_drag_k_min": 13.172,
+		"air_drag_k_max": 52.688,
 		"lift_to_drag_k": 3,
 		"x_rot_input_drag_k": 1,
 		"y_rot_input_drag_k": 0.25,
@@ -25,11 +25,6 @@
 		"afterburner_offsets": [
 			[0.0029, 1.9585, -7.2606, 0.88]
 		]
-	},
-	"physics_info": {
-		"mass": 1000,
-		"friction": 2000,
-		"destroy_explosion_velocity": 0.3
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
@@ -50,6 +45,11 @@
 	},
 	"with_warning_receiver": true,
 	"center_offset": [0.0, 1.4467, 0.0],
+	"physics_info": {
+		"mass": 6586,
+		"friction": 13172,
+		"destroy_explosion_velocity": 0.3
+	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/jf17",
 	"parts": [
 		{
@@ -62,10 +62,10 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
-				"x_rot_min": 0,
 				"x_rot_max": 0,
-				"y_rot_min": 0,
-				"y_rot_max": 0
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0
 			},
 			"optical_sight_offset": [0, 0, 0],
 			"operator_view_offset": [0.0, 0.0, 0.0],
@@ -81,11 +81,11 @@
 				},
 				{
 					"id": "dragonrise_reforge_ywzj:pl_8",
-					"part_unit_id": "missile"
+					"part_unit_id": "pl_8"
 				},
 				{
 					"id": "dragonrise_reforge_ywzj:pl_12",
-					"part_unit_id": "missile2"
+					"part_unit_id": "pl_12"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -107,36 +107,36 @@
 			}
 		},
 		{
-			"id": "missile",
-			"name": "missile",
+			"id": "pl_8",
+			"name": "pl_8",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "missile",
+			"structure_bone": "pl_8",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "ir"
+			}
 		},
 		{
-			"id": "missile2",
-			"name": "missile2",
+			"id": "pl_12",
+			"name": "pl_12",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "missile2",
+			"structure_bone": "pl_12",
+			"render_model": true,
+			"ammo_capacity": 4,
+			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 4,
-			"render_model": true,
-			"fire_control_sensor_type": "rf"
+			}
 		},
 		{
 			"id": "decoy_flare",
@@ -160,8 +160,8 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 30,
-				"y_rot_min": -60,
-				"y_rot_max": 60
+				"y_rot_max": 60,
+				"y_rot_min": -60
 			},
 			"radar_type": "KLJ-7",
 			"scan_sector_angle": 90,

@@ -1,44 +1,64 @@
 {
 	"name": "motuo_controller",
-	"script": "dragonrise_reforge_ywzj:motuo",
 	"parameters": {},
 	"event_animations": {},
-	"loop_animations": {
-		"static": {
-			"animation": "static"
-		}
-	},
 	"graph": {
-		"type": "merge",
-		"inputs": [
-			{
-				"type": "loop_animation",
-				"ref": "static"
-			},
-			{
-				"type": "additive",
-				"base": {
+		"type": "additive",
+		"base": {
+			"type": "merge",
+			"inputs": [
+				{
 					"type": "bone_binding",
 					"special_bindings": [
 						{
-							"bones": ["wheelL"],
-							"source": "left_wheel_rotation",
+							"bones": [
+								"wheelR"
+							],
+							"source": "wheel_rotation",
 							"axis": "x",
 							"param": -0.375
 						},
 						{
-							"bones": ["wheelL1Turn"],
-							"source": "right_wheel_rotation",
+							"bones": [
+								"wheelL"
+							],
+							"source": "wheel_rotation",
 							"axis": "x",
 							"param": -0.375
+						},
+						{
+							"bones": [
+								"wheelL1Turn"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.375
+						},
+						{
+							"bones": [
+								"wheelL1Turn"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1,
+							"min": -30,
+							"max": 30
+						},
+						{
+							"bones": [
+								"control"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1
 						}
 					],
 					"part_bindings": []
-				},
-				"add": {
-					"type": "event_animation"
 				}
-			}
-		]
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
 	}
 }

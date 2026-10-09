@@ -1,11 +1,31 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"forward_force": 0.045,
-		"backward_force": 0.005,
-		"wing_area": 4.5,
-		"air_drag": 0.02,
-		"landing_gear_drag_k": 0.5
+		"thrust": 8000,
+		"thrust_k": 1.4,
+		"ceiling": 512,
+		"x_rot_input_step": 0.4,
+		"y_rot_input_step": 0.5,
+		"z_rot_input_step": 0.2,
+		"air_drag_k_min": 2,
+		"air_drag_k_max": 8,
+		"lift_to_drag_k": 3,
+		"x_rot_input_drag_k": 1.2,
+		"y_rot_input_drag_k": 0.25,
+		"z_rot_input_drag_k": 0.125,
+		"landing_gear_drag_k": 0.5,
+		"turn_rate_by_speed": 0.4,
+		"x_turn_rate": 2.5,
+		"y_turn_rate": 3,
+		"z_turn_rate": 8,
+		"vortex_offsets": [
+			[5.462, 1.162, -2.6647],
+			[-5.462, 1.162, -2.6647]
+		],
+		"afterburner_offsets": [
+			[0.8964, 1.7078, -8.0357, 0.35],
+			[-0.8964, 1.7078, -8.0357, 0.35]
+		]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 600,
@@ -18,11 +38,17 @@
 	},
 	"energy_info": {
 		"energy_capacity": 1,
-		"energy_consumption_per_tick": 0.00001
+		"energy_consumption_per_tick": 1e-05
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
 		"impact_multiplier": 0.2
+	},
+	"center_offset": [0.0, 1.8377, 0.0],
+	"physics_info": {
+		"mass": 1000,
+		"friction": 2000,
+		"destroy_explosion_velocity": 0.3
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/tjgc",
 	"parts": [
@@ -31,21 +57,23 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 3.245, 3.925],
+			"seat_offset": [0.0, 3.2846, 4.048],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
-				"x_rot_min": 0,
 				"x_rot_max": 0,
-				"y_rot_min": 0,
-				"y_rot_max": 0
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0
 			},
-			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [-0.94704, 2.97641, 2.77564],
-			"optical_sight_type": "crt",
+			"optical_sight_offset": [0, 0, 0],
+			"operator_view_offset": [0.0, 0.0, 0.0],
+			"optical_sight_type": "none",
 			"zoom_max": 12,
-			"sub_part_unit_ids": ["radar"],
+			"sub_part_unit_ids": [
+				"radar"
+			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:laser_cannon",
@@ -60,12 +88,12 @@
 					"part_unit_id": "big_rocket"
 				},
 				{
-					"id": "dragonrise_reforge_ywzj:bomb_500kg",
+					"id": "dragonrise_reforge_ywzj:gbu_12",
 					"part_unit_id": "bomb"
 				},
 				{
 					"id": "dragonrise_reforge_ywzj:agm_65",
-					"part_unit_id": "aamissile"
+					"part_unit_id": "agm_65"
 				},
 				{
 					"part_unit_id": "atmissile"
@@ -84,74 +112,76 @@
 			"name": "laser",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "laser",
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "circle",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"fire_control_sensor_type": "eo"
+			}
 		},
 		{
 			"id": "rocket",
 			"name": "rocket",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "rocket",
+			"render_model": true,
+			"ammo_capacity": 50,
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 50
+			}
 		},
 		{
 			"id": "big_rocket",
 			"name": "big_rocket",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "big_rocket",
+			"render_model": true,
+			"ammo_capacity": 10,
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 10
+			}
 		},
 		{
 			"id": "bomb",
 			"name": "bomb",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "bomb",
+			"render_model": true,
+			"ammo_capacity": 1,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "big_cross",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 1,
-			"render_model": true,
-			"fire_control_sensor_type": "ccip"
+			}
 		},
 		{
-			"id": "aamissile",
-			"name": "aamissile",
+			"id": "agm_65",
+			"name": "agm_65",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "aamissile",
+			"structure_bone": "agm_65",
+			"render_model": true,
+			"ammo_capacity": 10,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 10,
-			"render_model": true,
-			"fire_control_sensor_type": "eo"
+			}
 		},
 		{
 			"id": "atmissile",
@@ -174,6 +204,9 @@
 			"name": "atmissile_agm_65",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "atmissile",
+			"render_model": true,
+			"ammo_capacity": 10,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -181,16 +214,18 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"ammo_capacity": 10,
-			"render_model": true,
-			"fire_control_sensor_type": "eo",
-			"weapons": ["dragonrise_reforge_ywzj:agm_65"]
+			"weapons": [
+				"dragonrise_reforge_ywzj:agm_65"
+			]
 		},
 		{
 			"id": "atmissile_aasm",
 			"name": "atmissile_aasm",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "atmissile",
+			"render_model": true,
+			"ammo_capacity": 10,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -198,10 +233,9 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"ammo_capacity": 10,
-			"render_model": true,
-			"fire_control_sensor_type": "eo",
-			"weapons": ["dragonrise_reforge_ywzj:aasm"]
+			"weapons": [
+				"dragonrise_reforge_ywzj:aasm"
+			]
 		},
 		{
 			"id": "big_atmissile",
@@ -224,6 +258,9 @@
 			"name": "big_atmissile_agm_65",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "big_atmissile",
+			"render_model": true,
+			"ammo_capacity": 5,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -231,16 +268,18 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"ammo_capacity": 5,
-			"render_model": true,
-			"fire_control_sensor_type": "eo",
-			"weapons": ["dragonrise_reforge_ywzj:agm_65"]
+			"weapons": [
+				"dragonrise_reforge_ywzj:agm_65"
+			]
 		},
 		{
 			"id": "big_atmissile_aasm",
 			"name": "big_atmissile_aasm",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "big_atmissile",
+			"render_model": true,
+			"ammo_capacity": 5,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -248,10 +287,9 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"ammo_capacity": 5,
-			"render_model": true,
-			"fire_control_sensor_type": "eo",
-			"weapons": ["dragonrise_reforge_ywzj:aasm"]
+			"weapons": [
+				"dragonrise_reforge_ywzj:aasm"
+			]
 		},
 		{
 			"id": "decoy_flare",
@@ -275,8 +313,8 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 30,
-				"y_rot_min": -60,
-				"y_rot_max": 60
+				"y_rot_max": 60,
+				"y_rot_min": -60
 			},
 			"radar_type": "MULTI-MODE",
 			"scan_sector_angle": 90,
@@ -291,6 +329,5 @@
 			"drag_k": 0.5
 		}
 	],
-	"experimental": true,
-	"center_offset": [0, 1.78125, 0]
+	"experimental": true
 }

@@ -1,0 +1,32 @@
+{
+	"type": "ywzj_vehicle:missile",
+	"name": "9M133 Kornet",
+	"caliber": 152,
+	"damage": 1000,
+	"headshot_multiplier": 1.5,
+	"recoil": 0,
+	"shoot_interval": 7500,
+	"max_capacity": 1,
+	"reload": {
+		"time": 100,
+		"ammo": "ywzj_vehicle:ammo_missile"
+	},
+	"x_rot_max": 90,
+	"x_rot_min": -90,
+	"y_rot_max": 180,
+	"y_rot_min": -180,
+	"explosion": {
+		"explode": true,
+		"damage": 60,
+		"radius": 6,
+		"destroy_block": true
+	},
+	"seeker_fov": 30,
+	"mass": 26,
+	"thrust": 4160,
+	"motor_burn_time": 600,
+	"drag_coefficient": 0.13,
+	"max_g": 18,
+	"reference_speed": 2,
+	"guidance": "SACLOS"
+}

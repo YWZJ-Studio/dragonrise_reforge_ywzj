@@ -1,51 +1,80 @@
 {
-	"format_version": "1.21.0",
+	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.unknown",
+				"identifier": "geometry.npds514_structure",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 17,
-				"visible_bounds_height": 6.5,
-				"visible_bounds_offset": [0, 2.75, 0]
+				"visible_bounds_width": 9.57228240492701,
+				"visible_bounds_height": 3.7342848730550027,
+				"visible_bounds_offset": [0.06138748, 1.36714244, 1.86633317]
 			},
 			"bones": [
+				{
+					"name": "main_structure",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-41.29265082, 0.0, -38.71692848],
+							"size": [84.54970103, 21.62253797, 81.72698456],
+							"uv": [0, 0]
+						}
+					]
+				},
 				{
 					"name": "vehicle_body",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
-							"origin": [-8, 0, -8],
-							"size": [16, 16, 16],
-							"uv": {
-								"north": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"east": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"south": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"west": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"up": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								},
-								"down": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								}
-							}
+							"origin": [-39.35953518, 0.0, -36.98850628],
+							"size": [82.61658539, 16.82818103, 77.08224317],
+							"uv": [0, 0]
+						},
+						{
+							"origin": [-41.29265082, 0.0, -38.71692848],
+							"size": [82.616586, 21.62253797, 81.72698456],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "turret",
+					"pivot": [0.0, 25.35357797, 0.0],
+					"cubes": [
+						{
+							"origin": [-8.0, 20.35357797, -8.0],
+							"size": [16.0, 13.0, 16.0],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "turret_barrel",
+					"parent": "turret",
+					"pivot": [0.97496, 33.14912797, -0.02491],
+					"cubes": [
+						{
+							"origin": [-12.67225, 40.48556297, -0.02491],
+							"size": [0.8, 0.8, 98.4645],
+							"uv": [0, 0]
+						},
+						{
+							"origin": [13.66917, 40.48556797, -0.02491],
+							"size": [0.8, 0.8, 98.4645],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "turret_receiver",
+					"parent": "turret_barrel",
+					"pivot": [0.97496, 33.14912797, -0.02491],
+					"cubes": [
+						{
+							"origin": [-15.76781, 29.08106498, -15.02491],
+							"size": [33.33254, 14.45016299, 23.0],
+							"uv": [0, 0]
 						}
 					]
 				}

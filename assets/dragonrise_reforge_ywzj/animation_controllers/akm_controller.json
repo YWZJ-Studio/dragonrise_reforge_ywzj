@@ -22,7 +22,10 @@
 						"param": -1
 					},
 					{
-						"bones": ["wheelL2", "wheelL6"],
+						"bones": [
+							"wheelL2",
+							"wheelL6"
+						],
 						"source": "steering_angle",
 						"axis": "y",
 						"multiplier": 1.0,
@@ -30,7 +33,10 @@
 						"max": 30.0
 					},
 					{
-						"bones": ["wheelL5", "wheelL1"],
+						"bones": [
+							"wheelL5",
+							"wheelL1"
+						],
 						"source": "steering_angle",
 						"axis": "y",
 						"multiplier": -1.0,

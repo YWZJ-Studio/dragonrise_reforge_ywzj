@@ -1,0 +1,113 @@
+{
+	"name": "ural4320_supply_controller",
+	"parameters": {},
+	"event_animations": {},
+	"graph": {
+		"type": "merge",
+		"inputs": [
+			{
+				"type": "additive",
+				"base": {
+					"type": "merge",
+					"inputs": [
+						{
+							"type": "bone_binding",
+							"special_bindings": [
+								{
+									"bones": [
+										"wheelL0Turn"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.62746
+								},
+								{
+									"bones": [
+										"wheelL0Turn"
+									],
+									"source": "steering_angle",
+									"axis": "y",
+									"multiplier": 1,
+									"min": -30,
+									"max": 30
+								},
+								{
+									"bones": [
+										"wheelL1"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.62746
+								},
+								{
+									"bones": [
+										"wheelL2"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.62746
+								},
+								{
+									"bones": [
+										"wheelR0Turn"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.62746
+								},
+								{
+									"bones": [
+										"wheelR0Turn"
+									],
+									"source": "steering_angle",
+									"axis": "y",
+									"multiplier": 1,
+									"min": -30,
+									"max": 30
+								},
+								{
+									"bones": [
+										"wheelR1"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.62746
+								},
+								{
+									"bones": [
+										"wheelR2"
+									],
+									"source": "wheel_rotation",
+									"axis": "x",
+									"param": -0.62746
+								}
+							],
+							"part_bindings": []
+						}
+					]
+				},
+				"add": {
+					"type": "event_animation"
+				}
+			},
+			{
+				"type": "switchable_animation",
+				"ref": "door_front_left"
+			},
+			{
+				"type": "switchable_animation",
+				"ref": "door_front_right"
+			}
+		]
+	},
+	"switchable_animations": {
+		"door_front_left": {
+			"part_id": "door_front_left",
+			"animation": "door_front_left"
+		},
+		"door_front_right": {
+			"part_id": "door_front_right",
+			"animation": "door_front_right"
+		}
+	}
+}

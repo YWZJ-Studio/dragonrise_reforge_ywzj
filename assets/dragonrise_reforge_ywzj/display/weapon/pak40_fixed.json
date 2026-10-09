@@ -1,0 +1,7 @@
+{
+	"type": "ywzj_vehicle:weapon",
+	"sounds": {
+		"fire": "dragonrise_reforge_ywzj:88mm_shot",
+		"reload": "ywzj_vehicle:common_reload"
+	}
+}

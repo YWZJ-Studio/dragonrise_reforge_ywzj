@@ -3,7 +3,9 @@
 	"script": "dragonrise_reforge_ywzj:project640",
 	"parameters": {},
 	"event_animations": {
-		"turret_fire": ["barrel_shoot"]
+		"turret_fire": [
+			"barrel_shoot"
+		]
 	},
 	"loop_animations": {
 		"static": {
@@ -14,81 +16,221 @@
 		"type": "merge",
 		"inputs": [
 			{
-				"type": "loop_animation",
-				"ref": "static"
+				"type": "merge",
+				"inputs": [
+					{
+						"type": "merge",
+						"inputs": [
+							{
+								"type": "merge",
+								"inputs": [
+									{
+										"type": "loop_animation",
+										"ref": "static"
+									},
+									{
+										"type": "additive",
+										"base": {
+											"type": "bone_binding",
+											"special_bindings": [],
+											"part_bindings": []
+										},
+										"add": {
+											"type": "event_animation"
+										}
+									}
+								]
+							},
+							{
+								"type": "bone_binding",
+								"special_bindings": [
+									{
+										"bones": [
+											"track_spin_wheelL0"
+										],
+										"source": "left_wheel_rotation",
+										"axis": "x",
+										"param": -0.419279
+									},
+									{
+										"bones": [
+											"track_spin_wheelL1"
+										],
+										"source": "left_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelL2"
+										],
+										"source": "left_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelL3"
+										],
+										"source": "left_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelL4"
+										],
+										"source": "left_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelL5"
+										],
+										"source": "left_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelL6"
+										],
+										"source": "left_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelL7"
+										],
+										"source": "left_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelL8"
+										],
+										"source": "left_wheel_rotation",
+										"axis": "x",
+										"param": -0.419279
+									},
+									{
+										"bones": [
+											"track_spin_wheelR0"
+										],
+										"source": "right_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelR1"
+										],
+										"source": "right_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelR2"
+										],
+										"source": "right_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelR3"
+										],
+										"source": "right_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelR4"
+										],
+										"source": "right_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelR5"
+										],
+										"source": "right_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelR6"
+										],
+										"source": "right_wheel_rotation",
+										"axis": "x",
+										"param": -0.5240987
+									},
+									{
+										"bones": [
+											"track_spin_wheelR7"
+										],
+										"source": "right_wheel_rotation",
+										"axis": "x",
+										"param": -0.419279
+									},
+									{
+										"bones": [
+											"track_spin_wheelR8"
+										],
+										"source": "right_wheel_rotation",
+										"axis": "x",
+										"param": -0.419279
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "bone_binding",
+						"part_bindings": [
+							{
+								"bone": "weapon_drive_yaw",
+								"part": "turret",
+								"rotation_type": "y",
+								"axis": "y",
+								"invert": true
+							},
+							{
+								"bone": "weapon_drive_pitch",
+								"part": "turret",
+								"rotation_type": "x",
+								"axis": "x",
+								"invert": false
+							}
+						]
+					}
+				]
 			},
 			{
-				"type": "additive",
-				"base": {
-					"type": "bone_binding",
-					"special_bindings": [
-						{
-							"bones": [
-								"wheelL0",
-								"wheelL1",
-								"wheelL2",
-								"wheelL3",
-								"wheelL4",
-								"wheelL5",
-								"wheelL6",
-								"wheelL7",
-								"wheelL8"
-							],
-							"source": "left_wheel_rotation",
-							"axis": "x",
-							"param": -0.375
-						},
-						{
-							"bones": [
-								"wheelR0",
-								"wheelR1",
-								"wheelR2",
-								"wheelR3",
-								"wheelR4",
-								"wheelR5",
-								"wheelR6",
-								"wheelR7",
-								"wheelR8"
-							],
-							"source": "right_wheel_rotation",
-							"axis": "x",
-							"param": -0.375
-						}
-					],
-					"part_bindings": [
-						{
-							"bone": "turret",
-							"part": "turret",
-							"rotation_type": "y",
-							"axis": "y",
-							"invert": true
-						},
-						{
-							"bone": "barrel",
-							"part": "turret",
-							"rotation_type": "x",
-							"axis": "x",
-							"invert": false
-						},
-						{
-							"bone": "passengerWeaponStationYaw",
-							"part": "commander_machine_gun",
-							"rotation_type": "y",
-							"axis": "y",
-							"invert": false
-						},
-						{
-							"bone": "passengerWeaponStationPitch",
-							"part": "commander_machine_gun",
-							"rotation_type": "x",
-							"axis": "x",
-							"invert": true
-						}
-					]
-				},
-				"add": {
-					"type": "event_animation"
-				}
+				"type": "bone_binding",
+				"part_bindings": [
+					{
+						"bone": "crew_mg_visual_yaw",
+						"part": "commander_machine_gun",
+						"rotation_type": "y",
+						"axis": "y",
+						"invert": true
+					},
+					{
+						"bone": "crew_mg_visual_pitch",
+						"part": "commander_machine_gun",
+						"rotation_type": "x",
+						"axis": "x",
+						"invert": false
+					}
+				]
 			}
 		]
 	}

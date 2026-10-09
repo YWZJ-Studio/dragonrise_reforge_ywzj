@@ -22,10 +22,6 @@
 			[-5.0388, 3.107, 1.4645]
 		]
 	},
-	"physics_info": {
-		"mass": 421,
-		"friction": 842
-	},
 	"max_health": 1000,
 	"view_info": {
 		"third_person_center_offset": [0, 4, 0],
@@ -42,6 +38,11 @@
 		"damage_threshold": 10,
 		"impact_multiplier": 0.2
 	},
+	"center_offset": [0, 1.9701, 0],
+	"physics_info": {
+		"mass": 421,
+		"friction": 842
+	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/camel",
 	"parts": [
 		{
@@ -54,10 +55,10 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
-				"x_rot_min": 0,
 				"x_rot_max": 0,
-				"y_rot_min": 0,
-				"y_rot_max": 0
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0
 			},
 			"optical_sight_offset": [0, 0, 0],
 			"operator_view_offset": [0, 0, 0],
@@ -75,10 +76,10 @@
 			"name": "cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "cannon",
+			"ammo_capacity": 1000,
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "circle",
-			"ammo_capacity": 1000,
 			"firing_mode": "salvo",
 			"rot_info": {
 				"x_rot_speed": 0,
@@ -93,6 +94,5 @@
 			"is_seat": false,
 			"drag_k": 0
 		}
-	],
-	"center_offset": [0, 1.9701, 0]
+	]
 }

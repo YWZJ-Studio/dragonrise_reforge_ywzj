@@ -1,14 +1,14 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.02,
+		"thrust": 70720,
 		"thrust_k": 1.4,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
-		"air_drag_k_min": 0.002,
-		"air_drag_k_max": 0.008,
+		"air_drag_k_min": 17.68,
+		"air_drag_k_max": 70.72,
 		"lift_to_drag_k": 3,
 		"x_rot_input_drag_k": 1,
 		"y_rot_input_drag_k": 0.25,
@@ -18,9 +18,16 @@
 		"x_turn_rate": 2,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [[4.384375, 1.5390625, -4.390625], [-4.384375, 1.5390625, -4.390625]],
-		"afterburner_offsets": [[0, 1.8140625, -6.5203125, 0.65]],
-		"aerobatic_smoke_offsets": [[0, 2.628125, -7.5734375]]
+		"vortex_offsets": [
+			[4.384375, 1.5390625, -4.390625],
+			[-4.384375, 1.5390625, -4.390625]
+		],
+		"afterburner_offsets": [
+			[0, 1.8140625, -6.5203125, 0.65]
+		],
+		"aerobatic_smoke_offsets": [
+			[0, 2.628125, -7.5734375]
+		]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
@@ -33,7 +40,7 @@
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 0.00001
+		"energy_consumption_per_tick": 1e-05
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
@@ -41,6 +48,10 @@
 	},
 	"with_warning_receiver": true,
 	"center_offset": [0, 1.5, 0],
+	"physics_info": {
+		"mass": 8840,
+		"friction": 17680
+	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/j10",
 	"parts": [
 		{
@@ -53,14 +64,16 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
-				"x_rot_min": 0,
 				"x_rot_max": 0,
-				"y_rot_min": 0,
-				"y_rot_max": 0
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0
 			},
 			"operator_view_offset": [0, -0.05, 0.2],
 			"optical_sight_type": "none",
-			"sub_part_unit_ids": ["radar"],
+			"sub_part_unit_ids": [
+				"radar"
+			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:type_23_3",
@@ -76,7 +89,7 @@
 				},
 				{
 					"id": "dragonrise_reforge_ywzj:pl_8",
-					"part_unit_id": "missile"
+					"part_unit_id": "pl_8"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -102,46 +115,46 @@
 			"name": "rocket",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "rocket",
+			"ammo_capacity": 28,
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 28
+			}
 		},
 		{
 			"id": "bomb",
 			"name": "bomb",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "bomb",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "ccip",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "big_cross",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "ccip"
+			}
 		},
 		{
-			"id": "missile",
-			"name": "missile",
+			"id": "pl_8",
+			"name": "pl_8",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "missile",
+			"structure_bone": "pl_8",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "ir"
+			}
 		},
 		{
 			"id": "decoy_flare",
@@ -165,8 +178,8 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 30,
-				"y_rot_min": -60,
-				"y_rot_max": 60
+				"y_rot_max": 60,
+				"y_rot_min": -60
 			},
 			"radar_type": "Type 1473",
 			"scan_sector_angle": 90,

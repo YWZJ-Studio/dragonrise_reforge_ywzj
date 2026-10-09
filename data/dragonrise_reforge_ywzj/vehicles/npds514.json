@@ -1,19 +1,57 @@
 {
 	"type": "ywzj_vehicle:generic",
 	"attributes": {},
-	"max_health": 50,
+	"max_health": 350,
 	"view_info": {
-		"third_person_center_offset": [0, 2, 0],
-		"third_person_distance": 4,
-		"third_person_center_offset_zoomed": [0, 1, 0],
-		"third_person_distance_zoomed": 0,
-		"sound_distance": 3
+		"third_person_center_offset": [0, 1.3671424365625002, 0],
+		"third_person_distance": 9.57228240492701,
+		"sound_distance": 4
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-5
+		"energy_capacity": 0,
+		"energy_consumption_per_tick": 0
+	},
+	"protect_passenger": false,
+	"physics_info": {
+		"mass": 1000,
+		"friction": 2000,
+		"destroy_explosion_velocity": 0.3
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/npds514",
-	"parts": [],
+	"parts": [
+		{
+			"id": "turret",
+			"name": "turret",
+			"type": "ywzj_vehicle:weapon",
+			"max_health": 350,
+			"render_bone": "weapon_yaw",
+			"structure_bone": "turret",
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "ccip",
+			"seat_offset": [3.080790676540755, 1.62, -2.9198080299270113],
+			"passenger_pose": {
+				"left_leg_rot_x": 0,
+				"right_leg_rot_x": 0
+			},
+			"operator_on_weapon_unit": false,
+			"crosshair_style": "circle",
+			"rot_info": {
+				"x_rot_speed": 3,
+				"y_rot_speed": 3,
+				"x_rot_max": 32.5,
+				"x_rot_min": -90.0,
+				"need_power": false
+			},
+			"optical_sight_offset": [-0.060935, 1.27468625, -0.62655688],
+			"operator_view_offset": [-0.060935, 1.27468625, -0.62655688],
+			"fire_control_lock_type": "none",
+			"optical_sight_type": "crt",
+			"zoom_min": 1,
+			"zoom_max": 8,
+			"weapons": [
+				"dragonrise_reforge_ywzj:npds514_fixed"
+			]
+		}
+	],
 	"experimental": true
 }

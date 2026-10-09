@@ -5,6 +5,20 @@
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/nh90.png",
 	"animations": "dragonrise_reforge_ywzj:entity/nh90.animation",
 	"animation_controller": "dragonrise_reforge_ywzj:nh90_controller",
+	"special_bone_effects": [
+		{
+			"bone": "windows",
+			"type": "transparent"
+		},
+		{
+			"bone": "glass_cangmenL",
+			"type": "transparent"
+		},
+		{
+			"bone": "glass_cangmenR",
+			"type": "transparent"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:z10_engine_start",
 		"engine_stop": "ywzj_vehicle:z10_engine_stop",

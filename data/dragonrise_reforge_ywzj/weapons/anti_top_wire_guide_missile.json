@@ -21,10 +21,10 @@
 		"destroy_block": true
 	},
 	"seeker_fov": 30,
-	"mass": 0.05,
-	"thrust": 0.02,
+	"mass": 22.59,
+	"thrust": 3614.4,
 	"motor_burn_time": 600,
-	"drag_coefficient": 0.005,
+	"drag_coefficient": 0.11295,
 	"max_g": 18,
 	"reference_speed": 2,
 	"guidance": "HOMING",

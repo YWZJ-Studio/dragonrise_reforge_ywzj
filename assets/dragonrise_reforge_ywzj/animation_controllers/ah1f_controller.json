@@ -1,0 +1,9 @@
+{
+	"name": "ah1f_controller",
+	"script": "dragonrise_reforge_ywzj:ah1f",
+	"parameters": {},
+	"graph": {
+		"type": "script",
+		"function": "updateBones"
+	}
+}

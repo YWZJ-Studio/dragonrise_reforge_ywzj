@@ -1,14 +1,14 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.015,
+		"thrust": 6000,
 		"thrust_k": 1.3,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
-		"air_drag_k_min": 0.002,
-		"air_drag_k_max": 0.0015,
+		"air_drag_k_min": 2,
+		"air_drag_k_max": 1.5,
 		"lift_to_drag_k": 4,
 		"x_rot_input_drag_k": 1.0,
 		"y_rot_input_drag_k": 0.25,
@@ -34,17 +34,17 @@
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 1e-5
+		"energy_consumption_per_tick": 1e-05
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
 		"impact_multiplier": 3
 	},
+	"with_warning_receiver": true,
+	"center_offset": [0, 1.625, 0],
 	"physics_info": {
 		"center": [0, 0, 6]
 	},
-	"with_warning_receiver": true,
-	"center_offset": [0, 1.625, 0],
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/ac130",
 	"parts": [
 		{
@@ -57,10 +57,10 @@
 			"rot_info": {
 				"x_rot_speed": 15,
 				"y_rot_speed": 15,
-				"x_rot_min": -5,
 				"x_rot_max": 45,
-				"y_rot_min": -30,
-				"y_rot_max": 30
+				"x_rot_min": -5,
+				"y_rot_max": 30,
+				"y_rot_min": -30
 			},
 			"optical_sight_offset": [0, 0, 1],
 			"operator_view_offset": [-0.969, 2.384, 5.134],
@@ -82,60 +82,66 @@
 			"name": "auto_cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "gun1",
-			"optical_sight_type": "crt",
-			"crosshair_style": "circle",
 			"seat_offset": [0, 3, 5],
-			"optical_sight_offset": [-0.5, 0.1, 1.2],
 			"operator_on_weapon_unit": false,
+			"crosshair_style": "circle",
 			"rot_info": {
 				"x_rot_speed": 8,
 				"y_rot_speed": 8,
-				"x_rot_min": -15,
 				"x_rot_max": 20,
-				"y_rot_min": -105,
-				"y_rot_max": -75
+				"x_rot_min": -15,
+				"y_rot_max": -75,
+				"y_rot_min": -105
 			},
-			"weapons": ["ywzj_vehicle:auto_cannon"]
+			"optical_sight_offset": [-0.5, 0.1, 1.2],
+			"optical_sight_type": "crt",
+			"weapons": [
+				"ywzj_vehicle:auto_cannon"
+			]
 		},
 		{
 			"id": "105mm_cannon",
 			"name": "105mm_cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "gun2",
-			"optical_sight_type": "crt",
-			"crosshair_style": "circle",
 			"seat_offset": [0, 3, 5],
-			"optical_sight_offset": [-0.5, 0.1, 1.2],
 			"operator_on_weapon_unit": false,
+			"crosshair_style": "circle",
 			"rot_info": {
 				"x_rot_speed": 8,
 				"y_rot_speed": 8,
-				"x_rot_min": -15,
 				"x_rot_max": 20,
-				"y_rot_min": -105,
-				"y_rot_max": -75
+				"x_rot_min": -15,
+				"y_rot_max": -75,
+				"y_rot_min": -105
 			},
-			"weapons": ["dragonrise_reforge_ywzj:cannon_105mm"]
+			"optical_sight_offset": [-0.5, 0.1, 1.2],
+			"optical_sight_type": "crt",
+			"weapons": [
+				"dragonrise_reforge_ywzj:cannon_105mm"
+			]
 		},
 		{
 			"id": "40mm_cannon",
 			"name": "40mm_cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "gun3",
-			"optical_sight_type": "crt",
-			"crosshair_style": "circle",
 			"seat_offset": [0, 3, -4.39],
-			"optical_sight_offset": [-0.5, 0.1, 1.2],
 			"operator_on_weapon_unit": false,
+			"crosshair_style": "circle",
 			"rot_info": {
 				"x_rot_speed": 8,
 				"y_rot_speed": 8,
-				"x_rot_min": -17.5,
 				"x_rot_max": 30,
-				"y_rot_min": -105,
-				"y_rot_max": -75
+				"x_rot_min": -17.5,
+				"y_rot_max": -75,
+				"y_rot_min": -105
 			},
-			"weapons": ["dragonrise_reforge_ywzj:cannon_40mm"]
+			"optical_sight_offset": [-0.5, 0.1, 1.2],
+			"optical_sight_type": "crt",
+			"weapons": [
+				"dragonrise_reforge_ywzj:cannon_40mm"
+			]
 		},
 		{
 			"id": "hellfire",
@@ -144,14 +150,14 @@
 			"structure_bone": "hellfire",
 			"ammo_capacity": 8,
 			"fire_control_sensor_type": "eo",
-			"fire_control_lock_type": "aim_hit",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"fire_control_lock_type": "aim_hit"
 		},
 		{
 			"id": "decoy_flare",

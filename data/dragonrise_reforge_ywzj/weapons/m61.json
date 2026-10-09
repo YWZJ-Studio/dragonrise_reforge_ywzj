@@ -4,8 +4,8 @@
 	"caliber": 20,
 	"damage": 20,
 	"velocity": 16,
-	"recoil": 0.1,
 	"headshot_multiplier": 1.5,
+	"recoil": 0.1,
 	"shoot_interval": 10,
 	"max_capacity": 676,
 	"reload": {

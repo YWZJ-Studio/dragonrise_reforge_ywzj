@@ -1,51 +1,40 @@
 {
-	"format_version": "1.21.0",
+	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.unknown",
+				"identifier": "geometry.shield_structure",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 17,
-				"visible_bounds_height": 6.5,
-				"visible_bounds_offset": [0, 2.75, 0]
+				"visible_bounds_width": 2.2412631508831162,
+				"visible_bounds_height": 2.2375,
+				"visible_bounds_offset": [0.0, 0.61875, 0.08553003]
 			},
 			"bones": [
+				{
+					"name": "main_structure",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-9.93010521, 0.0, -3.47142893],
+							"size": [19.86021041, 19.8, 9.67981893],
+							"uv": [0, 0]
+						}
+					]
+				},
 				{
 					"name": "vehicle_body",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
-							"origin": [-8, 0, -8],
-							"size": [16, 16, 16],
-							"uv": {
-								"north": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"east": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"south": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"west": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"up": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								},
-								"down": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								}
-							}
+							"origin": [-9.93010521, 0.0, -3.47142893],
+							"size": [10.0976803, 19.8, 4.66246552],
+							"uv": [0, 0]
+						},
+						{
+							"origin": [-9.8878, 0.0, -3.47142893],
+							"size": [19.81790521, 19.8, 9.67981893],
+							"uv": [0, 0]
 						}
 					]
 				}

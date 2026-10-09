@@ -17,11 +17,16 @@
 	},
 	"energy_info": {
 		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-5,
-		"engine_particle_offsets": [[-2.3, 1.8, 2.2]]
+		"energy_consumption_per_tick": 1e-05,
+		"engine_particle_offsets": [
+			[-2.3, 1.8, 2.2]
+		]
 	},
 	"physics_info": {
-		"can_destroy_block": true
+		"mass": 18112,
+		"friction": 36224,
+		"can_destroy_block": true,
+		"suspension_response": 0.25
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/zbd04a",
 	"parts": [
@@ -30,38 +35,45 @@
 			"name": "turret",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "turret",
-			"seat_offset": [-0.5, 2.5, -0.5],
+			"seat_offset": [0.6, 2.8010125, -1.190625],
+			"seat_rot": 0,
+			"operator_on_weapon_unit": true,
 			"rot_info": {
 				"x_rot_speed": 1.5,
 				"y_rot_speed": 1.5,
 				"x_rot_max": 5,
 				"x_rot_min": -13
 			},
-			"optical_sight_offset": [1, -0.3, 0.84],
-			"operator_view_offset": [0, 1.5, 0],
+			"optical_sight_offset": [0.8682087, -0.4762876, 0.5057641],
+			"operator_view_offset": [0.5, 0.5, -0.3125],
 			"fire_control_lock_type": "aim_hit",
 			"optical_sight_type": "crt",
+			"zoom_max": 8,
 			"with_stabilizer": true,
 			"with_thermal_imager": true,
-			"zoom_max": 8,
 			"weapons": [
 				"dragonrise_reforge_ywzj:cannon_100mm",
 				{
 					"id": "dragonrise_reforge_ywzj:2a72",
-					"part_unit_id": "turret_machine_gun",
+					"part_unit_id": "auto_cannon",
 					"secondary": true
 				},
 				{
 					"id": "ywzj_vehicle:launcher_smoke_grenade",
 					"part_unit_id": "turret_smoke_grenade"
+				},
+				{
+					"id": "ywzj_vehicle:gun_7.62mm",
+					"part_unit_id": "turret_machine_gun",
+					"secondary": true
 				}
 			]
 		},
 		{
-			"id": "turret_machine_gun",
-			"name": "turret_machine_gun",
+			"id": "auto_cannon",
+			"name": "auto_cannon",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "turret_machine_gun",
+			"structure_bone": "turret_cn",
 			"is_seat": false,
 			"rot_info": {
 				"x_rot_speed": 1.5,
@@ -74,7 +86,7 @@
 			"id": "turret_smoke_grenade",
 			"name": "turret_smoke_grenade",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "turret_smoke_grenade",
+			"structure_bone": "turret_gr",
 			"is_seat": false,
 			"rot_info": {
 				"x_rot_speed": 0,
@@ -85,19 +97,239 @@
 			"id": "seat1",
 			"name": "seat1",
 			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0.5, 2.5, -0.5]
+			"structure_bone": "crew_seat1",
+			"seat_offset": [-0.4, 4.0375, -1.190625],
+			"owner_view_offset": [-0.4, 4.0375, -1.190625],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat2",
 			"name": "seat2",
 			"type": "ywzj_vehicle:generic",
-			"seat_offset": [-0.5, 2.5, -1]
+			"seat_offset": [-0.75, 2.5, -2.25],
+			"owner_view_offset": [-0.75, 2.5, -2.25],
+			"seat_rot": 0
 		},
 		{
 			"id": "seat3",
 			"name": "seat3",
 			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0.5, 2.5, -1]
+			"seat_offset": [0.75, 2.5, -2.25],
+			"owner_view_offset": [0.75, 2.5, -2.25],
+			"seat_rot": 0
+		},
+		{
+			"id": "track",
+			"name": "track",
+			"type": "ywzj_vehicle:track",
+			"structure_bone": "tracks"
+		},
+		{
+			"id": "door_rear",
+			"name": "part.dragonrise_reforge_ywzj.door_rear",
+			"type": "ywzj_vehicle:door",
+			"render_bone": "door_rear_drive",
+			"structure_bone": "door_rear",
+			"is_seat": false,
+			"detachable": false
+		},
+		{
+			"id": "turret_machine_gun",
+			"name": "turret_machine_gun",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "turret_mg",
+			"is_seat": false,
+			"parent_weapon_unit_aim": true,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0,
+				"x_rot_max": 0,
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0,
+				"x_rot": 0,
+				"y_rot": 0
+			}
+		},
+		{
+			"id": "suspension_left_1",
+			"name": "suspension_left_1",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_l_0",
+			"structure_bone": "suspension_left_1",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_2",
+			"name": "suspension_left_2",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_l_1",
+			"structure_bone": "suspension_left_2",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_3",
+			"name": "suspension_left_3",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_l_2",
+			"structure_bone": "suspension_left_3",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_4",
+			"name": "suspension_left_4",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_l_3",
+			"structure_bone": "suspension_left_4",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_5",
+			"name": "suspension_left_5",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_l_4",
+			"structure_bone": "suspension_left_5",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_left_6",
+			"name": "suspension_left_6",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_l_5",
+			"structure_bone": "suspension_left_6",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_1",
+			"name": "suspension_right_1",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_r_0",
+			"structure_bone": "suspension_right_1",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_2",
+			"name": "suspension_right_2",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_r_1",
+			"structure_bone": "suspension_right_2",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_3",
+			"name": "suspension_right_3",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_r_2",
+			"structure_bone": "suspension_right_3",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_4",
+			"name": "suspension_right_4",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_r_3",
+			"structure_bone": "suspension_right_4",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_5",
+			"name": "suspension_right_5",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_r_4",
+			"structure_bone": "suspension_right_5",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
+		},
+		{
+			"id": "suspension_right_6",
+			"name": "suspension_right_6",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "track_spin_wheel_r_5",
+			"structure_bone": "suspension_right_6",
+			"is_seat": false,
+			"spring_stiffness": 160366.666667,
+			"damping": 11471.666667,
+			"rest_length": 0.2,
+			"max_compression": 0.2,
+			"max_extension": 0.15,
+			"max_droop": 0.1
 		}
 	]
 }

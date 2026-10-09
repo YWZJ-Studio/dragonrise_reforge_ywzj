@@ -1,7 +1,7 @@
 {
 	"type": "ywzj_vehicle:rotary_wing_vehicle",
 	"attributes": {
-		"main_rotor_force": 0.042,
+		"main_rotor_force": 13720,
 		"ceiling": 256,
 		"x_rot_speed_acceleration": 1.0,
 		"x_rot_speed_max": 3.0,
@@ -14,24 +14,25 @@
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 1000,
 	"view_info": {
-		"third_person_center_offset": [0, 6, 0],
+		"third_person_center_offset": [0, 5.9742647606057675, 0],
 		"third_person_distance": 14,
-		"third_person_center_offset_zoomed": [0, 7, 0],
+		"third_person_center_offset_zoomed": [0, 6.9742647606057675, 0],
 		"third_person_distance_zoomed": 0,
 		"sound_distance": 8
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 1e-5,
+		"energy_consumption_per_tick": 1e-05,
 		"engine_particle_offsets": [
-			[1.5, 2, -1.5],
-			[-1.5, 2, -1.5]
+			[1.5, 1.9742647606057673, -1.5],
+			[-1.5, 1.9742647606057673, -1.5]
 		]
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
 		"impact_multiplier": 2
 	},
+	"center_offset": [-0.0015625, 1.5894164, -0.0533575],
 	"physics_info": {
 		"center": [0, 0, 2]
 	},
@@ -42,7 +43,7 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.2, 2.4],
+			"seat_offset": [0, 2.1742647606057677, 2.4],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 3,
@@ -81,7 +82,6 @@
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "auto_cannon",
 			"fire_control_sensor_type": "eo",
-			"fire_control_lock_type": "aim_hit",
 			"is_seat": false,
 			"crosshair_style": "square",
 			"rot_info": {
@@ -91,7 +91,8 @@
 				"x_rot_min": 0,
 				"y_rot_max": 20,
 				"y_rot_min": 0
-			}
+			},
+			"fire_control_lock_type": "aim_hit"
 		},
 		{
 			"id": "missile",
@@ -100,22 +101,22 @@
 			"structure_bone": "missile",
 			"ammo_capacity": 12,
 			"fire_control_sensor_type": "eo",
-			"fire_control_lock_type": "aim_hit",
 			"is_seat": false,
-			"crosshair_style": "circle",
 			"parent_weapon_unit_aim": true,
+			"crosshair_style": "circle",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"fire_control_lock_type": "aim_hit"
 		},
 		{
 			"id": "rocket",
 			"name": "rocket",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "rocket",
-			"is_seat": false,
 			"fire_control_sensor_type": "ccip",
+			"is_seat": false,
 			"crosshair_style": "cross",
 			"rot_info": {
 				"x_rot_speed": 0,

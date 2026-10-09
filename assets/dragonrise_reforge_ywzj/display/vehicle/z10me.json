@@ -3,13 +3,20 @@
 	"model": "dragonrise_reforge_ywzj:entity/z10me",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/z10me.png",
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/z10me.png",
-	"animations": "dragonrise_reforge_ywzj:entity/z10me.animation",
 	"animation_controller": "dragonrise_reforge_ywzj:z10me_controller",
+	"special_bone_effects": [
+		{
+			"bone": "canopy_glass",
+			"type": "transparent",
+			"texture": "dragonrise_reforge_ywzj:textures/entity/nh90.png"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:z10_engine_start",
 		"engine_stop": "ywzj_vehicle:z10_engine_stop",
 		"engine_run": "ywzj_vehicle:z10_engine_run"
 	},
 	"description": "vehicle.z10me.description",
-	"tab_index": 3020
+	"tab_index": 3020,
+	"animations": "dragonrise_reforge_ywzj:entity/z10me.animation"
 }

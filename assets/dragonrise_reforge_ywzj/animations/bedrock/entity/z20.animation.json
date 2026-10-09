@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"door": {
+			"animation_length": 1,
+			"bones": {
+				"anim_door": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, -34]
+					}
+				}
+			}
+		},
+		"door2": {
+			"animation_length": 1,
+			"bones": {
+				"anim_door2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, -34]
+					}
+				}
+			}
+		}
+	}
+}

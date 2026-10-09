@@ -1,51 +1,70 @@
 {
-	"format_version": "1.21.0",
+	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.unknown",
+				"identifier": "geometry.qjz89_structure",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 17,
-				"visible_bounds_height": 6.5,
-				"visible_bounds_offset": [0, 2.75, 0]
+				"visible_bounds_width": 3.2053415751472767,
+				"visible_bounds_height": 1.7186242639571105,
+				"visible_bounds_offset": [0.0, 0.35931213, 0.25613609]
 			},
 			"bones": [
+				{
+					"name": "main_structure",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8.1630123, -0.0, -13.4510891],
+							"size": [16.32602459, 5.68143823, 25.23099801],
+							"uv": [0, 0]
+						}
+					]
+				},
 				{
 					"name": "vehicle_body",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
-							"origin": [-8, 0, -8],
-							"size": [16, 16, 16],
-							"uv": {
-								"north": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"east": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"south": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"west": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"up": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								},
-								"down": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								}
-							}
+							"origin": [-8.1630123, -0.0, -13.4510891],
+							"size": [16.32602459, 8.84332161, 25.23099801],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "turret",
+					"pivot": [0.0, 5.68143822, 0.0],
+					"cubes": [
+						{
+							"origin": [-1.3, 4.28143822, -1.0],
+							"size": [2.6, 6.69175, 2.1],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "turret_barrel",
+					"parent": "turret",
+					"pivot": [-0.0, 8.48973822, 0.621],
+					"cubes": [
+						{
+							"origin": [-0.44564534, 9.21916356, 0.621],
+							"size": [0.8, 0.8, 21.11991],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "turret_receiver",
+					"parent": "turret_barrel",
+					"pivot": [-0.0, 8.48973822, 0.621],
+					"cubes": [
+						{
+							"origin": [-6.73499319, 5.85176606, -13.5445552],
+							"size": [7.79148629, 5.34622479, 22.1655552],
+							"uv": [0, 0]
 						}
 					]
 				}

@@ -1,0 +1,7 @@
+{
+	"type": "ywzj_vehicle:weapon",
+	"sounds": {
+		"fire": "dragonrise_reforge_ywzj:cannon_125mm_shot",
+		"reload": "ywzj_vehicle:common_reload"
+	}
+}

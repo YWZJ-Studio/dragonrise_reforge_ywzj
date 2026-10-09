@@ -1,0 +1,16 @@
+{
+	"type": "ywzj_vehicle:cannon",
+	"name": "M2HB 12.7mm",
+	"caliber": 12.7,
+	"damage": 40,
+	"velocity": 28.4333,
+	"inaccuracy": 0.25,
+	"headshot_multiplier": 1.5,
+	"recoil": 0.05,
+	"shoot_interval": 100,
+	"max_capacity": 50,
+	"reload": {
+		"time": 80,
+		"ammo": "ywzj_vehicle:ammo_machine_gun"
+	}
+}

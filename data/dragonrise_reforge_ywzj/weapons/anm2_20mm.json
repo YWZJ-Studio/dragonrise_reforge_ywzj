@@ -3,8 +3,8 @@
 	"name": "AN/M2 (20 mm)",
 	"damage": 20,
 	"velocity": 16,
-	"recoil": 0.05,
 	"headshot_multiplier": 1.5,
+	"recoil": 0.05,
 	"shoot_interval": 100,
 	"max_capacity": 120,
 	"reload": {

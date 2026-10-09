@@ -4672,11 +4672,11 @@
 					"pivot": [-7.1036, 15.0895, 18.3672]
 				},
 				{
-					"name": "missile_barrel",
+					"name": "pl_8_barrel",
 					"pivot": [0.0001, 27.3488, -50.8427]
 				},
 				{
-					"name": "missile2_barrel",
+					"name": "pl_12_barrel",
 					"pivot": [0.0001, 16.4726, -37.8062]
 				},
 				{

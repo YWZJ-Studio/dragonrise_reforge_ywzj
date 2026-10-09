@@ -1,7 +1,7 @@
 {
 	"type": "ywzj_vehicle:rotary_wing_vehicle",
 	"attributes": {
-		"main_rotor_force": 0.042,
+		"main_rotor_force": 66116.68,
 		"ceiling": 256,
 		"x_rot_speed_acceleration": 1.0,
 		"x_rot_speed_max": 3.0,
@@ -11,22 +11,26 @@
 		"z_rot_speed_max": 3.0,
 		"max_air_speed": 1.8
 	},
-	"landing_gear_part_id": "landing_gear",
 	"max_health": 1000,
 	"view_info": {
-		"third_person_center_offset": [0, 6, 0],
+		"third_person_center_offset": [0, 5.995185638660538, 0],
 		"third_person_distance": 14,
-		"third_person_center_offset_zoomed": [0, 7, 0],
+		"third_person_center_offset_zoomed": [0, 6.995185638660538, 0],
 		"third_person_distance_zoomed": 0,
 		"sound_distance": 8
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 1e-5
+		"energy_consumption_per_tick": 1e-05
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
 		"impact_multiplier": 0.2
+	},
+	"center_offset": [-0.0269088, 1.9324319, -0.0504406],
+	"physics_info": {
+		"mass": 4819,
+		"friction": 9638
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/uh60",
 	"parts": [
@@ -35,25 +39,22 @@
 			"name": "sighting_system",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "sighting_system",
-			"seat_offset": [0, 2.2, 2.4],
+			"seat_offset": [0.71875, 2.609560638660538, 2.95625],
 			"operator_on_weapon_unit": false,
 			"rot_info": {
 				"x_rot_speed": 3,
 				"y_rot_speed": 3,
 				"x_rot_max": 45,
-				"x_rot_min": -13,
-				"y_rot_max": 60,
-				"y_rot_min": -60
+				"x_rot_min": -20,
+				"y_rot_max": 90,
+				"y_rot_min": -90
 			},
-			"optical_sight_offset": [-0.1, 0, 0.01],
-			"operator_view_offset": [-0.1, 1.1, -3],
-			"optical_sight_type": "crt",
+			"optical_sight_offset": [0, 0, 0.03],
+			"operator_view_offset": [-0.0, 0.0, 0.0],
+			"optical_sight_type": "none",
 			"zoom_max": 8,
+			"with_stabilizer": true,
 			"weapons": [
-				{
-					"id": "ywzj_vehicle:rocket",
-					"part_unit_id": "rocket"
-				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
 					"part_unit_id": "decoy_flare"
@@ -61,23 +62,83 @@
 			]
 		},
 		{
-			"id": "rocket",
-			"name": "rocket",
-			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "rocket",
-			"is_seat": false,
-			"fire_control_sensor_type": "ccip",
-			"crosshair_style": "cross",
-			"rot_info": {
-				"x_rot_speed": 0,
-				"y_rot_speed": 0
-			}
+			"id": "pilot_seat_2",
+			"name": "pilot_seat_2",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.71875, 2.609560638660538, 2.95625],
+			"owner_view_offset": [-0.71875, 2.609560638660538, 2.95625],
+			"seat_rot": 0
+		},
+		{
+			"id": "passenger_seat_1",
+			"name": "passenger_seat_1",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [1.04875, 2.382685638660538, -1.6175],
+			"owner_view_offset": [1.04875, 2.382685638660538, -1.6175],
+			"seat_rot": 0
+		},
+		{
+			"id": "passenger_seat_2",
+			"name": "passenger_seat_2",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.35125, 2.382685638660538, -1.6175],
+			"owner_view_offset": [0.35125, 2.382685638660538, -1.6175],
+			"seat_rot": 0
+		},
+		{
+			"id": "passenger_seat_3",
+			"name": "passenger_seat_3",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.35125, 2.382685638660538, -1.6175],
+			"owner_view_offset": [-0.35125, 2.382685638660538, -1.6175],
+			"seat_rot": 0
+		},
+		{
+			"id": "passenger_seat_4",
+			"name": "passenger_seat_4",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-1.04875, 2.382685638660538, -1.6175],
+			"owner_view_offset": [-1.04875, 2.382685638660538, -1.6175],
+			"seat_rot": 0
+		},
+		{
+			"id": "passenger_seat_5",
+			"name": "passenger_seat_5",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.014375, 2.382685638660538, 1.66875],
+			"owner_view_offset": [0.014375, 2.382685638660538, 1.66875],
+			"seat_rot": 180
+		},
+		{
+			"id": "passenger_seat_6",
+			"name": "passenger_seat_6",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.9, 2.382685638660538, 1.65625],
+			"owner_view_offset": [0.9, 2.382685638660538, 1.65625],
+			"seat_rot": 90
+		},
+		{
+			"id": "passenger_seat_7",
+			"name": "passenger_seat_7",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.9, 2.382685638660538, 1.65625],
+			"owner_view_offset": [-0.9, 2.382685638660538, 1.65625],
+			"seat_rot": -90
 		},
 		{
 			"id": "decoy_flare",
 			"name": "decoy_flare",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "decoy_flare",
+			"ammo_capacity": 64,
 			"is_seat": false,
 			"crosshair_style": "none",
 			"firing_mode": "salvo",
@@ -94,10 +155,10 @@
 			"is_seat": false
 		},
 		{
-			"id": "landing_gear",
-			"name": "landing_gear",
-			"type": "ywzj_vehicle:landing_gear",
-			"structure_bone": "landing_gear",
+			"id": "door2",
+			"name": "door2",
+			"type": "ywzj_vehicle:door",
+			"structure_bone": "door2",
 			"is_seat": false
 		}
 	],

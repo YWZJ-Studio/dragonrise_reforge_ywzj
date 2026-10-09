@@ -7,6 +7,6 @@
 	"license": "All Rights Reserved",
 	"authors": ["龙之崛起团队", "YWZJ"],
 	"dependencies": {
-		"ywzj_vehicle": "[0.5.10,)"
+		"ywzj_vehicle": "[0.6.0,)"
 	}
 }

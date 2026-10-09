@@ -1,14 +1,14 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.02,
+		"thrust": 8000,
 		"thrust_k": 1.1,
 		"ceiling": 512,
 		"x_rot_input_step": 0.2,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
-		"air_drag_k_min": 0.002,
-		"air_drag_k_max": 0.008,
+		"air_drag_k_min": 2,
+		"air_drag_k_max": 8,
 		"lift_to_drag_k": 3.0,
 		"x_rot_input_drag_k": 1.0,
 		"y_rot_input_drag_k": 0.25,
@@ -34,7 +34,7 @@
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 1e-5
+		"energy_consumption_per_tick": 1e-05
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
@@ -54,16 +54,18 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
-				"x_rot_min": 0,
 				"x_rot_max": 0,
-				"y_rot_min": 0,
-				"y_rot_max": 0
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0
 			},
 			"optical_sight_offset": [0, 0.6, 1.2],
 			"operator_view_offset": [-0.06, 1, 0],
 			"optical_sight_type": "none",
 			"zoom_max": 12,
-			"sub_part_unit_ids": ["radar"],
+			"sub_part_unit_ids": [
+				"radar"
+			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:gsh_23",
@@ -71,7 +73,7 @@
 				},
 				{
 					"id": "dragonrise_reforge_ywzj:pl_8",
-					"part_unit_id": "missile"
+					"part_unit_id": "pl_8"
 				},
 				{
 					"id": "ywzj_vehicle:decoy_flare",
@@ -92,10 +94,10 @@
 			}
 		},
 		{
-			"id": "missile",
-			"name": "missile",
+			"id": "pl_8",
+			"name": "pl_8",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "missile",
+			"structure_bone": "pl_8",
 			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,

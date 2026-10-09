@@ -1,42 +1,61 @@
 {
 	"type": "ywzj_vehicle:generic",
 	"attributes": {},
-	"max_health": 50,
+	"max_health": 120,
 	"view_info": {
-		"third_person_center_offset": [0, 2, 0],
-		"third_person_distance": 4,
-		"third_person_center_offset_zoomed": [0, 1, 0],
-		"third_person_distance_zoomed": 0,
-		"sound_distance": 3
+		"third_person_center_offset": [0, 1.2373035175718572, 0],
+		"third_person_distance": 6.441781731163099,
+		"sound_distance": 4
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-5
+		"energy_capacity": 0,
+		"energy_consumption_per_tick": 0
+	},
+	"protect_passenger": false,
+	"physics_info": {
+		"mass": 1000,
+		"friction": 2000,
+		"destroy_explosion_velocity": 0.3
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/zu23",
 	"parts": [
 		{
-			"id": "zu23",
-			"name": "zu23",
+			"id": "turret",
+			"name": "turret",
 			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "zu23",
-			"seat_offset": [0, 1, -1],
-			"fire_control_sensor_type": "none",
-			"fire_control_lock_type": "none",
+			"max_health": 120,
+			"render_bone": "weapon_yaw",
+			"structure_bone": "turret",
+			"ammo_capacity": 120,
+			"fire_control_sensor_type": "ccip",
+			"seat_offset": [-0.785, 1.85, -1.1850525],
+			"operator_on_weapon_unit": true,
 			"crosshair_style": "circle",
 			"rot_info": {
 				"x_rot_speed": 3,
 				"y_rot_speed": 3,
-				"x_rot_max": 4,
-				"x_rot_min": -30,
+				"x_rot_max": 5.0,
+				"x_rot_min": -70.0,
 				"need_power": false
 			},
-			"optical_sight_offset": [0, 1, 1],
-			"operator_view_offset": [0, 0.28, -0.8],
-			"operator_on_weapon_unit": true,
+			"optical_sight_offset": [-0.178125, 1.07956625, -0.9269275],
+			"operator_view_offset": [-0.178125, 1.07956625, -0.9269275],
+			"fire_control_lock_type": "none",
 			"optical_sight_type": "operator",
-			"zoom_max": 4,
-			"weapons": ["dragonrise_reforge_ywzj:cannon_23mm"]
+			"zoom_min": 1,
+			"zoom_max": 2,
+			"weapons": [
+				"dragonrise_reforge_ywzj:zu23_fixed"
+			]
+		},
+		{
+			"id": "passenger_seat_1",
+			"name": "passenger_seat_1",
+			"type": "ywzj_vehicle:generic",
+			"structure_bone": "loader_seat",
+			"is_seat": true,
+			"seat_offset": [0.785, 1.85, -1.1850525],
+			"owner_view_offset": [0.785, 1.85, -1.1850525]
 		}
 	],
 	"experimental": true

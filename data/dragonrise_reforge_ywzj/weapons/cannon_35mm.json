@@ -4,9 +4,9 @@
 	"caliber": 35,
 	"damage": 35,
 	"velocity": 32,
-	"recoil": 0.1,
 	"inaccuracy": 1,
 	"headshot_multiplier": 1.5,
+	"recoil": 0.1,
 	"shoot_interval": 50,
 	"max_capacity": 400,
 	"reload": {

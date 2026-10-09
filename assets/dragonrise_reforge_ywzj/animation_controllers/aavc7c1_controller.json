@@ -1,0 +1,160 @@
+{
+	"name": "aavc7c1_controller",
+	"graph": {
+		"type": "merge",
+		"inputs": [
+			{
+				"type": "merge",
+				"inputs": [
+					{
+						"type": "bone_binding",
+						"part_bindings": []
+					},
+					{
+						"type": "bone_binding",
+						"special_bindings": [
+							{
+								"bones": [
+									"track_spin_wheelL0"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelL1"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelL2"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelL3"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelL4"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelL5"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelL6"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.3103703
+							},
+							{
+								"bones": [
+									"track_spin_wheelL7"
+								],
+								"source": "left_wheel_rotation",
+								"axis": "x",
+								"param": -0.3562109
+							},
+							{
+								"bones": [
+									"track_spin_wheelR0"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelR1"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelR2"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelR3"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelR4"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelR5"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.34375
+							},
+							{
+								"bones": [
+									"track_spin_wheelR6"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.3103703
+							},
+							{
+								"bones": [
+									"track_spin_wheelR7"
+								],
+								"source": "right_wheel_rotation",
+								"axis": "x",
+								"param": -0.3562109
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "switchable_animation",
+				"ref": "door_ramp"
+			}
+		]
+	},
+	"switchable_animations": {
+		"door_ramp": {
+			"part_id": "door_ramp",
+			"animation": "door_ramp"
+		}
+	}
+}

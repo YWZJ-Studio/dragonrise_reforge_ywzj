@@ -1,43 +1,23 @@
 {
 	"type": "ywzj_vehicle:generic",
 	"attributes": {},
-	"max_health": 50,
+	"max_health": 40,
 	"view_info": {
-		"third_person_center_offset": [0, 2, 0],
-		"third_person_distance": 4,
-		"third_person_center_offset_zoomed": [0, 1, 0],
-		"third_person_distance_zoomed": 0,
-		"sound_distance": 3
+		"third_person_center_offset": [0, 0.61875, 0],
+		"third_person_distance": 3,
+		"sound_distance": 4
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-5
+		"energy_capacity": 0,
+		"energy_consumption_per_tick": 0
+	},
+	"protect_passenger": false,
+	"physics_info": {
+		"mass": 1000,
+		"friction": 2000,
+		"destroy_explosion_velocity": 0.3
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/shield",
-	"parts": [
-		{
-			"id": "shield",
-			"name": "shield",
-			"type": "ywzj_vehicle:weapon",
-			"structure_bone": "shield",
-			"seat_offset": [0, 1, -1],
-			"fire_control_sensor_type": "none",
-			"fire_control_lock_type": "none",
-			"crosshair_style": "circle",
-			"rot_info": {
-				"x_rot_speed": 3,
-				"y_rot_speed": 3,
-				"x_rot_max": 4,
-				"x_rot_min": -30,
-				"need_power": false
-			},
-			"optical_sight_offset": [0, 1, 1],
-			"operator_view_offset": [0, 0.28, -0.8],
-			"operator_on_weapon_unit": true,
-			"optical_sight_type": "operator",
-			"zoom_max": 4,
-			"weapons": ["ywzj_vehicle:gun_12.7mm"]
-		}
-	],
+	"parts": [],
 	"experimental": true
 }

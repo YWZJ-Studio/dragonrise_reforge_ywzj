@@ -1,0 +1,155 @@
+{
+	"name": "zsl10_controller",
+	"parameters": {},
+	"event_animations": {
+		"turret_fire": [
+			"barrel_shoot"
+		]
+	},
+	"graph": {
+		"type": "additive",
+		"base": {
+			"type": "merge",
+			"inputs": [
+				{
+					"type": "bone_binding",
+					"special_bindings": [
+						{
+							"bones": [
+								"wheelL0Turn"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.65625
+						},
+						{
+							"bones": [
+								"wheelL0Turn"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1,
+							"min": -30,
+							"max": 30
+						},
+						{
+							"bones": [
+								"wheelL1Turn"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.65625
+						},
+						{
+							"bones": [
+								"wheelL1Turn"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1,
+							"min": -15,
+							"max": 15
+						},
+						{
+							"bones": [
+								"wheelL2"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.65625
+						},
+						{
+							"bones": [
+								"wheelL3"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.65625
+						},
+						{
+							"bones": [
+								"wheelR0Turn"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.65625
+						},
+						{
+							"bones": [
+								"wheelR0Turn"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1,
+							"min": -30,
+							"max": 30
+						},
+						{
+							"bones": [
+								"wheelR1Turn"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.65625
+						},
+						{
+							"bones": [
+								"wheelR1Turn"
+							],
+							"source": "steering_angle",
+							"axis": "y",
+							"multiplier": 1,
+							"min": -15,
+							"max": 15
+						},
+						{
+							"bones": [
+								"wheelR2"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.65625
+						},
+						{
+							"bones": [
+								"wheelR3"
+							],
+							"source": "wheel_rotation",
+							"axis": "x",
+							"param": -0.65625
+						}
+					],
+					"part_bindings": [
+						{
+							"bone": "turret",
+							"part": "turret",
+							"rotation_type": "y",
+							"axis": "y",
+							"invert": true
+						},
+						{
+							"bone": "barrel",
+							"part": "turret",
+							"rotation_type": "x",
+							"axis": "x",
+							"invert": true
+						}
+					]
+				},
+				{
+					"type": "switchable_animation",
+					"ref": "wave_deflector"
+				}
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
+	},
+	"switchable_animations": {
+		"wave_deflector": {
+			"part_id": "wave_deflector",
+			"animation": "wave_deflector"
+		}
+	}
+}

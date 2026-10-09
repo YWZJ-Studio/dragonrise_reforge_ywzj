@@ -26,11 +26,6 @@
 			[-0.0018, 1.93, -7.2835, 0.7]
 		]
 	},
-	"physics_info": {
-		"mass": 8000,
-		"friction": 16000,
-		"destroy_explosion_velocity": 0.3
-	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
 	"view_info": {
@@ -50,6 +45,11 @@
 	},
 	"with_warning_receiver": true,
 	"center_offset": [0.0, 1.3882, 0.0],
+	"physics_info": {
+		"mass": 8000,
+		"friction": 16000,
+		"destroy_explosion_velocity": 0.3
+	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/jas39e",
 	"parts": [
 		{
@@ -62,15 +62,18 @@
 			"rot_info": {
 				"x_rot_speed": 15,
 				"y_rot_speed": 15,
-				"x_rot_min": -60,
 				"x_rot_max": 30,
-				"y_rot_min": -90,
-				"y_rot_max": 90
+				"x_rot_min": -60,
+				"y_rot_max": 90,
+				"y_rot_min": -90
 			},
 			"optical_sight_offset": [0, 0, 0.05],
 			"operator_view_offset": [0.6613, 1.5, 1.0582],
 			"optical_sight_type": "crt",
 			"zoom_max": 12,
+			"with_stabilizer": true,
+			"with_focus_locker": true,
+			"with_thermal_imager": true,
 			"sub_part_unit_ids": [
 				"radar"
 			],
@@ -97,10 +100,7 @@
 					"id": "ywzj_vehicle:decoy_flare",
 					"part_unit_id": "decoy_flare"
 				}
-			],
-			"with_stabilizer": true,
-			"with_focus_locker": true,
-			"with_thermal_imager": true
+			]
 		},
 		{
 			"id": "cannon",
@@ -120,32 +120,32 @@
 			"name": "aim_9",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "aim_9",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "ir"
+			}
 		},
 		{
 			"id": "aim_120",
 			"name": "aim_120",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "aim_120",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "rf"
+			}
 		},
 		{
 			"id": "pylon_inner",
@@ -168,6 +168,9 @@
 			"name": "pylon_inner_aim_120",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon_inner",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -175,9 +178,6 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "rf",
 			"weapons": [
 				"dragonrise_reforge_ywzj:aim_120"
 			]
@@ -187,6 +187,9 @@
 			"name": "pylon_inner_agm_65",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon_inner",
+			"render_model": true,
+			"ammo_capacity": 2,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -194,9 +197,6 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"ammo_capacity": 2,
-			"render_model": true,
-			"fire_control_sensor_type": "eo",
 			"weapons": [
 				"dragonrise_reforge_ywzj:agm_65"
 			]
@@ -222,6 +222,9 @@
 			"name": "pylon_fuselage_aim_120",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon_fuselage",
+			"render_model": true,
+			"ammo_capacity": 3,
+			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -229,9 +232,6 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"ammo_capacity": 3,
-			"render_model": true,
-			"fire_control_sensor_type": "rf",
 			"weapons": [
 				"dragonrise_reforge_ywzj:aim_120"
 			]
@@ -241,6 +241,9 @@
 			"name": "pylon_fuselage_gbu_12",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon_fuselage",
+			"render_model": true,
+			"ammo_capacity": 3,
+			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "big_cross",
@@ -248,9 +251,6 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"ammo_capacity": 3,
-			"render_model": true,
-			"fire_control_sensor_type": "eo",
 			"weapons": [
 				"dragonrise_reforge_ywzj:gbu_12"
 			]
@@ -277,8 +277,8 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 30,
-				"y_rot_min": -60,
-				"y_rot_max": 60
+				"y_rot_max": 60,
+				"y_rot_min": -60
 			},
 			"radar_type": "Raven ES-05",
 			"scan_sector_angle": 90,

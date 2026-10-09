@@ -1,51 +1,114 @@
 {
-	"format_version": "1.21.0",
+	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.unknown",
+				"identifier": "geometry.csk181_structure",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 17,
-				"visible_bounds_height": 6.5,
-				"visible_bounds_offset": [0, 2.75, 0]
+				"visible_bounds_width": 10.83,
+				"visible_bounds_height": 7.37,
+				"visible_bounds_offset": [0, 1.165, 0]
 			},
 			"bones": [
 				{
-					"name": "vehicle_body",
+					"name": "vehicle_forward",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 0, 0]
+				},
+				{
+					"name": "main_structure",
+					"parent": "vehicle_forward",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
-							"origin": [-8, 0, -8],
-							"size": [16, 16, 16],
-							"uv": {
-								"north": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"east": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"south": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"west": {
-									"uv": [0, 0],
-									"uv_size": [16, 16]
-								},
-								"up": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								},
-								"down": {
-									"uv": [16, 16],
-									"uv_size": [-16, -16],
-									"uv_rotation": 180
-								}
-							}
+							"origin": [-23.10462, 8.9523, -54.6015209],
+							"size": [46.20924, 28.317, 109.2030419],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "vehicle_body",
+					"parent": "vehicle_forward",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-23.10462, 3.416154, -54.6015209],
+							"size": [46.20924, 33.853146, 109.2030419],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "turret",
+					"parent": "vehicle_forward",
+					"pivot": [0.4218, 38.3513, 6.5384091],
+					"cubes": [
+						{
+							"origin": [-3.94139, 37.94855, 1.9315191],
+							"size": [8.7939, 5.3055, 9.21375],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "turret_barrel",
+					"parent": "turret",
+					"pivot": [0.66669, 40.81966, 5.5334691],
+					"cubes": [
+						{
+							"origin": [-1.95848, 43.96008, -1.2299609],
+							"size": [0.87717, 0.87717, 31.54697],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "wheelR1Turn",
+					"parent": "vehicle_forward",
+					"pivot": [15.6249, 8.9523, 35.6246091],
+					"cubes": [
+						{
+							"origin": [11.2815, 0.0, 26.6723091],
+							"size": [8.6868, 17.9046, 17.9046],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "wheelL1Turn",
+					"parent": "vehicle_forward",
+					"pivot": [-15.6249, 8.9523, 35.6246091],
+					"cubes": [
+						{
+							"origin": [-19.9683, 0.0, 26.6723091],
+							"size": [8.6868, 17.9046, 17.9046],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "wheelR2",
+					"parent": "vehicle_forward",
+					"pivot": [-15.6249, 8.9523, -30.0753909],
+					"cubes": [
+						{
+							"origin": [-19.9683, 0.0, -39.0276909],
+							"size": [8.6868, 17.9046, 17.9046],
+							"uv": [0, 0]
+						}
+					]
+				},
+				{
+					"name": "wheelL2",
+					"parent": "vehicle_forward",
+					"pivot": [15.6249, 8.9523, -30.0753909],
+					"cubes": [
+						{
+							"origin": [11.2815, 0.0, -39.0276909],
+							"size": [8.6868, 17.9046, 17.9046],
+							"uv": [0, 0]
 						}
 					]
 				}

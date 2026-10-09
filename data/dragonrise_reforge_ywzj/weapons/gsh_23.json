@@ -5,8 +5,8 @@
 	"damage": 30,
 	"velocity": 32,
 	"inaccuracy": 0.15,
-	"recoil": 0.2,
 	"headshot_multiplier": 1.5,
+	"recoil": 0.2,
 	"shoot_interval": 20,
 	"max_capacity": 120,
 	"reload": {

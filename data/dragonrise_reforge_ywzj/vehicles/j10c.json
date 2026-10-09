@@ -1,14 +1,14 @@
 {
 	"type": "ywzj_vehicle:fixed_wing_vehicle",
 	"attributes": {
-		"thrust": 0.02,
+		"thrust": 8000,
 		"thrust_k": 1.4,
 		"ceiling": 512,
 		"x_rot_input_step": 0.4,
 		"y_rot_input_step": 0.5,
 		"z_rot_input_step": 0.2,
-		"air_drag_k_min": 0.002,
-		"air_drag_k_max": 0.008,
+		"air_drag_k_min": 2,
+		"air_drag_k_max": 8,
 		"lift_to_drag_k": 3,
 		"x_rot_input_drag_k": 1.2,
 		"y_rot_input_drag_k": 0.25,
@@ -22,8 +22,12 @@
 			[5.267, 1.714, -4.559],
 			[-5.267, 1.714, -4.559]
 		],
-		"afterburner_offsets": [[0, 2.05, -7, 1]],
-		"aerobatic_smoke_offsets": [[0, 2.673, -9.339]]
+		"afterburner_offsets": [
+			[0, 2.05, -7, 1]
+		],
+		"aerobatic_smoke_offsets": [
+			[0, 2.673, -9.339]
+		]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
@@ -36,7 +40,7 @@
 	},
 	"energy_info": {
 		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 1e-5
+		"energy_consumption_per_tick": 1e-05
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
@@ -56,16 +60,18 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
-				"x_rot_min": 0,
 				"x_rot_max": 0,
-				"y_rot_min": 0,
-				"y_rot_max": 0
+				"x_rot_min": 0,
+				"y_rot_max": 0,
+				"y_rot_min": 0
 			},
-			"optical_sight_offset": [0, 0, 1],
-			"operator_view_offset": [0.108, 0.274, -2.1],
-			"optical_sight_type": "crt",
+			"optical_sight_offset": [0, 0, 0],
+			"operator_view_offset": [0, 0, 0],
+			"optical_sight_type": "none",
 			"zoom_max": 12,
-			"sub_part_unit_ids": ["radar"],
+			"sub_part_unit_ids": [
+				"radar"
+			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:type_23_3",

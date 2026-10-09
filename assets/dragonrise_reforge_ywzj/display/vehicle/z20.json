@@ -5,6 +5,31 @@
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/z20.png",
 	"animations": "dragonrise_reforge_ywzj:entity/z20.animation",
 	"animation_controller": "dragonrise_reforge_ywzj:z20_controller",
+	"special_bone_effects": [
+		{
+			"bone": "glass_bone5",
+			"type": "transparent"
+		},
+		{
+			"bone": "glass_bone6",
+			"type": "transparent"
+		},
+		{
+			"bone": "glass_fill_windows",
+			"type": "transparent",
+			"texture": "dragonrise_reforge_ywzj:textures/entity/nh90.png"
+		},
+		{
+			"bone": "glass_fill_bone5",
+			"type": "transparent",
+			"texture": "dragonrise_reforge_ywzj:textures/entity/nh90.png"
+		},
+		{
+			"bone": "glass_fill_bone6",
+			"type": "transparent",
+			"texture": "dragonrise_reforge_ywzj:textures/entity/nh90.png"
+		}
+	],
 	"sounds": {
 		"engine_start": "ywzj_vehicle:z10_engine_start",
 		"engine_stop": "ywzj_vehicle:z10_engine_stop",
