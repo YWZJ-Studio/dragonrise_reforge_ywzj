@@ -16,8 +16,8 @@
 		"sound_distance": 7
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05,
+		"energy_capacity": 588,
+		"energy_consumption_per_tick": 0.00125,
 		"engine_particle_offsets": [
 			[-2.3, 1.8, 2.2]
 		]
@@ -87,11 +87,50 @@
 			"name": "turret_smoke_grenade",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "turret_gr",
+			"ammo_capacity": 6,
 			"is_seat": false,
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"bolts": [
+				{
+					"offset": [-1.3714182, 0.4507238, 1.0770516],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.2248856, 0.415807, 1.2681276],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.0533498, 0.3871692, 1.4287727],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [1.2651682, 0.4694738, 1.1083016],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.0873856, 0.434557, 1.2806276],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [0.9220998, 0.4059192, 1.4287727],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				}
+			]
 		},
 		{
 			"id": "seat1",

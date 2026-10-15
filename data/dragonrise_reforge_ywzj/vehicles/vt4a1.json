@@ -16,8 +16,8 @@
 		"sound_distance": 7
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05,
+		"energy_capacity": 900,
+		"energy_consumption_per_tick": 0.0025,
 		"engine_particle_offsets": [
 			[1.288, 1.47, -5.39]
 		]
@@ -82,11 +82,86 @@
 			"name": "turret_smoke_grenade",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "turret_gr",
+			"ammo_capacity": 12,
 			"is_seat": false,
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"bolts": [
+				{
+					"offset": [1.6263903, 1.2931008, -1.3562174],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.4405481, 1.2948577, -1.3314011],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.4107653, 1.4277215, -1.5380183],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.3920153, 1.538927, -1.7208416],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.5795153, 1.5409716, -1.767672],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.5982653, 1.4297662, -1.5848487],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [-1.6263903, 1.2931008, -1.3562174],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.4107653, 1.4277215, -1.5380183],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.4405481, 1.2948577, -1.3314011],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.5982653, 1.4297662, -1.5848487],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.5795153, 1.5409716, -1.767672],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.3920153, 1.538927, -1.7208416],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				}
+			]
 		},
 		{
 			"id": "commander_machine_gun",

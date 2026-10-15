@@ -20,8 +20,8 @@
 		}
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05,
+		"energy_capacity": 1180,
+		"energy_consumption_per_tick": 0.002361111,
 		"engine_particle_offsets": [
 			[0.5, 1.8, -3],
 			[-0.5, 1.8, -3]
@@ -98,7 +98,45 @@
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"bolts": [
+				{
+					"offset": [-1.1500934, 0.2584741, 1.0417122],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.1970503, 0.1425375, 1.0359656],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.2432841, 0.0263444, 1.0295724],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [1.0573934, 0.2584741, 1.0417122],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.1043503, 0.1425375, 1.0359656],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.1505841, 0.0263444, 1.0295724],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				}
+			]
 		},
 		{
 			"id": "seat_radio_operator",

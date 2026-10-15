@@ -16,8 +16,8 @@
 		"sound_distance": 7
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05
+		"energy_capacity": 600,
+		"energy_consumption_per_tick": 0.001388889
 	},
 	"physics_info": {
 		"mass": 45155,
@@ -33,7 +33,7 @@
 			"type": "ywzj_vehicle:weapon",
 			"render_bone": "weapon_drive_yaw",
 			"structure_bone": "turret",
-			"seat_offset": [-0.5, 2.3796875, 0.628125],
+			"seat_offset": [-0.605, 2.40625, 0.26875],
 			"seat_rot": 0,
 			"operator_on_weapon_unit": true,
 			"rot_info": {
@@ -42,19 +42,18 @@
 				"x_rot_max": 5,
 				"x_rot_min": -13
 			},
-			"optical_sight_offset": [-0.5356334, 1.1073759, 0.7145644],
-			"operator_view_offset": [-0.5, 0.5, -0.3125],
+			"optical_sight_offset": [0.62013125, 0.75910188, 0.62402063],
+			"operator_view_offset": [-0.60393125, 1.08535188, -0.06754187],
 			"fire_control_lock_type": "aim_hit",
 			"optical_sight_type": "crt",
 			"zoom_max": 6,
 			"with_stabilizer": false,
 			"with_thermal_imager": false,
 			"weapons": [
-				"dragonrise_reforge_ywzj:cannon_105mm",
+				"dragonrise_reforge_ywzj:cannon_105mm_dtc10105_400_1_80",
 				{
-					"id": "ywzj_vehicle:gun_7.62mm",
-					"part_unit_id": "turret_machine_gun",
-					"secondary": true
+					"id": "ywzj_vehicle:launcher_smoke_grenade",
+					"part_unit_id": "turret_smoke_grenade"
 				}
 			]
 		},
@@ -66,7 +65,7 @@
 			"render_bone": "crew_mg_visual_yaw",
 			"structure_bone": "turret_st",
 			"is_seat": true,
-			"seat_offset": [0.2870188, 2.5364562, -0.3494437],
+			"seat_offset": [0.63625, 2.40625, 0.33125],
 			"seat_rot": 0,
 			"operator_on_weapon_unit": false,
 			"rot_info": {
@@ -75,31 +74,28 @@
 				"x_rot_max": 10,
 				"x_rot_min": -60
 			},
-			"optical_sight_offset": [0.0202746, 0.7569778, -0.1558137],
-			"operator_view_offset": [0.0, 0.4375, -0.5],
+			"optical_sight_offset": [0.01441062, 0.5231625, 0.2261825],
+			"operator_view_offset": [0.01441062, 0.6169125, -0.4613175],
 			"optical_sight_type": "operator",
 			"zoom_min": 1,
 			"zoom_max": 4,
 			"with_stabilizer": false,
 			"with_thermal_imager": false,
-			"bolts": [
-				{
-					"offset": [0.1636634, 0.2180741, 0.0],
-					"barrel_length": 1.5072993750000006,
-					"x_rot": 0,
-					"y_rot": 0
-				}
-			],
 			"weapons": [
-				"ywzj_vehicle:gun_12.7mm"
+				"dragonrise_reforge_ywzj:gun_12_7mm_w85",
+				{
+					"id": "dragonrise_reforge_ywzj:ztq15_grenade_launcher",
+					"part_unit_id": "turret_machine_gun",
+					"secondary": true
+				}
 			]
 		},
 		{
 			"id": "driver_seat_2",
 			"name": "driver_seat_2",
 			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0.0, 2.0217619, 2.5274366],
-			"owner_view_offset": [0.0, 2.0217619, 2.5274366],
+			"seat_offset": [0.448625, 1.59375, 2.260375],
+			"owner_view_offset": [0.448625, 1.7, 2.6125],
 			"seat_rot": 0
 		},
 		{
@@ -146,7 +142,7 @@
 			"name": "suspension_left_2",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelL18",
+			"render_bone": "track_spin_wheelL2",
 			"structure_bone": "suspension_left_2",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -161,7 +157,7 @@
 			"name": "suspension_left_3",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelL2",
+			"render_bone": "track_spin_wheelL3",
 			"structure_bone": "suspension_left_3",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -176,7 +172,7 @@
 			"name": "suspension_left_4",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelL3",
+			"render_bone": "track_spin_wheelL4",
 			"structure_bone": "suspension_left_4",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -191,7 +187,7 @@
 			"name": "suspension_left_5",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelL4",
+			"render_bone": "track_spin_wheelL5",
 			"structure_bone": "suspension_left_5",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -206,7 +202,7 @@
 			"name": "suspension_left_6",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelL5",
+			"render_bone": "track_spin_wheelL6",
 			"structure_bone": "suspension_left_6",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -221,7 +217,7 @@
 			"name": "suspension_right_1",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelR10",
+			"render_bone": "track_spin_wheelL7",
 			"structure_bone": "suspension_right_1",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -236,7 +232,7 @@
 			"name": "suspension_right_2",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelR16",
+			"render_bone": "track_spin_wheelL8",
 			"structure_bone": "suspension_right_2",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -251,7 +247,7 @@
 			"name": "suspension_right_3",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelR14",
+			"render_bone": "track_spin_wheelL9",
 			"structure_bone": "suspension_right_3",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -266,7 +262,7 @@
 			"name": "suspension_right_4",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelR13",
+			"render_bone": "track_spin_wheelL10",
 			"structure_bone": "suspension_right_4",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -281,7 +277,7 @@
 			"name": "suspension_right_5",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelR11",
+			"render_bone": "track_spin_wheelL11",
 			"structure_bone": "suspension_right_5",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -296,7 +292,7 @@
 			"name": "suspension_right_6",
 			"type": "ywzj_vehicle:suspension",
 			"max_health": 50,
-			"render_bone": "track_spin_wheelR12",
+			"render_bone": "track_spin_wheelL12",
 			"structure_bone": "suspension_right_6",
 			"is_seat": false,
 			"spring_stiffness": 399809.895833,
@@ -305,6 +301,92 @@
 			"max_compression": 0.2,
 			"max_extension": 0.15,
 			"max_droop": 0.1
+		},
+		{
+			"id": "turret_smoke_grenade",
+			"name": "turret_smoke_grenade",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "turret_gr",
+			"ammo_capacity": 12,
+			"is_seat": false,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"bolts": [
+				{
+					"offset": [0.97333377, 0.59471529, -1.57142333],
+					"barrel_length": 0.4050875,
+					"x_rot": -29.494077860451043,
+					"y_rot": -1.1403386581394095
+				},
+				{
+					"offset": [0.97334856, 0.63554353, -1.75567824],
+					"barrel_length": 0.4189975,
+					"x_rot": -29.494077860451043,
+					"y_rot": -1.1403386581394095
+				},
+				{
+					"offset": [1.14370531, 0.66945138, -1.96329387],
+					"barrel_length": 0.4050875,
+					"x_rot": -29.494077860451043,
+					"y_rot": -1.1403386581394095
+				},
+				{
+					"offset": [0.97333377, 0.67122029, -1.96090333],
+					"barrel_length": 0.4050875,
+					"x_rot": -29.494077860451043,
+					"y_rot": -1.1403386581394095
+				},
+				{
+					"offset": [1.09368415, 0.61939759, -1.76948139],
+					"barrel_length": 0.4259525,
+					"x_rot": -27.89066628227427,
+					"y_rot": -20.456032729388838
+				},
+				{
+					"offset": [1.11822447, 0.58537525, -1.58730527],
+					"barrel_length": 0.4050875,
+					"x_rot": -28.220817234143265,
+					"y_rot": -18.22077101027994
+				},
+				{
+					"offset": [-0.97119627, 0.67122029, -1.96090333],
+					"barrel_length": 0.4050875,
+					"x_rot": -29.494077860451043,
+					"y_rot": 1.1403386581394095
+				},
+				{
+					"offset": [-1.14156781, 0.66945138, -1.96329387],
+					"barrel_length": 0.4050875,
+					"x_rot": -29.494077860451043,
+					"y_rot": 1.1403386581394095
+				},
+				{
+					"offset": [-0.97121106, 0.63554353, -1.75567824],
+					"barrel_length": 0.4189975,
+					"x_rot": -29.494077860451043,
+					"y_rot": 1.1403386581394095
+				},
+				{
+					"offset": [-1.11608697, 0.58537525, -1.58730527],
+					"barrel_length": 0.4050875,
+					"x_rot": -28.220817234143265,
+					"y_rot": 18.22077101027994
+				},
+				{
+					"offset": [-1.09154665, 0.61939759, -1.76948139],
+					"barrel_length": 0.4259525,
+					"x_rot": -27.89066628227427,
+					"y_rot": 20.456032729388838
+				},
+				{
+					"offset": [-0.97119627, 0.59471529, -1.57142333],
+					"barrel_length": 0.4050875,
+					"x_rot": -29.494077860451043,
+					"y_rot": 1.1403386581394095
+				}
+			]
 		}
 	],
 	"experimental": true

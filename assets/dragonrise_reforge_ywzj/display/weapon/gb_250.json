@@ -1,6 +1,6 @@
 {
 	"type": "ywzj_vehicle:weapon",
-	"model": "dragonrise_reforge_ywzj:entity/bomb_gb_250",
+	"model": "dragonrise_reforge_ywzj:weapon/bomb_gb_250",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/bomb_gb_250.png",
 	"sounds": {
 		"fire": "ywzj_vehicle:bomb_drop",

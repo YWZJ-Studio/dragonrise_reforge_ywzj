@@ -1,0 +1,21 @@
+{
+	"type": "ywzj_vehicle:grenade",
+	"grenade": "frag",
+	"name": "自动榴弹发射器",
+	"caliber": 40,
+	"damage": 40,
+	"velocity": 6,
+	"shoot_interval": 160,
+	"max_capacity": 32,
+	"reload": {
+		"time": 100,
+		"ammo": "ywzj_vehicle:ammo_grenade"
+	},
+	"gravity": 0.07,
+	"should_bounce": false,
+	"broke_on_ground": true,
+	"explosion": {
+		"damage": 50,
+		"radius": 5
+	}
+}

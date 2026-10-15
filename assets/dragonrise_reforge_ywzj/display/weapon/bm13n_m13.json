@@ -1,0 +1,9 @@
+{
+	"type": "ywzj_vehicle:weapon",
+	"model": "dragonrise_reforge_ywzj:weapon/rocket_bm13n_m13",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/bm13n.png",
+	"sounds": {
+		"fire": "dragonrise_reforge_ywzj:bm13n_m13_fire",
+		"reload": "ywzj_vehicle:common_reload"
+	}
+}

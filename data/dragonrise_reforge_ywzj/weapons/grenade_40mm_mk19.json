@@ -1,0 +1,18 @@
+{
+	"type": "ywzj_vehicle:grenade",
+	"name": "weapon.dragonrise_reforge_ywzj.grenade_40mm_mk19",
+	"damage": 50,
+	"velocity": 3,
+	"shoot_interval": 171,
+	"max_capacity": 96,
+	"reload": {
+		"time": 100,
+		"ammo": "ywzj_vehicle:ammo_grenade"
+	},
+	"explosion": {
+		"explode": true,
+		"damage": 80,
+		"radius": 5
+	},
+	"caliber": 40
+}

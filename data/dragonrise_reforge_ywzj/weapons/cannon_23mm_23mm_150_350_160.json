@@ -1,0 +1,22 @@
+{
+	"type": "ywzj_vehicle:cannon",
+	"name": "weapon.dragonrise_reforge_ywzj.cannon_23mm_23mm_150_350_160",
+	"caliber": 23,
+	"damage": 30,
+	"velocity": 32,
+	"inaccuracy": 0.15,
+	"headshot_multiplier": 1.5,
+	"recoil": 0.05,
+	"shoot_interval": 150,
+	"max_capacity": 350,
+	"reload": {
+		"time": 160,
+		"ammo": "ywzj_vehicle:ammo_auto_cannon"
+	},
+	"explosion": {
+		"explode": true,
+		"damage": 10,
+		"radius": 1,
+		"destroy_block": true
+	}
+}

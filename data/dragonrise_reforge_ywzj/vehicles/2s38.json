@@ -16,8 +16,8 @@
 		"sound_distance": 7
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05
+		"energy_capacity": 588,
+		"energy_consumption_per_tick": 0.00125
 	},
 	"physics_info": {
 		"mass": 18112,
@@ -50,11 +50,15 @@
 			"with_stabilizer": false,
 			"with_thermal_imager": false,
 			"weapons": [
-				"dragonrise_reforge_ywzj:cannon_57mm",
+				"dragonrise_reforge_ywzj:cannon_57mm_3ubm22",
 				{
-					"id": "ywzj_vehicle:gun_7.62mm",
+					"id": "dragonrise_reforge_ywzj:gun_7_62mm_pktm_100_750_120",
 					"part_unit_id": "turret_machine_gun",
 					"secondary": true
+				},
+				{
+					"id": "ywzj_vehicle:launcher_smoke_grenade",
+					"part_unit_id": "turret_smoke_grenade"
 				}
 			]
 		},
@@ -269,6 +273,92 @@
 			"max_compression": 0.2,
 			"max_extension": 0.15,
 			"max_droop": 0.1
+		},
+		{
+			"id": "turret_smoke_grenade",
+			"name": "turret_smoke_grenade",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "turret_gr",
+			"ammo_capacity": 12,
+			"is_seat": false,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"bolts": [
+				{
+					"offset": [-0.8362549, 0.5307473, -0.2827997],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-0.8257174, 0.3112315, -0.2703371],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-0.2523415, 0.4036981, 0.9746225],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-0.2762847, 0.567373, 0.8648262],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-0.2805976, 0.0888948, 1.2491337],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-0.5538686, 0.0905825, 1.0969137],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [0.3210359, 0.575091, 0.8155831],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [0.7589916, 0.627617, -0.8658372],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [0.7481833, 0.466102, -0.8493169],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [0.7380214, 0.3173839, -0.8438403],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [0.2945804, 0.4046241, 0.9757661],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [0.4374943, 0.0974564, 1.2715721],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				}
+			]
 		}
 	],
 	"experimental": true

@@ -1,0 +1,17 @@
+{
+	"type": "ywzj_vehicle:cannon",
+	"name": "weapon.dragonrise_reforge_ywzj.gun_12_7mm_w85",
+	"caliber": 12.7,
+	"tracer_r": 0.9,
+	"tracer_g": 0.4,
+	"tracer_b": 0.1,
+	"damage": 15,
+	"velocity": 16,
+	"headshot_multiplier": 1.5,
+	"shoot_interval": 100,
+	"max_capacity": 600,
+	"reload": {
+		"time": 100,
+		"ammo": "ywzj_vehicle:ammo_machine_gun"
+	}
+}

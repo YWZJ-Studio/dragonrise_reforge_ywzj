@@ -16,6 +16,6 @@
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/ztq15_track_link",
 		"texture": "dragonrise_reforge_ywzj:textures/entity/ztq15.png",
-		"module_length": 0.25
+		"module_length": 0.173838739
 	}
 }

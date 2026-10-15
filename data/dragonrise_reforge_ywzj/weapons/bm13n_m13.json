@@ -1,0 +1,24 @@
+{
+	"type": "ywzj_vehicle:rocket",
+	"name": "weapon.dragonrise_reforge_ywzj.bm13n_m13",
+	"caliber": 132,
+	"damage": 180,
+	"velocity": 3.5,
+	"inaccuracy": 1.5,
+	"shoot_interval": 200,
+	"max_capacity": 16,
+	"reload": {
+		"time": 600,
+		"ammo": "ywzj_vehicle:ammo_rocket"
+	},
+	"mass": 42.3,
+	"thrust": 19620,
+	"motor_burn_time": 14,
+	"engine_nozzle_offset": [0, 0, -0.705853984375],
+	"drag_coefficient": 0.08,
+	"explosion": {
+		"explode": true,
+		"damage": 250,
+		"radius": 7
+	}
+}

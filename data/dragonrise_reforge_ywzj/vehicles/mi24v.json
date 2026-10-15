@@ -20,8 +20,8 @@
 		"sound_distance": 8
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05
+		"energy_capacity": 1500,
+		"energy_consumption_per_tick": 0.009722222
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
@@ -57,11 +57,11 @@
 			"with_stabilizer": true,
 			"weapons": [
 				{
-					"id": "dragonrise_reforge_ywzj:auto_cannon",
+					"id": "dragonrise_reforge_ywzj:cannon_23mm_mi24v_cannon",
 					"part_unit_id": "auto_cannon"
 				},
 				{
-					"id": "dragonrise_reforge_ywzj:rocket_80mm",
+					"id": "dragonrise_reforge_ywzj:rocket_mi24v_rocket",
 					"part_unit_id": "rocket"
 				},
 				{
@@ -128,7 +128,7 @@
 			"name": "auto_cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "auto_cannon",
-			"ammo_capacity": 450,
+			"ammo_capacity": 350,
 			"is_seat": false,
 			"rot_info": {
 				"x_rot_speed": 3,
@@ -144,7 +144,7 @@
 			"name": "rocket",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "rocket",
-			"ammo_capacity": 57,
+			"ammo_capacity": 80,
 			"is_seat": false,
 			"rot_info": {
 				"x_rot_speed": 0,

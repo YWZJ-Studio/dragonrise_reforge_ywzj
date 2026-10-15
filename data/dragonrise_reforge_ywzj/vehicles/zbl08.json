@@ -85,7 +85,7 @@
 			"type": "ywzj_vehicle:weapon",
 			"render_bone": "turret",
 			"structure_bone": "turret",
-			"ammo_capacity": 300,
+			"ammo_capacity": 250,
 			"fire_control_sensor_type": "eo",
 			"is_seat": true,
 			"seat_offset": [0.0, 2.6718753, -2.1958247],
@@ -104,9 +104,9 @@
 			"with_stabilizer": true,
 			"with_thermal_imager": false,
 			"weapons": [
-				"dragonrise_reforge_ywzj:cannon_30mm",
+				"dragonrise_reforge_ywzj:cannon_30mm_30mm_dtc04_30_apds",
 				{
-					"id": "ywzj_vehicle:gun_7.62mm",
+					"id": "dragonrise_reforge_ywzj:gun_5_8mm_qjt_75_500_160",
 					"part_unit_id": "turret_machine_gun",
 					"secondary": true
 				},
@@ -294,76 +294,76 @@
 			},
 			"bolts": [
 				{
-					"offset": [0.5226737, 0.4499402, 0.8183866],
-					"barrel_length": 0.26661,
-					"x_rot": -25.615895,
-					"y_rot": -7.462038
+					"offset": [0.553895, 0.5652053, 1.0567562],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
 				},
 				{
-					"offset": [0.5099208, 0.3522046, 0.9115846],
-					"barrel_length": 0.275985,
-					"x_rot": -25.615895,
-					"y_rot": -7.462038
+					"offset": [0.54224, 0.4715228, 1.1583362],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
 				},
 				{
-					"offset": [0.5027664, 0.2518939, 0.9862631],
-					"barrel_length": 0.3087975,
-					"x_rot": -25.615895,
-					"y_rot": -7.462038
+					"offset": [0.5389281, 0.3853982, 1.2623515],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
 				},
 				{
-					"offset": [0.6403937, 0.2576552, 1.0000966],
-					"barrel_length": 0.26661,
-					"x_rot": -25.615895,
-					"y_rot": -7.462038
+					"offset": [0.671615, 0.3729203, 1.2384662],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
 				},
 				{
-					"offset": [0.6443987, 0.3562577, 0.9145216],
-					"barrel_length": 0.26661,
-					"x_rot": -25.615895,
-					"y_rot": -7.462038
+					"offset": [0.67562, 0.4715228, 1.1528912],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
 				},
 				{
-					"offset": [0.6578537, 0.4499402, 0.7980916],
-					"barrel_length": 0.26661,
-					"x_rot": -25.615895,
-					"y_rot": -7.462038
+					"offset": [0.689075, 0.5652053, 1.0364612],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
 				},
 				{
-					"offset": [-0.6086954, 0.4560199, 0.8309595],
-					"barrel_length": 0.2525475,
-					"x_rot": -25.615895,
-					"y_rot": 7.462038
+					"offset": [-0.63827, 0.5652053, 1.0567562],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
 				},
 				{
-					"offset": [-0.5937469, 0.350178, 0.9073936],
-					"barrel_length": 0.2806725,
-					"x_rot": -25.615895,
-					"y_rot": 7.462038
+					"offset": [-0.626615, 0.4715228, 1.1583362],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
 				},
 				{
-					"offset": [-0.589886, 0.2620268, 1.007218],
-					"barrel_length": 0.28536,
-					"x_rot": -25.615895,
-					"y_rot": 7.462038
+					"offset": [-0.6233031, 0.3853982, 1.2623515],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
 				},
 				{
-					"offset": [-0.7242197, 0.2556286, 0.9959056],
-					"barrel_length": 0.2712975,
-					"x_rot": -25.615895,
-					"y_rot": 7.462038
+					"offset": [-0.75599, 0.3729203, 1.2384662],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
 				},
 				{
-					"offset": [-0.7287737, 0.3562577, 0.9145216],
-					"barrel_length": 0.26661,
-					"x_rot": -25.615895,
-					"y_rot": 7.462038
+					"offset": [-0.759995, 0.4715228, 1.1528912],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
 				},
 				{
-					"offset": [-0.7422287, 0.4499402, 0.7980916],
-					"barrel_length": 0.26661,
-					"x_rot": -25.615895,
-					"y_rot": 7.462038
+					"offset": [-0.77345, 0.5652053, 1.0364612],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
 				}
 			]
 		},

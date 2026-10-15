@@ -76,7 +76,7 @@
 			"type": "ywzj_vehicle:weapon",
 			"render_bone": "turret",
 			"structure_bone": "turret",
-			"ammo_capacity": 300,
+			"ammo_capacity": 600,
 			"fire_control_sensor_type": "none",
 			"is_seat": true,
 			"seat_offset": [0.0, 2.7233664, 0.3182706],
@@ -96,7 +96,7 @@
 			"zoom_max": 8,
 			"with_stabilizer": false,
 			"weapons": [
-				"ywzj_vehicle:gun_12.7mm"
+				"dragonrise_reforge_ywzj:gun_12_7mm_m2hb_100_600_100"
 			]
 		},
 		{

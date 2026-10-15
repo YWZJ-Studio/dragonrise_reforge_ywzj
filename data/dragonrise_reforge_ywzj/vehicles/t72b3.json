@@ -16,8 +16,8 @@
 		"sound_distance": 7
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05
+		"energy_capacity": 845,
+		"energy_consumption_per_tick": 0.002361111
 	},
 	"physics_info": {
 		"mass": 45155,
@@ -49,11 +49,15 @@
 			"optical_sight_type": "crt",
 			"zoom_max": 8,
 			"weapons": [
-				"dragonrise_reforge_ywzj:cannon_125mm",
+				"dragonrise_reforge_ywzj:cannon_125mm_3bm60_400_1_120",
 				{
-					"id": "ywzj_vehicle:gun_7.62mm",
+					"id": "dragonrise_reforge_ywzj:gun_7_62mm_pkmt",
 					"part_unit_id": "turret_machine_gun",
 					"secondary": true
+				},
+				{
+					"id": "ywzj_vehicle:launcher_smoke_grenade",
+					"part_unit_id": "turret_smoke_grenade"
 				}
 			]
 		},
@@ -90,7 +94,7 @@
 				}
 			],
 			"weapons": [
-				"ywzj_vehicle:gun_12.7mm"
+				"dragonrise_reforge_ywzj:gun_12_7mm_kord_86_300_160"
 			]
 		},
 		{
@@ -314,6 +318,68 @@
 			"max_compression": 0.2,
 			"max_extension": 0.15,
 			"max_droop": 0.1
+		},
+		{
+			"id": "turret_smoke_grenade",
+			"name": "turret_smoke_grenade",
+			"type": "ywzj_vehicle:weapon",
+			"structure_bone": "turret_gr",
+			"ammo_capacity": 8,
+			"is_seat": false,
+			"rot_info": {
+				"x_rot_speed": 0,
+				"y_rot_speed": 0
+			},
+			"bolts": [
+				{
+					"offset": [1.7833653, 0.4205897, 0.3998077],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.9483653, 0.4205897, 0.3998077],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.9633653, 0.5855897, 0.3248077],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.7983653, 0.5855897, 0.3248077],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.6558653, 0.5855897, 0.3248077],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.7908653, 0.7430897, 0.2498077],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.6258653, 0.7430897, 0.2498077],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.4833653, 0.7430897, 0.2498077],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				}
+			]
 		}
 	],
 	"experimental": true

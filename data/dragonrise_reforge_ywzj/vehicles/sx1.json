@@ -77,7 +77,7 @@
 			"type": "ywzj_vehicle:weapon",
 			"render_bone": "turret",
 			"structure_bone": "turret",
-			"ammo_capacity": 300,
+			"ammo_capacity": 120,
 			"fire_control_sensor_type": "none",
 			"is_seat": true,
 			"seat_offset": [0.0, 2.656427, -0.6721051],
@@ -97,7 +97,7 @@
 			"zoom_max": 4,
 			"with_stabilizer": false,
 			"weapons": [
-				"dragonrise_reforge_ywzj:grenade_40mm"
+				"dragonrise_reforge_ywzj:grenade_40mm_mk19_133_120_100"
 			]
 		},
 		{

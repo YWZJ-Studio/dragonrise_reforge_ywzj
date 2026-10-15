@@ -1,0 +1,21 @@
+{
+	"type": "ywzj_vehicle:cannon",
+	"name": "weapon.dragonrise_reforge_ywzj.cannon_20mm_m197",
+	"caliber": 20,
+	"damage": 20,
+	"velocity": 16,
+	"headshot_multiplier": 1.5,
+	"recoil": 0.05,
+	"shoot_interval": 96,
+	"max_capacity": 1200,
+	"reload": {
+		"time": 160,
+		"ammo": "ywzj_vehicle:ammo_auto_cannon"
+	},
+	"explosion": {
+		"explode": true,
+		"damage": 10,
+		"radius": 0.5,
+		"destroy_block": true
+	}
+}

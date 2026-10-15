@@ -38,5 +38,12 @@
 			"dragonrise_reforge_ywzj:weapon/artillery/cannon_88mm_pak43_shot_03"
 		],
 		"subtitle": "dragonrise_reforge_ywzj.sounds.88mm_shot"
+	},
+	"bm13n_m13_fire": {
+		"sounds": [
+			"dragonrise_reforge_ywzj:weapon/rocket/bm13n_m13_fire_001",
+			"dragonrise_reforge_ywzj:weapon/rocket/bm13n_m13_fire_002",
+			"dragonrise_reforge_ywzj:weapon/rocket/bm13n_m13_fire_003"
+		]
 	}
 }

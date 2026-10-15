@@ -1,6 +1,6 @@
 {
 	"type": "ywzj_vehicle:weapon",
-	"model": "dragonrise_reforge_ywzj:entity/missile_9k33m3",
+	"model": "dragonrise_reforge_ywzj:weapon/missile_9k33m3",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/akm.png",
 	"sounds": {
 		"fire": "dragonrise_reforge_ywzj:missile_start_med",

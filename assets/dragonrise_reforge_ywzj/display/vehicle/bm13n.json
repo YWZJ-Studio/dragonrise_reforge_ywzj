@@ -1,0 +1,14 @@
+{
+	"type": "ywzj_vehicle:wheeled_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/bm13n",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/bm13n.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/bm13n.png",
+	"animation_controller": "dragonrise_reforge_ywzj:bm13n_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:lav150_engine_start",
+		"engine_idle": "ywzj_vehicle:truck_engine_idle",
+		"engine_run": "ywzj_vehicle:truck_engine_run"
+	},
+	"description": "vehicle.bm13n.description",
+	"tab_index": 2130
+}

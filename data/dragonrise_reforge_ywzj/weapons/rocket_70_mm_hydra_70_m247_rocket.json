@@ -1,0 +1,20 @@
+{
+	"type": "ywzj_vehicle:rocket",
+	"name": "weapon.dragonrise_reforge_ywzj.rocket_70_mm_hydra_70_m247_rocket",
+	"damage": 100,
+	"velocity": 4,
+	"shoot_interval": 133,
+	"max_capacity": 14,
+	"reload": {
+		"time": 200,
+		"ammo": "ywzj_vehicle:ammo_rocket"
+	},
+	"explosion": {
+		"explode": true,
+		"damage": 200,
+		"radius": 6
+	},
+	"mass": 10.4,
+	"thrust": 4160,
+	"drag_coefficient": 0.052
+}

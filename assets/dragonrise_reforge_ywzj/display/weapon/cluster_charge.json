@@ -1,6 +1,6 @@
 {
 	"type": "ywzj_vehicle:weapon",
-	"model": "dragonrise_reforge_ywzj:entity/bomb_cluster_charge",
+	"model": "dragonrise_reforge_ywzj:weapon/bomb_cluster_charge",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/bomb_cluster_charge.png",
 	"sounds": {
 		"fire": "ywzj_vehicle:bomb_drop",

@@ -1,0 +1,20 @@
+{
+	"type": "ywzj_vehicle:rocket",
+	"name": "weapon.dragonrise_reforge_ywzj.rocket_mi24v_rocket",
+	"damage": 150,
+	"velocity": 4,
+	"shoot_interval": 133,
+	"max_capacity": 80,
+	"reload": {
+		"time": 200,
+		"ammo": "ywzj_vehicle:ammo_rocket"
+	},
+	"explosion": {
+		"explode": true,
+		"damage": 250,
+		"radius": 6
+	},
+	"mass": 11.3,
+	"thrust": 4520,
+	"drag_coefficient": 0.0565
+}

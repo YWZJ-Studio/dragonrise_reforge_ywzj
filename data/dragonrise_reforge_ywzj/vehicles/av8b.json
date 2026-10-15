@@ -37,8 +37,8 @@
 		"sound_distance": 8
 	},
 	"energy_info": {
-		"energy_capacity": 0.25,
-		"energy_consumption_per_tick": 1e-05
+		"energy_capacity": 3000,
+		"energy_consumption_per_tick": 0.048611111
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
@@ -77,15 +77,15 @@
 			],
 			"weapons": [
 				{
-					"id": "dragonrise_reforge_ywzj:gsh_30_1",
+					"id": "dragonrise_reforge_ywzj:cannon_23mm_23mm",
 					"part_unit_id": "cannon"
 				},
 				{
-					"id": "dragonrise_reforge_ywzj:rocket_70mm",
+					"id": "dragonrise_reforge_ywzj:rocket_huo_fa6",
 					"part_unit_id": "rocket"
 				},
 				{
-					"id": "dragonrise_reforge_ywzj:gbu_12",
+					"id": "dragonrise_reforge_ywzj:aerial_bomb_500kg",
 					"part_unit_id": "bomb"
 				},
 				{
@@ -117,7 +117,7 @@
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "rocket",
 			"render_model": true,
-			"ammo_capacity": 4,
+			"ammo_capacity": 28,
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",

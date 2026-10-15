@@ -1,0 +1,22 @@
+{
+	"type": "ywzj_vehicle:cannon",
+	"name": "weapon.dragonrise_reforge_ywzj.cannon_85mm_85mmzis_s_53aphe",
+	"caliber": 85,
+	"damage": 700,
+	"velocity": 35,
+	"inaccuracy": 0.02,
+	"headshot_multiplier": 1,
+	"recoil": 1,
+	"shoot_interval": 400,
+	"max_capacity": 1,
+	"reload": {
+		"time": 180,
+		"ammo": "ywzj_vehicle:ammo_artillery"
+	},
+	"explosion": {
+		"explode": true,
+		"damage": 200,
+		"radius": 5,
+		"destroy_block": true
+	}
+}

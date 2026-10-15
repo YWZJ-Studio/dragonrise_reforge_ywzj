@@ -1,0 +1,107 @@
+{
+	"name": "bm13n_controller",
+	"graph": {
+		"type": "bone_binding",
+		"part_bindings": [
+			{
+				"bone": "LaunchBoody",
+				"part": "turret",
+				"rotation_type": "y",
+				"axis": "y",
+				"invert": true
+			},
+			{
+				"bone": "group4",
+				"part": "turret",
+				"rotation_type": "x",
+				"axis": "x",
+				"invert": false
+			},
+			{
+				"bone": "Up-Down-Ctrl_rod",
+				"part": "turret",
+				"rotation_type": "x",
+				"axis": "x",
+				"invert": false
+			}
+		],
+		"special_bindings": [
+			{
+				"bones": [
+					"wheel_left_1_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.4384100000000001
+			},
+			{
+				"bones": [
+					"wheel_left_1_steer"
+				],
+				"source": "steering_angle",
+				"axis": "y",
+				"multiplier": 1,
+				"min": -28,
+				"max": 28
+			},
+			{
+				"bones": [
+					"wheel_left_2_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.4384103125
+			},
+			{
+				"bones": [
+					"wheel_left_3_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.43841031249999995
+			},
+			{
+				"bones": [
+					"wheel_right_1_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.4384100000000001
+			},
+			{
+				"bones": [
+					"wheel_right_1_steer"
+				],
+				"source": "steering_angle",
+				"axis": "y",
+				"multiplier": 1,
+				"min": -28,
+				"max": 28
+			},
+			{
+				"bones": [
+					"wheel_right_2_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.4384103125
+			},
+			{
+				"bones": [
+					"wheel_right_3_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.43841031249999995
+			},
+			{
+				"bones": [
+					"steering_wheel_spin"
+				],
+				"source": "steering_angle",
+				"axis": "y",
+				"multiplier": 6
+			}
+		]
+	}
+}

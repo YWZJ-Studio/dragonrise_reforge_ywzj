@@ -1,0 +1,20 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/ztz96a",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/ztz96a_desert_pla.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/ztz96a.png",
+	"track_config": {
+		"model": "dragonrise_reforge_ywzj:effect/ztz96a_track_link",
+		"texture": "dragonrise_reforge_ywzj:textures/entity/ztz96a_desert_pla.png",
+		"module_length": 0.31770813
+	},
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run",
+		"track_run": "ywzj_vehicle:track_run"
+	},
+	"description": "vehicle.ztz96a.description",
+	"tab_index": 2010,
+	"animation_controller": "dragonrise_reforge_ywzj:ztz96a_controller"
+}

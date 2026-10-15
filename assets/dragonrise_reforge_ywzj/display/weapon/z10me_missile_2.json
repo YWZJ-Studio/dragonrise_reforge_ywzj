@@ -1,6 +1,6 @@
 {
 	"type": "ywzj_vehicle:weapon",
-	"model": "dragonrise_reforge_ywzj:weapon/z10me_missile_2",
+	"model": "dragonrise_reforge_ywzj:weapon/missile_z10me_2",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/z10me.png",
 	"sounds": {
 		"fire": "ywzj_vehicle:missile_launch",

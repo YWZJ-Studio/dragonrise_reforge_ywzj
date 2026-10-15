@@ -16,8 +16,8 @@
 		"sound_distance": 7
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05
+		"energy_capacity": 1250,
+		"energy_consumption_per_tick": 0.003055556
 	},
 	"physics_info": {
 		"mass": 45155,
@@ -49,9 +49,9 @@
 			"with_stabilizer": false,
 			"with_thermal_imager": false,
 			"weapons": [
-				"dragonrise_reforge_ywzj:cannon_125mm",
+				"dragonrise_reforge_ywzj:cannon_125mm_dtc10125",
 				{
-					"id": "ywzj_vehicle:gun_7.62mm",
+					"id": "dragonrise_reforge_ywzj:gun_5_8mm_qjt_75_2600_160",
 					"part_unit_id": "turret_machine_gun",
 					"secondary": true
 				},
@@ -98,11 +98,62 @@
 			"name": "turret_smoke_grenade",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "turret_gr",
+			"ammo_capacity": 8,
 			"is_seat": false,
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"bolts": [
+				{
+					"offset": [-1.7089203, 0.2009871, 0.3207065],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.9071013, 0.1875027, 0.2033805],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.6814616, 0.3742146, 0.2544152],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [-1.8796425, 0.3607301, 0.1370892],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": 15
+				},
+				{
+					"offset": [1.7089203, 0.1772156, 0.2881084],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.9071013, 0.1791606, 0.1700261],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.6814616, 0.3576138, 0.244995],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				},
+				{
+					"offset": [1.8796425, 0.3595587, 0.1269127],
+					"barrel_length": 0.1,
+					"x_rot": -45,
+					"y_rot": -15
+				}
+			]
 		},
 		{
 			"id": "commander_machine_gun",
@@ -124,7 +175,7 @@
 			"optical_sight_type": "operator",
 			"zoom_max": 2,
 			"weapons": [
-				"ywzj_vehicle:gun_14.5mm"
+				"dragonrise_reforge_ywzj:gun_12_7mm_88c_86_600_100"
 			]
 		},
 		{

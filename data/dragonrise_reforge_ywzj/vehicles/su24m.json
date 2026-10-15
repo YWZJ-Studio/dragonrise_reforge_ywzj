@@ -37,8 +37,8 @@
 		"sound_distance": 10
 	},
 	"energy_info": {
-		"energy_capacity": 1,
-		"energy_consumption_per_tick": 1e-05
+		"energy_capacity": 16065.0,
+		"energy_consumption_per_tick": 0.058333333
 	},
 	"defense_stats": {
 		"damage_threshold": 10,

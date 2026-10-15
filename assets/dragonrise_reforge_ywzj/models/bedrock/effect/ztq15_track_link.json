@@ -1,5 +1,5 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.0",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -8,33 +8,32 @@
 				"texture_height": 1024,
 				"visible_bounds_width": 3,
 				"visible_bounds_height": 2,
-				"visible_bounds_offset": [0.0, 0.0, 0.0]
+				"visible_bounds_offset": [0, 0, 0]
 			},
 			"bones": [
 				{
-					"name": "vehicle_forward",
+					"name": "track_link",
 					"pivot": [0, 0, 0],
-					"rotation": [0, 180, 0]
-				},
-				{
-					"name": "track_link_0",
-					"pivot": [0, 0, 0],
-					"rotation": [0.0, 0.0, 0.0],
 					"cubes": [
 						{
-							"origin": [-5.435965, -0.836305, -2.0],
-							"size": [10.87193, 1.67261, 4.0],
+							"origin": [-4.87365, -0.775535, -1.3907099099099098],
+							"size": [9.7473, 1.55107, 2.7814198198198197],
+							"pivot": [0, 0, 0],
+							"rotation": [0, 180, 0],
 							"uv": {
-								"north": {"uv": [477, 477], "uv_size": [13, 2]},
-								"east": {"uv": [447.58371750869657, 302], "uv_size": [4.832564982606829, 2]},
-								"south": {"uv": [478, 13], "uv_size": [13, 2]},
-								"west": {"uv": [447.58371750869657, 302], "uv_size": [4.832564982606829, 2]},
-								"up": {"uv": [608, 185.5837175086966], "uv_size": [15, 4.832564982606829]},
-								"down": {"uv": [592, 190.4162824913034], "uv_size": [15, -4.832564982606829]}
+								"north": {"uv": [521, 265], "uv_size": [-13, 2]},
+								"east": {"uv": [487, 104], "uv_size": [-4, 2]},
+								"south": {"uv": [521, 267], "uv_size": [-13, 2]},
+								"west": {"uv": [483, 212], "uv_size": [-4, 2]},
+								"up": {"uv": [605, 223], "uv_size": [-15, 4]},
+								"down": {
+									"uv": [590, 270],
+									"uv_size": [-15, -4],
+									"uv_rotation": 180
+								}
 							}
 						}
-					],
-					"parent": "vehicle_forward"
+					]
 				}
 			]
 		}

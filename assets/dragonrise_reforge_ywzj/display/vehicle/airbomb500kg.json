@@ -1,6 +1,6 @@
 {
 	"type": "ywzj_vehicle:generic",
-	"model": "dragonrise_reforge_ywzj:entity/bomb_airbomb500kg",
+	"model": "dragonrise_reforge_ywzj:weapon/bomb_airbomb500kg",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/bomb_airbomb500kg.png",
 	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/airbomb500kg.png",
 	"animations": "dragonrise_reforge_ywzj:entity/airbomb500kg.animation",

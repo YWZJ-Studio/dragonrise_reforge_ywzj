@@ -6,7 +6,7 @@
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/ztz96a_track_link",
 		"texture": "dragonrise_reforge_ywzj:textures/entity/ztz96a.png",
-		"module_length": 0.3177081
+		"module_length": 0.31770813
 	},
 	"sounds": {
 		"engine_start": "ywzj_vehicle:ztz99a_engine_start",

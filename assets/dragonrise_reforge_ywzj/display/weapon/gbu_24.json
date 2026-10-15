@@ -1,6 +1,6 @@
 {
 	"type": "ywzj_vehicle:weapon",
-	"model": "dragonrise_reforge_ywzj:entity/bomb_gbu_24",
+	"model": "dragonrise_reforge_ywzj:weapon/bomb_gbu_24",
 	"texture": "dragonrise_reforge_ywzj:textures/entity/bomb_gbu_24.png",
 	"animations": "dragonrise_reforge_ywzj:entity/gbu_24.animation",
 	"sounds": {
