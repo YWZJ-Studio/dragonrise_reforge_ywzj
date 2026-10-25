@@ -12,7 +12,7 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.l1a2.description",
-	"tab_index": 1210,
+	"tab_index": 2520,
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/l1a2_track_link",
 		"texture": "dragonrise_reforge_ywzj:textures/entity/l1a2.png",

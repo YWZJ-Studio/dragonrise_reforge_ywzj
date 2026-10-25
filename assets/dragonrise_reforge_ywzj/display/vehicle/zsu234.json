@@ -12,7 +12,7 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.zsu234.description",
-	"tab_index": 1130,
+	"tab_index": 2270,
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/zsu234_track_link",
 		"texture": "dragonrise_reforge_ywzj:textures/entity/zsu234.png",

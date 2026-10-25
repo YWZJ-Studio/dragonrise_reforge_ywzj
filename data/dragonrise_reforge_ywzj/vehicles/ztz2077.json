@@ -9,10 +9,12 @@
 		"turn_acceleration": 1,
 		"max_turn": 2
 	},
-	"max_health": 2500,
+	"max_health": 3000,
 	"view_info": {
-		"third_person_center_offset": [0, 3, 0],
+		"third_person_center_offset": [0, 4, 0],
 		"third_person_distance": 10,
+		"third_person_center_offset_zoomed": [0, 5, 0],
+		"third_person_distance_zoomed": 0,
 		"sound_distance": 7
 	},
 	"energy_info": {
@@ -34,7 +36,7 @@
 			"max_health": 1000,
 			"render_bone": "bone27",
 			"structure_bone": "turret",
-			"seat_offset": [0.5, 2.2625, 0.0],
+			"seat_offset": [0.5, 2.1900932, 0.0],
 			"seat_rot": 0,
 			"operator_on_weapon_unit": true,
 			"rot_info": {
@@ -44,7 +46,7 @@
 				"x_rot_min": -13
 			},
 			"optical_sight_offset": [-0.6178881, 1.0746197, 0.5276944],
-			"operator_view_offset": [0.5, 0.5, -0.3125],
+			"operator_view_offset": [0.0, 1.389907, 0.0],
 			"fire_control_lock_type": "aim_hit",
 			"optical_sight_type": "crt",
 			"zoom_max": 16,
@@ -210,7 +212,7 @@
 			"id": "passenger_weapon_station",
 			"name": "passenger_weapon_station",
 			"type": "ywzj_vehicle:weapon",
-			"max_health": 1000,
+			"max_health": 600,
 			"render_bone": "bone47",
 			"structure_bone": "passenger_weapon_station",
 			"is_seat": false,
@@ -227,23 +229,27 @@
 			"name": "seat",
 			"type": "ywzj_vehicle:generic",
 			"structure_bone": "crew_seat",
-			"seat_offset": [-0.5, 2.2625, 0.0],
-			"owner_view_offset": [-0.5, 2.2625, 0.0],
+			"seat_offset": [-0.5, 2.2138398, 0.0],
+			"owner_view_offset": [0.0, 3.152407, 0.0],
 			"seat_rot": 0
 		},
 		{
 			"id": "seat_2",
 			"name": "seat",
 			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0.0, 2.1953125, 2.675625],
-			"owner_view_offset": [0.0, 2.1953125, 2.675625],
+			"seat_offset": [0.0, 1.0928699, 2.675625],
+			"owner_view_offset": [0.0, 3.152407, 0.0],
 			"seat_rot": 0
 		},
 		{
 			"id": "track",
 			"name": "track",
 			"type": "ywzj_vehicle:track",
-			"structure_bone": "tracks"
+			"structure_bone": "tracks",
+			"suspensions": {
+				"track_left": ["suspension_left_1", "suspension_left_2", "suspension_left_3", "suspension_left_4", "suspension_left_5", "suspension_left_6"],
+				"track_right": ["suspension_right_1", "suspension_right_2", "suspension_right_3", "suspension_right_4", "suspension_right_5", "suspension_right_6"]
+			}
 		},
 		{
 			"id": "suspension_left_1",
@@ -424,6 +430,22 @@
 			"max_compression": 0.2,
 			"max_extension": 0.15,
 			"max_droop": 0.1
+		},
+		{
+			"id": "hook_front",
+			"name": "part.ywzj_vehicle.hook_front",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_front",
+			"is_seat": false,
+			"detachable": false
+		},
+		{
+			"id": "hook_rear",
+			"name": "part.ywzj_vehicle.hook_rear",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_rear",
+			"is_seat": false,
+			"detachable": false
 		}
 	]
 }

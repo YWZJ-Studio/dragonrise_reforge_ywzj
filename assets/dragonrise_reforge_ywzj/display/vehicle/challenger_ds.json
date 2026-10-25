@@ -16,5 +16,6 @@
 	},
 	"description": "vehicle.challenger_ds.description",
 	"tab_index": 2470,
-	"animation_controller": "dragonrise_reforge_ywzj:challenger_ds_controller"
+	"animation_controller": "dragonrise_reforge_ywzj:challenger_ds_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/challenger_ds.animation"
 }

@@ -1,0 +1,120 @@
+{
+	"name": "t20_controller",
+	"graph": {
+		"type": "bone_binding",
+		"part_bindings": [
+			{
+				"bone": "weapon_drive_yaw",
+				"part": "turret",
+				"rotation_type": "y",
+				"axis": "y",
+				"invert": true
+			},
+			{
+				"bone": "weapon_drive_pitch",
+				"part": "turret",
+				"rotation_type": "x",
+				"axis": "x",
+				"invert": false
+			}
+		],
+		"special_bindings": [
+			{
+				"bones": [
+					"wheel_left_1_spin"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.320667926
+			},
+			{
+				"bones": [
+					"wheel_left_2_spin"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.233181297
+			},
+			{
+				"bones": [
+					"wheel_left_3_spin"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.208220097
+			},
+			{
+				"bones": [
+					"wheel_left_4_spin"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.230887907
+			},
+			{
+				"bones": [
+					"wheel_left_5_spin"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.224587437
+			},
+			{
+				"bones": [
+					"wheel_left_6_spin"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.232207797
+			},
+			{
+				"bones": [
+					"wheel_right_1_spin"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.320667926
+			},
+			{
+				"bones": [
+					"wheel_right_2_spin"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.233181297
+			},
+			{
+				"bones": [
+					"wheel_right_3_spin"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.208220097
+			},
+			{
+				"bones": [
+					"wheel_right_4_spin"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.230887907
+			},
+			{
+				"bones": [
+					"wheel_right_5_spin"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.224587437
+			},
+			{
+				"bones": [
+					"wheel_right_6_spin"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.232207797
+			}
+		]
+	}
+}

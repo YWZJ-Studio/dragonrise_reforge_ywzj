@@ -8,7 +8,7 @@
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/tiger_h1_track_link",
 		"texture": "dragonrise_reforge_ywzj:textures/entity/tiger_h1.png",
-		"module_length": 0.25
+		"module_length": 0.275777261
 	},
 	"sounds": {
 		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
@@ -17,5 +17,6 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.tiger_h1.description",
-	"tab_index": 2420
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2003
 }

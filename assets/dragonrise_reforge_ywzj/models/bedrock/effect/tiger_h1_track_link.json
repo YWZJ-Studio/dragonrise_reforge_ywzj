@@ -6,19 +6,19 @@
 				"identifier": "geometry.tiger_h1_track_link",
 				"texture_width": 512,
 				"texture_height": 512,
-				"visible_bounds_width": 3,
-				"visible_bounds_height": 2,
+				"visible_bounds_width": 3.309327127,
+				"visible_bounds_height": 2.206218084,
 				"visible_bounds_offset": [0, 0, 0]
 			},
 			"bones": [
 				{
 					"name": "track_link_0",
-					"pivot": [0, 0, 0],
+					"pivot": [0, 0.827331782, 0],
 					"rotation": [-180.0, 0.0, -180.0],
 					"cubes": [
 						{
-							"origin": [-5.75, -0.75, -2.0],
-							"size": [11.5, 1.5, 4.0],
+							"origin": [-6.342876993, 0.0, -2.206218084],
+							"size": [12.685753985, 1.654663563, 4.412436169],
 							"uv": {
 								"north": {"uv": [324, 10], "uv_size": [12, 2]},
 								"east": {

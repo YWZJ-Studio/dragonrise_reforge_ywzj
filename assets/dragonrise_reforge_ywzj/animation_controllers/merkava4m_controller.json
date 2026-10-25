@@ -1,0 +1,181 @@
+{
+	"name": "merkava4m_controller",
+	"parameters": {},
+	"event_animations": {
+		"turret_fire": [
+			"cannon_shoot"
+		],
+		"turret_machine_gun_fire": [
+			"machine_gun_shoot"
+		]
+	},
+	"graph": {
+		"type": "additive",
+		"base": {
+			"type": "bone_binding",
+			"special_bindings": [
+				{
+					"bones": [
+						"wheelL1"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.38764864204956506
+				},
+				{
+					"bones": [
+						"wheelL2"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.38764864204956523
+				},
+				{
+					"bones": [
+						"wheelL3"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.38764864204956506
+				},
+				{
+					"bones": [
+						"wheelL4"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.38764864204956523
+				},
+				{
+					"bones": [
+						"wheelL5"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.387648642049565
+				},
+				{
+					"bones": [
+						"wheelL6"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.3876486420495652
+				},
+				{
+					"bones": [
+						"wheelL7"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.3876486420495654
+				},
+				{
+					"bones": [
+						"wheelL8"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.3876486420495653
+				},
+				{
+					"bones": [
+						"wheelL9"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.38764864204956523
+				},
+				{
+					"bones": [
+						"wheelL10"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.3876486420495652
+				},
+				{
+					"bones": [
+						"wheelL11"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.38764864204956523
+				},
+				{
+					"bones": [
+						"wheelL12"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.38764864204956506
+				},
+				{
+					"bones": [
+						"wheelL13"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.3798958248830868
+				},
+				{
+					"bones": [
+						"wheelL14"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.3798958248830868
+				},
+				{
+					"bones": [
+						"wheelL15"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.6117076907736336
+				},
+				{
+					"bones": [
+						"wheelL16"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.6117076907736336
+				}
+			],
+			"part_bindings": [
+				{
+					"bone": "turret",
+					"part": "turret",
+					"rotation_type": "y",
+					"axis": "y",
+					"invert": true
+				},
+				{
+					"bone": "cannon",
+					"part": "turret",
+					"rotation_type": "x",
+					"axis": "x",
+					"invert": false
+				},
+				{
+					"bone": "turret_mg_visual",
+					"part": "turret_machine_gun",
+					"rotation_type": "y",
+					"axis": "y",
+					"invert": true
+				},
+				{
+					"bone": "turret_mg_visual",
+					"part": "turret_machine_gun",
+					"rotation_type": "x",
+					"axis": "x",
+					"invert": false
+				}
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
+	}
+}

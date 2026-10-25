@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"main_cannon_shoot": {
+			"animation_length": 0.0833,
+			"bones": {
+				"main_cannon_recoil_1": {
+					"position": {
+						"0.0": {
+							"post": [-0.0, 0.0, 0.0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0417": {
+							"post": [-0.0, 0.0, 1.0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0833": {
+							"post": [-0.0, 0.0, 0.0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"main_cannon_recoil_2": {
+					"position": {
+						"0.0": {
+							"post": [-0.0, 0.0, 0.0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0417": {
+							"post": [-0.0, 0.0, 1.0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0833": {
+							"post": [-0.0, 0.0, 0.0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		}
+	}
+}

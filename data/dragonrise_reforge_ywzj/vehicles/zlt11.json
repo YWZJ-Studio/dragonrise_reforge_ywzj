@@ -1,18 +1,20 @@
 {
 	"type": "ywzj_vehicle:wheeled_vehicle",
 	"attributes": {
-		"brake_force": 282552.0,
-		"forward_force": 113020.8,
-		"backward_force": 113020.8,
-		"max_speed_forward": 0.6,
-		"max_speed_backward": 0.2,
+		"brake_force": 225000.0,
+		"forward_force": 270000.0,
+		"backward_force": 180000.0,
+		"max_speed_forward": 1.38947954,
+		"max_speed_backward": 0.12595815,
 		"turn_step": 0.35,
 		"max_turn": 2.5
 	},
-	"max_health": 1000,
+	"max_health": 2000,
 	"view_info": {
-		"third_person_center_offset": [0, 1.615, 0],
-		"third_person_distance": 11.0,
+		"third_person_center_offset": [0, 4, 0],
+		"third_person_distance": 10,
+		"third_person_center_offset_zoomed": [0, 5, 0],
+		"third_person_distance_zoomed": 0,
 		"sound_distance": 7,
 		"passenger_view_rot": {
 			"rot_by_vehicle_in_third_person": false,
@@ -21,47 +23,30 @@
 	},
 	"energy_info": {
 		"energy_capacity": 500,
-		"energy_consumption_per_tick": 0.000972222
+		"energy_consumption_per_tick": 0.000972222,
+		"engine_particle_offsets": [[-1.596953, 2.0, 1.4375]]
 	},
 	"center_offset": [0.0218178, 1.2421877, 0.0],
 	"physics_info": {
-		"mass": 23546,
-		"friction": 47092,
+		"mass": 22500,
+		"friction": 45000,
 		"can_destroy_block": true,
 		"destroy_explosion_velocity": 0.3,
-		"suspension_response": 0.6,
+		"suspension_response": 0.8,
 		"center": [0, -0.62109, 0]
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/zlt11",
 	"parts": [
 		{
-			"id": "driver_seat_1",
-			"name": "part.dragonrise_reforge_ywzj.driver_seat",
-			"type": "ywzj_vehicle:generic",
-			"is_seat": true,
-			"seat_offset": [0.75, 2.1093753, 2.4206419],
-			"owner_view_offset": [0.75, 2.1093753, 2.4206419],
-			"dismount_offset": [2.27, 0.3, 2.4206419]
-		},
-		{
-			"id": "passenger_seat_1",
-			"name": "part.dragonrise_reforge_ywzj.passenger_seat_1",
-			"type": "ywzj_vehicle:generic",
-			"is_seat": true,
-			"seat_offset": [-0.75, 2.2343753, -0.5168581],
-			"owner_view_offset": [-0.75, 2.2343753, -0.5168581],
-			"dismount_offset": [-2.27, 0.3, -0.5168581]
-		},
-		{
 			"id": "turret",
 			"name": "part.dragonrise_reforge_ywzj.turret",
 			"type": "ywzj_vehicle:weapon",
+			"max_health": 600,
 			"render_bone": "turret",
 			"structure_bone": "turret",
 			"ammo_capacity": 1,
-			"fire_control_sensor_type": "eo",
 			"is_seat": true,
-			"seat_offset": [0.0, 2.7968753, -0.6418581],
+			"seat_offset": [0.0, 2.5717922, -0.6418581],
 			"owner_view_offset": [0.0, 2.7968753, -0.6418581],
 			"operator_on_weapon_unit": true,
 			"rot_info": {
@@ -71,7 +56,8 @@
 				"x_rot_min": -25
 			},
 			"optical_sight_offset": [0.5390622, 1.0792969, -0.3339063],
-			"operator_view_offset": [0.0375, 0.6734375, -0.78125],
+			"operator_view_offset": [0.0, 1.774535, 0.0],
+			"fire_control_sensor_type": "eo",
 			"optical_sight_type": "crt",
 			"zoom_max": 6,
 			"with_stabilizer": true,
@@ -85,6 +71,24 @@
 			]
 		},
 		{
+			"id": "driver_seat_1",
+			"name": "part.dragonrise_reforge_ywzj.driver_seat",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.75, 1.6357628, 2.4206419],
+			"owner_view_offset": [0.0, 3.897973, 0.0],
+			"dismount_offset": [2.27, 0.3, 2.4206419]
+		},
+		{
+			"id": "passenger_seat_1",
+			"name": "part.dragonrise_reforge_ywzj.passenger_seat_1",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.75, 1.6764797, -0.5168581],
+			"owner_view_offset": [0.0, 3.897973, 0.0],
+			"dismount_offset": [-2.27, 0.3, -0.5168581]
+		},
+		{
 			"id": "suspension_wheelL0Turn",
 			"name": "part.dragonrise_reforge_ywzj.suspension",
 			"type": "ywzj_vehicle:suspension",
@@ -95,10 +99,10 @@
 			"render_bone": "wheelL0Turn",
 			"structure_bone": "wheelL0Turn",
 			"is_seat": false,
-			"spring_stiffness": 353190.0,
-			"damping": 29025,
-			"rest_length": 0.4,
-			"max_compression": 0.4,
+			"spring_stiffness": 233446.987,
+			"damping": 28185.977,
+			"rest_length": 0.439327,
+			"max_compression": 0.439327,
 			"max_extension": 0.22,
 			"max_droop": 0.26
 		},
@@ -113,10 +117,10 @@
 			"render_bone": "wheelL1Turn",
 			"structure_bone": "wheelL1Turn",
 			"is_seat": false,
-			"spring_stiffness": 353190.0,
-			"damping": 29025,
-			"rest_length": 0.4,
-			"max_compression": 0.4,
+			"spring_stiffness": 233446.987,
+			"damping": 28185.977,
+			"rest_length": 0.437927,
+			"max_compression": 0.437927,
 			"max_extension": 0.22,
 			"max_droop": 0.26
 		},
@@ -131,10 +135,10 @@
 			"render_bone": "wheelL2",
 			"structure_bone": "wheelL2",
 			"is_seat": false,
-			"spring_stiffness": 353190.0,
-			"damping": 29025,
-			"rest_length": 0.4,
-			"max_compression": 0.4,
+			"spring_stiffness": 233446.987,
+			"damping": 28185.977,
+			"rest_length": 0.435871,
+			"max_compression": 0.435871,
 			"max_extension": 0.22,
 			"max_droop": 0.26
 		},
@@ -149,10 +153,10 @@
 			"render_bone": "wheelL3",
 			"structure_bone": "wheelL3",
 			"is_seat": false,
-			"spring_stiffness": 353190.0,
-			"damping": 29025,
-			"rest_length": 0.4,
-			"max_compression": 0.4,
+			"spring_stiffness": 233446.987,
+			"damping": 28185.977,
+			"rest_length": 0.434421,
+			"max_compression": 0.434421,
 			"max_extension": 0.22,
 			"max_droop": 0.26
 		},
@@ -167,10 +171,10 @@
 			"render_bone": "wheelR0Turn",
 			"structure_bone": "wheelR0Turn",
 			"is_seat": false,
-			"spring_stiffness": 353190.0,
-			"damping": 29025,
-			"rest_length": 0.4,
-			"max_compression": 0.4,
+			"spring_stiffness": 233446.987,
+			"damping": 28185.977,
+			"rest_length": 0.438357,
+			"max_compression": 0.438357,
 			"max_extension": 0.22,
 			"max_droop": 0.26
 		},
@@ -185,10 +189,10 @@
 			"render_bone": "wheelR1Turn",
 			"structure_bone": "wheelR1Turn",
 			"is_seat": false,
-			"spring_stiffness": 353190.0,
-			"damping": 29025,
-			"rest_length": 0.4,
-			"max_compression": 0.4,
+			"spring_stiffness": 233446.987,
+			"damping": 28185.977,
+			"rest_length": 0.436949,
+			"max_compression": 0.436949,
 			"max_extension": 0.22,
 			"max_droop": 0.26
 		},
@@ -203,10 +207,10 @@
 			"render_bone": "wheelR2",
 			"structure_bone": "wheelR2",
 			"is_seat": false,
-			"spring_stiffness": 353190.0,
-			"damping": 29025,
-			"rest_length": 0.4,
-			"max_compression": 0.4,
+			"spring_stiffness": 233446.987,
+			"damping": 28185.977,
+			"rest_length": 0.434902,
+			"max_compression": 0.434902,
 			"max_extension": 0.22,
 			"max_droop": 0.26
 		},
@@ -221,10 +225,10 @@
 			"render_bone": "wheelR3",
 			"structure_bone": "wheelR3",
 			"is_seat": false,
-			"spring_stiffness": 353190.0,
-			"damping": 29025,
-			"rest_length": 0.4,
-			"max_compression": 0.4,
+			"spring_stiffness": 233446.987,
+			"damping": 28185.977,
+			"rest_length": 0.433451,
+			"max_compression": 0.433451,
 			"max_extension": 0.22,
 			"max_droop": 0.26
 		},
@@ -232,11 +236,12 @@
 			"id": "commander_machine_gun",
 			"name": "part.dragonrise_reforge_ywzj.commander_gun",
 			"type": "ywzj_vehicle:weapon",
+			"max_health": 200,
 			"render_bone": "passengerWeaponStationYaw",
 			"structure_bone": "turret_st",
 			"ammo_capacity": 600,
 			"is_seat": true,
-			"seat_offset": [-0.6376319, 3.7352347, -0.4057912],
+			"seat_offset": [-0.6376319, 2.5717922, 0.0942087],
 			"seat_rot": 0,
 			"operator_on_weapon_unit": true,
 			"rot_info": {
@@ -249,9 +254,7 @@
 			"operator_view_offset": [-0.0, 0.375, -0.5],
 			"optical_sight_type": "operator",
 			"zoom_max": 4,
-			"weapons": [
-				"dragonrise_reforge_ywzj:gun_12_7mm_w85"
-			]
+			"weapons": ["dragonrise_reforge_ywzj:gun_12_7mm_w85"]
 		},
 		{
 			"id": "turret_smoke_grenade",
@@ -339,6 +342,22 @@
 					"y_rot": 15
 				}
 			]
+		},
+		{
+			"id": "hook_front",
+			"name": "part.ywzj_vehicle.hook_front",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_front",
+			"is_seat": false,
+			"detachable": false
+		},
+		{
+			"id": "hook_rear",
+			"name": "part.ywzj_vehicle.hook_rear",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_rear",
+			"is_seat": false,
+			"detachable": false
 		}
 	],
 	"experimental": true

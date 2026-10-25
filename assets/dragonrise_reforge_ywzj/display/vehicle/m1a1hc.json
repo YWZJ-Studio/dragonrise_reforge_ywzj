@@ -16,5 +16,6 @@
 	},
 	"description": "vehicle.m1a1hc.description",
 	"tab_index": 2350,
-	"animation_controller": "dragonrise_reforge_ywzj:m1a1hc_controller"
+	"animation_controller": "dragonrise_reforge_ywzj:m1a1hc_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/m1a1hc.animation"
 }

@@ -9,5 +9,6 @@
 		"engine_run": "ywzj_vehicle:z10_engine_run"
 	},
 	"description": "vehicle.sd905.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.fictional",
 	"tab_index": 3120
 }

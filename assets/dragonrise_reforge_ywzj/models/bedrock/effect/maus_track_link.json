@@ -6,30 +6,31 @@
 				"identifier": "geometry.maus_track_link",
 				"texture_width": 512,
 				"texture_height": 512,
-				"visible_bounds_width": 3,
-				"visible_bounds_height": 2,
+				"visible_bounds_width": 2.525927046,
+				"visible_bounds_height": 1.683951364,
 				"visible_bounds_offset": [0.0, 0.0, 0.0]
 			},
 			"bones": [
 				{
 					"name": "vehicle_forward",
-					"pivot": [0, 0, 0],
+					"pivot": [0, 1.059676914, 0],
 					"rotation": [0, 180, 0]
 				},
 				{
 					"name": "track_link_0",
-					"pivot": [0, 0, 0],
+					"pivot": [0, 1.059676914, 0],
 					"rotation": [0.0, 0.0, 0.0],
 					"cubes": [
 						{
-							"origin": [-10.06847, -0.375, -2.0],
-							"size": [20.13694, 0.75, 4.0],
+							"origin": [-8.477406895, 0.0, -3.311486937],
+							"size": [16.95481379, 2.119353829, 6.622973874],
 							"uv": {
+								"east": {"uv": [296, 15], "uv_size": [-5.0, 2]},
+								"west": {"uv": [216, 15], "uv_size": [5.0, 2]},
+								"up": {"uv": [94, 126], "uv_size": [13, 5.0]},
+								"down": {"uv": [94, 131], "uv_size": [13, -5.0]},
 								"north": {"uv": [260, 137], "uv_size": [13, 2]},
-								"east": {"uv": [254.7287045093725, 13], "uv_size": [2.542590981254982, 2]},
-								"south": {"uv": [261, 168], "uv_size": [13, 2]},
-								"west": {"uv": [254.7287045093725, 15], "uv_size": [2.542590981254982, 2]},
-								"down": {"uv": [0, 473.2712954906275], "uv_size": [13, -2.542590981254982]}
+								"south": {"uv": [261, 168], "uv_size": [13, 2]}
 							}
 						}
 					],

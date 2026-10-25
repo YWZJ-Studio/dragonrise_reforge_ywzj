@@ -3,8 +3,10 @@
 	"attributes": {},
 	"max_health": 100,
 	"view_info": {
-		"third_person_center_offset": [0, 0.7787373984375, 0],
-		"third_person_distance": 8.977797954873466,
+		"third_person_center_offset": [0, 3, 0],
+		"third_person_distance": 7,
+		"third_person_center_offset_zoomed": [0, 4, 0],
+		"third_person_distance_zoomed": 0,
 		"sound_distance": 4
 	},
 	"energy_info": {
@@ -27,8 +29,7 @@
 			"render_bone": "weapon_yaw",
 			"structure_bone": "turret",
 			"ammo_capacity": 1,
-			"fire_control_sensor_type": "ccip",
-			"seat_offset": [0.551, 1.62, -0.994],
+			"seat_offset": [0.471034742, 1.384893433, -0.849743255],
 			"passenger_pose": {
 				"left_leg_rot_x": 0,
 				"right_leg_rot_x": 0
@@ -44,23 +45,22 @@
 				"y_rot_min": -30,
 				"need_power": false
 			},
-			"optical_sight_offset": [0.55375, 0.3882875, 0.0232],
-			"operator_view_offset": [0.55375, 0.3882875, 0.0232],
+			"optical_sight_offset": [0.473385641, 0.331936302, 0.019833042],
+			"operator_view_offset": [0.473385641, 0.331936302, 0.019833042],
 			"fire_control_lock_type": "none",
+			"fire_control_sensor_type": "ccip",
 			"optical_sight_type": "operator",
 			"zoom_min": 1,
 			"zoom_max": 8,
-			"weapons": [
-				"dragonrise_reforge_ywzj:pak40_fixed"
-			]
+			"weapons": ["dragonrise_reforge_ywzj:pak40_fixed"]
 		},
 		{
 			"id": "passenger_seat_1",
 			"name": "passenger_seat_1",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [-0.551, 1.62, -0.994],
-			"owner_view_offset": [-0.551, 1.62, -0.994],
+			"seat_offset": [-0.471034742, 1.384893433, -0.849743255],
+			"owner_view_offset": [-0.471034742, 1.384893433, -0.849743255],
 			"passenger_pose": {
 				"left_leg_rot_x": 0,
 				"right_leg_rot_x": 0

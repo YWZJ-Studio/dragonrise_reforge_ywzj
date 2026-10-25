@@ -1,10 +1,12 @@
 {
 	"type": "ywzj_vehicle:generic",
 	"attributes": {},
-	"max_health": 40,
+	"max_health": 100,
 	"view_info": {
-		"third_person_center_offset": [0, 0.61875, 0],
+		"third_person_center_offset": [0, 2, 0],
 		"third_person_distance": 3,
+		"third_person_center_offset_zoomed": [0, 2, 0],
+		"third_person_distance_zoomed": 0,
 		"sound_distance": 4
 	},
 	"energy_info": {

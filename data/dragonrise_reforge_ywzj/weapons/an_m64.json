@@ -3,7 +3,6 @@
 	"name": "aerial_bomb",
 	"damage": 10,
 	"velocity": 0,
-	"headshot_multiplier": 200,
 	"recoil": 0,
 	"shoot_interval": 100,
 	"max_capacity": 8,
@@ -16,5 +15,6 @@
 		"damage": 999,
 		"radius": 32,
 		"destroy_block": true
-	}
+	},
+	"headshot_multiplier": 200
 }

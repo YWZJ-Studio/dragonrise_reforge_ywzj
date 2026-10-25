@@ -1,0 +1,22 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/kv1",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/kv1_kagevev.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/kv1_kagevev.png",
+	"animations": "dragonrise_reforge_ywzj:entity/kv1.animation",
+	"animation_controller": "dragonrise_reforge_ywzj:kv1_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run",
+		"track_run": "ywzj_vehicle:track_run"
+	},
+	"description": "vehicle.kv1_kagevev.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2102,
+	"track_config": {
+		"model": "dragonrise_reforge_ywzj:effect/kv1_track_link",
+		"texture": "dragonrise_reforge_ywzj:textures/entity/kv1_kagevev.png",
+		"module_length": 0.240056702
+	}
+}

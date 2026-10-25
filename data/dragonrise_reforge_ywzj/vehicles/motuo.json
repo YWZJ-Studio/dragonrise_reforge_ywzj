@@ -2,7 +2,7 @@
 	"type": "ywzj_vehicle:wheeled_vehicle",
 	"attributes": {
 		"brake_force": 4800.0,
-		"forward_force": 1920.0,
+		"forward_force": 2080.0,
 		"backward_force": 1920.0,
 		"max_speed_forward": 0.6,
 		"max_speed_backward": 0.2,
@@ -11,8 +11,10 @@
 	},
 	"max_health": 300,
 	"view_info": {
-		"third_person_center_offset": [0, 0.894, 0],
-		"third_person_distance": 5,
+		"third_person_center_offset": [0, 4, 0],
+		"third_person_distance": 8,
+		"third_person_center_offset_zoomed": [0, 5, 0],
+		"third_person_distance_zoomed": 0,
 		"sound_distance": 5,
 		"passenger_view_rot": {
 			"rot_by_vehicle_in_third_person": false,
@@ -21,14 +23,15 @@
 	},
 	"energy_info": {
 		"energy_capacity": 20,
-		"energy_consumption_per_tick": 5e-05
+		"energy_consumption_per_tick": 5e-05,
+		"engine_particle_offsets": [[0.625, 0.4375, -1.1125]]
 	},
 	"center_offset": [-0.0248337, 0.6875, 0.0543928],
 	"physics_info": {
 		"mass": 400,
 		"friction": 800,
 		"destroy_explosion_velocity": 0.3,
-		"suspension_response": 0.5,
+		"suspension_response": 0.6,
 		"center": [0, -0.34375, 0]
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/motuo",
@@ -38,8 +41,8 @@
 			"name": "part.dragonrise_reforge_ywzj.driver_seat",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [0.3641621, 1.4375, 0.1168929],
-			"owner_view_offset": [0.3641621, 1.4375, 0.1168929],
+			"seat_offset": [0.3642, 1.96, 0.1],
+			"owner_view_offset": [0.3642, 1.96, 0.1],
 			"dismount_offset": [1.739, 0.3, 0.1168929]
 		},
 		{
@@ -47,8 +50,8 @@
 			"name": "part.dragonrise_reforge_ywzj.passenger_seat_1",
 			"type": "ywzj_vehicle:generic",
 			"is_seat": true,
-			"seat_offset": [-0.6983379, 1.125, 0.1793929],
-			"owner_view_offset": [-0.6983379, 1.125, 0.1793929],
+			"seat_offset": [-0.376, 1.45, -0.65],
+			"owner_view_offset": [-0.376, 1.45, -0.65],
 			"dismount_offset": [-1.739, 0.3, 0.1793929]
 		},
 		{
@@ -62,10 +65,10 @@
 			"render_bone": "wheelR",
 			"structure_bone": "wheelR",
 			"is_seat": false,
-			"spring_stiffness": 16000.0,
-			"damping": 1250,
-			"rest_length": 0.35,
-			"max_compression": 0.35,
+			"spring_stiffness": 9593.255,
+			"damping": 1244.071,
+			"rest_length": 0.400602,
+			"max_compression": 0.400602,
 			"max_extension": 0.22,
 			"max_droop": 0.22
 		},
@@ -80,10 +83,10 @@
 			"render_bone": "wheelL",
 			"structure_bone": "wheelL",
 			"is_seat": false,
-			"spring_stiffness": 16000.0,
-			"damping": 1250,
-			"rest_length": 0.35,
-			"max_compression": 0.35,
+			"spring_stiffness": 9593.255,
+			"damping": 1244.071,
+			"rest_length": 0.392116,
+			"max_compression": 0.392116,
 			"max_extension": 0.22,
 			"max_droop": 0.22
 		},
@@ -98,12 +101,28 @@
 			"render_bone": "wheelL1Turn",
 			"structure_bone": "wheelL1Turn",
 			"is_seat": false,
-			"spring_stiffness": 16000.0,
-			"damping": 1250,
-			"rest_length": 0.35,
-			"max_compression": 0.35,
+			"spring_stiffness": 9593.255,
+			"damping": 1244.071,
+			"rest_length": 0.420902,
+			"max_compression": 0.420902,
 			"max_extension": 0.22,
 			"max_droop": 0.22
+		},
+		{
+			"id": "hook_front",
+			"name": "part.ywzj_vehicle.hook_front",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_front",
+			"is_seat": false,
+			"detachable": false
+		},
+		{
+			"id": "hook_rear",
+			"name": "part.ywzj_vehicle.hook_rear",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_rear",
+			"is_seat": false,
+			"detachable": false
 		}
 	],
 	"experimental": true

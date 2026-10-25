@@ -1,0 +1,179 @@
+{
+	"name": "sdkfz234_2_controller",
+	"graph": {
+		"type": "additive",
+		"base": {
+			"type": "bone_binding",
+			"part_bindings": [
+				{
+					"bone": "weapon_drive_yaw",
+					"part": "turret",
+					"rotation_type": "y",
+					"axis": "y",
+					"invert": true
+				},
+				{
+					"bone": "weapon_drive_pitch",
+					"part": "turret",
+					"rotation_type": "x",
+					"axis": "x",
+					"invert": false
+				}
+			],
+			"special_bindings": [
+				{
+					"bones": [
+						"wheel_left_1_spin"
+					],
+					"source": "wheel_rotation",
+					"axis": "x",
+					"param": 0.486057332
+				},
+				{
+					"bones": [
+						"wheel_left_1_steer"
+					],
+					"source": "steering_angle",
+					"axis": "y",
+					"multiplier": 1,
+					"min": -28,
+					"max": 28
+				},
+				{
+					"bones": [
+						"wheel_left_2_spin"
+					],
+					"source": "wheel_rotation",
+					"axis": "x",
+					"param": 0.486057332
+				},
+				{
+					"bones": [
+						"wheel_left_2_steer"
+					],
+					"source": "steering_angle",
+					"axis": "y",
+					"multiplier": 0.5,
+					"min": -28,
+					"max": 28
+				},
+				{
+					"bones": [
+						"wheel_left_3_spin"
+					],
+					"source": "wheel_rotation",
+					"axis": "x",
+					"param": 0.486057332
+				},
+				{
+					"bones": [
+						"wheel_left_3_steer"
+					],
+					"source": "steering_angle",
+					"axis": "y",
+					"multiplier": -0.5,
+					"min": -28,
+					"max": 28
+				},
+				{
+					"bones": [
+						"wheel_left_4_spin"
+					],
+					"source": "wheel_rotation",
+					"axis": "x",
+					"param": 0.486057442
+				},
+				{
+					"bones": [
+						"wheel_left_4_steer"
+					],
+					"source": "steering_angle",
+					"axis": "y",
+					"multiplier": -1,
+					"min": -28,
+					"max": 28
+				},
+				{
+					"bones": [
+						"wheel_right_1_spin"
+					],
+					"source": "wheel_rotation",
+					"axis": "x",
+					"param": 0.486057332
+				},
+				{
+					"bones": [
+						"wheel_right_1_steer"
+					],
+					"source": "steering_angle",
+					"axis": "y",
+					"multiplier": 1,
+					"min": -28,
+					"max": 28
+				},
+				{
+					"bones": [
+						"wheel_right_2_spin"
+					],
+					"source": "wheel_rotation",
+					"axis": "x",
+					"param": 0.486057332
+				},
+				{
+					"bones": [
+						"wheel_right_2_steer"
+					],
+					"source": "steering_angle",
+					"axis": "y",
+					"multiplier": 0.5,
+					"min": -28,
+					"max": 28
+				},
+				{
+					"bones": [
+						"wheel_right_3_spin"
+					],
+					"source": "wheel_rotation",
+					"axis": "x",
+					"param": 0.486057332
+				},
+				{
+					"bones": [
+						"wheel_right_3_steer"
+					],
+					"source": "steering_angle",
+					"axis": "y",
+					"multiplier": -0.5,
+					"min": -28,
+					"max": 28
+				},
+				{
+					"bones": [
+						"wheel_right_4_spin"
+					],
+					"source": "wheel_rotation",
+					"axis": "x",
+					"param": 0.486057442
+				},
+				{
+					"bones": [
+						"wheel_right_4_steer"
+					],
+					"source": "steering_angle",
+					"axis": "y",
+					"multiplier": -1,
+					"min": -28,
+					"max": 28
+				}
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
+	},
+	"event_animations": {
+		"turret_fire": [
+			"main_cannon_shoot"
+		]
+	}
+}

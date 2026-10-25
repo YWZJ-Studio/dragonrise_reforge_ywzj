@@ -1,185 +1,196 @@
 {
 	"name": "leopard2a4_controller",
 	"graph": {
-		"type": "merge",
-		"inputs": [
-			{
-				"type": "merge",
-				"inputs": [
-					{
-						"type": "bone_binding",
-						"part_bindings": []
-					},
-					{
-						"type": "bone_binding",
-						"special_bindings": [
-							{
-								"bones": [
-									"track_spin_wheelL1"
-								],
-								"source": "right_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL10"
-								],
-								"source": "left_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL11"
-								],
-								"source": "left_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL12"
-								],
-								"source": "left_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL13"
-								],
-								"source": "left_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL14"
-								],
-								"source": "left_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL15"
-								],
-								"source": "left_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL16"
-								],
-								"source": "left_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL17"
-								],
-								"source": "left_wheel_rotation",
-								"axis": "x",
-								"param": -0.3133909
-							},
-							{
-								"bones": [
-									"track_spin_wheelL18"
-								],
-								"source": "left_wheel_rotation",
-								"axis": "x",
-								"param": -0.3640347
-							},
-							{
-								"bones": [
-									"track_spin_wheelL2"
-								],
-								"source": "right_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL3"
-								],
-								"source": "right_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL4"
-								],
-								"source": "right_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL5"
-								],
-								"source": "right_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL6"
-								],
-								"source": "right_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL7"
-								],
-								"source": "right_wheel_rotation",
-								"axis": "x",
-								"param": -0.3995296
-							},
-							{
-								"bones": [
-									"track_spin_wheelL8"
-								],
-								"source": "right_wheel_rotation",
-								"axis": "x",
-								"param": -0.3133909
-							},
-							{
-								"bones": [
-									"track_spin_wheelL9"
-								],
-								"source": "right_wheel_rotation",
-								"axis": "x",
-								"param": -0.3640347
-							}
-						]
-					}
-				]
-			},
-			{
-				"type": "bone_binding",
-				"part_bindings": [
-					{
-						"bone": "weapon_drive_yaw",
-						"part": "turret",
-						"rotation_type": "y",
-						"axis": "y",
-						"invert": true
-					},
-					{
-						"bone": "weapon_drive_pitch",
-						"part": "turret",
-						"rotation_type": "x",
-						"axis": "x",
-						"invert": false
-					}
-				]
-			}
+		"type": "additive",
+		"base": {
+			"type": "merge",
+			"inputs": [
+				{
+					"type": "merge",
+					"inputs": [
+						{
+							"type": "bone_binding",
+							"part_bindings": []
+						},
+						{
+							"type": "bone_binding",
+							"special_bindings": [
+								{
+									"bones": [
+										"track_spin_wheelL1"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL10"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL11"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL12"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL13"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL14"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL15"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL16"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL17"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.3133909
+								},
+								{
+									"bones": [
+										"track_spin_wheelL18"
+									],
+									"source": "left_wheel_rotation",
+									"axis": "x",
+									"param": -0.3640347
+								},
+								{
+									"bones": [
+										"track_spin_wheelL2"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL3"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL4"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL5"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL6"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL7"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.3995296
+								},
+								{
+									"bones": [
+										"track_spin_wheelL8"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.3133909
+								},
+								{
+									"bones": [
+										"track_spin_wheelL9"
+									],
+									"source": "right_wheel_rotation",
+									"axis": "x",
+									"param": -0.3640347
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "bone_binding",
+					"part_bindings": [
+						{
+							"bone": "weapon_drive_yaw",
+							"part": "turret",
+							"rotation_type": "y",
+							"axis": "y",
+							"invert": true
+						},
+						{
+							"bone": "weapon_drive_pitch",
+							"part": "turret",
+							"rotation_type": "x",
+							"axis": "x",
+							"invert": false
+						}
+					]
+				}
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
+	},
+	"event_animations": {
+		"turret_fire": [
+			"main_cannon_shoot"
 		]
 	}
 }

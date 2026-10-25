@@ -1,0 +1,22 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/su100",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/su100.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/su100.png",
+	"animation_controller": "dragonrise_reforge_ywzj:su100_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run",
+		"track_run": "ywzj_vehicle:track_run"
+	},
+	"description": "vehicle.su100.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2107,
+	"track_config": {
+		"model": "dragonrise_reforge_ywzj:effect/su100_track_link",
+		"texture": "dragonrise_reforge_ywzj:textures/entity/su100.png",
+		"module_length": 0.274999999
+	},
+	"animations": "dragonrise_reforge_ywzj:entity/su100.animation"
+}

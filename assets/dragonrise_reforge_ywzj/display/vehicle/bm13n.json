@@ -10,5 +10,6 @@
 		"engine_run": "ywzj_vehicle:truck_engine_run"
 	},
 	"description": "vehicle.bm13n.description",
-	"tab_index": 2130
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 1102
 }

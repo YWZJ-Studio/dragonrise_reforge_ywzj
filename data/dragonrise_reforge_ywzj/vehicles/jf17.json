@@ -18,13 +18,8 @@
 		"x_turn_rate": 2,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [
-			[4.7314, 1.7269, -4.4961],
-			[-4.7314, 1.7269, -4.4961]
-		],
-		"afterburner_offsets": [
-			[0.0029, 1.9585, -7.2606, 0.88]
-		]
+		"vortex_offsets": [[4.7314, 1.7269, -4.4961], [-4.7314, 1.7269, -4.4961]],
+		"afterburner_offsets": [[0.0029, 1.9585, -7.2606, 0.88]]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
@@ -59,6 +54,7 @@
 			"structure_bone": "sighting_system",
 			"seat_offset": [-0.0005, 2.5194, 3.446],
 			"operator_on_weapon_unit": false,
+			"sub_part_unit_ids": ["radar"],
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
@@ -71,9 +67,6 @@
 			"operator_view_offset": [0.0, 0.0, 0.0],
 			"optical_sight_type": "none",
 			"zoom_max": 12,
-			"sub_part_unit_ids": [
-				"radar"
-			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:type_23_3",
@@ -113,14 +106,14 @@
 			"structure_bone": "pl_8",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"fire_control_sensor_type": "ir"
 		},
 		{
 			"id": "pl_12",
@@ -129,14 +122,14 @@
 			"structure_bone": "pl_12",
 			"render_model": true,
 			"ammo_capacity": 4,
-			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"fire_control_sensor_type": "rf"
 		},
 		{
 			"id": "decoy_flare",

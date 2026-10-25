@@ -1,0 +1,15 @@
+{
+	"type": "ywzj_vehicle:wheeled_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/type94_isuzu",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/type94_isuzu.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/type94_isuzu.png",
+	"animation_controller": "dragonrise_reforge_ywzj:type94_isuzu_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:lav150_engine_start",
+		"engine_idle": "ywzj_vehicle:truck_engine_idle",
+		"engine_run": "ywzj_vehicle:truck_engine_run"
+	},
+	"description": "vehicle.type94_isuzu.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 1300
+}

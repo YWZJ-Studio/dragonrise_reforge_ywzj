@@ -15,6 +15,8 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.markv.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
 	"tab_index": 2390,
-	"animation_controller": "dragonrise_reforge_ywzj:markv_controller"
+	"animation_controller": "dragonrise_reforge_ywzj:markv_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/markv.animation"
 }

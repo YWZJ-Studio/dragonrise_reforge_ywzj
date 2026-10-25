@@ -16,5 +16,6 @@
 	},
 	"description": "vehicle.t72b3.description",
 	"tab_index": 2240,
-	"animation_controller": "dragonrise_reforge_ywzj:t72b3_controller"
+	"animation_controller": "dragonrise_reforge_ywzj:t72b3_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/t72b3.animation"
 }

@@ -17,16 +17,13 @@
 		"x_turn_rate": 2,
 		"y_turn_rate": 3,
 		"z_turn_rate": 4,
-		"vortex_offsets": [
-			[5.0388, 3.107, 1.4645],
-			[-5.0388, 3.107, 1.4645]
-		]
+		"vortex_offsets": [[5.0388, 3.107, 1.4645], [-5.0388, 3.107, 1.4645]]
 	},
-	"max_health": 1000,
+	"max_health": 500,
 	"view_info": {
 		"third_person_center_offset": [0, 4, 0],
-		"third_person_distance": 10,
-		"third_person_center_offset_zoomed": [0, 3, 0],
+		"third_person_distance": 12,
+		"third_person_center_offset_zoomed": [0, 5, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
 	},

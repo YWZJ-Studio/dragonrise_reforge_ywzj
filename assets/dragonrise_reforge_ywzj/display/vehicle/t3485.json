@@ -12,10 +12,11 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.t3485.description",
-	"tab_index": 2140,
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2105,
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/t3485_track_link",
 		"texture": "dragonrise_reforge_ywzj:textures/entity/t3485.png",
-		"module_length": 0.25
+		"module_length": 0.25762089
 	}
 }

@@ -1,0 +1,15 @@
+{
+	"type": "ywzj_vehicle:wheeled_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/cckw353",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/cckw353.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/cckw353.png",
+	"animation_controller": "dragonrise_reforge_ywzj:cckw353_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:lav150_engine_start",
+		"engine_idle": "ywzj_vehicle:truck_engine_idle",
+		"engine_run": "ywzj_vehicle:truck_engine_run"
+	},
+	"description": "vehicle.cckw353.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 1200
+}

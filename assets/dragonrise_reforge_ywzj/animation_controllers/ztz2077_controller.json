@@ -3,7 +3,7 @@
 	"parameters": {},
 	"event_animations": {
 		"turret_fire": [
-			"barrel_shoot"
+			"main_cannon_shoot"
 		],
 		"passenger_weapon_station_fire": [
 			"weapon_station_shoot"

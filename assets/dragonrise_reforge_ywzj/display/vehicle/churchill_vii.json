@@ -12,10 +12,11 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.churchill_vii.description",
-	"tab_index": 2410,
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2400,
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/churchill_vii_track_link",
 		"texture": "dragonrise_reforge_ywzj:textures/entity/churchill_vii.png",
-		"module_length": 0.25
+		"module_length": 0.214034899
 	}
 }

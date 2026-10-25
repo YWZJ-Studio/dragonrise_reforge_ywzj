@@ -1,0 +1,22 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/sherman_firefly",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/sherman_firefly.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/sherman_firefly.png",
+	"animation_controller": "dragonrise_reforge_ywzj:sherman_firefly_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run",
+		"track_run": "ywzj_vehicle:track_run"
+	},
+	"description": "vehicle.sherman_firefly.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2402,
+	"track_config": {
+		"model": "dragonrise_reforge_ywzj:effect/sherman_firefly_track_link",
+		"texture": "dragonrise_reforge_ywzj:textures/entity/sherman_firefly.png",
+		"module_length": 0.270564626
+	},
+	"animations": "dragonrise_reforge_ywzj:entity/sherman_firefly.animation"
+}

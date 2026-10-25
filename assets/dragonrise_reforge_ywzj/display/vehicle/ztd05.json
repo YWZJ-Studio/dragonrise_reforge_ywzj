@@ -16,5 +16,6 @@
 	},
 	"description": "vehicle.ztd05.description",
 	"tab_index": 2060,
-	"animation_controller": "dragonrise_reforge_ywzj:ztd05_controller"
+	"animation_controller": "dragonrise_reforge_ywzj:ztd05_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/ztd05.animation"
 }

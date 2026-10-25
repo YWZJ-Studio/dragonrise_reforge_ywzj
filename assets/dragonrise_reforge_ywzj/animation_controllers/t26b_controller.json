@@ -1,0 +1,259 @@
+{
+	"name": "t26b_controller",
+	"graph": {
+		"type": "additive",
+		"base": {
+			"type": "bone_binding",
+			"part_bindings": [
+				{
+					"bone": "weapon_drive_yaw",
+					"part": "turret",
+					"rotation_type": "y",
+					"axis": "y",
+					"invert": true
+				},
+				{
+					"bone": "weapon_drive_pitch",
+					"part": "turret",
+					"rotation_type": "x",
+					"axis": "x",
+					"invert": false
+				}
+			],
+			"special_bindings": [
+				{
+					"bones": [
+						"wheel_left_1_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.412762121
+				},
+				{
+					"bones": [
+						"wheel_left_2_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336818
+				},
+				{
+					"bones": [
+						"wheel_left_3_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.115841575
+				},
+				{
+					"bones": [
+						"wheel_left_4_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336928
+				},
+				{
+					"bones": [
+						"wheel_left_5_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336596
+				},
+				{
+					"bones": [
+						"wheel_left_6_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.115841575
+				},
+				{
+					"bones": [
+						"wheel_left_7_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336596
+				},
+				{
+					"bones": [
+						"wheel_left_8_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336818
+				},
+				{
+					"bones": [
+						"wheel_left_9_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.115841686
+				},
+				{
+					"bones": [
+						"wheel_left_10_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336928
+				},
+				{
+					"bones": [
+						"wheel_left_11_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336596
+				},
+				{
+					"bones": [
+						"wheel_left_12_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.115841575
+				},
+				{
+					"bones": [
+						"wheel_left_13_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336596
+				},
+				{
+					"bones": [
+						"wheel_left_14_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.360245353
+				},
+				{
+					"bones": [
+						"wheel_right_1_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.412761789
+				},
+				{
+					"bones": [
+						"wheel_right_2_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336596
+				},
+				{
+					"bones": [
+						"wheel_right_3_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.115841464
+				},
+				{
+					"bones": [
+						"wheel_right_4_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336596
+				},
+				{
+					"bones": [
+						"wheel_right_5_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336928
+				},
+				{
+					"bones": [
+						"wheel_right_6_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.115841464
+				},
+				{
+					"bones": [
+						"wheel_right_7_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336818
+				},
+				{
+					"bones": [
+						"wheel_right_8_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336596
+				},
+				{
+					"bones": [
+						"wheel_right_9_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.115841575
+				},
+				{
+					"bones": [
+						"wheel_right_10_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336596
+				},
+				{
+					"bones": [
+						"wheel_right_11_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336928
+				},
+				{
+					"bones": [
+						"wheel_right_12_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.115841686
+				},
+				{
+					"bones": [
+						"wheel_right_13_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.158336818
+				},
+				{
+					"bones": [
+						"wheel_right_14_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.360245353
+				}
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
+	},
+	"event_animations": {
+		"turret_fire": [
+			"main_cannon_shoot"
+		]
+	}
+}

@@ -7,5 +7,6 @@
 	"animation_controller": "dragonrise_reforge_ywzj:npds514_controller",
 	"sounds": {},
 	"description": "vehicle.npds514.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.fictional",
 	"tab_index": 5120
 }

@@ -6,6 +6,7 @@
 	"animation_controller": "dragonrise_reforge_ywzj:dshk_controller",
 	"sounds": {},
 	"description": "vehicle.dshk.description",
-	"tab_index": 5020,
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 5100,
 	"type": "ywzj_vehicle:generic"
 }

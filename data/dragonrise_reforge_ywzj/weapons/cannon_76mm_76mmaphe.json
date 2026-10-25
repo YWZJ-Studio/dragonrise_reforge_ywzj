@@ -4,9 +4,9 @@
 	"caliber": 76,
 	"damage": 600,
 	"velocity": 35,
-	"inaccuracy": 0.025,
 	"headshot_multiplier": 1,
 	"recoil": 1,
+	"inaccuracy": 0.025,
 	"shoot_interval": 400,
 	"max_capacity": 1,
 	"reload": {

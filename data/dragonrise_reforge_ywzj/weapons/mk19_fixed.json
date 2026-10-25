@@ -1,26 +1,26 @@
 {
 	"type": "ywzj_vehicle:grenade",
+	"grenade": "frag",
 	"name": "Mk 19 40mm",
 	"caliber": 40,
 	"damage": 55,
 	"velocity": 8,
-	"inaccuracy": 1.2,
-	"headshot_multiplier": 1.5,
-	"recoil": 0.2,
 	"shoot_interval": 214,
 	"max_capacity": 20,
 	"reload": {
 		"time": 100,
 		"ammo": "ywzj_vehicle:ammo_grenade"
 	},
+	"gravity": 0.05,
+	"should_bounce": false,
+	"broke_on_ground": true,
 	"explosion": {
 		"explode": true,
 		"damage": 10,
 		"radius": 5,
 		"destroy_block": true
 	},
-	"grenade": "frag",
-	"gravity": 0.05,
-	"should_bounce": false,
-	"broke_on_ground": true
+	"inaccuracy": 1.2,
+	"headshot_multiplier": 1.5,
+	"recoil": 0.2
 }

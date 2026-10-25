@@ -12,10 +12,11 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.m4a2_105.description",
-	"tab_index": 2290,
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2205,
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/m4a2_105_track_link",
 		"texture": "dragonrise_reforge_ywzj:textures/entity/m4a2_105.png",
-		"module_length": 0.25
+		"module_length": 0.233124368
 	}
 }

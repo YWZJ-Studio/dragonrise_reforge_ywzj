@@ -15,6 +15,8 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.darkbear.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.fictional",
 	"tab_index": 2560,
-	"animation_controller": "dragonrise_reforge_ywzj:darkbear_controller"
+	"animation_controller": "dragonrise_reforge_ywzj:darkbear_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/darkbear.animation"
 }

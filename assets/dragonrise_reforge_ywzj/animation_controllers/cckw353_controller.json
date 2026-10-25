@@ -1,0 +1,77 @@
+{
+	"name": "cckw353_controller",
+	"graph": {
+		"type": "bone_binding",
+		"part_bindings": [],
+		"special_bindings": [
+			{
+				"bones": [
+					"wheel_left_1_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.457130378
+			},
+			{
+				"bones": [
+					"wheel_left_1_steer"
+				],
+				"source": "steering_angle",
+				"axis": "y",
+				"multiplier": 1,
+				"min": -28,
+				"max": 28
+			},
+			{
+				"bones": [
+					"wheel_left_2_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.435362126
+			},
+			{
+				"bones": [
+					"wheel_left_3_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.435362126
+			},
+			{
+				"bones": [
+					"wheel_right_1_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.457130378
+			},
+			{
+				"bones": [
+					"wheel_right_1_steer"
+				],
+				"source": "steering_angle",
+				"axis": "y",
+				"multiplier": 1,
+				"min": -28,
+				"max": 28
+			},
+			{
+				"bones": [
+					"wheel_right_2_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.435362126
+			},
+			{
+				"bones": [
+					"wheel_right_3_spin"
+				],
+				"source": "wheel_rotation",
+				"axis": "x",
+				"param": 0.435362126
+			}
+		]
+	}
+}

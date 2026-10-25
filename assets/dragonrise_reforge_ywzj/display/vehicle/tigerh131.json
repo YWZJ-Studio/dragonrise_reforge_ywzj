@@ -1,0 +1,22 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/tigerh131",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/tigerh131.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/tigerh131.png",
+	"animation_controller": "dragonrise_reforge_ywzj:tigerh_skin_controller",
+	"track_config": {
+		"model": "dragonrise_reforge_ywzj:effect/tigerh131_track_link",
+		"texture": "dragonrise_reforge_ywzj:textures/entity/tigerh131.png",
+		"module_length": 0.275777261
+	},
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run",
+		"track_run": "ywzj_vehicle:track_run"
+	},
+	"description": "vehicle.tigerh131.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2003,
+	"display_group": "dragonrise_reforge_ywzj:entity/tiger_h1"
+}

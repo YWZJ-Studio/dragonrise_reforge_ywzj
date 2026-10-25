@@ -12,6 +12,7 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.pzbjy.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.fictional",
 	"tab_index": 2580,
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/pzbjy_track_link",

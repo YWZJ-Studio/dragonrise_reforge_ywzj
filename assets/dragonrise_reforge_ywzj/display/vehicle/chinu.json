@@ -1,0 +1,22 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/chinu",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/chinu.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/chinu.png",
+	"animation_controller": "dragonrise_reforge_ywzj:chinu_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run",
+		"track_run": "ywzj_vehicle:track_run"
+	},
+	"description": "vehicle.chinu.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2303,
+	"track_config": {
+		"model": "dragonrise_reforge_ywzj:effect/chinu_track_link",
+		"texture": "dragonrise_reforge_ywzj:textures/entity/chinu.png",
+		"module_length": 0.281999998
+	},
+	"animations": "dragonrise_reforge_ywzj:entity/chinu.animation"
+}

@@ -1,0 +1,22 @@
+{
+	"type": "ywzj_vehicle:cannon",
+	"name": "weapon.dragonrise_reforge_ywzj.howitzer_152mm_m10",
+	"caliber": 152,
+	"damage": 1200,
+	"velocity": 22,
+	"headshot_multiplier": 1,
+	"recoil": 1,
+	"inaccuracy": 0.025,
+	"shoot_interval": 500,
+	"max_capacity": 1,
+	"reload": {
+		"time": 360,
+		"ammo": "ywzj_vehicle:ammo_artillery"
+	},
+	"explosion": {
+		"explode": true,
+		"damage": 360.0,
+		"radius": 8,
+		"destroy_block": true
+	}
+}

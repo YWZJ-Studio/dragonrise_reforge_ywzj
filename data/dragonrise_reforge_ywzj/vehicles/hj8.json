@@ -1,10 +1,12 @@
 {
 	"type": "ywzj_vehicle:generic",
 	"attributes": {},
-	"max_health": 60,
+	"max_health": 100,
 	"view_info": {
-		"third_person_center_offset": [0, 0.6255654516692774, 0],
+		"third_person_center_offset": [0, 2, 0],
 		"third_person_distance": 3,
+		"third_person_center_offset_zoomed": [0, 2, 0],
+		"third_person_distance_zoomed": 0,
 		"sound_distance": 4
 	},
 	"energy_info": {
@@ -23,11 +25,10 @@
 			"id": "turret",
 			"name": "turret",
 			"type": "ywzj_vehicle:weapon",
-			"max_health": 60,
+			"max_health": 100,
 			"render_bone": "weapon_yaw",
 			"structure_bone": "turret",
 			"ammo_capacity": 1,
-			"fire_control_sensor_type": "eo",
 			"seat_offset": [0.19999999999999996, 1.62, -1.0],
 			"passenger_pose": {
 				"left_leg_rot_x": 0,
@@ -45,12 +46,11 @@
 			"optical_sight_offset": [0.2, 0.18595, -0.375],
 			"operator_view_offset": [0.2, 0.18595, -0.375],
 			"fire_control_lock_type": "aim_hit",
+			"fire_control_sensor_type": "eo",
 			"optical_sight_type": "crt",
 			"zoom_min": 4,
 			"zoom_max": 12,
-			"weapons": [
-				"dragonrise_reforge_ywzj:hj8_fixed"
-			]
+			"weapons": ["dragonrise_reforge_ywzj:hj8_fixed"]
 		}
 	],
 	"experimental": true

@@ -2,7 +2,11 @@
 	"name": "xyr2000_controller",
 	"script": "dragonrise_reforge_ywzj:xyr2000",
 	"parameters": {},
-	"event_animations": {},
+	"event_animations": {
+		"turret_fire": [
+			"main_cannon_shoot"
+		]
+	},
 	"loop_animations": {
 		"static": {
 			"animation": "static"

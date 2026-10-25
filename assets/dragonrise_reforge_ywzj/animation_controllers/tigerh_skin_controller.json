@@ -1,0 +1,184 @@
+{
+	"name": "tigerh_skin_controller",
+	"graph": {
+		"type": "bone_binding",
+		"part_bindings": [
+			{
+				"bone": "tiger_skin_yaw",
+				"part": "turret",
+				"rotation_type": "y",
+				"axis": "y",
+				"invert": true
+			},
+			{
+				"bone": "tiger_skin_pitch",
+				"part": "turret",
+				"rotation_type": "x",
+				"axis": "x",
+				"invert": false
+			}
+		],
+		"special_bindings": [
+			{
+				"bones": [
+					"track_spin_bone17"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone2"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone7"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone5"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone18"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone6"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone24"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone19"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone26"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone27"
+				],
+				"source": "left_wheel_rotation",
+				"axis": "x",
+				"param": 0.383015124
+			},
+			{
+				"bones": [
+					"track_spin_bone10"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone13"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone11"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone14"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone12"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone15"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone21"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone20"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone22"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.451482234
+			},
+			{
+				"bones": [
+					"track_spin_bone23"
+				],
+				"source": "right_wheel_rotation",
+				"axis": "x",
+				"param": 0.383015124
+			}
+		]
+	}
+}

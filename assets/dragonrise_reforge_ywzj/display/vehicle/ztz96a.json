@@ -16,5 +16,6 @@
 	},
 	"description": "vehicle.ztz96a.description",
 	"tab_index": 2010,
-	"animation_controller": "dragonrise_reforge_ywzj:ztz96a_controller"
+	"animation_controller": "dragonrise_reforge_ywzj:ztz96a_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/ztz96a.animation"
 }

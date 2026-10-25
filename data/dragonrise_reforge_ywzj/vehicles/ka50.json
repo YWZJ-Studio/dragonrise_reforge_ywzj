@@ -1,7 +1,7 @@
 {
 	"type": "ywzj_vehicle:rotary_wing_vehicle",
 	"attributes": {
-		"main_rotor_force": 13720,
+		"main_rotor_force": 105644,
 		"ceiling": 256,
 		"x_rot_speed_acceleration": 1.0,
 		"x_rot_speed_max": 3.0,
@@ -14,19 +14,16 @@
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 1000,
 	"view_info": {
-		"third_person_center_offset": [0, 5.9742647606057675, 0],
+		"third_person_center_offset": [0, 6, 0],
 		"third_person_distance": 14,
-		"third_person_center_offset_zoomed": [0, 6.9742647606057675, 0],
+		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 0,
 		"sound_distance": 8
 	},
 	"energy_info": {
 		"energy_capacity": 1500,
 		"energy_consumption_per_tick": 0.009027778,
-		"engine_particle_offsets": [
-			[1.5, 1.9742647606057673, -1.5],
-			[-1.5, 1.9742647606057673, -1.5]
-		]
+		"engine_particle_offsets": [[1.5, 1.9742647606057673, -1.5], [-1.5, 1.9742647606057673, -1.5]]
 	},
 	"defense_stats": {
 		"damage_threshold": 10,
@@ -34,6 +31,8 @@
 	},
 	"center_offset": [-0.0015625, 1.5894164, -0.0533575],
 	"physics_info": {
+		"mass": 7700,
+		"friction": 15400,
 		"center": [0, 0, 2]
 	},
 	"structure_model": "dragonrise_reforge_ywzj:vehicle/ka50",
@@ -81,7 +80,6 @@
 			"name": "auto_cannon",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "auto_cannon",
-			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"crosshair_style": "square",
 			"rot_info": {
@@ -92,7 +90,8 @@
 				"y_rot_max": 20,
 				"y_rot_min": 0
 			},
-			"fire_control_lock_type": "aim_hit"
+			"fire_control_lock_type": "aim_hit",
+			"fire_control_sensor_type": "eo"
 		},
 		{
 			"id": "missile",
@@ -100,7 +99,6 @@
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "missile",
 			"ammo_capacity": 12,
-			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "circle",
@@ -108,20 +106,21 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"fire_control_lock_type": "aim_hit"
+			"fire_control_lock_type": "aim_hit",
+			"fire_control_sensor_type": "eo"
 		},
 		{
 			"id": "rocket",
 			"name": "rocket",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "rocket",
-			"fire_control_sensor_type": "ccip",
 			"is_seat": false,
 			"crosshair_style": "cross",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"fire_control_sensor_type": "ccip"
 		},
 		{
 			"id": "decoy_flare",

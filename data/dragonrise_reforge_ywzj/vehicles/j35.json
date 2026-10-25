@@ -18,20 +18,14 @@
 		"x_turn_rate": 2,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [
-			[6.756, 1.9471, -3.402],
-			[-6.756, 1.9471, -3.402]
-		],
-		"afterburner_offsets": [
-			[0.9022, 1.8412, -6.4651, 0.52],
-			[-0.9022, 1.8412, -6.4651, 0.52]
-		]
+		"vortex_offsets": [[6.756, 1.9471, -3.402], [-6.756, 1.9471, -3.402]],
+		"afterburner_offsets": [[0.9022, 1.8412, -6.4651, 0.52], [-0.9022, 1.8412, -6.4651, 0.52]]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
 	"view_info": {
 		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_distance": 16,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
@@ -60,6 +54,7 @@
 			"structure_bone": "sighting_system",
 			"seat_offset": [0.0, 2.7363, 4.4422],
 			"operator_on_weapon_unit": false,
+			"sub_part_unit_ids": ["radar"],
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
@@ -72,9 +67,6 @@
 			"operator_view_offset": [0.0, 0.0, 0.0],
 			"optical_sight_type": "none",
 			"zoom_max": 12,
-			"sub_part_unit_ids": [
-				"radar"
-			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:pl_15",
@@ -93,7 +85,6 @@
 			"structure_bone": "pl_15",
 			"render_model": true,
 			"ammo_capacity": 6,
-			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -101,6 +92,7 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
+			"fire_control_sensor_type": "rf",
 			"cold_launch_time_tick": 5,
 			"cold_launch_velocity": [0, -1, 0]
 		},

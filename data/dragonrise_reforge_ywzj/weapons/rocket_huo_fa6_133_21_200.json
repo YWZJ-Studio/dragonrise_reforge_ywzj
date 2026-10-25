@@ -1,8 +1,10 @@
 {
+	"thrust": 4160,
+	"drag_coefficient": 0.052,
+	"mass": 10.4,
 	"type": "ywzj_vehicle:rocket",
 	"name": "weapon.dragonrise_reforge_ywzj.rocket_huo_fa6_133_21_200",
 	"damage": 100,
-	"velocity": 4,
 	"shoot_interval": 133,
 	"max_capacity": 21,
 	"reload": {
@@ -14,7 +16,5 @@
 		"damage": 200,
 		"radius": 6
 	},
-	"mass": 10.4,
-	"thrust": 4160,
-	"drag_coefficient": 0.052
+	"velocity": 4
 }

@@ -1,0 +1,21 @@
+{
+	"type": "ywzj_vehicle:tracked_vehicle",
+	"model": "dragonrise_reforge_ywzj:entity/pantherg_c",
+	"texture": "dragonrise_reforge_ywzj:textures/entity/pantherg_g.png",
+	"slot_texture": "dragonrise_reforge_ywzj:textures/slot/pantherg_g.png",
+	"animation_controller": "dragonrise_reforge_ywzj:pantherg_c_controller",
+	"sounds": {
+		"engine_start": "ywzj_vehicle:ztz99a_engine_start",
+		"engine_idle": "ywzj_vehicle:ztz99a_engine_idle",
+		"engine_run": "ywzj_vehicle:ztz99a_engine_run",
+		"track_run": "ywzj_vehicle:track_run"
+	},
+	"description": "vehicle.pantherg_g.description",
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2002,
+	"track_config": {
+		"model": "dragonrise_reforge_ywzj:effect/pantherg_c_track_link",
+		"texture": "dragonrise_reforge_ywzj:textures/entity/pantherg_g.png",
+		"module_length": 0.274999998
+	}
+}

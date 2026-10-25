@@ -12,10 +12,11 @@
 		"track_run": "ywzj_vehicle:track_run"
 	},
 	"description": "vehicle.type97.description",
-	"tab_index": 2520,
+	"tab_name": "tab.dragonrise_reforge_ywzj.ww2",
+	"tab_index": 2301,
 	"track_config": {
 		"model": "dragonrise_reforge_ywzj:effect/type97_track_link",
 		"texture": "dragonrise_reforge_ywzj:textures/entity/type97.png",
-		"module_length": 0.25
+		"module_length": 0.270130053
 	}
 }

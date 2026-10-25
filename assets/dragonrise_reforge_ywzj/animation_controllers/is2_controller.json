@@ -47,7 +47,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.1520038
+								"param": -0.140383009
 							},
 							{
 								"bones": [
@@ -55,7 +55,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.1520038
+								"param": -0.140383009
 							},
 							{
 								"bones": [
@@ -63,7 +63,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.1520038
+								"param": -0.140383009
 							},
 							{
 								"bones": [
@@ -71,7 +71,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.1520038
+								"param": -0.140383009
 							},
 							{
 								"bones": [
@@ -79,7 +79,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.1520041
+								"param": -0.140383286
 							},
 							{
 								"bones": [
@@ -87,7 +87,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.3303808
+								"param": -0.305122969
 							},
 							{
 								"bones": [
@@ -95,7 +95,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.327281
+								"param": -0.302260151
 							},
 							{
 								"bones": [
@@ -103,7 +103,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272807
+								"param": -0.302259874
 							},
 							{
 								"bones": [
@@ -111,7 +111,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272818
+								"param": -0.302260889
 							},
 							{
 								"bones": [
@@ -119,7 +119,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272812
+								"param": -0.302260335
 							},
 							{
 								"bones": [
@@ -127,7 +127,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272805
+								"param": -0.302259689
 							},
 							{
 								"bones": [
@@ -135,7 +135,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272818
+								"param": -0.302260889
 							},
 							{
 								"bones": [
@@ -143,7 +143,7 @@
 								],
 								"source": "left_wheel_rotation",
 								"axis": "x",
-								"param": -0.3751752
+								"param": -0.346492807
 							},
 							{
 								"bones": [
@@ -151,7 +151,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.3303808
+								"param": -0.305122969
 							},
 							{
 								"bones": [
@@ -159,7 +159,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.327281
+								"param": -0.302260151
 							},
 							{
 								"bones": [
@@ -167,7 +167,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272807
+								"param": -0.302259874
 							},
 							{
 								"bones": [
@@ -175,7 +175,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272818
+								"param": -0.302260889
 							},
 							{
 								"bones": [
@@ -183,7 +183,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272812
+								"param": -0.302260335
 							},
 							{
 								"bones": [
@@ -191,7 +191,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272805
+								"param": -0.302259689
 							},
 							{
 								"bones": [
@@ -199,7 +199,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.3272818
+								"param": -0.302260889
 							},
 							{
 								"bones": [
@@ -207,7 +207,7 @@
 								],
 								"source": "right_wheel_rotation",
 								"axis": "x",
-								"param": -0.3751752
+								"param": -0.346492807
 							}
 						]
 					}

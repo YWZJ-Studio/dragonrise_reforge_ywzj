@@ -1,0 +1,147 @@
+{
+	"name": "su100_controller",
+	"graph": {
+		"type": "additive",
+		"base": {
+			"type": "bone_binding",
+			"part_bindings": [
+				{
+					"bone": "weapon_drive_yaw",
+					"part": "turret",
+					"rotation_type": "y",
+					"axis": "y",
+					"invert": true
+				},
+				{
+					"bone": "weapon_drive_pitch",
+					"part": "turret",
+					"rotation_type": "x",
+					"axis": "x",
+					"invert": false
+				}
+			],
+			"special_bindings": [
+				{
+					"bones": [
+						"wheel_left_1_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.284853249
+				},
+				{
+					"bones": [
+						"wheel_left_2_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_left_3_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_left_4_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_left_5_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_left_6_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_left_7_spin"
+					],
+					"source": "left_wheel_rotation",
+					"axis": "x",
+					"param": 0.284853249
+				},
+				{
+					"bones": [
+						"wheel_right_1_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.284853249
+				},
+				{
+					"bones": [
+						"wheel_right_2_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_right_3_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_right_4_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_right_5_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_right_6_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.432513399
+				},
+				{
+					"bones": [
+						"wheel_right_7_spin"
+					],
+					"source": "right_wheel_rotation",
+					"axis": "x",
+					"param": 0.284853249
+				}
+			]
+		},
+		"add": {
+			"type": "event_animation"
+		}
+	},
+	"event_animations": {
+		"turret_fire": [
+			"main_cannon_shoot"
+		]
+	}
+}

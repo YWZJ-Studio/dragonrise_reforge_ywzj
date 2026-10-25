@@ -2,7 +2,6 @@
 	"type": "ywzj_vehicle:aerial_bomb",
 	"name": "500kg Aerial Bomb",
 	"damage": 50,
-	"headshot_multiplier": 200,
 	"shoot_interval": 1000,
 	"max_capacity": 4,
 	"reload": {
@@ -14,5 +13,6 @@
 		"damage": 999,
 		"radius": 24,
 		"destroy_block": true
-	}
+	},
+	"headshot_multiplier": 200
 }

@@ -18,21 +18,14 @@
 		"x_turn_rate": 2,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [
-			[4.384375, 1.5390625, -4.390625],
-			[-4.384375, 1.5390625, -4.390625]
-		],
-		"afterburner_offsets": [
-			[0, 1.8140625, -6.5203125, 0.65]
-		],
-		"aerobatic_smoke_offsets": [
-			[0, 2.628125, -7.5734375]
-		]
+		"vortex_offsets": [[4.384375, 1.5390625, -4.390625], [-4.384375, 1.5390625, -4.390625]],
+		"afterburner_offsets": [[0, 1.8140625, -6.5203125, 0.65]],
+		"aerobatic_smoke_offsets": [[0, 2.628125, -7.5734375]]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
 	"view_info": {
-		"third_person_center_offset": [0, 5, 0],
+		"third_person_center_offset": [0, 6, 0],
 		"third_person_distance": 16,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
@@ -61,6 +54,7 @@
 			"structure_bone": "sighting_system",
 			"seat_offset": [0, 2.7140625, 3.009375],
 			"operator_on_weapon_unit": false,
+			"sub_part_unit_ids": ["radar"],
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0,
@@ -71,9 +65,6 @@
 			},
 			"operator_view_offset": [0, -0.05, 0.2],
 			"optical_sight_type": "none",
-			"sub_part_unit_ids": [
-				"radar"
-			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:type_23_3",
@@ -131,14 +122,14 @@
 			"structure_bone": "bomb",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "ccip",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "big_cross",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"fire_control_sensor_type": "ccip"
 		},
 		{
 			"id": "pl_8",
@@ -147,14 +138,14 @@
 			"structure_bone": "pl_8",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"fire_control_sensor_type": "ir"
 		},
 		{
 			"id": "decoy_flare",

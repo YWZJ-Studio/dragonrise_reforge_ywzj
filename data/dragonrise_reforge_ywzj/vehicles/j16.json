@@ -18,20 +18,14 @@
 		"x_turn_rate": 2,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [
-			[7.25625, 2.1859375, -6.15],
-			[-7.25625, 2.1859375, -6.15]
-		],
-		"afterburner_offsets": [
-			[1.1828125, 1.7171875, -7.8921875, 0.65],
-			[-1.1828125, 1.7171875, -7.8921875, 0.65]
-		]
+		"vortex_offsets": [[7.25625, 2.1859375, -6.15], [-7.25625, 2.1859375, -6.15]],
+		"afterburner_offsets": [[1.1828125, 1.7171875, -7.8921875, 0.65], [-1.1828125, 1.7171875, -7.8921875, 0.65]]
 	},
 	"landing_gear_part_id": "landing_gear",
 	"max_health": 500,
 	"view_info": {
 		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_distance": 22,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 8
@@ -55,6 +49,7 @@
 			"structure_bone": "sighting_system",
 			"seat_offset": [0, 3.41, 5.613],
 			"operator_on_weapon_unit": false,
+			"sub_part_unit_ids": ["radar"],
 			"rot_info": {
 				"x_rot_speed": 15,
 				"y_rot_speed": 15,
@@ -71,9 +66,6 @@
 			"with_stabilizer": true,
 			"with_focus_locker": true,
 			"with_thermal_imager": true,
-			"sub_part_unit_ids": [
-				"radar"
-			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:gsh_30_1",
@@ -123,22 +115,22 @@
 			"structure_bone": "pl_10",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"fire_control_sensor_type": "ir"
 		},
 		{
 			"id": "pylon_wing",
 			"name": "pylon_wing",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon_wing",
-			"render_selected_weapon": true,
 			"is_seat": false,
+			"render_selected_weapon": true,
 			"weapons": [
 				{
 					"part_unit_id": "pylon_wing_pl_15"
@@ -158,12 +150,10 @@
 			"structure_bone": "pylon_wing",
 			"render_model": true,
 			"ammo_capacity": 6,
-			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"crosshair_style": "none",
-			"weapons": [
-				"dragonrise_reforge_ywzj:pl_15"
-			]
+			"fire_control_sensor_type": "rf",
+			"weapons": ["dragonrise_reforge_ywzj:pl_15"]
 		},
 		{
 			"id": "pylon_wing_kd_88a",
@@ -172,13 +162,11 @@
 			"structure_bone": "pylon_wing",
 			"render_model": true,
 			"ammo_capacity": 6,
-			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "square",
-			"weapons": [
-				"dragonrise_reforge_ywzj:kd_88a"
-			]
+			"fire_control_sensor_type": "eo",
+			"weapons": ["dragonrise_reforge_ywzj:kd_88a"]
 		},
 		{
 			"id": "pylon_wing_gb_250",
@@ -187,21 +175,19 @@
 			"structure_bone": "pylon_wing",
 			"render_model": true,
 			"ammo_capacity": 6,
-			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "square",
-			"weapons": [
-				"dragonrise_reforge_ywzj:gb_250"
-			]
+			"fire_control_sensor_type": "eo",
+			"weapons": ["dragonrise_reforge_ywzj:gb_250"]
 		},
 		{
 			"id": "pylon_fuselage",
 			"name": "pylon_fuselage",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon_fuselage",
-			"render_selected_weapon": true,
 			"is_seat": false,
+			"render_selected_weapon": true,
 			"weapons": [
 				{
 					"part_unit_id": "pylon_fuselage_pl_15"
@@ -221,12 +207,10 @@
 			"structure_bone": "pylon_fuselage",
 			"render_model": true,
 			"ammo_capacity": 3,
-			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"crosshair_style": "none",
-			"weapons": [
-				"dragonrise_reforge_ywzj:pl_15"
-			]
+			"fire_control_sensor_type": "rf",
+			"weapons": ["dragonrise_reforge_ywzj:pl_15"]
 		},
 		{
 			"id": "pylon_fuselage_kd_88a",
@@ -235,13 +219,11 @@
 			"structure_bone": "pylon_fuselage",
 			"render_model": true,
 			"ammo_capacity": 6,
-			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "square",
-			"weapons": [
-				"dragonrise_reforge_ywzj:kd_88a"
-			]
+			"fire_control_sensor_type": "eo",
+			"weapons": ["dragonrise_reforge_ywzj:kd_88a"]
 		},
 		{
 			"id": "pylon_fuselage_gb_250",
@@ -250,13 +232,11 @@
 			"structure_bone": "pylon_fuselage",
 			"render_model": true,
 			"ammo_capacity": 6,
-			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "square",
-			"weapons": [
-				"dragonrise_reforge_ywzj:gb_250"
-			]
+			"fire_control_sensor_type": "eo",
+			"weapons": ["dragonrise_reforge_ywzj:gb_250"]
 		},
 		{
 			"id": "decoy_flare",

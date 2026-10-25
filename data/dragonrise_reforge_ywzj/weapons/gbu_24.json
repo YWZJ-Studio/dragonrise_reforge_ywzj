@@ -1,4 +1,6 @@
 {
+	"drag_coefficient": 5,
+	"mass": 1000,
 	"type": "ywzj_vehicle:aerial_bomb",
 	"name": "GBU-24 Paveway III",
 	"damage": 10,
@@ -10,14 +12,12 @@
 		"time": 100,
 		"ammo": "ywzj_vehicle:ammo_aerial_bomb"
 	},
+	"penetration_depth": 4,
 	"explosion": {
 		"explode": true,
 		"damage": 1600,
 		"radius": 40,
 		"destroy_block": true
 	},
-	"mass": 1000,
-	"drag_coefficient": 5,
-	"penetration_depth": 4,
 	"homing": true
 }

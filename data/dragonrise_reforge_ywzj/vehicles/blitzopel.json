@@ -1,0 +1,173 @@
+{
+	"type": "ywzj_vehicle:wheeled_vehicle",
+	"attributes": {
+		"brake_force": 36000.0,
+		"forward_force": 43200.0,
+		"backward_force": 28800.0,
+		"max_speed_forward": 0.700525,
+		"max_speed_backward": 0.1759,
+		"turn_step": 0.25,
+		"max_turn": 1.75
+	},
+	"max_health": 500,
+	"view_info": {
+		"third_person_center_offset": [0, 4, 0],
+		"third_person_distance": 8,
+		"third_person_center_offset_zoomed": [0, 5, 0],
+		"third_person_distance_zoomed": 0,
+		"sound_distance": 5,
+		"passenger_view_rot": {
+			"rot_by_vehicle_in_third_person": false,
+			"rot_by_vehicle_in_operator": true
+		}
+	},
+	"energy_info": {
+		"energy_capacity": 150,
+		"energy_consumption_per_tick": 0.000625,
+		"engine_particle_offsets": [[-1.168474999, 0.973729166, -1.321489583]]
+	},
+	"protect_passenger": false,
+	"center_offset": [0, 1.340296466, 0],
+	"physics_info": {
+		"mass": 3600,
+		"friction": 7200,
+		"can_destroy_block": false,
+		"destroy_explosion_velocity": 0.3,
+		"suspension_response": 0.8,
+		"center": [0, -0.695520833, 0]
+	},
+	"structure_model": "dragonrise_reforge_ywzj:vehicle/blitzopel",
+	"parts": [
+		{
+			"id": "driver_seat_1",
+			"name": "part.dragonrise_reforge_ywzj.driver_seat",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.4173125, 1.780533332, 1.057191666],
+			"owner_view_offset": [0.4468567, 2.03125, 1.1544159],
+			"seat_rot": 0
+		},
+		{
+			"id": "passenger_seat_1",
+			"name": "part.dragonrise_reforge_ywzj.passenger_seat_1",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.4173125, 1.780533332, 1.057191666],
+			"owner_view_offset": [-0.4393978, 2.03125, 1.1544159],
+			"seat_rot": 0
+		},
+		{
+			"id": "passenger_seat_2",
+			"name": "part.dragonrise_reforge_ywzj.passenger_seat_1",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.834624999, 2.434322915, -0.556416666],
+			"owner_view_offset": [-0.834624999, 2.434322915, -0.556416666],
+			"seat_rot": 90
+		},
+		{
+			"id": "passenger_seat_3",
+			"name": "part.dragonrise_reforge_ywzj.passenger_seat_1",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [-0.834624999, 2.434322915, -1.877906249],
+			"owner_view_offset": [-0.834624999, 2.434322915, -1.877906249],
+			"seat_rot": 90
+		},
+		{
+			"id": "passenger_seat_4",
+			"name": "part.dragonrise_reforge_ywzj.passenger_seat_1",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.834624999, 2.434322915, -0.556416666],
+			"owner_view_offset": [0.834624999, 2.434322915, -0.556416666],
+			"seat_rot": -90
+		},
+		{
+			"id": "passenger_seat_5",
+			"name": "part.dragonrise_reforge_ywzj.passenger_seat_1",
+			"type": "ywzj_vehicle:generic",
+			"is_seat": true,
+			"seat_offset": [0.834624999, 2.434322915, -1.877906249],
+			"owner_view_offset": [0.834624999, 2.434322915, -1.877906249],
+			"seat_rot": -90
+		},
+		{
+			"id": "suspension_left_1",
+			"name": "part.dragonrise_reforge_ywzj.suspension",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "wheel_left_1_steer",
+			"structure_bone": "suspension_left_1",
+			"is_seat": false,
+			"spring_stiffness": 55516.525,
+			"damping": 7775.442,
+			"rest_length": 0.389872255,
+			"max_compression": 0.389872255,
+			"max_extension": 0.20031,
+			"max_droop": 0.166925
+		},
+		{
+			"id": "suspension_left_2",
+			"name": "part.dragonrise_reforge_ywzj.suspension",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "wheel_left_2_spin",
+			"structure_bone": "suspension_left_2",
+			"is_seat": false,
+			"spring_stiffness": 55516.525,
+			"damping": 7775.442,
+			"rest_length": 0.404218903,
+			"max_compression": 0.404218903,
+			"max_extension": 0.20031,
+			"max_droop": 0.166925
+		},
+		{
+			"id": "suspension_right_1",
+			"name": "part.dragonrise_reforge_ywzj.suspension",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "wheel_right_1_steer",
+			"structure_bone": "suspension_right_1",
+			"is_seat": false,
+			"spring_stiffness": 55516.525,
+			"damping": 7775.442,
+			"rest_length": 0.389872255,
+			"max_compression": 0.389872255,
+			"max_extension": 0.20031,
+			"max_droop": 0.166925
+		},
+		{
+			"id": "suspension_right_2",
+			"name": "part.dragonrise_reforge_ywzj.suspension",
+			"type": "ywzj_vehicle:suspension",
+			"max_health": 50,
+			"render_bone": "wheel_right_2_spin",
+			"structure_bone": "suspension_right_2",
+			"is_seat": false,
+			"spring_stiffness": 55516.525,
+			"damping": 7775.442,
+			"rest_length": 0.404218903,
+			"max_compression": 0.404218903,
+			"max_extension": 0.20031,
+			"max_droop": 0.166925
+		},
+		{
+			"id": "hook_front",
+			"name": "part.ywzj_vehicle.hook_front",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_front",
+			"is_seat": false,
+			"detachable": false
+		},
+		{
+			"id": "hook_rear",
+			"name": "part.ywzj_vehicle.hook_rear",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_rear",
+			"is_seat": false,
+			"detachable": false
+		}
+	],
+	"experimental": true
+}

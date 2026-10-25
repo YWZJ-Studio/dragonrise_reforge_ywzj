@@ -2,11 +2,12 @@
 	"type": "ywzj_vehicle:cannon",
 	"name": "88mm Cannon",
 	"caliber": 88,
+	"artillery": false,
 	"damage": 750,
 	"velocity": 35,
-	"inaccuracy": 0.02,
 	"headshot_multiplier": 1,
 	"recoil": 1,
+	"inaccuracy": 0.02,
 	"shoot_interval": 400,
 	"max_capacity": 1,
 	"reload": {
@@ -18,6 +19,5 @@
 		"damage": 200,
 		"radius": 5,
 		"destroy_block": true
-	},
-	"artillery": true
+	}
 }

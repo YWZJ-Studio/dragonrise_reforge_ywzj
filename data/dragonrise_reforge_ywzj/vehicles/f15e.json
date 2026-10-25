@@ -18,20 +18,14 @@
 		"x_turn_rate": 2.5,
 		"y_turn_rate": 3,
 		"z_turn_rate": 8,
-		"vortex_offsets": [
-			[6.5037, 2.4689, -4.5241],
-			[-6.5037, 2.4689, -4.5241]
-		],
-		"afterburner_offsets": [
-			[0.6918, 2.1153, -7.4998, 0.78],
-			[-0.6918, 2.1153, -7.4998, 0.78]
-		]
+		"vortex_offsets": [[6.5037, 2.4689, -4.5241], [-6.5037, 2.4689, -4.5241]],
+		"afterburner_offsets": [[0.6918, 2.1153, -7.4998, 0.78], [-0.6918, 2.1153, -7.4998, 0.78]]
 	},
 	"landing_gear_part_id": "landing_gear",
-	"max_health": 1750,
+	"max_health": 500,
 	"view_info": {
 		"third_person_center_offset": [0, 6, 0],
-		"third_person_distance": 20,
+		"third_person_distance": 22,
 		"third_person_center_offset_zoomed": [0, 7, 0],
 		"third_person_distance_zoomed": 4,
 		"sound_distance": 10
@@ -60,6 +54,7 @@
 			"structure_bone": "sighting_system",
 			"seat_offset": [0.0, 3.247, 4.9625],
 			"operator_on_weapon_unit": false,
+			"sub_part_unit_ids": ["radar"],
 			"rot_info": {
 				"x_rot_speed": 15,
 				"y_rot_speed": 15,
@@ -75,9 +70,6 @@
 			"with_stabilizer": true,
 			"with_focus_locker": true,
 			"with_thermal_imager": true,
-			"sub_part_unit_ids": [
-				"radar"
-			],
 			"weapons": [
 				{
 					"id": "dragonrise_reforge_ywzj:m61",
@@ -131,8 +123,8 @@
 			"name": "pylon1",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon1",
-			"render_selected_weapon": true,
 			"is_seat": false,
+			"render_selected_weapon": true,
 			"weapons": [
 				{
 					"part_unit_id": "pylon1_aim_9"
@@ -152,7 +144,6 @@
 			"structure_bone": "pylon1",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -160,9 +151,8 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:aim_9"
-			]
+			"fire_control_sensor_type": "ir",
+			"weapons": ["dragonrise_reforge_ywzj:aim_9"]
 		},
 		{
 			"id": "pylon1_aim_120",
@@ -171,7 +161,6 @@
 			"structure_bone": "pylon1",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -179,9 +168,8 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:aim_120"
-			]
+			"fire_control_sensor_type": "rf",
+			"weapons": ["dragonrise_reforge_ywzj:aim_120"]
 		},
 		{
 			"id": "pylon1_agm_65",
@@ -190,7 +178,6 @@
 			"structure_bone": "pylon1",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -198,17 +185,16 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:agm_65"
-			]
+			"fire_control_sensor_type": "eo",
+			"weapons": ["dragonrise_reforge_ywzj:agm_65"]
 		},
 		{
 			"id": "pylon2",
 			"name": "pylon2",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon2",
-			"render_selected_weapon": true,
 			"is_seat": false,
+			"render_selected_weapon": true,
 			"weapons": [
 				{
 					"part_unit_id": "pylon2_aim_9"
@@ -228,7 +214,6 @@
 			"structure_bone": "pylon2",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -236,9 +221,8 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:aim_9"
-			]
+			"fire_control_sensor_type": "ir",
+			"weapons": ["dragonrise_reforge_ywzj:aim_9"]
 		},
 		{
 			"id": "pylon2_aim_120",
@@ -247,7 +231,6 @@
 			"structure_bone": "pylon2",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -255,9 +238,8 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:aim_120"
-			]
+			"fire_control_sensor_type": "rf",
+			"weapons": ["dragonrise_reforge_ywzj:aim_120"]
 		},
 		{
 			"id": "pylon2_agm_65",
@@ -266,7 +248,6 @@
 			"structure_bone": "pylon2",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -274,17 +255,16 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:agm_65"
-			]
+			"fire_control_sensor_type": "eo",
+			"weapons": ["dragonrise_reforge_ywzj:agm_65"]
 		},
 		{
 			"id": "pylon3",
 			"name": "pylon3",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon3",
-			"render_selected_weapon": true,
 			"is_seat": false,
+			"render_selected_weapon": true,
 			"weapons": [
 				{
 					"part_unit_id": "pylon3_aim_9"
@@ -304,7 +284,6 @@
 			"structure_bone": "pylon3",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "ir",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -312,9 +291,8 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:aim_9"
-			]
+			"fire_control_sensor_type": "ir",
+			"weapons": ["dragonrise_reforge_ywzj:aim_9"]
 		},
 		{
 			"id": "pylon3_aim_120",
@@ -323,7 +301,6 @@
 			"structure_bone": "pylon3",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -331,9 +308,8 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:aim_120"
-			]
+			"fire_control_sensor_type": "rf",
+			"weapons": ["dragonrise_reforge_ywzj:aim_120"]
 		},
 		{
 			"id": "pylon3_agm_65",
@@ -342,7 +318,6 @@
 			"structure_bone": "pylon3",
 			"render_model": true,
 			"ammo_capacity": 2,
-			"fire_control_sensor_type": "eo",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -350,17 +325,16 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:agm_65"
-			]
+			"fire_control_sensor_type": "eo",
+			"weapons": ["dragonrise_reforge_ywzj:agm_65"]
 		},
 		{
 			"id": "pylon4",
 			"name": "pylon4",
 			"type": "ywzj_vehicle:weapon",
 			"structure_bone": "pylon4",
-			"render_selected_weapon": true,
 			"is_seat": false,
+			"render_selected_weapon": true,
 			"weapons": [
 				{
 					"part_unit_id": "pylon4_aim_120"
@@ -377,7 +351,6 @@
 			"structure_bone": "pylon4",
 			"render_model": true,
 			"ammo_capacity": 4,
-			"fire_control_sensor_type": "rf",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "none",
@@ -385,9 +358,8 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:aim_120"
-			]
+			"fire_control_sensor_type": "rf",
+			"weapons": ["dragonrise_reforge_ywzj:aim_120"]
 		},
 		{
 			"id": "pylon4_mk82",
@@ -396,7 +368,6 @@
 			"structure_bone": "pylon4",
 			"render_model": true,
 			"ammo_capacity": 4,
-			"fire_control_sensor_type": "ccip",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "big_cross",
@@ -404,9 +375,8 @@
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
 			},
-			"weapons": [
-				"dragonrise_reforge_ywzj:mk82"
-			]
+			"fire_control_sensor_type": "ccip",
+			"weapons": ["dragonrise_reforge_ywzj:mk82"]
 		},
 		{
 			"id": "pylon5",
@@ -415,14 +385,14 @@
 			"structure_bone": "pylon5",
 			"render_model": true,
 			"ammo_capacity": 1,
-			"fire_control_sensor_type": "ccip",
 			"is_seat": false,
 			"parent_weapon_unit_aim": true,
 			"crosshair_style": "big_cross",
 			"rot_info": {
 				"x_rot_speed": 0,
 				"y_rot_speed": 0
-			}
+			},
+			"fire_control_sensor_type": "ccip"
 		},
 		{
 			"id": "decoy_flare",

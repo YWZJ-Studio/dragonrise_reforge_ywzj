@@ -3,9 +3,9 @@
 	"name": "NPDS514 Cannon",
 	"damage": 500,
 	"velocity": 6.6667,
-	"inaccuracy": 0.02,
 	"headshot_multiplier": 1.5,
 	"recoil": 0,
+	"inaccuracy": 0.02,
 	"shoot_interval": 1000,
 	"max_capacity": 2,
 	"reload": {

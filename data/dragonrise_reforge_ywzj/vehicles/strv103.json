@@ -4,20 +4,23 @@
 		"brake_acceleration": 0.025,
 		"forward_acceleration": 0.01,
 		"backward_acceleration": 0.01,
-		"max_speed_forward": 0.4,
-		"max_speed_backward": 0.15,
-		"turn_acceleration": 1,
-		"max_turn": 2
+		"max_speed_forward": 0.69933315,
+		"max_speed_backward": 0.61599981,
+		"turn_acceleration": 0.09033333,
+		"max_turn": 1.084
 	},
-	"max_health": 2500,
+	"max_health": 3000,
 	"view_info": {
-		"third_person_center_offset": [0.0, 3.0, 0.0],
+		"third_person_center_offset": [0, 3, 0],
 		"third_person_distance": 7,
+		"third_person_center_offset_zoomed": [0, 5, 0],
+		"third_person_distance_zoomed": 0,
 		"sound_distance": 7
 	},
 	"energy_info": {
 		"energy_capacity": 1028,
-		"energy_consumption_per_tick": 0.002361111
+		"energy_consumption_per_tick": 0.002361111,
+		"engine_particle_offsets": [[-1.807157, 1.5, 1.4375]]
 	},
 	"physics_info": {
 		"mass": 45155,
@@ -31,9 +34,10 @@
 			"id": "turret",
 			"name": "turret",
 			"type": "ywzj_vehicle:weapon",
+			"max_health": 1000,
 			"render_bone": "turret",
 			"structure_bone": "turret",
-			"seat_offset": [0.5625, 1.61875, -0.125],
+			"seat_offset": [0.5625, 1.60125, -0.125],
 			"seat_rot": 0,
 			"operator_on_weapon_unit": false,
 			"rot_info": {
@@ -44,30 +48,32 @@
 				"x_rot": 0,
 				"y_rot": 0
 			},
-			"optical_sight_offset": [-0.6736775, 0.4202294, -1.688125],
-			"operator_view_offset": [0.424375, 0.5004244, -0.0146139],
+			"optical_sight_offset": [0.361875, 0.358444, -1.593849],
+			"operator_view_offset": [-0.138125, 0.845229, -1.420625],
 			"fire_control_lock_type": "aim_hit",
 			"optical_sight_type": "crt",
 			"zoom_max": 6,
 			"with_stabilizer": false,
 			"with_thermal_imager": false,
-			"weapons": [
-				"dragonrise_reforge_ywzj:cannon_105mm_m66"
-			]
+			"weapons": ["dragonrise_reforge_ywzj:cannon_105mm_m66"]
 		},
 		{
 			"id": "driver_seat_2",
 			"name": "driver_seat_2",
 			"type": "ywzj_vehicle:generic",
-			"seat_offset": [0.0, 2.0169806, 1.5338302],
-			"owner_view_offset": [0.0, 2.0169806, 1.5338302],
+			"seat_offset": [0.0, 1.60125, 1.5338302],
+			"owner_view_offset": [0.0, 2.486786, 0.0],
 			"seat_rot": 0
 		},
 		{
 			"id": "track",
 			"name": "track",
 			"type": "ywzj_vehicle:track",
-			"structure_bone": "tracks"
+			"structure_bone": "tracks",
+			"suspensions": {
+				"track_left": ["suspension_left_1", "suspension_left_2", "suspension_left_3", "suspension_left_4"],
+				"track_right": ["suspension_right_1", "suspension_right_2", "suspension_right_3", "suspension_right_4"]
+			}
 		},
 		{
 			"id": "suspension_left_1",
@@ -188,6 +194,22 @@
 			"max_compression": 0.2,
 			"max_extension": 0.15,
 			"max_droop": 0.1
+		},
+		{
+			"id": "hook_front",
+			"name": "part.ywzj_vehicle.hook_front",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_front",
+			"is_seat": false,
+			"detachable": false
+		},
+		{
+			"id": "hook_rear",
+			"name": "part.ywzj_vehicle.hook_rear",
+			"type": "ywzj_vehicle:hook",
+			"structure_bone": "hook_rear",
+			"is_seat": false,
+			"detachable": false
 		}
 	],
 	"experimental": true

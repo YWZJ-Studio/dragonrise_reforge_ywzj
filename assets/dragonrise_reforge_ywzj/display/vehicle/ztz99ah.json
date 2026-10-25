@@ -16,5 +16,6 @@
 	},
 	"description": "vehicle.ztz99ah.description",
 	"tab_index": 2030,
-	"animation_controller": "dragonrise_reforge_ywzj:ztz99ah_controller"
+	"animation_controller": "dragonrise_reforge_ywzj:ztz99ah_controller",
+	"animations": "dragonrise_reforge_ywzj:entity/ztz99ah.animation"
 }
