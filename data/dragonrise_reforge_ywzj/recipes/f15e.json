@@ -1,0 +1,48 @@
+{
+	"type": "ywzj_vehicle:vehicle_printing",
+	"materials": [
+		{
+			"tag": "forge:ingots/iron",
+			"count": 224
+		},
+		{
+			"tag": "forge:ingots/copper",
+			"count": 144
+		},
+		{
+			"item": "minecraft:redstone",
+			"count": 112
+		},
+		{
+			"item": "minecraft:glass_pane",
+			"count": 24
+		},
+		{
+			"item": "minecraft:dispenser",
+			"count": 14
+		},
+		{
+			"item": "minecraft:diamond",
+			"count": 20
+		},
+		{
+			"item": "minecraft:gold_ingot",
+			"count": 56
+		},
+		{
+			"item": "minecraft:lapis_lazuli",
+			"count": 40
+		},
+		{
+			"item": "minecraft:netherite_scrap",
+			"count": 4
+		}
+	],
+	"result": {
+		"item": "ywzj_vehicle:vehicle_spawn_item",
+		"nbt": {
+			"YwzjVehicleId": "dragonrise_reforge_ywzj:f15e"
+		}
+	},
+	"printingTime": 2100
+}

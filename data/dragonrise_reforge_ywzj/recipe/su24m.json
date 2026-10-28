@@ -1,0 +1,69 @@
+{
+	"type": "ywzj_vehicle:vehicle_printing",
+	"materials": [
+		{
+			"count": 208,
+			"ingredient": {
+				"tag": "c:ingots/iron"
+			}
+		},
+		{
+			"count": 112,
+			"ingredient": {
+				"tag": "c:ingots/copper"
+			}
+		},
+		{
+			"count": 80,
+			"ingredient": {
+				"item": "minecraft:redstone"
+			}
+		},
+		{
+			"count": 24,
+			"ingredient": {
+				"item": "minecraft:glass_pane"
+			}
+		},
+		{
+			"count": 12,
+			"ingredient": {
+				"item": "minecraft:dispenser"
+			}
+		},
+		{
+			"count": 12,
+			"ingredient": {
+				"item": "minecraft:diamond"
+			}
+		},
+		{
+			"count": 40,
+			"ingredient": {
+				"item": "minecraft:gold_ingot"
+			}
+		},
+		{
+			"count": 24,
+			"ingredient": {
+				"item": "minecraft:lapis_lazuli"
+			}
+		},
+		{
+			"count": 2,
+			"ingredient": {
+				"item": "minecraft:netherite_scrap"
+			}
+		}
+	],
+	"result": {
+		"id": "ywzj_vehicle:vehicle_spawn_item",
+		"count": 1,
+		"components": {
+			"minecraft:custom_data": {
+				"YwzjVehicleId": "dragonrise_reforge_ywzj:su24m"
+			}
+		}
+	},
+	"printingTime": 1800
+}
