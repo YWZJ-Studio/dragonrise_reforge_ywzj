@@ -23,7 +23,6 @@
 		"engine_particle_offsets": [[-2.1125, 1.75, 2.875]]
 	},
 	"protect_passenger": true,
-	"with_warning_receiver": true,
 	"physics_info": {
 		"mass": 63600,
 		"friction": 127200,
